@@ -1,0 +1,48 @@
+@import (reference) '../common/mixin';
+
+
+.exp{
+    .h-logos,.exp-logos{height:40px;}
+}
+.exp.exp-index{
+    .h-logos{overflow: hidden;}
+    .exp_logo.hover{
+        border-bottom: 4px solid @d_purple; 
+    }
+}
+.h-logos{
+    width:976px;
+    position: relative;
+    
+    .exp-logos{
+        width:1200px;
+    }
+
+    .exp_logo{
+        display: block;
+        float: left;
+        height: 35px;
+        text-align: center;
+        border-bottom: 1px solid @d_purple;
+
+        &_1, &_3{width:296px;}
+        &_2{width:384px;}
+
+        &.active{border-bottom: 5px solid @d_purple;}
+
+        span{
+            display: inline-block;
+        }
+        .ico_smart {
+          .spritebox(-54px, -83px, 29px, 122px)
+        }
+
+        .ico_ultra {
+          .spritebox(-0px, -119px, 21px, 163px)
+        }
+
+        .ico_oled {
+          .spritebox(-0px, -140px, 19px, 116px)
+        }
+    }
+}

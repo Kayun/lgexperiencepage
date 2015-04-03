@@ -1,0 +1,56 @@
+@import (reference) '../common/mixin';
+
+body .exp{
+	.wrapper_bot{
+		width:970px;
+		margin: 30px auto 100px;
+		.botmenu{
+			&__block{
+				width: 322px;
+				height: 166px;
+				float:left;
+				background: url('../images/common/bot_block.png') no-repeat;
+			}
+			&__text{
+				float:left;
+				margin: 50px 0 0 12px;
+			}
+			&__title{
+				display: block;
+				min-height: 45px;
+				.helvetica-medium();
+				font-size: 13px;
+				line-height: 16px;
+				color:@purple;
+				span{
+					.helvetica-medium();
+					font-size: 9px;
+				}
+				&_smart{font-size: 12px;}
+			}
+			&__button{
+				width: 84px;
+				height: 18px;
+				display: block;
+				background: url(../images/common/bot_button.png) no-repeat;
+				padding: 4px 0;
+				text-align: center;
+				.helvetica-medium();
+				font-size: 10px;
+				color:#fff;
+
+				&:hover{
+					background-position: 0 -26px;
+				}
+			}
+			&__image{
+				float: right;
+				&_smart{
+					position: absolute;
+					right: 7px;
+					top: 4px;
+				}
+			}
+		}
+	}
+}

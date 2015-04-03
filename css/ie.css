@@ -1,0 +1,23 @@
+
+.wrapper_oled_3d{background-image:url(../images/oled/3D_back.jpg);}
+.wrapper_oled_curved{background-image:url(../images/oled/oled_curved.jpg);}
+.wrapper_oled_4colours{background-image:url(../images/oled/oled_4colour.jpg);}
+.wrapper_ultra_3d{background-image:url(../images/ultra/ultra_3d.jpg);}
+.layer_waves{background-image:url(../images/ultra/ultra_waves.jpg);}
+.layer_ultra_webos{background-image:url(../images/smart/smart_tvwebos.jpg)\9;background-position: right center;}
+
+.exp-oled .layer_main_video{background-image: url(../images/oled/Video_1_still.jpg); width: 1260px;height:454px;}
+
+.exp-ultra .layer_main_video{background-image: url(../images/ultra/Video_2_still.jpg); width: 1260px;height:454px;}
+
+.exp-smart .layer_main_video{background-image: url(../images/smart/Video_2_still.jpg); width: 1260px;height:454px;}
+
+.iframe__holder{display: none;}
+/* .featureVisual video{display: none;} */
+
+.mask, .player, .featureVisual{zoom:1;}
+
+.wrapper_choose .items .item{margin-right: 20px;}
+.wrapper_choose .items .item{*margin-right: 10px;*border:0;*background-position: center top;*width:215px;}
+.wrapper_choose .items .item .photo{*margin-top: 10px;}
+.wrapper_choose .items .item p.model{min-height:auto;}

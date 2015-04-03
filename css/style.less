@@ -1,0 +1,728 @@
+@charset "UTF-8";
+
+// Общее
+@import 'common/reset';
+@import (reference) 'common/mixin';
+@import 'common/font';
+
+// Главное меню
+@import 'blocks/tvmenu';
+@import 'blocks/botmenu';
+@import 'blocks/choose';
+
+// Главная
+@import 'pages/index';
+
+@import 'pages/3d';
+
+@import 'pages/info';
+
+
+.collapse {
+  display: none;
+  -webkit-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+.collapse.in {
+  display: block;
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}  
+
+body{
+	background: #fff;
+	color:#333;
+    .lgsmart;
+	font-size: 14px;
+}
+body .exp {
+    *{  .lgsmart; /* Все с шрифтом LG */ }
+
+    a{
+        text-decoration: none;
+        color:@purple;
+
+        &:hover{  color:#cc0440;}
+    }
+
+    h4,h5,h4 *,h5 *{  .helvetica-light;}
+
+    h4 strong b,
+    h5 strong,
+    h5 strong b{  .helvetica-medium;}
+
+    h4{
+        color:#fff;
+        
+        span{  color:@purple;}   
+        strong{  .helvetica-medium;}
+    }
+
+    h5{
+        color:@purple;
+        
+        span{  color:@gray_31;}
+    }
+}
+    
+.exp_wrapper{
+    width:976px;
+    margin: 50px auto 30px;
+
+    &_info{
+        width:1080px;
+    }
+}
+.wrapper{
+    position: relative;
+    margin:0 auto;
+}
+    
+
+.wrapper_share{
+    height:87px;
+    padding-top: 24px;
+
+    .scroll{
+        position: absolute;
+        margin: 0 0 0 -33px;
+        left: 50%;
+        width: 67px;
+        display: block;
+    }
+}
+
+// OLED
+
+.h-wrapper_wide{
+    position: relative;
+    width:100%;
+    
+    &_gray{ //тень в выборе телека
+        background: url(../images/common/gray.png) no-repeat center top;
+    }
+    &_matrix{ //матрица IPS
+        background: url(../images/ultra/ultra_matrix_1.jpg) no-repeat center center;
+    }
+}
+
+.exp .wrapper{
+    
+    h4{
+        font-size: 24px;
+        line-height: 31px;
+        b{display: none;}
+    }
+    h5{
+        font-size: 18px;
+        line-height: 29px; 
+        margin-bottom: 10px;  
+    }
+    h5.big{
+        font-size: 21px;
+        line-height: 31px;
+    }
+    h6{
+        font-size: 20px;
+        line-height: 24px;
+        color:@gray_15;
+    }
+    p.m50{
+        margin-top:34px;
+    }
+    p.m42{
+        margin-top:24px;
+    }
+    .star{color:@purple;}
+
+    .label{
+        position: absolute;
+        
+        p{
+            width:410px;
+            color:@gray_51;
+            font-size: 17px;
+            line-height: 20px;
+
+            &.list{line-height: 25px;}
+        }
+        
+        
+        &_main{
+            left: 50%;
+            top:50%;
+            margin: -29px 0 0 75px;
+            z-index: 100;
+        }
+        &_right{
+            top:155px;
+            left:720px;
+            margin:0;
+            p{margin-top: 16px;}
+        }
+        
+        &_left{
+            left: 137px;
+            top:150px;
+            margin:0;
+            
+            p{width:345px;margin-top:35px;}
+            h6 + p{margin-top:20px;}
+        }
+        &_top_left{
+            left: 133px;
+            top: 65px;
+        }
+        &_top{
+            top: -12px;
+            left:131px;
+        }
+        &_circle{
+            left:995px;
+            top:35px;
+            
+            p{
+                width:100px;
+                margin-bottom: 5px;
+                font-size: 19px;
+                line-height: 22px;
+                color:#faffff;
+            }
+        }
+    }
+
+    &_wide{
+        width:1260px;
+        height:550px;
+    }
+    &_small{
+        width:990px;
+        margin:0 auto;
+        .player{
+            margin:23px auto;
+        }
+        &.opened{
+            height:auto;
+        }
+    }
+    &_main{
+        .featureVisual{
+            width:1260px;
+        }        
+    }
+    &_main.wrapper{margin: 25px auto 17px;}
+    &_first .player{margin-top:16px;}
+    &_angles{background: url(../images/oled/main_video.jpg) no-repeat center top;}
+    
+    &_oled_horse{
+        background: url(../images/oled/oled_horse.jpg) no-repeat 0 -1px;
+        height: 455px; 
+        .label.label_left{top:90px;
+            p{margin-top:28px;}
+        }
+    }
+
+    &_oled_3d{
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+            height: 580px;
+        .label p{margin-top:0;}
+        .label h5{margin-bottom: 5px;}
+        .label_right .gap{
+            margin-top:216px;
+        }
+        .layer_eagle{background: url(../images/oled/3d_eagle.png) no-repeat;width:291px;height: 140px;  top:259px;left:55px;z-index: 3;}
+        .layer_clouds{background: url(../images/oled/3d_clouds.png) no-repeat;width:384px;height: 211px;  top:328px;left:0px;z-index: 4;}
+        .layer_baloon{background: url(../images/oled/3d_baloon_1.png) no-repeat;width:173px;height: 187px;  top:110px;left:293px;z-index: 2;}
+    }
+    &_oled_curved{
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 640px;
+
+        .animation{
+            width: 371px;height:374px;margin:40px 0 0 5px;
+        }
+    }
+
+    &_oled_4colours{
+        background-repeat:  no-repeat;
+        background-position: center center;
+        margin-top: -75px;
+
+        .layer_wpixel{
+            background: url(../images/oled/wpixel.png) no-repeat 0 0;
+            width:38px;height: 45px;
+            top: 409px;
+            z-index: 2;
+            left: 765px;
+            display: none;
+        }
+        .label_right{
+            top: 180px;
+            h5 + p{margin-top:10px;}
+            a.pixel{
+                position: relative;
+                display: block;
+                cursor: pointer;
+                width:240px;
+                margin:28px 0 0 0;
+                color: @gray_51;
+                font-size: 24px;
+                line-height: 1;
+
+                strong{color: @purple;}
+                span{
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    right: 0;
+                    .spritebox(-75px,-164px,38px,38px);
+
+                }
+                &:hover span,
+                &.active span{
+                    background-position: -75px -202px;
+                }
+            }
+            .wrgb{
+                width: 130px;
+                position: absolute;
+                line-height: 20px;
+                bottom: -89px;
+                left: 96px;
+            }
+            
+
+        }   
+        .noise{background: url(../images/oled/noise.png) no-repeat;width: 400px;height: 325px;top: 143px;left: 136px;}
+    }
+    &_oled_remote{
+        .layer_oled_remote{background: url(../images/oled/oled_pult.png) no-repeat 0 18px;}
+        .layer_oled_pean{
+            background: url(../images/oled/oled_pean.png) no-repeat;
+            bottom: 360px;top: auto;
+            left: 74px;
+            width:145px;height: 50px;
+        }
+        
+        p.larger{font-size:20px;line-height:21px;color:#4b4b4b;}
+        p.larger + p{margin-top: 13px;}
+        .label{top:56px;}
+        .label.label_remote{
+            top: 140px;
+            left: 333px;
+
+            .larger{margin:17px 0 9px;}
+            p{width:200px;margin:0;}
+            
+            ul{
+                list-style-type: none;
+                margin: -95px 0 0 56px;
+
+                p{
+                    position: relative;
+                    width: 274px;
+                    line-height: 18px;
+                }
+            }
+            .control{
+                &:before{left:-42px;}
+                &_wheel{
+                    &:before{
+                        content:"";display: block; top: -5px;
+                        position: absolute; .spritebox(-115px,-198px,30px,30px);
+                    }
+                }
+                &_voice{
+                    &:before{
+                        left:-45px;top:-2px;
+                        content:"";display: block;
+                        position: absolute; .spritebox(-116px,-229px,25px,36px);
+                    }
+                }
+                &_remote{
+                    &:before{
+                        left:-36px;
+                        content:"";display: block;
+                        position: absolute; .spritebox(-116px,-257px,21px,23px);
+                    }
+                }
+
+            }
+        }
+    }
+    &_ultra_pigeon{
+        background: url(../images/ultra/ultra_feather.jpg) no-repeat center center;
+        height: 450px;margin-top: 56px;
+
+        .label{top:85px;}
+        .pigeon{
+            position: absolute;left: 657px;
+
+            .h-pigeon{
+                width: 499px;
+                height: 342px;
+                position: relative;
+                .pigeon_ultra{
+                    width: 499px;
+                    height:342px;
+                    position: absolute;
+                    z-index: 2;top: 0;left: 0;
+                    background: url(../images/ultra/pigeon_0.png) no-repeat;
+                    border-bottom:1px solid @purple;
+                }
+            } 
+            &__switcher{
+                width: 305px;margin-left: 90px;
+                *{cursor: pointer;display: inline-block;}
+                .pigeon__tumbler{ 
+                    .spritebox(-154px, -200px,20px,57px);top: 5px;position: relative;
+                    &.active{background-position: -154px -196px;}
+                }
+                .pigeon__button{position: absolute;.spritebox(-216px, -200px,16px,16px);}
+                a{  
+                    font-size: 24px;color: @gray_51;margin:23px 13px 10px;line-height: 16px;
+                    &.active{color: @purple;}
+                }
+            }
+        }  
+    }
+    &_ultra_3d{
+        background-position: center center;
+        background-repeat: no-repeat; 
+        .label{top: 105px;} 
+
+        .compare-3d{
+        width: 259px;
+        height: 61px;
+        position: absolute;
+        top: 520px;
+        left: 435px;
+        background: url(../images/common/3d.png) no-repeat;
+            &:hover{
+                background-position: 0 -61px;
+            }
+        }
+    }    
+    &_ultra_matrix{
+        height: 645px;margin-top:45px;
+
+        .layer_ultra_matrix{
+            margin-top: 225px;
+            height:297px;
+            overflow: hidden;
+            
+            img{
+                margin:2px 0 0 117px;
+            }
+        }
+        .layer_ultra_matrix_middle{
+            width: 1260px;
+            height: 297px;
+            margin: 227px 0 0 0;
+            background-image: url('../images/ultra/matrix_middle.png'); 
+            transition: background-image 150ms ease-in-out;
+        }
+    } 
+    &_ultra_waves{position: relative;
+        .layer_waves{ background-position: -400px center ; background-repeat: no-repeat;}
+        overflow: hidden;
+        height:450px;
+        margin-bottom: 0;
+    } 
+
+    &_ultra_webos{
+        .label{top:170px; p{width: 405px;}}
+        .layer_ultra_webos video{margin: 39px 0 0 576px;}
+    } 
+
+    &_smart_emulator{
+        width:995px;
+        height:494px;
+        margin-top:56px;
+        .player{height:494px;margin-bottom: 0;}
+        .label{margin-top: 60px;margin-left: 16px;}
+        .panel{margin-bottom:17px; p{width:360px;}}
+        
+        .player { 
+            .label{z-index: 203;}
+            .mask{z-index: 202;}    
+            .featureVisual{z-index:201;}
+            .openMovie{top:138px;left:602px;z-index:204;}
+        }
+        #emulator{display: none;}
+        a.closeMovie{width:auto;}
+        li{list-style: none;}
+        h6{
+            position: relative;
+            .helvetica-light;
+            color:@purple;
+            font-size: 18px;
+            line-height: 24px;
+            cursor: pointer;
+
+            &.gray{color:@gray_51;font-size: 16px;&:before{display: none;}}
+            &:before{
+                content: "";
+                display: inline-block;
+                position: absolute;
+                left:-13px;
+                top: 8px;
+                width:4px;
+                height: 4px;
+                border-radius: 50%;
+                border:1px solid @purple;
+            }
+        }
+        .collapsed{
+            &:before{
+                left:-11px;
+                top: 9px;
+                width:2px;
+                height: 2px;
+                border:0;
+                background: @purple;
+            }
+        }
+        p{margin-top:12px;}
+        
+        .openEmulator{
+            position: absolute;top: 154px;left: 687px;z-index: 211;
+            color:#fff;.helvetica-light;font-size: 13px;line-height:22px;cursor: pointer;
+            .bold{.helvetica-medium;}
+        }
+        &.opened{
+            .player{z-index: 10000;overflow:visible;}
+            a.closeMovie{
+                z-index: 10003;
+                position: fixed;
+                left: 50%;
+                margin: 314px 0 0 267px;
+                right: auto;
+                top: 50%;
+            }
+            #emulator{
+                position: fixed;
+                z-index: 150;
+                top: 50%;
+                margin-top: -340px;
+                z-index: 10002;
+            }
+        }
+        .modal_backdrop{
+            z-index: 10001;
+        }
+    }
+    &_smart_films{
+        background: url(../images/smart/smart_films.jpg) no-repeat 0 0;
+        margin-top:45px;
+
+        .guys{.abs;top: 7px;background: url(../images/smart/smart_guys.png) no-repeat 0 0;width: 740px;height: 489px;overflow: hidden;}
+        .label{left:750px;top:212px;
+            .endnote{font-size: 13px;line-height: 15px;}
+            .endnote:before{
+                content:"*";
+                position: absolute;
+                left:-9px; 
+                color:@purple;
+            } 
+        }
+    } 
+    &_smart_devices{
+        background: url(../images/smart/smart_devices.jpg) no-repeat center center;
+        .layer_carousel{
+            width: 900px;
+            margin: 63px 0 0 289px;
+        }
+        .label{left:132px;top:90px;
+            p{margin-top: 16px;}
+        }
+    } 
+    &_smart_4k{
+        background: url(../images/smart/smart_4k.jpg) no-repeat center center;
+        margin-top: -119px;
+        .label{
+            top: 180px;
+        }
+    } 
+    &_smart_remote{
+        
+
+       // margin-bottom: 90px;
+    //height:350px;
+        .label{top:43px;
+            p{margin-top:16px;}
+        }
+
+        .label.label_remote{
+            top: 132px;left: 844px;
+            ul{margin: -95px 0 0 36px;}
+        }
+        .layer_smart_remote{
+            background: url(../images/oled/oled_pult.png) no-repeat 0 18px;
+            background-position: 510px 10px;
+        }
+        .layer_smart_pean{
+            left: 582px;bottom: 349px;
+        }
+    } 
+}
+
+.layer{
+    .abs;
+    width:100%;height:100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &_waves_tv{
+        background: url(../images/ultra/ultra_waves_tv.png) no-repeat center -70px;
+    }
+}
+
+/* .exp.exp-smart .wrapper {
+        .label_main{margin-top: -14px;}
+}
+.exp.exp-ultra .wrapper h4{
+    text-shadow: 1px 1px 7px rgba(0,0,0,0.9);
+    span{color:#fff;}
+} */
+.exp.exp-oled .wrapper h4{
+    color: #d80546;
+}
+.exp.exp-smart .player.smart .openMovie_main {
+margin-top: 62px;
+}
+.exp.exp-smart .player.smart .label_main {
+margin-top: 84px;
+}
+
+.openMovie {
+    position:absolute; display:block; z-index:13; .spritebox(0, -160px, 72px, 72px);cursor: pointer;
+    top:50%;
+    left:50%;
+
+    &_main{
+        margin:-36px 0 0 -36px;
+        display: none;
+    }
+    &_small{
+        background: url(../images/common/small_play.png) no-repeat;
+        width: 120px;
+        height: 120px;
+        margin: 0 0 0 -60px;
+        top: 16px;
+    }
+}
+
+.exp .player{
+    position:relative; height:452px; overflow:hidden; margin:100px auto;
+
+    h5 {margin:132px 0 18px;}
+    p {padding-left:2px; line-height:21px; font-size:16px; color:#666;width:350px;}
+    .closeMovie {position:absolute; display:block; top:15px; right: 3px; width:100px; height:30px; z-index:5;}
+    .text{position:absolute; z-index:100;width:390px; height:452px; }
+    .featureVisual {.abs; z-index:10;width:993px;height:452px;}
+    .mask{position:absolute; display:block; z-index:12; top:0;}
+    .h-video{width:990px;margin:0 auto;display:none;}
+    .iframe__holder{z-index: 1;position: relative;}
+    
+    &_to_left{
+        .text_left{left:0;}
+        .maskToLeft {left:0px;}
+        .openMovie{top: 189px; left: 644px;}
+
+        h5{margin-top:100px;}
+    }
+
+    &_to_right{
+        .text_right {left:655px; }
+        .maskToRight {right:0px;}
+        .openMovie{top: 189px; left: 271px;}
+    }
+
+    
+}
+
+.player .featureVisual{
+
+    &_abs_black{
+
+        background:url(../images/oled/oled_v1_mm.jpg) no-repeat 0 0;
+        background-size:100%;
+        transition: background-size 300ms ease-in-out, background-position 300ms ease-in-out;
+        
+    }
+    /*
+    &_highlight{
+        background:url(../images/oled/oled_v2_mm.jpg) no-repeat -20px -3px;
+    }
+    &_angles{
+        background:url(../images/oled/oled_v3_mm.jpg) no-repeat -20px -3px;
+    }*/
+}
+.player:hover .featureVisual_abs_black{ 
+    background-position: -40px -40px; 
+    background-size: 110%; 
+}
+
+.feathers{
+    img{display: none;.abs;z-index: 11;}
+}
+
+.playlist{
+    width:994px;
+    margin:25px auto 0;
+
+    &__item{
+        position: relative;
+        width:248px;
+        float:left;
+        margin-right: 1px;
+        text-align: center;
+        &.active:before{
+            content: "";
+            position: absolute;
+            display: block;
+            width:100%;
+            height: 4px;
+            background: #d00946;
+            top:146px;
+        }
+        p{color:@gray_51;}
+    }
+} 
+
+.modal_backdrop{
+    transition: opacity .15s linear;
+    opacity: .95;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    z-index:140;
+}
+
+
+
+.note,.exp .wrapper .label_right .note{color:#afafaf;font-size: 14px;margin: 18px 0;}
+
+.homeLink{
+    .spritebox(0,-245px,48px,47px);
+    cursor: pointer;
+    left: -100px;top: -14px;
+    position: absolute;
+    display: block;
+
+    &:hover{background-position:-52px -245px;}
+}
