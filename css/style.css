@@ -1994,3 +1994,187 @@ body .exp h5 span {
 .homeLink:hover {
   background-position: -52px -245px;
 }
+.mobile-html {
+  width: 976px;
+  min-width: 976px!important;
+  max-width: 976px;
+  margin: 0px auto;
+  overflow-x: hidden;
+}
+.mobile {
+  width: 976px;
+  margin: 0px auto;
+  overflow-x: hidden;
+}
+.mobile .h-logos .exp-logos {
+  width: 100%;
+}
+.mobile .h-logos .exp_logo {
+  width: 33.3%!important;
+  float: left!important;
+}
+.mobile .h-slides .slide {
+  float: left;
+  width: 30%;
+  margin-right: 30px;
+  height: 380px;
+  position: relative;
+  left: 0px!important;
+}
+.mobile .h-slides .slide_1 {
+  background: url(../images/common/slide_1.jpg) center bottom no-repeat;
+  background-size: contain;
+}
+.mobile .h-slides .slide_2 {
+  background: url(../images/common/slide_2.jpg) center bottom no-repeat;
+  background-size: contain;
+}
+.mobile .h-slides .slide_3 {
+  background: url(../images/common/slide_3.jpg) center bottom no-repeat;
+  background-size: contain;
+}
+.mobile .layer_main_video video {
+  width: 100%;
+}
+.mobile .layer_main_video video source {
+  width: 100%;
+}
+.mobile .exp .wrapper_wide {
+  width: 100%;
+}
+.mobile .exp .player {
+  min-height: 360px;
+  position: relative;
+}
+.mobile .exp .player.smart {
+  height: 360px;
+}
+.mobile .exp .player.ultra {
+  height: 360px;
+}
+.mobile .exp .player .featureVisual {
+  height: 100%;
+  width: 100%;
+}
+.mobile .exp .player .label_main {
+  margin: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+}
+.mobile .exp .player .openMovie_main {
+  margin-left: -300px;
+  z-index: 100;
+}
+.mobile .exp .player .h-video {
+  width: 100%;
+  height: 360px;
+}
+.mobile .exp .player .h-video iframe {
+  width: 100%;
+  height: 100%;
+}
+.mobile .exp .wrapper_smart_films {
+  background: url('../images/common/exp-wrapper-bg-smart-filmes.png') 0px center no-repeat;
+}
+.mobile .wrapper_smart_films .guys {
+  display: none;
+}
+.mobile .exp .wrapper_smart_films .label {
+  right: 0px!important;
+  left: auto!important;
+}
+.mobile .exp .wrapper_smart_4k .label {
+  right: 0px!important;
+  left: auto!important;
+}
+.mobile .exp .wrapper .label_left {
+  left: 0px!important;
+}
+.mobile .exp .wrapper_smart_remote .layer_smart_remote {
+  background: url(../images/oled/oled_pult.png) no-repeat center 50px;
+  background-position: none;
+}
+.mobile .exp .wrapper_smart_remote .layer_smart_pean {
+  display: none;
+}
+.mobile .exp .wrapper_smart_remote .label.label_remote {
+  right: 0px!important;
+  left: auto!important;
+}
+.mobile .exp .wrapper_oled_3d .layer_baloon {
+  left: 356px!important;
+}
+.mobile .exp .wrapper_oled_3d .layer_eagle {
+  left: 112px!important;
+}
+.mobile .exp .wrapper_oled_3d .layer_clouds {
+  left: -1px !important;
+}
+.mobile .exp .wrapper .label_right {
+  left: auto;
+  right: 0px;
+}
+.mobile .exp .player .featureVisual_ambilight {
+  background: url('../images/common/bg-pl-featureVisual.jpg') right 0px no-repeat;
+}
+.mobile .exp .player .featureVisual_angles {
+  background: url('../images/common/bg-pl-featureVisual_angles.jpg') left 0px no-repeat;
+}
+.mobile .exp .wrapper_ultra_3d .compare-3d {
+  left: 200px;
+}
+.mobile .layer_ultra_webos {
+  background: url('../images/common/slide_3.jpg') right 80px no-repeat;
+}
+.mobile .wrapper_oled_main .h-video {
+  height: 452px!important;
+}
+.mobile .wrapper_oled_main h4 {
+  display: none;
+}
+.mobile .exp .player .openMovie_main {
+  margin-left: -30px;
+  z-index: 100;
+  top: 127px;
+}
+.mobile .layer_ultra_matrix {
+  display: none;
+}
+.mobile .exp .wrapper_ultra_matrix .layer_ultra_matrix_middle {
+  background: url('../images/ultra/bg-ultra-matrix.png') center center no-repeat;
+  width: 100%;
+}
+.mobile.ultra .layer_main_video {
+  display: none;
+}
+.mobile.ultra .wrapper_main.ultra {
+  background: url('../images/ultra/wrap-main-ultra.png') center center no-repeat;
+}
+.mobile.ultra .wrapper_main.ultra .label_main {
+  display: block;
+  opacity: 1;
+}
+.mobile.ultra .wrapper_main.ultra .label_main h4 b {
+  display: inline;
+}
+.mobile.ultra .wrapper_main.ultra .openMovie_main {
+  display: block;
+}
+.mobile.smart .layer_main_video {
+  display: none;
+}
+.mobile.smart .wrapper_main.smart {
+  background: url('../images/smart/wrap-main-smart.png') center center no-repeat;
+}
+.mobile.smart .wrapper_main.smart .label_main {
+  display: block;
+  opacity: 1;
+}
+.mobile.smart .wrapper_main.smart .label_main h4 b {
+  display: inline;
+}
+.mobile.smart .wrapper_main.smart .openMovie_main {
+  display: block;
+  margin-top: 10px;
+}
