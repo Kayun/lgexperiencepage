@@ -725,3 +725,48 @@ if ($('.wrapper_choose').length>0){
 
   
 });
+
+
+$(document).ready(function() {
+    //check mobile device
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $('body').addClass('mobile');
+        $('html').addClass('mobile-html');
+        mobileCode();
+    }
+});
+
+function mobileCode() {
+    // main TV nagivation
+    $('.h-slides .slide').removeClass('jslide1 jslide2 jslide3 jhover1 jhover2 jhover3');
+    $('.h-slides .slide_3 video').remove();
+    $('.h-slides .slide .slayer').remove();
+
+    //main TV logos
+    $('.h-logos .exp_logo').removeClass('jhover1 jhover2 jhover3 hover');
+
+    //remove videos
+    $('.wrapper_smart_emulator .openEmulator').remove();
+    $('.wrapper_smart_emulator .openMovie').remove();
+
+    $('.player:not(.wrapper_oled_main):not(.ultra):not(.smart) .openMovie').remove();
+    $('.player .closeMovie').remove();
+    $('.player .iframe__holder').remove();
+
+    $('#light-vid').remove();
+    $('#light-vid').remove();
+    $('#smart-vid').remove();
+    $('#carousel-vid').remove();
+
+    $('.wrapper_oled_main .openMovie_main').unbind('click').bind('click', function() {
+        $('.wrapper_oled_main .h-video').css({position: 'relative', zIndex: 10000, display: 'block'});
+    });
+
+    $('.ultra .wrapper_main.ultra .openMovie_main').unbind('click').bind('click', function() {
+        $('.ultra .wrapper_main.ultra .h-video').css({position: 'relative', zIndex: 10000, display: 'block'});
+    });
+
+    $('.smart .wrapper_main.smart .openMovie_main').unbind('click').bind('click', function() {
+        $('.smart .wrapper_main.smart .h-video').css({position: 'relative', zIndex: 10000, display: 'block'});
+    });
+}
