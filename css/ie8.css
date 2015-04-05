@@ -7,3 +7,6 @@ body{}
 .pigeon__tumbler{margin-top: 20px;display: block;}
 #curved{background: url('../images/oled/anim/anim_5.jpg') no-repeat center center;}
 #curved *{display: none;}
+.ultra .layer_main_video {
+    background: url('../images/ultra/Video_3_still.jpg') center no-repeat;
+}
