@@ -737,6 +737,9 @@ $(document).ready(function() {
 });
 
 function mobileCode() {
+    viewport = document.querySelector("meta[name=viewport]");
+    viewport.setAttribute('content', 'width=976px');
+
     // main TV nagivation
     $('.h-slides .slide').removeClass('jslide1 jslide2 jslide3 jhover1 jhover2 jhover3');
     $('.h-slides .slide_3 video').remove();
