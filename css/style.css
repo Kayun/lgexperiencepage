@@ -2045,6 +2045,9 @@ body .exp h5 span {
 .mobile .wrapper_ultra_pigeon .pigeon {
   left: 530px!important;
 }
+.mobile .wrapper_oled_4colours .noise {
+  left: -7px !important;
+}
 .mobile .h-logos .exp-logos {
   width: 100%;
 }
