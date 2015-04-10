@@ -2006,6 +2006,45 @@ body .exp h5 span {
   margin: 0px auto;
   overflow-x: hidden;
 }
+.mobile .wrapper_share {
+  display: none!important;
+}
+.mobile .wrapper_oled_main {
+  display: block!important;
+  background: url('../images/bg-oled.png') center no-repeat;
+}
+.mobile .wrapper_oled_main > * {
+  display: none!important;
+}
+.mobile .wrapper_oled_main .h-video[style] {
+  display: block!important;
+}
+.mobile .wrapper_main.ultra {
+  display: block!important;
+  background: url('../images/bg-ultra.png') center no-repeat;
+}
+.mobile .wrapper_main.ultra > * {
+  display: none!important;
+}
+.mobile .wrapper_main.ultra .h-video[style] {
+  display: block!important;
+}
+.mobile .wrapper_main.smart {
+  display: block!important;
+  background: url('../images/bg-ultra.png') center no-repeat;
+}
+.mobile .wrapper_main.smart > * {
+  display: none!important;
+}
+.mobile .wrapper_main.smart .h-video[style] {
+  display: block!important;
+}
+.mobile .wrapper_oled_horse {
+  background: url(../images/oled/oled_horse.jpg) no-repeat -200px 1px !important;
+}
+.mobile .wrapper_ultra_pigeon .pigeon {
+  left: 530px!important;
+}
 .mobile .h-logos .exp-logos {
   width: 100%;
 }

@@ -1,3 +1,4 @@
+require('/usr/local/lib/node_modules/less/bin/lessc');
 // Обязательная обёртка
 module.exports = function(grunt) {
 
