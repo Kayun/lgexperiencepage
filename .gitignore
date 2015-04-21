@@ -1,0 +1,7 @@
+#folders
+node_modules
+layout
+
+#project files
+*.sublime-project
+*.sublime-workspace
