@@ -198,7 +198,7 @@ td,
 th {
   padding: 0;
 }
-.clearfix:before {
+.clearfix:after {
   content: ' ';
   display: table;
   font-size: 0;
@@ -245,7 +245,7 @@ This must be run when you have at least 2 sprites.
   position: relative;
   padding-top: 20px;
   width: 100%;
-  height: 462px;
+  height: 465px;
   font-size: 0;
 }
 .menu__item {
@@ -269,12 +269,12 @@ This must be run when you have at least 2 sprites.
 }
 .menu__item-logo_type_oled {
   background-image: url(../images/sprite.png);
-  background-position: 0px -70px;
+  background-position: 0px -130px;
   width: 134px;
   height: 22px;
 }
 .menu__item-logo_type_webos {
-  margin-bottom: 7px;
+  top: -3px;
   background-image: url(../images/sprite.png);
   background-position: 0px -34px;
   width: 134px;
@@ -286,7 +286,7 @@ This must be run when you have at least 2 sprites.
   top: 35px;
   left: 0;
   width: 100%;
-  height: 427px;
+  height: 430px;
   background-color: #fff;
   border-top: 1px solid #c5003d;
   border-bottom: 1px solid #c5003d;
@@ -301,12 +301,17 @@ This must be run when you have at least 2 sprites.
   z-index: 2;
   top: 32px;
   width: 126%;
-  height: 430px;
+  height: 433px;
   -webkit-transform: translateX(-13%);
       -ms-transform: translateX(-13%);
           transform: translateX(-13%);
   border-top-width: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.menu__item-wrap:hover .menu__item-img {
+  width: 386px;
+  height: 320px;
+  margin-left: -193px;
 }
 .menu__item-text {
   padding: 36px 26px 0;
@@ -329,14 +334,9 @@ This must be run when you have at least 2 sprites.
   height: 275px;
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   transition: all .3s ease;
-  will-change: width, height, margin-left;
-}
-.menu__item-img:hover {
-  width: 386px;
-  height: 320px;
-  margin-left: -193px;
+  will-change: width, height, margin-left, background-size;
 }
 .menu__item-img_type_ultra {
   background-image: url('../images/menu-ultra.png');
@@ -346,4 +346,105 @@ This must be run when you have at least 2 sprites.
 }
 .menu__item-img_type_webos {
   background-image: url('../images/menu-webos.png');
+}
+.technology {
+  padding: 0 27px;
+}
+.technology__title {
+  padding-top: 44px;
+  padding-bottom: 36px;
+  font-family: 'helvetica-light', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 28px;
+  color: #7b7b7b;
+}
+.technology__item {
+  width: 215px;
+  float: left;
+}
+.technology__item:first-child {
+  margin-left: 5px;
+}
+.technology__item + .technology__item {
+  margin-left: 20px;
+}
+.technology__item-container {
+  width: 100%;
+  height: 188px;
+  border: 1px solid #efefef;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.technology__item-container:hover {
+  background-color: #efefef;
+}
+.technology__item-img {
+  margin: 0 auto;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.technology__item-img_type_cinema-3d {
+  margin-top: 12px;
+  width: 166px;
+  height: 134px;
+  background-image: url('../images/cinema-3d.png');
+}
+.technology__item-img_type_dvb-t2 {
+  margin-top: 19px;
+  padding-left: 10px;
+  width: 166px;
+  height: 122px;
+  background-image: url('../images/dvb-t2.png');
+  background-position-x: 10px;
+}
+.technology__item-img_type_oled-4k {
+  margin-top: 28px;
+  width: 200px;
+  height: 118px;
+  background-image: url('../images/oled-4k.png');
+}
+.technology__item-img_type_ips {
+  margin-top: 31px;
+  width: 158px;
+  height: 110px;
+  background-image: url('../images/ips.png');
+}
+.technology__item-logo {
+  margin: 0 auto;
+}
+.technology__item-logo_type_cinema-3d {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -70px;
+  width: 150px;
+  height: 24px;
+}
+.technology__item-logo_type_dvb-t2 {
+  margin-top: 8px;
+  background-image: url(../images/sprite.png);
+  background-position: 0px -160px;
+  width: 80px;
+  height: 20px;
+}
+.technology__item-logo_type_oled-4k {
+  margin-top: 5px;
+  background-image: url(../images/sprite.png);
+  background-position: 0px -102px;
+  width: 148px;
+  height: 20px;
+}
+.technology__item-logo_type_ips {
+  margin-top: 12px;
+  background-image: url(../images/sprite.png);
+  background-position: -88px -160px;
+  width: 50px;
+  height: 16px;
+}
+.technology__item-text {
+  margin-top: 15px;
+  padding: 0 3px;
+  font-family: 'lg_smart_regular', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 19px;
+  color: #3a3939;
 }
