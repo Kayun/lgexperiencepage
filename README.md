@@ -6,3 +6,7 @@
 	Версия `jQuery - 1.6.2` на всем сайте LG, это надо обязательно учитывать, иначе меню работать не будет
 
 *	На самом сайте DOM лежит в `.m` шаблонах, а не `html`, редактировать надо их.
+
+## Листинг
+
+[https://kayun.github.io/lgexperiencepage/dist/main.html](https://kayun.github.io/lgexperiencepage/dist/main.html)
