@@ -449,7 +449,7 @@ This must be run when you have at least 2 sprites.
   color: #3a3939;
 }
 .submenu {
-  padding: 56px 250px;
+  padding: 56px 0;
   text-align: center;
   background: radial-gradient(at bottom, #f8f8f8, #ffffff 60%);
 }
