@@ -17,6 +17,8 @@
     "grunt-browser-sync": "^2.1.1",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-imagemin": "^0.9.4",
     "grunt-contrib-jade": "^0.14.1",
     "grunt-contrib-jshint": "~0.6.3",
     "grunt-contrib-less": "^1.0.1",
@@ -25,6 +27,8 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-newer": "^1.1.0",
     "grunt-prettify": "^0.4.0",
-    "load-grunt-tasks": "^3.1.0"
+    "grunt-spritesmith": "^4.5.3",
+    "load-grunt-tasks": "^3.1.0",
+    "pngsmith": "^0.1.3"
   }
 }

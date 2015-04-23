@@ -1,4 +1,3 @@
-//require('/usr/local/lib/node_modules/less/bin/lessc');
 // Обязательная обёртка
 module.exports = function(grunt) {
 
@@ -10,13 +9,42 @@ module.exports = function(grunt) {
 			dist: ['dist']
 		},
 
+		sprite: {
+			dist: {
+				src: 'images/new_design/sprite/**/*.png',
+				dest: 'images/new_design/sprite.png',
+				imgPath: '../images/sprite.png',
+				destCss: 'css/new_design/base/sprite.less',
+				cssFormat: 'less',
+				algorithm: 'binary-tree',
+				padding: 8,
+				engine: 'pngsmith',
+				imgOpts: {
+					format: 'png'
+				},
+			},
+		},
+
+		imagemin: {
+			images: {
+				files: [
+					{
+						expand: true,
+						cwd: 'images/new_design/',
+						src: ['**/*.{png,jpg,gif}', '!sprite/**/*.png'],
+						dest: 'dist/assets/images',
+					},
+				],
+			},
+		},
+
 		less: {
 			development: {
 				options: {
-					paths: ["css/"]
+					paths: ['css/new_design'],
 				},
 				files: {
-					"dist/assets/styles/common.css" : "css/style.less"
+					'dist/assets/styles/common.css' : 'css/new_design/common.less'
 				}
 			}
 		},
@@ -64,6 +92,28 @@ module.exports = function(grunt) {
 			},
 		},
 
+		copy: {
+			/*images: {
+				files: [{
+					expand: true,
+					cwd: 'images/new_design/',
+					src: ['*.{png,jpg,gif}'],
+					dest: 'dist/assets/images',
+					filter: 'isFile'
+				}]
+			},*/
+
+			fonts: {
+				files: [{
+					expand: true,
+					cwd: 'webfont/',
+					src: ['*'],
+					dest: 'dist/assets/fonts',
+					filter: 'isFile'
+				}]
+			}
+		},
+
 		browserSync: {
 		    bsFiles: {
 		        src : 'dist/**/*'
@@ -78,6 +128,17 @@ module.exports = function(grunt) {
 		},
 
 		watch: {
+
+			sprite: {
+				files: ['images/new_design/sprite/**/*.png'],
+				tasks: ['sprite']
+			},
+
+			imagemin: {
+				files: ['images/new_design/**/*.{png,jpg,gif}', '!images/new_design/sprite/**/*'],
+				tasks: ['newer:imagemin']
+			},
+
 			style: {
 				files: ['css/**/*.less'],
 				tasks: ['less', 'autoprefixer']
@@ -93,8 +154,16 @@ module.exports = function(grunt) {
 				tasks: ['jade', 'newer:prettify']
 			},
 
-			options: {
-				livereload: true
+			copyFomts: {
+				files: ['webfont/*'],
+				tasks: ['newer:copy:fonts']
+			},
+
+			livereload: {
+				options: {
+					livereload: true
+				},
+				files: ['dist/**/*']
 			}
 		}
 	});
@@ -108,16 +177,19 @@ module.exports = function(grunt) {
 	// Задача по умолчанию
 	grunt.registerTask('build', [
 		'clean',
+		'sprite',
+		'imagemin',
 		'less',
 		'autoprefixer',
 		'jade',
 		'prettify',
+		'copy'
 	]);
 
 	grunt.registerTask('default', [
 		'build',
 		'browserSync',
-		'watch',
+		'watch'
 	]);
 }
 
