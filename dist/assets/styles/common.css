@@ -269,7 +269,7 @@ This must be run when you have at least 2 sprites.
 }
 .menu__item-logo_type_oled {
   background-image: url(../images/sprite.png);
-  background-position: 0px -130px;
+  background-position: -198px 0px;
   width: 134px;
   height: 22px;
 }
@@ -422,21 +422,21 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_dvb-t2 {
   margin-top: 8px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -160px;
+  background-position: -198px -124px;
   width: 80px;
   height: 20px;
 }
 .technology__item-logo_type_oled-4k {
   margin-top: 5px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -102px;
+  background-position: 0px -152px;
   width: 148px;
   height: 20px;
 }
 .technology__item-logo_type_ips {
   margin-top: 12px;
   background-image: url(../images/sprite.png);
-  background-position: -88px -160px;
+  background-position: -198px -152px;
   width: 50px;
   height: 16px;
 }
@@ -447,4 +447,68 @@ This must be run when you have at least 2 sprites.
   font-size: 17px;
   line-height: 19px;
   color: #3a3939;
+}
+.submenu {
+  padding: 56px 250px;
+  text-align: center;
+  background: radial-gradient(at bottom, #f8f8f8, #ffffff 60%);
+}
+.submenu__item {
+  position: relative;
+  width: 90px;
+  display: inline-block;
+  font-family: 'lg_smart_regular', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  color: #7b7b7b;
+  text-align: center;
+  text-decoration: none;
+}
+.submenu__item + .submenu__item {
+  margin-left: 115px;
+}
+.submenu__item:hover {
+  color: #c5003d;
+}
+.submenu__item:hover .submenu__item-logo_type_tv {
+  background-image: url(../images/sprite.png);
+  background-position: -198px -30px;
+  width: 56px;
+  height: 42px;
+}
+.submenu__item:hover .submenu__item-logo_type_audio {
+  background-image: url(../images/sprite.png);
+  background-position: -96px -102px;
+  width: 88px;
+  height: 42px;
+}
+.submenu__item:hover .submenu__item-logo_type_monitor {
+  background-image: url(../images/sprite.png);
+  background-position: -260px -80px;
+  width: 54px;
+  height: 36px;
+}
+.submenu__item-logo {
+  margin: 0 auto;
+}
+.submenu__item-logo_type_tv {
+  background-image: url(../images/sprite.png);
+  background-position: -262px -30px;
+  width: 56px;
+  height: 42px;
+}
+.submenu__item-logo_type_audio {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -102px;
+  width: 88px;
+  height: 42px;
+}
+.submenu__item-logo_type_monitor {
+  background-image: url(../images/sprite.png);
+  background-position: -198px -80px;
+  width: 54px;
+  height: 36px;
+}
+.submenu__item-text {
+  margin-top: 10px;
+  line-height: 19px;
 }

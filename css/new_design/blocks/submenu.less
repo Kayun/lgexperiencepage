@@ -1,0 +1,72 @@
+.submenu {
+	padding: 56px 250px;
+	text-align: center;
+	background: radial-gradient(at bottom, #f8f8f8, #fff 60%);
+
+	&__item {
+		position: relative;
+		width: 90px;
+		display: inline-block;
+		.lgsmart();
+		font-size: 17px;
+		color: @gray-text;
+		text-align: center;
+		text-decoration: none;
+
+		& + .submenu__item {
+			margin-left: 115px;
+		}
+
+		&:hover {
+			color: @reb-menu;
+
+			& .submenu__item-logo {
+
+				&_type {
+
+					&_tv {
+						.sprite(@icon-tv-hover);
+					}
+
+					&_audio {
+						.sprite(@icon-audio-hover);
+					}
+
+					&_monitor {
+						.sprite(@icon-monitor-hover);
+					}
+				}
+
+			}
+
+		}
+
+	}
+
+	&__item-logo {
+		margin: 0 auto;
+
+		&_type {
+
+			&_tv {
+				.sprite(@icon-tv);
+			}
+
+			&_audio {
+				.sprite(@icon-audio);
+			}
+
+			&_monitor {
+				.sprite(@icon-monitor);
+			}
+
+		}
+
+	}
+
+	&__item-text {
+		margin-top: 10px;
+		line-height: 19px;
+	}
+
+}
