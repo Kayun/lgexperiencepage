@@ -320,7 +320,7 @@ This must be run when you have at least 2 sprites.
       -ms-transform: translateX(-13%);
           transform: translateX(-13%);
   border-top-width: 4px;
-  box-shadow: 0 2px 15px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: -5px 0px 12px -3px rgba(0, 0, 0, 0.1), 5px 0px 12px -3px rgba(0, 0, 0, 0.1);
 }
 .menu__item-wrap:hover .menu__item-img_type_ultra {
   bottom: -20px;
