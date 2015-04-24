@@ -4,16 +4,30 @@
 
 		&:hover {
 			left: -13%;
-		}
 
-		&:before {
-			position: absolute;
-			top: 0;
-			left: -5px;
-			width: 5px;
-			height: 100%;
-			content: '';
-			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=1)";
+
+			&:before {
+				position: absolute;
+				top: 0;
+				left: -5px;
+				width: 5px;
+				height: 100%;
+				content: ' ';
+				//background-color: #000;
+				filter: ~"progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 )";
+			}
+
+			&:after {
+				position: absolute;
+				top: 0;
+				right: -5px;
+				width: 5px;
+				height: 100%;
+				content: ' ';
+				background-color: #000;
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#000000, GradientType=1)";
+			}
+
 		}
 
 	}

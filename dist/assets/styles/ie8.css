@@ -1,12 +1,22 @@
 .menu__item-wrap:hover {
   left: -13%;
 }
-.menu__item-wrap:before {
+.menu__item-wrap:hover:before {
   position: absolute;
   top: 0;
   left: -5px;
   width: 5px;
   height: 100%;
-  content: '';
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=1)";
+  content: ' ';
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 );
+}
+.menu__item-wrap:hover:after {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 5px;
+  height: 100%;
+  content: ' ';
+  background-color: #000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#000000, GradientType=1)";
 }
