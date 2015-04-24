@@ -350,8 +350,14 @@ This must be run when you have at least 2 sprites.
   width: 335px;
   height: 295px;
 }
+.menu__item-wrap:hover .menu__item-badge_type_webos {
+  top: 90px;
+}
+.menu__item-wrap:hover .menu__item-badge_type_ultra {
+  top: 105px;
+}
 .menu__item-text {
-  padding: 36px 26px 0;
+  padding: 36px 0 0 26px;
   font-family: 'helvetica-light', Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 28px;
@@ -373,9 +379,9 @@ This must be run when you have at least 2 sprites.
   will-change: width, height, margin-left, bottom;
 }
 .menu__item-img_type_ultra {
-  bottom: 25px;
-  margin-left: -154px;
-  width: 280px;
+  bottom: 22px;
+  margin-left: -145px;
+  width: 270px;
   height: 265px;
   background-image: url('../images/menu-ultra-hover.png');
 }
@@ -391,6 +397,25 @@ This must be run when you have at least 2 sprites.
   width: 280px;
   height: 265px;
   background-image: url('../images/menu-webos-hover.png');
+}
+.menu__item-badge {
+  position: absolute;
+  top: 118px;
+  left: 26px;
+  transition: top .3s ease;
+  will-change: top;
+}
+.menu__item-badge_type_ultra {
+  background-image: url(../images/sprite.png);
+  background-position: -198px -80px;
+  width: 106px;
+  height: 20px;
+}
+.menu__item-badge_type_webos {
+  background-image: url(../images/sprite.png);
+  background-position: -198px -152px;
+  width: 90px;
+  height: 18px;
 }
 .technology {
   padding: 0 27px;
@@ -467,7 +492,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_dvb-t2 {
   margin-top: 8px;
   background-image: url(../images/sprite.png);
-  background-position: -198px -124px;
+  background-position: 0px -180px;
   width: 80px;
   height: 20px;
 }
@@ -481,7 +506,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_ips {
   margin-top: 12px;
   background-image: url(../images/sprite.png);
-  background-position: -198px -152px;
+  background-position: -88px -180px;
   width: 50px;
   height: 16px;
 }
@@ -516,19 +541,19 @@ This must be run when you have at least 2 sprites.
 }
 .submenu__item:hover .submenu__item-logo_type_tv {
   background-image: url(../images/sprite.png);
-  background-position: -198px -30px;
+  background-position: -262px -30px;
   width: 56px;
   height: 42px;
 }
 .submenu__item:hover .submenu__item-logo_type_audio {
   background-image: url(../images/sprite.png);
-  background-position: -96px -102px;
+  background-position: 0px -102px;
   width: 88px;
   height: 42px;
 }
 .submenu__item:hover .submenu__item-logo_type_monitor {
   background-image: url(../images/sprite.png);
-  background-position: -260px -80px;
+  background-position: -260px -108px;
   width: 54px;
   height: 36px;
 }
@@ -537,19 +562,19 @@ This must be run when you have at least 2 sprites.
 }
 .submenu__item-logo_type_tv {
   background-image: url(../images/sprite.png);
-  background-position: -262px -30px;
+  background-position: -198px -30px;
   width: 56px;
   height: 42px;
 }
 .submenu__item-logo_type_audio {
   background-image: url(../images/sprite.png);
-  background-position: 0px -102px;
+  background-position: -96px -102px;
   width: 88px;
   height: 42px;
 }
 .submenu__item-logo_type_monitor {
   background-image: url(../images/sprite.png);
-  background-position: -198px -80px;
+  background-position: -198px -108px;
   width: 54px;
   height: 36px;
 }

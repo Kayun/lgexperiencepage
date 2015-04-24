@@ -132,12 +132,28 @@
 
 			}
 
+			& .menu__item-badge {
+
+				&_type {
+
+					&_webos {
+						top: 90px;
+					}
+
+					&_ultra {
+						top: 105px;
+					}
+
+				}
+
+			}
+
 		}
 
 	}
 
 	&__item-text {
-		padding: 36px 26px 0;
+		padding: 36px 0 0 26px;
 		.helvetica-light();
 		font-size: 17px;
 		line-height: 28px;
@@ -163,9 +179,9 @@
 		&_type {
 
 			&_ultra {
-				bottom: 25px;
-				margin-left: -154px;
-				width: 280px;
+				bottom: 22px;
+				margin-left: -145px;
+				width: 270px;
 				height: 265px;
 				background-image: url('../images/menu-ultra-hover.png')
 			}
@@ -186,6 +202,28 @@
 			}
 
 		}
+
+	}
+
+	&__item-badge {
+		position: absolute;
+		top: 118px;
+		left: 26px;
+		transition: top .3s ease;
+		will-change: top;
+
+		&_type {
+
+			&_ultra {
+				.sprite(@badge-colorprime)
+			}
+
+			&_webos {
+				.sprite(@badge-webos)
+			}
+
+		}
+
 	}
 
 }
