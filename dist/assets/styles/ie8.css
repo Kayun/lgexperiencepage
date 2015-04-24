@@ -1,22 +1,48 @@
+.menu_item_pos_center .menu__item-wrap:before {
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 15px;
+  height: 100%;
+  content: ' ';
+  background: url('../images/ie/menu-shadow-left.png') repeat-y 0 0;
+}
+.menu_item_pos_center .menu__item-wrap:after {
+  position: absolute;
+  top: 0;
+  right: -15px;
+  width: 15px;
+  height: 100%;
+  content: ' ';
+  background: url('../images/ie/menu-shadow-right.png') repeat-y 0 0;
+}
 .menu__item-wrap:hover {
   left: -13%;
 }
 .menu__item-wrap:hover:before {
   position: absolute;
   top: 0;
-  left: -5px;
-  width: 5px;
+  left: -15px;
+  width: 15px;
   height: 100%;
   content: ' ';
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 );
+  background: url('../images/ie/menu-shadow-left.png') repeat-y 0 0;
 }
 .menu__item-wrap:hover:after {
   position: absolute;
   top: 0;
-  right: -5px;
-  width: 5px;
+  right: -15px;
+  width: 15px;
   height: 100%;
   content: ' ';
-  background-color: #000;
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#000000, GradientType=1)";
+  background: url('../images/ie/menu-shadow-right.png') repeat-y 0 0;
+}
+.menu__item-img_type_ultra {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-ultra-hover.png', sizingMethod='scale');
+}
+.menu__item-img_type_oled {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-oled-hover.png', sizingMethod='scale');
+}
+.menu__item-img_type_webos {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-webos-hover.png', sizingMethod='scale');
 }

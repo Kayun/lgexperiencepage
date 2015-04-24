@@ -421,8 +421,8 @@ This must be run when you have at least 2 sprites.
 }
 .technology__item-img_type_cinema-3d {
   margin-top: 12px;
-  width: 166px;
-  height: 134px;
+  width: 150px;
+  height: 126px;
   background-image: url('../images/cinema-3d.png');
 }
 .technology__item-img_type_dvb-t2 {
@@ -442,7 +442,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-img_type_ips {
   margin-top: 31px;
   width: 158px;
-  height: 110px;
+  height: 118px;
   background-image: url('../images/ips.png');
 }
 .technology__item-logo {

@@ -1,31 +1,80 @@
 .menu {
 
+	&_item {
+
+		&_pos_center {
+
+			& .menu__item-wrap {
+
+				&:before {
+					position: absolute;
+					top: 0;
+					left: -15px;
+					width: 15px;
+					height: 100%;
+					content: ' ';
+					background: url('../images/ie/menu-shadow-left.png') repeat-y 0 0;
+				}
+
+				&:after {
+					position: absolute;
+					top: 0;
+					right: -15px;
+					width: 15px;
+					height: 100%;
+					content: ' ';
+					background: url('../images/ie/menu-shadow-right.png') repeat-y 0 0;
+				}
+
+			}
+
+		}
+
+	}
+
 	&__item-wrap {
 
 		&:hover {
 			left: -13%;
 
-
 			&:before {
 				position: absolute;
 				top: 0;
-				left: -5px;
-				width: 5px;
+				left: -15px;
+				width: 15px;
 				height: 100%;
 				content: ' ';
-				//background-color: #000;
-				filter: ~"progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 )";
+				background: url('../images/ie/menu-shadow-left.png') repeat-y 0 0;
 			}
 
 			&:after {
 				position: absolute;
 				top: 0;
-				right: -5px;
-				width: 5px;
+				right: -15px;
+				width: 15px;
 				height: 100%;
 				content: ' ';
-				background-color: #000;
-				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#000000, GradientType=1)";
+				background: url('../images/ie/menu-shadow-right.png') repeat-y 0 0;
+			}
+
+		}
+
+	}
+
+	&__item-img {
+
+		&_type {
+
+			&_ultra {
+				filter: ~"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-ultra-hover.png', sizingMethod='scale')";
+			}
+
+			&_oled {
+				filter: ~"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-oled-hover.png', sizingMethod='scale')";
+			}
+
+			&_webos {
+				filter: ~"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-webos-hover.png', sizingMethod='scale')";
 			}
 
 		}
