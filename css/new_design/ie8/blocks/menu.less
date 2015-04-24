@@ -1,29 +1,53 @@
 .menu {
 
-	&_item {
+	&__item {
 
-		&_pos_center {
+		&_pos {
 
-			& .menu__item-wrap {
+			&_left {
 
-				&:before {
-					position: absolute;
-					top: 0;
-					left: -12px;
-					width: 12px;
-					height: 100%;
-					content: ' ';
-					background: url('../images/ie/menu-shadow-left.png') repeat-y 0 0;
+				& .menu__item-wrap:hover {
+					left: 0;
 				}
 
-				&:after {
-					position: absolute;
-					top: 0;
-					right: -12px;
-					width: 12px;
-					height: 100%;
-					content: ' ';
-					background: url('../images/ie/menu-shadow-right.png') repeat-y 0 0;
+			}
+
+			&_right {
+
+				& .menu__item-wrap:hover {
+					left: -26%;
+				}
+			}
+
+			&_center {
+
+				& .menu__item-wrap {
+
+					&:hover {
+						left: -13%;
+
+						&:before {
+							position: absolute;
+							top: 0;
+							left: -12px;
+							width: 12px;
+							height: 100%;
+							content: ' ';
+							background: url('../images/ie/menu-shadow-left.png') repeat-y 0 0;
+						}
+
+						&:after {
+							position: absolute;
+							top: 0;
+							right: -12px;
+							width: 12px;
+							height: 100%;
+							content: ' ';
+							background: url('../images/ie/menu-shadow-right.png') repeat-y 0 0;
+						}
+
+					}
+
 				}
 
 			}
@@ -35,7 +59,6 @@
 	&__item-wrap {
 
 		&:hover {
-			left: -13%;
 
 			&:before {
 				position: absolute;
@@ -66,15 +89,18 @@
 		&_type {
 
 			&_ultra {
-				filter: ~"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-ultra-hover.png', sizingMethod='scale')";
+				background-size: cover;
+				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-ultra-hover.png', sizingMethod='scale')";
 			}
 
 			&_oled {
-				filter: ~"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-oled-hover.png', sizingMethod='scale')";
+				background-size: cover;
+				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-oled-hover.png', sizingMethod='scale')";
 			}
 
 			&_webos {
-				filter: ~"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-webos-hover.png', sizingMethod='scale')";
+				background-size: cover;
+				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-webos-hover.png', sizingMethod='scale')";
 			}
 
 		}

@@ -44,7 +44,9 @@ module.exports = function(grunt) {
 
 		less: {
 			options: {
-				paths: 'css/new_design'
+				paths: 'css/new_design',
+				syncImport: true,
+				dumpLineNumbers: 'comments'
 			},
 
 			dev: {
@@ -96,6 +98,39 @@ module.exports = function(grunt) {
 			}
 		},
 
+		csscomb: {
+			dist: {
+				options: {
+					config: '.csscomb.json'
+				},
+				files: [{
+					expand: true,
+					cwd: 'dist/assets/styles',
+					src: '**/*.css',
+					dest: 'dist/assets/styles'
+				}]
+			}
+		},
+
+		cssmin: {
+			prod: {
+				options: {
+					shorthandCompacting: false,
+					roundingPrecision: -1
+				},
+				files: [{
+					expand: true,
+					cwd: 'dist/assets/styles',
+					src: [
+						'*.css',
+						'!*.min.css'
+					],
+					dest: 'dist/assets/styles',
+					ext: '.min.css'
+				}]
+			}
+		},
+
 		jade: {
 			dist: {
 				options: {
@@ -130,6 +165,26 @@ module.exports = function(grunt) {
 			},
 		},
 
+		concat: {
+			options: {
+				separator: ';',
+			},
+			script: {
+				src: [
+					'js/libs/*.js',
+					'common.js'
+				],
+				dest: 'dist/assets/scripts/common.js'
+			}
+		},
+
+		uglify: {
+			dist: {
+				src: 'dist/assets/scripts/common.js',
+				dest: 'dist/assets/scripts/common.min.js'
+			}
+		},
+
 		copy: {
 			/*images: {
 				files: [{
@@ -153,16 +208,16 @@ module.exports = function(grunt) {
 		},
 
 		browserSync: {
-		    bsFiles: {
-		        src : 'dist/**/*'
-		    },
-		    options: {
-		        server: {
-		            baseDir: "dist",
-		        },
-		        watchTask: true,
+			bsFiles: {
+				src : 'dist/**/*'
+			},
+			options: {
+				server: {
+					baseDir: "dist",
+				},
+				watchTask: true,
 				open: false,
-		    }
+			}
 		},
 
 		watch: {
@@ -183,17 +238,17 @@ module.exports = function(grunt) {
 					'!css/new_design/ie8/**/*.less',
 					'!css/new_design/ie7/**/*.less',
 				],
-				tasks: ['less:dev', 'autoprefixer:dist']
+				tasks: ['less:dev', 'autoprefixer:dist', 'csscomb']
 			},
 
 			styleIe8: {
 				files: ['css/new_design/ie8/**/*.less'],
-				tasks: ['less:ie8', 'autoprefixer:ie8']
+				tasks: ['less:ie8', 'autoprefixer:ie8', 'csscomb']
 			},
 
 			styleIe7: {
 				files: ['css/new_design/ie7/**/*.less'],
-				tasks: ['less:ie7', 'autoprefixer:ie7']
+				tasks: ['less:ie7', 'autoprefixer:ie7', 'csscomb']
 			},
 
 			jade: {
@@ -235,6 +290,7 @@ module.exports = function(grunt) {
 		'autoprefixer',
 		'jade',
 		'prettify',
+		'concat',
 		'copy'
 	]);
 
@@ -242,6 +298,11 @@ module.exports = function(grunt) {
 		'build',
 		'browserSync',
 		'watch'
+	]);
+
+	grunt.registerTask('min', [
+		'uglify',
+		'cssmin',
 	]);
 }
 

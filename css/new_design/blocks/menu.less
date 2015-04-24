@@ -17,34 +17,44 @@
 
 			&_left,
 			&_right {
-				width: 27%;
+				width: 28%;
 			}
 
 			&_left {
 
-				& .menu__item-wrap:hover {
-					transform: translateX(0);
+				& .menu__item-wrap {
+					z-index: 2;
+
+					&:hover {
+						transform: translateX(0);
+					}
+
 				}
 
 			}
 
 			&_right {
 
-				& .menu__item-wrap:hover {
-					transform: translateX(-26%);
+				& .menu__item-wrap {
+					z-index: 1;
+
+					&:hover {
+						transform: translateX(-26%);
+					}
+
 				}
 
 			}
 
 			&_center {
-				z-index: 2;
-				width: 46%;
+				width: 44%;
 
 				& .menu__item-wrap {
+					z-index: 2;
 					box-shadow: -5px 0px 12px -3px rgba(0, 0, 0, 0.1), 5px 0px 12px -3px rgba(0, 0, 0, 0.1);
 
 					&:hover {
-						transform: translateX(-13%);
+						transform: translateX(-10%);
 						padding: 0 35px;
 					}
 
@@ -104,6 +114,7 @@
 			box-shadow: -5px 0px 12px -3px rgba(0, 0, 0, 0.1), 5px 0px 12px -3px rgba(0, 0, 0, 0.1);
 
 			& .menu__item-img {
+				z-index: 3;
 
 				&_type {
 
@@ -123,25 +134,9 @@
 
 					&_webos {
 						bottom: 9px;
-						margin-left: -167px;
+						margin-left: -174px;
 						width: 335px;
 						height: 295px;
-					}
-
-				}
-
-			}
-
-			& .menu__item-badge {
-
-				&_type {
-
-					&_webos {
-						top: 90px;
-					}
-
-					&_ultra {
-						top: 105px;
 					}
 
 				}
@@ -162,12 +157,13 @@
 		transition: padding-right .3s ease;
 
 		&_pos_center {
-			padding: 36px 45px 0
+			padding: 36px 34px 0
 		}
 	}
 
 	&__item-img {
 		position: absolute;
+		z-index: 3;
 		bottom: 0;
 		left: 50%;
 		background-position: 0 0;
@@ -179,9 +175,9 @@
 		&_type {
 
 			&_ultra {
-				bottom: 22px;
-				margin-left: -145px;
-				width: 270px;
+				bottom: 15px;
+				margin-left: -127px;
+				width: 254px;
 				height: 265px;
 				background-image: url('../images/menu-ultra-hover.png')
 			}
@@ -194,10 +190,10 @@
 			}
 
 			&_webos {
-				bottom: 12px;
-				margin-left: -140px;
-				width: 280px;
-				height: 265px;
+				bottom: 29px;
+				margin-left: -134px;
+				width: 262px;
+				height: 231px;
 				background-image: url('../images/menu-webos-hover.png')
 			}
 
@@ -207,7 +203,7 @@
 
 	&__item-badge {
 		position: absolute;
-		top: 118px;
+		bottom: 30px;
 		left: 26px;
 		transition: top .3s ease;
 		will-change: top;
