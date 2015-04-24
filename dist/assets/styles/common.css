@@ -327,21 +327,18 @@ This must be run when you have at least 2 sprites.
   margin-left: -165px;
   width: 331px;
   height: 356px;
-  background-image: url('../images/menu-ultra-hover.png');
 }
 .menu__item-wrap:hover .menu__item-img_type_oled {
   bottom: -35px;
   margin-left: -210px;
   width: 419px;
   height: 346px;
-  background-image: url('../images/menu-oled-hover.png');
 }
 .menu__item-wrap:hover .menu__item-img_type_webos {
   bottom: 9px;
   margin-left: -167px;
   width: 335px;
   height: 295px;
-  background-image: url('../images/menu-webos-hover.png');
 }
 .menu__item-text {
   padding: 36px 26px 0;
@@ -366,22 +363,24 @@ This must be run when you have at least 2 sprites.
   will-change: width, height, margin-left, bottom;
 }
 .menu__item-img_type_ultra {
-  margin-left: -138px;
-  width: 256px;
-  height: 275px;
-  background-image: url('../images/menu-ultra.png');
+  bottom: 25px;
+  margin-left: -154px;
+  width: 280px;
+  height: 265px;
+  background-image: url('../images/menu-ultra-hover.png');
 }
 .menu__item-img_type_oled {
   margin-left: -184px;
   width: 368px;
   height: 305px;
-  background-image: url('../images/menu-oled.png');
+  background-image: url('../images/menu-oled-hover.png');
 }
 .menu__item-img_type_webos {
+  bottom: 12px;
   margin-left: -140px;
   width: 280px;
   height: 265px;
-  background-image: url('../images/menu-webos.png');
+  background-image: url('../images/menu-webos-hover.png');
 }
 .technology {
   padding: 0 27px;
