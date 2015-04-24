@@ -316,7 +316,7 @@ This must be run when you have at least 2 sprites.
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
-  box-shadow: 5px 0px 12px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 1px 15px -5px rgba(0, 0, 0, 0.1);
 }
 /* line 40, css\new_design\blocks\menu.less */
 .menu__item_pos_right .menu__item-wrap {
@@ -328,7 +328,7 @@ This must be run when you have at least 2 sprites.
   -webkit-transform: translateX(-20%);
       -ms-transform: translateX(-20%);
           transform: translateX(-20%);
-  box-shadow: -5px 0px 12px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: -5px 1px 15px -5px rgba(0, 0, 0, 0.1);
 }
 /* line 53, css\new_design\blocks\menu.less */
 .menu__item_pos_center {
@@ -337,7 +337,7 @@ This must be run when you have at least 2 sprites.
 /* line 56, css\new_design\blocks\menu.less */
 .menu__item_pos_center .menu__item-wrap {
   z-index: 2;
-  box-shadow: -5px 0px 12px -3px rgba(0, 0, 0, 0.1), 5px 0px 12px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: -5px 1px 15px -5px rgba(0, 0, 0, 0.1), 5px 1px 15px -5px rgba(0, 0, 0, 0.1);
 }
 /* line 61, css\new_design\blocks\menu.less */
 .menu__item_pos_center .menu__item-wrap:hover {
