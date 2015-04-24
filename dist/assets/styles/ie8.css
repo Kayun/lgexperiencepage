@@ -1,8 +1,8 @@
 .menu_item_pos_center .menu__item-wrap:before {
   position: absolute;
   top: 0;
-  left: -15px;
-  width: 15px;
+  left: -12px;
+  width: 12px;
   height: 100%;
   content: ' ';
   background: url('../images/ie/menu-shadow-left.png') repeat-y 0 0;
@@ -10,8 +10,8 @@
 .menu_item_pos_center .menu__item-wrap:after {
   position: absolute;
   top: 0;
-  right: -15px;
-  width: 15px;
+  right: -12px;
+  width: 12px;
   height: 100%;
   content: ' ';
   background: url('../images/ie/menu-shadow-right.png') repeat-y 0 0;
@@ -22,8 +22,8 @@
 .menu__item-wrap:hover:before {
   position: absolute;
   top: 0;
-  left: -15px;
-  width: 15px;
+  left: -12px;
+  width: 12px;
   height: 100%;
   content: ' ';
   background: url('../images/ie/menu-shadow-left.png') repeat-y 0 0;
@@ -31,8 +31,8 @@
 .menu__item-wrap:hover:after {
   position: absolute;
   top: 0;
-  right: -15px;
-  width: 15px;
+  right: -12px;
+  width: 12px;
   height: 100%;
   content: ' ';
   background: url('../images/ie/menu-shadow-right.png') repeat-y 0 0;
