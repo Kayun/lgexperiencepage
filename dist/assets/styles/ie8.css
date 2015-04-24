@@ -1,67 +1,92 @@
 /* line 9, css\new_design\ie8\blocks\menu.less */
-.menu__item_pos_left .menu__item-wrap:hover {
-  left: 0;
+.menu__item_pos_left .menu__item-wrap:hover
+{
+    left: 0;
 }
 /* line 17, css\new_design\ie8\blocks\menu.less */
-.menu__item_pos_right .menu__item-wrap:hover {
-  left: -26%;
+.menu__item_pos_right .menu__item-wrap:hover
+{
+    left: -26%;
 }
 /* line 26, css\new_design\ie8\blocks\menu.less */
-.menu__item_pos_center .menu__item-wrap:hover {
-  left: -13%;
+.menu__item_pos_center .menu__item-wrap:hover
+{
+    left: -13%;
 }
 /* line 29, css\new_design\ie8\blocks\menu.less */
-.menu__item_pos_center .menu__item-wrap:hover:before {
-  position: absolute;
-  top: 0;
-  left: -12px;
-  width: 12px;
-  height: 100%;
-  content: ' ';
-  background: url('../images/ie/menu-shadow-left.png') repeat-y 0 0;
+.menu__item_pos_center .menu__item-wrap:hover:before
+{
+    position: absolute;
+    top: 0;
+    left: -12px;
+
+    width: 12px;
+    height: 100%;
+
+    content: ' ';
+
+    background: url('../images/ie/menu-shadow-left.png') repeat-y 0 0;
 }
 /* line 39, css\new_design\ie8\blocks\menu.less */
-.menu__item_pos_center .menu__item-wrap:hover:after {
-  position: absolute;
-  top: 0;
-  right: -12px;
-  width: 12px;
-  height: 100%;
-  content: ' ';
-  background: url('../images/ie/menu-shadow-right.png') repeat-y 0 0;
+.menu__item_pos_center .menu__item-wrap:hover:after
+{
+    position: absolute;
+    top: 0;
+    right: -12px;
+
+    width: 12px;
+    height: 100%;
+
+    content: ' ';
+
+    background: url('../images/ie/menu-shadow-right.png') repeat-y 0 0;
 }
 /* line 63, css\new_design\ie8\blocks\menu.less */
-.menu__item-wrap:hover:before {
-  position: absolute;
-  top: 0;
-  left: -12px;
-  width: 12px;
-  height: 100%;
-  content: ' ';
-  background: url('../images/ie/menu-shadow-left.png') repeat-y 0 0;
+.menu__item-wrap:hover:before
+{
+    position: absolute;
+    top: 0;
+    left: -12px;
+
+    width: 12px;
+    height: 100%;
+
+    content: ' ';
+
+    background: url('../images/ie/menu-shadow-left.png') repeat-y 0 0;
 }
 /* line 73, css\new_design\ie8\blocks\menu.less */
-.menu__item-wrap:hover:after {
-  position: absolute;
-  top: 0;
-  right: -12px;
-  width: 12px;
-  height: 100%;
-  content: ' ';
-  background: url('../images/ie/menu-shadow-right.png') repeat-y 0 0;
+.menu__item-wrap:hover:after
+{
+    position: absolute;
+    top: 0;
+    right: -12px;
+
+    width: 12px;
+    height: 100%;
+
+    content: ' ';
+
+    background: url('../images/ie/menu-shadow-right.png') repeat-y 0 0;
 }
 /* line 91, css\new_design\ie8\blocks\menu.less */
-.menu__item-img_type_ultra {
-  background-size: cover;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-ultra-hover.png', sizingMethod='scale')";
+.menu__item-img_type_ultra
+{
+    background-size: cover;
+
+    -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'../images/menu-ultra-hover.png\', sizingMethod=\'scale\')';
 }
 /* line 96, css\new_design\ie8\blocks\menu.less */
-.menu__item-img_type_oled {
-  background-size: cover;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-oled-hover.png', sizingMethod='scale')";
+.menu__item-img_type_oled
+{
+    background-size: cover;
+
+    -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'../images/menu-oled-hover.png\', sizingMethod=\'scale\')';
 }
 /* line 101, css\new_design\ie8\blocks\menu.less */
-.menu__item-img_type_webos {
-  background-size: cover;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-webos-hover.png', sizingMethod='scale')";
+.menu__item-img_type_webos
+{
+    background-size: cover;
+
+    -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'../images/menu-webos-hover.png\', sizingMethod=\'scale\')';
 }

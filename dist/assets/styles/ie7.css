@@ -1,4 +1,5 @@
 /* line 1, css\new_design\ie7\blocks\menu.less */
-.menu {
-  transform: rotate(90deg);
+.menu
+{
+    transform: rotate(90deg);
 }
