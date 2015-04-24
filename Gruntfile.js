@@ -1,5 +1,6 @@
 // Обязательная обёртка
 module.exports = function(grunt) {
+	var mozjpeg = require('imagemin-mozjpeg');
 
 	// Задачи
 	grunt.initConfig({
@@ -27,34 +28,71 @@ module.exports = function(grunt) {
 
 		imagemin: {
 			images: {
-				files: [
-					{
-						expand: true,
-						cwd: 'images/new_design/',
-						src: ['**/*.{png,jpg,gif}', '!sprite/**/*.png'],
-						dest: 'dist/assets/images',
-					},
-				],
+				option: {
+					optimizatioLevel: 4,
+					use: [mozjpeg()]
+				},
+
+				files: [{
+					expand: true,
+					cwd: 'images/new_design/',
+					src: ['**/*.{png,jpg,gif}', '!sprite/**/*.png'],
+					dest: 'dist/assets/images/',
+				}],
 			},
 		},
 
 		less: {
-			development: {
-				options: {
-					paths: ['css/new_design'],
-				},
+			options: {
+				paths: 'css/new_design'
+			},
+
+			dev: {
 				files: {
 					'dist/assets/styles/common.css' : 'css/new_design/common.less'
+				}
+			},
+
+			ie8: {
+				files: {
+					'dist/assets/styles/ie8.css' : 'css/new_design/ie8.less'
+				}
+			},
+
+			ie7: {
+				files: {
+					'dist/assets/styles/ie7.css' : 'css/new_design/ie7.less'
 				}
 			}
 		},
 
 		autoprefixer: {
-			options: {
-				browsers: ['last 2 versions', 'ie 7', 'ie 8', 'ie 9']
-			},
+
 			dist: {
+
+				options: {
+					browsers: ['last 2 versions', 'ie 9']
+				},
+
 				src: 'dist/assets/styles/common.css'
+			},
+
+			ie8: {
+
+				options: {
+					browsers: ['ie 8']
+				},
+
+				src: 'dist/assets/styles/ie8.css'
+			},
+
+			ie7: {
+
+				options: {
+					browsers: ['ie 7']
+				},
+
+				src: 'dist/assets/styles/ie7.css'
 			}
 		},
 
@@ -139,9 +177,23 @@ module.exports = function(grunt) {
 				tasks: ['newer:imagemin']
 			},
 
-			style: {
-				files: ['css/**/*.less'],
-				tasks: ['less', 'autoprefixer']
+			styleDev: {
+				files: [
+					'css/new_design/**/*.less',
+					'!css/new_design/ie8/**/*.less',
+					'!css/new_design/ie7/**/*.less',
+				],
+				tasks: ['less:dev', 'autoprefixer:dist']
+			},
+
+			styleIe8: {
+				files: ['css/new_design/ie8/**/*.less'],
+				tasks: ['less:ie8', 'autoprefixer:ie8']
+			},
+
+			styleIe7: {
+				files: ['css/new_design/ie7/**/*.less'],
+				tasks: ['less:ie7', 'autoprefixer:ie7']
 			},
 
 			jade: {

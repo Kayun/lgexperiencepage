@@ -8,9 +8,12 @@
 	</head>
 	<body>
 		<link href="assets/styles/common.css" rel="stylesheet">
+		<!--[if IE 8]> <link href="assets/styles/ie8.css" rel="stylesheet"> <![endif]-->
+		<!--[if IE 7]> <link href="assets/styles/ie7.css" rel="stylesheet"> <![endif]-->
+		<!--[if lt IE 9]> <script>document.createElement('header');document.createElement('nav');document.createElement('section');document.createElement('article');document.createElement('aside');document.createElement('footer');</script> <![endif]-->
 		<div class="main">
 			<nav class="menu">
-				<a href="javascript:(void(0));" class="menu__item">
+				<a href="javascript:(void(0));" class="menu__item menu__item_pos_left">
 					<div class="menu__item-logo menu__item-logo_type_ultra"></div>
 					<div class="menu__item-wrap">
 						<div class="menu__item-text">Ультрачеткость
@@ -18,7 +21,7 @@
 						<div class="menu__item-img menu__item-img_type_ultra"></div>
 					</div>
 				</a>
-				<a href="javascript:(void(0));" class="menu__item">
+				<a href="javascript:(void(0));" class="menu__item menu__item_pos_center">
 					<div class="menu__item-logo menu__item-logo_type_oled"></div>
 					<div class="menu__item-wrap">
 						<div class="menu__item-text menu__item-text_pos_center">Совершенный цвет,
@@ -26,16 +29,16 @@
 						<div class="menu__item-img menu__item-img_type_oled"></div>
 					</div>
 				</a>
-				<a href="javascript:(void(0));" class="menu__item">
+				<a href="javascript:(void(0));" class="menu__item menu__item_pos_right">
 					<div class="menu__item-logo menu__item-logo_type_webos"></div>
 					<div class="menu__item-wrap">
 						<div class="menu__item-text">Смотрите,
-							<br>как просто с webOS</div>
+							<br>как просто!</div>
 						<div class="menu__item-img menu__item-img_type_webos"></div>
 					</div>
 				</a>
 			</nav>
-			<div class="technology">
+			<section class="technology">
 				<div class="technology__title">Технологии LG для идеального качества изображения</div>
 				<div class="technology-wrap clearfix">
 					<div class="technology__item">
@@ -67,8 +70,8 @@
 						<div class="technology__item-text">Самые реалистичные цвета в телевизорах LG с технологией IPS</div>
 					</div>
 				</div>
-			</div>
-			<div role="menubar" class="submenu">
+			</section>
+			<section role="menubar" class="submenu">
 				<a href="javascript:(void(0));" class="submenu__item">
 					<div class="submenu__item-logo submenu__item-logo_type_tv"></div>
 					<div class="submenu__item-text">TV</div>
@@ -81,7 +84,7 @@
 					<div class="submenu__item-logo submenu__item-logo_type_monitor"></div>
 					<div class="submenu__item-text">Мониторы</div>
 				</a>
-			</div>
+			</section>
 		</div>
 	</body>
 </html>

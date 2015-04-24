@@ -7,11 +7,36 @@
 
 	&__item {
 		position: relative;
-		width: 33.33%;
+		height: 465px;
 		display: inline-block;
 		text-align: center;
 		vertical-align: top;
 		text-decoration: none;
+
+		&_pos {
+
+			&_left,
+			&_right {
+				width: 27%;
+			}
+
+			&_center {
+				z-index: 2;
+				width: 46%;
+
+				& .menu__item-wrap {
+					box-shadow: -5px 2px 5px -2px rgba(0, 0, 0, .3), 5px 2px 5px -2px rgba(0, 0, 0, .3);
+
+					&:hover {
+						padding: 0 35px;
+					}
+
+				}
+
+			}
+
+		}
+
 	}
 
 	&__item-logo {
@@ -54,24 +79,48 @@
 		will-change: width, height, transform;
 
 		&:hover {
-			z-index: 2;
+			z-index: 3;
 			top: 32px;
 			width: 126%;
 			height: 433px;
 			transform: translateX(-13%);
 			border-top-width: 4px;
-			box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-
-			& .menu__item-text {
-				//text-align: center;
-			}
+			box-shadow: 0 2px 10px rgb(0, 0, 0);
 
 			& .menu__item-img {
-				width: 386px;
-				height: 320px;
-				margin-left: -193px;
+
+				&_type {
+
+					&_ultra {
+						bottom: -20px;
+						margin-left: -165px;
+						width: 331px;
+						height: 356px;
+						background-image: url('../images/menu-ultra-hover.png')
+					}
+
+					&_oled {
+						bottom: -35px;
+						margin-left: -210px;
+						width: 419px;
+						height: 346px;
+						background-image: url('../images/menu-oled-hover.png')
+					}
+
+					&_webos {
+						bottom: 9px;
+						margin-left: -167px;
+						width: 335px;
+						height: 295px;
+						background-image: url('../images/menu-webos-hover.png')
+					}
+
+				}
+
 			}
+
 		}
+
 	}
 
 	&__item-text {
@@ -84,7 +133,7 @@
 		transition: padding-right .3s ease;
 
 		&_pos_center {
-			padding: 36px 15px 0
+			padding: 36px 45px 0
 		}
 	}
 
@@ -92,26 +141,32 @@
 		position: absolute;
 		bottom: 0;
 		left: 50%;
-		margin-left: -143px;
-		width: 287px;
-		height: 275px;
 		background-position: 0 0;
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover;
 		transition: all .3s ease;
-		will-change: width, height, margin-left, background-size;
+		will-change: width, height, margin-left, bottom;
 
 		&_type {
 
 			&_ultra {
+				margin-left: -138px;
+				width: 256px;
+				height: 275px;
 				background-image: url('../images/menu-ultra.png')
 			}
 
 			&_oled {
+				margin-left: -184px;
+				width: 368px;
+				height: 305px;
 				background-image: url('../images/menu-oled.png')
 			}
 
 			&_webos {
+				margin-left: -140px;
+				width: 280px;
+				height: 265px;
 				background-image: url('../images/menu-webos.png')
 			}
 
