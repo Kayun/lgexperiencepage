@@ -22,9 +22,12 @@
 
 			&_left {
 
+				& .menu__item-bd-wrap {
+					border-left: 1px solid #f6f6f6;
+				}
+
 				& .menu__item-wrap {
 					z-index: 2;
-					border-left: 1px solid #f6f6f6;
 
 					&:hover {
 						transform: translateX(0);
@@ -37,9 +40,12 @@
 
 			&_right {
 
+				& .menu__item-bd-wrap {
+					border-right: 1px solid #f6f6f6;
+				}
+
 				& .menu__item-wrap {
 					z-index: 1;
-					border-right: 1px solid #f6f6f6;
 
 					&:hover {
 						transform: translateX(-20%);
@@ -93,6 +99,10 @@
 
 		}
 
+	}
+
+	&__item-bd-wrap {
+		height: 100%;
 	}
 
 	&__item-wrap {
