@@ -6,12 +6,12 @@
 		width: 100%;
 		height: 442px;
 		color: #fff;
-		background: url('../images/oled-bg.jpg') 0 0 no-repeat;
+		background: url('../images/oled/oled-bg.jpg') 0 0 no-repeat;
 
 		&-info {
 			position: absolute;
-			top: 99px;
-			right: 132px;
+			top: 100px;
+			right: 130px;
 			width: 330px;
 		}
 
@@ -30,7 +30,7 @@
 
 		&-text {
 			margin-top: 12px;
-			margin-bottom: 25px;
+			margin-bottom: 35px;
 			.helvetica-neue-thin();
 			font-size: 26px;
 		}
@@ -61,7 +61,7 @@
 	}
 
 	&-wrap {
-		padding-top: 75px;
+		padding-top: 53px;
 	}
 
 	&__item {
@@ -71,65 +71,68 @@
 
 		&_width {
 
-			&_252 {
-				width: 252px;
+			&_227 {
+				padding-left: 25px;
+				width: 227px;
 			}
 
-			&_207 {
-				padding-left: 45px;
-				width: 207px;
+			&_210 {
+				padding-left: 42px;
+				width: 210px;
 			}
 
-			&_208 {
-				padding-left: 60px;
-				width: 208px;
+			&_219 {
+				padding-left: 33px;
+				width: 219px;
 			}
 
-			&_190 {
-				padding-left: 62px;
-				width: 190px;
+			&_200 {
+				padding-left: 52px;
+				width: 200px;
 			}
 
-			&_186 {
-				padding-left: 50px;
-				width: 186px;
+			&_177 {
+				padding-left: 75px;
+				width: 177px;
 			}
 		}
 
 		&-logo {
 			position: relative;
-			margin: 0 auto 38px;
+			margin: 0 auto 19px;
 
 			&_type {
 
 				&_pixel {
-					left: -33px;
+					left: -13px;
 					.sprite(@icon-oled-pixel)
 				}
 
 				&_4k {
-					left: -31px;
-					margin-top: 9px;
+					left: -33px;
+					margin-top: 4px;
+					margin-bottom: 23px;
 					.sprite(@icon-oled-4k)
 				}
 
 				&_wrgb {
-					left: 9px;
-					margin-bottom: 33px;
+					left: -16px;
+					margin-top: 1px;
+					margin-bottom: 12px;
 					.sprite(@icon-oled-wrgb)
 				}
 
 				&_infinity {
-					left: -5px;
+					left: -21px;
 					margin-top: 9px;
-					margin-bottom: 44px;
+					margin-bottom: 26px;
 					.sprite(@icon-oled-infinity)
 				}
 
 				&_respond {
-					left: -10px;
-					margin-top: 3px;
-					margin-bottom: 42px;
+					left: -27px;
+					margin-top: 2px;
+					margin-bottom: 23px;
 					.sprite(@icon-oled-respond)
 				}
 			}
@@ -140,11 +143,15 @@
 			font-size: 18px;
 			color: @dark-blue-text;
 			text-align: left;
-			line-height: 23px;
+			line-height: 21px;
+			letter-spacing: -.1px;
 
 			&_font_bold {
+				margin-bottom: 4px;
+				display: inline-block;
 				.lgsmart-semibold();
 				font-size: 19px;
+				letter-spacing: -.5px;
 			}
 		}
 	}
