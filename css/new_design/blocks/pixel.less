@@ -1,0 +1,29 @@
+.pixel {
+	position: relative;
+	padding: 86px 24px 73px 10px;
+	border-bottom: 1px solid #f3f3f3;
+
+	&-wrap {
+		position: absolute;
+		top: 184px;
+		left: 10px;
+		width: 450px;
+	}
+
+	&__video {
+		position: relative;
+		width: 646px;
+		height: 447px;
+		float: right;
+
+		&-play {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -36px;
+			margin-left: -5px;
+			.sprite(@play);
+			cursor: pointer;
+		}
+	}
+}

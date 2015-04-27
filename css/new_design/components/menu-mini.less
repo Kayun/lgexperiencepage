@@ -1,0 +1,59 @@
+.menu-mini {
+		position: relative;
+		margin: 0 auto;
+		padding-top: 10px;
+		width: 1000px;
+		font-size: 0;
+		background: linear-gradient(to top, #fbfbfb, transparent);
+		border-bottom: 1px solid @reb-menu;
+
+	&__item {
+		display: inline-block;
+		padding-bottom: 8px;
+		width: 33.33%;
+		text-align: center;
+		border-bottom: 4px solid transparent;
+		transition: border-color .3s ease;
+
+		&:hover,
+		&_state_active {
+			border-color: @reb-menu;
+		}
+
+	}
+
+	&__logo {
+		position: relative;
+		display: inline-block;
+
+		&_type {
+
+			&_ultra {
+				top: 1px;
+				left: -2px;
+				.sprite(@logo-ultra);
+			}
+
+			&_oled {
+				.sprite(@logo-oled);
+			}
+
+			&_webos {
+				top: 2px;
+				left: 30px;
+				.sprite(@logo-webos);
+			}
+
+		}
+
+	}
+
+	&__home {
+		position: absolute;
+		top: 4px;
+		left: -88px;
+		.sprite(@icon-home);
+		cursor: pointer;
+	}
+
+}

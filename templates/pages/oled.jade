@@ -1,0 +1,25 @@
+extends ../layouts/default
+
+block head
+	- pageTitle = 'LG OLED';
+	- classWidth = 'main_width_1260'
+
+block content
+	nav.menu-mini
+
+		a.menu-mini__item(href=jv0)
+			.menu-mini__logo.menu-mini__logo_type_ultra
+
+		a.menu-mini__item.menu-mini__item_state_active(href=jv0)
+			.menu-mini__logo.menu-mini__logo_type_oled
+
+		a.menu-mini__item(href=jv0)
+			.menu-mini__logo.menu-mini__logo_type_webos
+
+		.menu-mini__home
+
+	include ../blocks/oled
+
+	.wrapper
+		include ../blocks/pixel
+		include ../blocks/oled-4k

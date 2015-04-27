@@ -186,15 +186,6 @@ module.exports = function(grunt) {
 		},
 
 		copy: {
-			/*images: {
-				files: [{
-					expand: true,
-					cwd: 'images/new_design/',
-					src: ['*.{png,jpg,gif}'],
-					dest: 'dist/assets/images',
-					filter: 'isFile'
-				}]
-			},*/
 
 			fonts: {
 				files: [{
@@ -202,6 +193,16 @@ module.exports = function(grunt) {
 					cwd: 'webfont/',
 					src: ['*'],
 					dest: 'dist/assets/fonts',
+					filter: 'isFile'
+				}]
+			},
+
+			svg: {
+				files: [{
+					expand: true,
+					cwd: 'images/new_design/svg',
+					src: ['*.svg'],
+					dest: 'dist/assets/images/svg',
 					filter: 'isFile'
 				}]
 			}
@@ -261,9 +262,14 @@ module.exports = function(grunt) {
 				tasks: ['jade', 'newer:prettify']
 			},
 
-			copyFomts: {
+			copyFonts: {
 				files: ['webfont/*'],
 				tasks: ['newer:copy:fonts']
+			},
+
+			copySVG: {
+				files: ['images/new_design/svg/*.svg'],
+				tasks: ['newer:copy:svg']
 			},
 
 			livereload: {

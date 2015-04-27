@@ -1,0 +1,152 @@
+.oled {
+	padding-top: 14px;
+
+	&__banner {
+		position: relative;
+		width: 100%;
+		height: 442px;
+		color: #fff;
+		background: url('../images/oled-bg.jpg') 0 0 no-repeat;
+
+		&-info {
+			position: absolute;
+			top: 99px;
+			right: 132px;
+			width: 330px;
+		}
+
+		&-logo {
+			display: inline-block;
+			.sprite(@logo-oled-white)
+		}
+
+		&-title {
+			margin-top: 16px;
+			text-transform: uppercase;
+			.helvetica-neue-roman();
+			font-size: 27px;
+			line-height: 36px;
+		}
+
+		&-text {
+			margin-top: 12px;
+			margin-bottom: 25px;
+			.helvetica-neue-thin();
+			font-size: 26px;
+		}
+
+		&-btn {
+			position: relative;
+			padding: 0 0 0 65px;
+			height: 52px;
+			display: inline-block;
+			.helvetica-neue-light();
+			font-size: 20px;
+			line-height: 52px;
+			color: #c5003d;
+			border: none;
+			background-color: transparent;
+			cursor: pointer;
+
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: ' ';
+				.sprite(@play-red);
+			}
+
+		}
+
+	}
+
+	&-wrap {
+		padding-top: 75px;
+	}
+
+	&__item {
+		float: left;
+		text-align: center;
+		box-sizing: content-box;
+
+		&_width {
+
+			&_252 {
+				width: 252px;
+			}
+
+			&_207 {
+				padding-left: 45px;
+				width: 207px;
+			}
+
+			&_208 {
+				padding-left: 60px;
+				width: 208px;
+			}
+
+			&_190 {
+				padding-left: 62px;
+				width: 190px;
+			}
+
+			&_186 {
+				padding-left: 50px;
+				width: 186px;
+			}
+		}
+
+		&-logo {
+			position: relative;
+			margin: 0 auto 38px;
+
+			&_type {
+
+				&_pixel {
+					left: -33px;
+					.sprite(@icon-oled-pixel)
+				}
+
+				&_4k {
+					left: -31px;
+					margin-top: 9px;
+					.sprite(@icon-oled-4k)
+				}
+
+				&_wrgb {
+					left: 9px;
+					margin-bottom: 33px;
+					.sprite(@icon-oled-wrgb)
+				}
+
+				&_infinity {
+					left: -5px;
+					margin-top: 9px;
+					margin-bottom: 44px;
+					.sprite(@icon-oled-infinity)
+				}
+
+				&_respond {
+					left: -10px;
+					margin-top: 3px;
+					margin-bottom: 42px;
+					.sprite(@icon-oled-respond)
+				}
+			}
+		}
+
+		&-text {
+			.lgsmart-regular();
+			font-size: 18px;
+			color: @dark-blue-text;
+			text-align: left;
+			line-height: 23px;
+
+			&_font_bold {
+				.lgsmart-semibold();
+				font-size: 19px;
+			}
+		}
+	}
+
+}

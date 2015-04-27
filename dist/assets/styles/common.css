@@ -1,7 +1,42 @@
 @font-face {
-  font-family: 'lg_smart_regular';
-  src: url('fonts/LGSmartRegular__W.eot');
-  src: url('../fonts/LGSmartRegular__W.eot?#iefix') format('embedded-opentype'), url('../fonts/LGSmartRegular__W.ttf') format('truetype'), url('../fonts/LGSmartRegular__W.svg#LGSmartWeb') format('svg');
+  font-family: 'LGSmart-Regular';
+  src: url('lg_smart_regular.eot');
+  src: url('../fonts/lg_smart_regular.eot?#iefix') format('embedded-opentype'), url('../fonts/lg_smart_regular.woff2') format('truetype'), url('../fonts/lg_smart_regular.woff') format('truetype'), url('../fonts/lg_smart_regular.ttf') format('truetype'), url('../fonts/lg_smart_regular.svg#lg_smartregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LGSmart-Bold';
+  src: url('lg_smart_bold.eot');
+  src: url('../fonts/lg_smart_bold.eot?#iefix') format('embedded-opentype'), url('../fonts/lg_smart_bold.woff2') format('truetype'), url('../fonts/lg_smart_bold.woff') format('truetype'), url('../fonts/lg_smart_bold.ttf') format('truetype'), url('../fonts/lg_smart_bold.svg#lg_smartbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LGSmart-BoldItalic';
+  src: url('lg_smart_bold_italic.eot');
+  src: url('../fonts/lg_smart_bold_italic.eot?#iefix') format('embedded-opentype'), url('../fonts/lg_smart_bold_italic.woff2') format('truetype'), url('../fonts/lg_smart_bold_italic.woff') format('truetype'), url('../fonts/lg_smart_bold_italic.ttf') format('truetype'), url('../fonts/lg_smart_bold_italic.svg#lg_smartbold_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LGSmart-Light';
+  src: url('lg_smart_light.eot');
+  src: url('../fonts/lg_smart_light.eot?#iefix') format('embedded-opentype'), url('../fonts/lg_smart_light.woff2') format('truetype'), url('../fonts/lg_smart_light.woff') format('truetype'), url('../fonts/lg_smart_light.ttf') format('truetype'), url('../fonts/lg_smart_light.svg#lg_smartlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LGSmart-Italic';
+  src: url('lg_smart_regular_italic.eot');
+  src: url('../fonts/lg_smart_regular_italic.eot?#iefix') format('embedded-opentype'), url('../fonts/lg_smart_regular_italic.woff2') format('truetype'), url('../fonts/lg_smart_regular_italic.woff') format('truetype'), url('../fonts/lg_smart_regular_italic.ttf') format('truetype'), url('../fonts/lg_smart_regular_italic.svg#lg_smartregular_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LGSmart-Semibold';
+  src: url('lg_smart_semibold.eot');
+  src: url('../fonts/lg_smart_semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/lg_smart_semibold.woff2') format('truetype'), url('../fonts/lg_smart_semibold.woff') format('truetype'), url('../fonts/lg_smart_semibold.ttf') format('truetype'), url('../fonts/lg_smart_semibold.svg#lg_smartsemibold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -19,6 +54,21 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'HelveticaNeue-Roman';
+  src: url('../fonts/helveticaneuecyr-roman.eot');
+  src: url('../fonts/helveticaneuecyr-roman.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneuecyr-roman.woff2') format('woff2'), url('../fonts/helveticaneuecyr-roman.woff') format('woff'), url('../fonts/helveticaneuecyr-roman.ttf') format('truetype'), url('../fonts/helveticaneuecyr-roman.svg#helveticaneuecyrroman') format('svg');
+}
+@font-face {
+  font-family: 'HelveticaNeue-Light';
+  src: url('../fonts/helveticaneuecyr-light.eot');
+  src: url('../fonts/helveticaneuecyr-light.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneuecyr-light.woff2') format('woff2'), url('../fonts/helveticaneuecyr-light.woff') format('woff'), url('../fonts/helveticaneuecyr-light.ttf') format('truetype'), url('../fonts/helveticaneuecyr-light.svg#helveticaneuecyrlight') format('svg');
+}
+@font-face {
+  font-family: 'HelveticaNeue-Thin';
+  src: url('../fonts/helveticaneuecyr-thin.eot');
+  src: url('../fonts/helveticaneuecyr-thin.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneuecyr-thin.woff2') format('woff2'), url('../fonts/helveticaneuecyr-thin.woff') format('woff'), url('../fonts/helveticaneuecyr-thin.ttf') format('truetype'), url('../fonts/helveticaneuecyr-thin.svg#helveticaneuecyrthin') format('svg');
+}
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* line 5, css\new_design\base\normalize.less */
 html {
@@ -27,10 +77,22 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 /* line 12, css\new_design\base\normalize.less */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+/* line 18, css\new_design\base\normalize.less */
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* line 25, css\new_design\base\normalize.less */
 body {
   margin: 0;
 }
-/* line 18, css\new_design\base\normalize.less */
+/* line 31, css\new_design\base\normalize.less */
 article,
 aside,
 details,
@@ -45,7 +107,7 @@ section,
 summary {
   display: block;
 }
-/* line 35, css\new_design\base\normalize.less */
+/* line 48, css\new_design\base\normalize.less */
 audio,
 canvas,
 progress,
@@ -53,53 +115,48 @@ video {
   display: inline-block;
   vertical-align: baseline;
 }
-/* line 45, css\new_design\base\normalize.less */
+/* line 58, css\new_design\base\normalize.less */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
-/* line 52, css\new_design\base\normalize.less */
+/* line 65, css\new_design\base\normalize.less */
 [hidden],
 template {
   display: none;
 }
-/* line 59, css\new_design\base\normalize.less */
+/* line 72, css\new_design\base\normalize.less */
 a {
   background: transparent;
 }
-/* line 62, css\new_design\base\normalize.less */
+/* line 75, css\new_design\base\normalize.less */
 a:active,
 a:hover {
   outline: 0;
 }
-/* line 71, css\new_design\base\normalize.less */
+/* line 84, css\new_design\base\normalize.less */
 abbr[title] {
   border-bottom: 1px dotted;
 }
-/* line 74, css\new_design\base\normalize.less */
+/* line 87, css\new_design\base\normalize.less */
 b,
 strong {
   font-weight: bold;
 }
-/* line 80, css\new_design\base\normalize.less */
+/* line 93, css\new_design\base\normalize.less */
 dfn {
   font-style: italic;
 }
-/* line 83, css\new_design\base\normalize.less */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-/* line 89, css\new_design\base\normalize.less */
+/* line 96, css\new_design\base\normalize.less */
 mark {
   background: #ff0;
   color: #000;
 }
-/* line 95, css\new_design\base\normalize.less */
+/* line 102, css\new_design\base\normalize.less */
 small {
   font-size: 80%;
 }
-/* line 98, css\new_design\base\normalize.less */
+/* line 105, css\new_design\base\normalize.less */
 sub,
 sup {
   font-size: 75%;
@@ -107,36 +164,36 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
-/* line 106, css\new_design\base\normalize.less */
+/* line 113, css\new_design\base\normalize.less */
 sup {
   top: -0.5em;
 }
-/* line 107, css\new_design\base\normalize.less */
+/* line 114, css\new_design\base\normalize.less */
 sub {
   bottom: -0.25em;
 }
-/* line 111, css\new_design\base\normalize.less */
+/* line 118, css\new_design\base\normalize.less */
 img {
   border: 0;
 }
-/* line 114, css\new_design\base\normalize.less */
+/* line 121, css\new_design\base\normalize.less */
 svg:not(:root) {
   overflow: hidden;
 }
-/* line 118, css\new_design\base\normalize.less */
+/* line 125, css\new_design\base\normalize.less */
 figure {
   margin: 1em 40px;
 }
-/* line 121, css\new_design\base\normalize.less */
+/* line 128, css\new_design\base\normalize.less */
 hr {
   box-sizing: content-box;
   height: 0;
 }
-/* line 128, css\new_design\base\normalize.less */
+/* line 135, css\new_design\base\normalize.less */
 pre {
   overflow: auto;
 }
-/* line 131, css\new_design\base\normalize.less */
+/* line 138, css\new_design\base\normalize.less */
 code,
 kbd,
 pre,
@@ -144,7 +201,7 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-/* line 147, css\new_design\base\normalize.less */
+/* line 154, css\new_design\base\normalize.less */
 button,
 input,
 optgroup,
@@ -154,92 +211,92 @@ textarea {
   font: inherit;
   margin: 0;
 }
-/* line 158, css\new_design\base\normalize.less */
+/* line 165, css\new_design\base\normalize.less */
 button {
   overflow: visible;
 }
-/* line 164, css\new_design\base\normalize.less */
+/* line 171, css\new_design\base\normalize.less */
 button,
 select {
   text-transform: none;
 }
-/* line 172, css\new_design\base\normalize.less */
+/* line 179, css\new_design\base\normalize.less */
 button,
 html input[type="button"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
-/* line 179, css\new_design\base\normalize.less */
+/* line 186, css\new_design\base\normalize.less */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
-/* line 187, css\new_design\base\normalize.less */
+/* line 194, css\new_design\base\normalize.less */
 button input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-/* line 194, css\new_design\base\normalize.less */
+/* line 201, css\new_design\base\normalize.less */
 input {
   line-height: normal;
 }
-/* line 196, css\new_design\base\normalize.less */
+/* line 203, css\new_design\base\normalize.less */
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
-/* line 206, css\new_design\base\normalize.less */
+/* line 213, css\new_design\base\normalize.less */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
-/* line 216, css\new_design\base\normalize.less */
+/* line 223, css\new_design\base\normalize.less */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
-/* line 224, css\new_design\base\normalize.less */
+/* line 231, css\new_design\base\normalize.less */
 input[type="search"] {
   -webkit-appearance: textfield;
   box-sizing: content-box;
 }
-/* line 233, css\new_design\base\normalize.less */
+/* line 240, css\new_design\base\normalize.less */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-/* line 242, css\new_design\base\normalize.less */
+/* line 249, css\new_design\base\normalize.less */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
-/* line 250, css\new_design\base\normalize.less */
+/* line 257, css\new_design\base\normalize.less */
 legend {
   border: 0;
   padding: 0;
 }
-/* line 256, css\new_design\base\normalize.less */
+/* line 263, css\new_design\base\normalize.less */
 textarea {
   overflow: auto;
 }
-/* line 260, css\new_design\base\normalize.less */
+/* line 267, css\new_design\base\normalize.less */
 optgroup {
   font-weight: bold;
 }
-/* line 264, css\new_design\base\normalize.less */
+/* line 271, css\new_design\base\normalize.less */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* line 269, css\new_design\base\normalize.less */
+/* line 276, css\new_design\base\normalize.less */
 td,
 th {
   padding: 0;
 }
-/* line 11, css\new_design\base\mixin.less */
+/* line 45, css\new_design\base\mixin.less */
 .clearfix:after {
   content: ' ';
   display: table;
@@ -283,6 +340,15 @@ This must be run when you have at least 2 sprites.
 .main {
   margin: 0 auto;
   width: 1000px;
+}
+/* line 5, css\new_design\base\base.less */
+.main_width_1260 {
+  width: 1260px;
+}
+/* line 10, css\new_design\base\base.less */
+.wrapper {
+  margin: 0 auto;
+  width: 1100px;
 }
 /* line 1, css\new_design\blocks\menu.less */
 .menu {
@@ -361,30 +427,30 @@ This must be run when you have at least 2 sprites.
 .menu__item-logo_type_ultra {
   top: -2px;
   background-image: url(../images/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -37px;
   width: 190px;
   height: 26px;
 }
-/* line 91, css\new_design\blocks\menu.less */
+/* line 95, css\new_design\blocks\menu.less */
 .menu__item-logo_type_oled {
   background-image: url(../images/sprite.png);
-  background-position: -198px 0px;
+  background-position: -80px -107px;
   width: 134px;
   height: 22px;
 }
-/* line 95, css\new_design\blocks\menu.less */
+/* line 99, css\new_design\blocks\menu.less */
 .menu__item-logo_type_webos {
   top: -3px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -34px;
+  background-position: -80px -71px;
   width: 134px;
   height: 28px;
 }
-/* line 104, css\new_design\blocks\menu.less */
+/* line 108, css\new_design\blocks\menu.less */
 .menu__item-bd-wrap {
   height: 100%;
 }
-/* line 108, css\new_design\blocks\menu.less */
+/* line 112, css\new_design\blocks\menu.less */
 .menu__item-wrap {
   position: absolute;
   z-index: 1;
@@ -403,40 +469,40 @@ This must be run when you have at least 2 sprites.
   transition: all .3s ease;
   will-change: width, height, transform;
 }
-/* line 124, css\new_design\blocks\menu.less */
+/* line 128, css\new_design\blocks\menu.less */
 .menu__item-wrap:hover {
   z-index: 3;
-  top: 32px;
+  top: 33px;
   width: 126%;
   height: 433px;
   border-top-width: 4px;
 }
-/* line 131, css\new_design\blocks\menu.less */
+/* line 135, css\new_design\blocks\menu.less */
 .menu__item-wrap:hover .menu__item-img {
   z-index: 3;
 }
-/* line 136, css\new_design\blocks\menu.less */
+/* line 140, css\new_design\blocks\menu.less */
 .menu__item-wrap:hover .menu__item-img_type_ultra {
   bottom: -20px;
   margin-left: -165px;
   width: 331px;
   height: 356px;
 }
-/* line 143, css\new_design\blocks\menu.less */
+/* line 147, css\new_design\blocks\menu.less */
 .menu__item-wrap:hover .menu__item-img_type_oled {
   bottom: -35px;
   margin-left: -210px;
   width: 419px;
   height: 346px;
 }
-/* line 150, css\new_design\blocks\menu.less */
+/* line 154, css\new_design\blocks\menu.less */
 .menu__item-wrap:hover .menu__item-img_type_webos {
   bottom: 9px;
   margin-left: -174px;
   width: 335px;
   height: 295px;
 }
-/* line 165, css\new_design\blocks\menu.less */
+/* line 169, css\new_design\blocks\menu.less */
 .menu__item-text {
   padding: 36px 0 0 26px;
   font-family: 'helvetica-light', Helvetica, Arial, sans-serif;
@@ -446,11 +512,11 @@ This must be run when you have at least 2 sprites.
   text-align: left;
   transition: padding-right 0.3s ease;
 }
-/* line 174, css\new_design\blocks\menu.less */
+/* line 178, css\new_design\blocks\menu.less */
 .menu__item-text_pos_center {
   padding: 36px 34px 0;
 }
-/* line 179, css\new_design\blocks\menu.less */
+/* line 183, css\new_design\blocks\menu.less */
 .menu__item-img {
   position: absolute;
   z-index: 3;
@@ -462,7 +528,7 @@ This must be run when you have at least 2 sprites.
   transition: all .3s ease;
   will-change: width, height, margin-left, bottom;
 }
-/* line 192, css\new_design\blocks\menu.less */
+/* line 196, css\new_design\blocks\menu.less */
 .menu__item-img_type_ultra {
   bottom: 15px;
   margin-left: -127px;
@@ -470,14 +536,14 @@ This must be run when you have at least 2 sprites.
   height: 265px;
   background-image: url('../images/menu-ultra-hover.png');
 }
-/* line 200, css\new_design\blocks\menu.less */
+/* line 204, css\new_design\blocks\menu.less */
 .menu__item-img_type_oled {
   margin-left: -184px;
   width: 368px;
   height: 305px;
   background-image: url('../images/menu-oled-hover.png');
 }
-/* line 207, css\new_design\blocks\menu.less */
+/* line 211, css\new_design\blocks\menu.less */
 .menu__item-img_type_webos {
   bottom: 29px;
   margin-left: -134px;
@@ -485,7 +551,7 @@ This must be run when you have at least 2 sprites.
   height: 231px;
   background-image: url('../images/menu-webos-hover.png');
 }
-/* line 219, css\new_design\blocks\menu.less */
+/* line 223, css\new_design\blocks\menu.less */
 .menu__item-badge {
   position: absolute;
   z-index: 3;
@@ -494,17 +560,17 @@ This must be run when you have at least 2 sprites.
   transition: top .3s ease;
   will-change: top;
 }
-/* line 229, css\new_design\blocks\menu.less */
+/* line 233, css\new_design\blocks\menu.less */
 .menu__item-badge_type_ultra {
   background-image: url(../images/sprite.png);
-  background-position: -198px -80px;
+  background-position: -222px -107px;
   width: 106px;
   height: 20px;
 }
-/* line 233, css\new_design\blocks\menu.less */
+/* line 237, css\new_design\blocks\menu.less */
 .menu__item-badge_type_webos {
   background-image: url(../images/sprite.png);
-  background-position: -198px -152px;
+  background-position: -295px -201px;
   width: 90px;
   height: 18px;
 }
@@ -591,7 +657,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_cinema-3d {
   margin-top: 7px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -70px;
+  background-position: -198px -37px;
   width: 150px;
   height: 24px;
 }
@@ -599,7 +665,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_dvb-t2 {
   margin-top: 8px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -180px;
+  background-position: 0px -261px;
   width: 80px;
   height: 20px;
 }
@@ -607,7 +673,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_oled-4k {
   margin-top: 5px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -152px;
+  background-position: -222px -71px;
   width: 148px;
   height: 20px;
 }
@@ -615,7 +681,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_ips {
   margin-top: 4px;
   background-image: url(../images/sprite.png);
-  background-position: -88px -180px;
+  background-position: -336px -107px;
   width: 50px;
   height: 16px;
 }
@@ -623,7 +689,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-text {
   margin-top: 15px;
   padding: 0 3px;
-  font-family: 'lg_smart_regular', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 19px;
   color: #3a3939;
@@ -639,7 +705,7 @@ This must be run when you have at least 2 sprites.
   position: relative;
   width: 90px;
   display: inline-block;
-  font-family: 'lg_smart_regular', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
   font-size: 17px;
   color: #7b7b7b;
   text-align: center;
@@ -656,21 +722,21 @@ This must be run when you have at least 2 sprites.
 /* line 27, css\new_design\blocks\submenu.less */
 .submenu__item:hover .submenu__item-logo_type_tv {
   background-image: url(../images/sprite.png);
-  background-position: -262px -30px;
+  background-position: -192px -151px;
   width: 56px;
   height: 42px;
 }
 /* line 31, css\new_design\blocks\submenu.less */
 .submenu__item:hover .submenu__item-logo_type_audio {
   background-image: url(../images/sprite.png);
-  background-position: 0px -102px;
+  background-position: 0px -151px;
   width: 88px;
   height: 42px;
 }
 /* line 35, css\new_design\blocks\submenu.less */
 .submenu__item:hover .submenu__item-logo_type_monitor {
   background-image: url(../images/sprite.png);
-  background-position: -260px -108px;
+  background-position: -171px -201px;
   width: 54px;
   height: 36px;
 }
@@ -681,21 +747,21 @@ This must be run when you have at least 2 sprites.
 /* line 51, css\new_design\blocks\submenu.less */
 .submenu__item-logo_type_tv {
   background-image: url(../images/sprite.png);
-  background-position: -198px -30px;
+  background-position: -256px -151px;
   width: 56px;
   height: 42px;
 }
 /* line 55, css\new_design\blocks\submenu.less */
 .submenu__item-logo_type_audio {
   background-image: url(../images/sprite.png);
-  background-position: -96px -102px;
+  background-position: -96px -151px;
   width: 88px;
   height: 42px;
 }
 /* line 59, css\new_design\blocks\submenu.less */
 .submenu__item-logo_type_monitor {
   background-image: url(../images/sprite.png);
-  background-position: -198px -108px;
+  background-position: -233px -201px;
   width: 54px;
   height: 36px;
 }
@@ -703,4 +769,315 @@ This must be run when you have at least 2 sprites.
 .submenu__item-text {
   margin-top: 10px;
   line-height: 19px;
+}
+/* line 1, css\new_design\blocks\oled.less */
+.oled {
+  padding-top: 14px;
+}
+/* line 4, css\new_design\blocks\oled.less */
+.oled__banner {
+  position: relative;
+  width: 100%;
+  height: 442px;
+  color: #fff;
+  background: url('../images/oled-bg.jpg') 0 0 no-repeat;
+}
+/* line 11, css\new_design\blocks\oled.less */
+.oled__banner-info {
+  position: absolute;
+  top: 99px;
+  right: 132px;
+  width: 330px;
+}
+/* line 18, css\new_design\blocks\oled.less */
+.oled__banner-logo {
+  display: inline-block;
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 192px;
+  height: 29px;
+}
+/* line 23, css\new_design\blocks\oled.less */
+.oled__banner-title {
+  margin-top: 16px;
+  text-transform: uppercase;
+  font-family: 'HelveticaNeue-Roman', Helvetica, Arial, sans-serif;
+  font-size: 27px;
+  line-height: 36px;
+}
+/* line 31, css\new_design\blocks\oled.less */
+.oled__banner-text {
+  margin-top: 12px;
+  margin-bottom: 25px;
+  font-family: 'HelveticaNeue-Thin', Helvetica, Arial, sans-serif;
+  font-size: 26px;
+}
+/* line 38, css\new_design\blocks\oled.less */
+.oled__banner-btn {
+  position: relative;
+  padding: 0 0 0 65px;
+  height: 52px;
+  display: inline-block;
+  font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 52px;
+  color: #c5003d;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* line 51, css\new_design\blocks\oled.less */
+.oled__banner-btn:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: ' ';
+  background-image: url(../images/sprite.png);
+  background-position: 0px -201px;
+  width: 52px;
+  height: 52px;
+}
+/* line 63, css\new_design\blocks\oled.less */
+.oled-wrap {
+  padding-top: 75px;
+}
+/* line 67, css\new_design\blocks\oled.less */
+.oled__item {
+  float: left;
+  text-align: center;
+  box-sizing: content-box;
+}
+/* line 74, css\new_design\blocks\oled.less */
+.oled__item_width_252 {
+  width: 252px;
+}
+/* line 78, css\new_design\blocks\oled.less */
+.oled__item_width_207 {
+  padding-left: 45px;
+  width: 207px;
+}
+/* line 83, css\new_design\blocks\oled.less */
+.oled__item_width_208 {
+  padding-left: 60px;
+  width: 208px;
+}
+/* line 88, css\new_design\blocks\oled.less */
+.oled__item_width_190 {
+  padding-left: 62px;
+  width: 190px;
+}
+/* line 93, css\new_design\blocks\oled.less */
+.oled__item_width_186 {
+  padding-left: 50px;
+  width: 186px;
+}
+/* line 99, css\new_design\blocks\oled.less */
+.oled__item-logo {
+  position: relative;
+  margin: 0 auto 38px;
+}
+/* line 105, css\new_design\blocks\oled.less */
+.oled__item-logo_type_pixel {
+  left: -33px;
+  background-image: url(../images/sprite.png);
+  background-position: 0px -289px;
+  width: 41px;
+  height: 41px;
+}
+/* line 110, css\new_design\blocks\oled.less */
+.oled__item-logo_type_4k {
+  left: -31px;
+  margin-top: 9px;
+  background-image: url(../images/sprite.png);
+  background-position: -320px -151px;
+  width: 63px;
+  height: 33px;
+}
+/* line 116, css\new_design\blocks\oled.less */
+.oled__item-logo_type_wrgb {
+  left: 9px;
+  margin-bottom: 33px;
+  background-image: url(../images/sprite.png);
+  background-position: -60px -201px;
+  width: 49px;
+  height: 47px;
+}
+/* line 122, css\new_design\blocks\oled.less */
+.oled__item-logo_type_infinity {
+  left: -5px;
+  margin-top: 9px;
+  margin-bottom: 44px;
+  background-image: url(../images/sprite.png);
+  background-position: -101px -289px;
+  width: 53px;
+  height: 26px;
+}
+/* line 129, css\new_design\blocks\oled.less */
+.oled__item-logo_type_respond {
+  left: -10px;
+  margin-top: 3px;
+  margin-bottom: 42px;
+  background-image: url(../images/sprite.png);
+  background-position: -49px -289px;
+  width: 44px;
+  height: 35px;
+}
+/* line 138, css\new_design\blocks\oled.less */
+.oled__item-text {
+  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #313245;
+  text-align: left;
+  line-height: 23px;
+}
+/* line 145, css\new_design\blocks\oled.less */
+.oled__item-text_font_bold {
+  font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif;
+  font-size: 19px;
+}
+/* line 1, css\new_design\blocks\pixel.less */
+.pixel {
+  position: relative;
+  padding: 86px 24px 73px 10px;
+  border-bottom: 1px solid #f3f3f3;
+}
+/* line 6, css\new_design\blocks\pixel.less */
+.pixel-wrap {
+  position: absolute;
+  top: 184px;
+  left: 10px;
+  width: 450px;
+}
+/* line 13, css\new_design\blocks\pixel.less */
+.pixel__video {
+  position: relative;
+  width: 646px;
+  height: 447px;
+  float: right;
+}
+/* line 19, css\new_design\blocks\pixel.less */
+.pixel__video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -36px;
+  margin-left: -5px;
+  background-image: url(../images/sprite.png);
+  background-position: 0px -71px;
+  width: 72px;
+  height: 72px;
+  cursor: pointer;
+}
+/* line 1, css\new_design\blocks\oled-4k.less */
+.oled-4k {
+  position: relative;
+  padding: 62px 24px 24px 10px;
+  border-bottom: 1px solid #f3f3f3;
+}
+/* line 6, css\new_design\blocks\oled-4k.less */
+.oled-4k-wrap {
+  padding-top: 16px;
+  width: 488px;
+  float: right;
+}
+/* line 12, css\new_design\blocks\oled-4k.less */
+.oled-4k__logo {
+  margin-bottom: 6px;
+  display: inline-block;
+  background-image: url(../images/sprite.png);
+  background-position: -200px 0px;
+  width: 203px;
+  height: 26px;
+}
+/* line 18, css\new_design\blocks\oled-4k.less */
+.oled-4k__img {
+  width: 494px;
+  height: 393px;
+  float: left;
+  background: url('../images/oled/oled-4k-bg.png') 0 0 no-repeat;
+}
+/* line 1, css\new_design\components\menu-mini.less */
+.menu-mini {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 1000px;
+  font-size: 0;
+  background: linear-gradient(to top, #fbfbfb, transparent);
+  border-bottom: 1px solid #c5003d;
+}
+/* line 10, css\new_design\components\menu-mini.less */
+.menu-mini__item {
+  display: inline-block;
+  padding-bottom: 8px;
+  width: 33.33%;
+  text-align: center;
+  border-bottom: 4px solid transparent;
+  transition: border-color 0.3s ease;
+}
+/* line 18, css\new_design\components\menu-mini.less */
+.menu-mini__item:hover,
+.menu-mini__item_state_active {
+  border-color: #c5003d;
+}
+/* line 25, css\new_design\components\menu-mini.less */
+.menu-mini__logo {
+  position: relative;
+  display: inline-block;
+}
+/* line 31, css\new_design\components\menu-mini.less */
+.menu-mini__logo_type_ultra {
+  top: 1px;
+  left: -2px;
+  background-image: url(../images/sprite.png);
+  background-position: 0px -37px;
+  width: 190px;
+  height: 26px;
+}
+/* line 37, css\new_design\components\menu-mini.less */
+.menu-mini__logo_type_oled {
+  background-image: url(../images/sprite.png);
+  background-position: -80px -107px;
+  width: 134px;
+  height: 22px;
+}
+/* line 41, css\new_design\components\menu-mini.less */
+.menu-mini__logo_type_webos {
+  top: 2px;
+  left: 30px;
+  background-image: url(../images/sprite.png);
+  background-position: -80px -71px;
+  width: 134px;
+  height: 28px;
+}
+/* line 51, css\new_design\components\menu-mini.less */
+.menu-mini__home {
+  position: absolute;
+  top: 4px;
+  left: -88px;
+  background-image: url(../images/sprite.png);
+  background-position: -117px -201px;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+}
+/* line 1, css\new_design\components\title.less */
+.title {
+  margin-bottom: 22px;
+  font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+  font-size: 29px;
+  color: #d80546;
+  letter-spacing: -0.5px;
+}
+/* line 1, css\new_design\components\text.less */
+.text {
+  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  color: #313245;
+  line-height: 23px;
+  letter-spacing: -0.3px;
+}
+/* line 8, css\new_design\components\text.less */
+.text + .text {
+  margin-top: 10px;
 }

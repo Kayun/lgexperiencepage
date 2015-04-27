@@ -8,6 +8,19 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+// Reset default styles.
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	box-sizing: border-box;
+
+	&:before,
+	&:after {
+		box-sizing: border-box;
+	}
+}
+
 //  Remove default margin.
 body { margin: 0 }
 
@@ -78,12 +91,6 @@ strong {
 
 //  * Address styling not present in Safari and Chrome.
 dfn { font-style: italic; }
-
-//  * Address variable `h1` font-size and margin within `section` and `article` contexts in Firefox 4+, Safari, and Chrome.
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
 
 //  * Address styling not present in IE 8/9.
 mark {
