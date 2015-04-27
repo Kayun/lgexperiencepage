@@ -1,5 +1,19 @@
 extends ../layouts/default
 
+mixin model(obj)
+	- var icons = obj["icons"];
+	.model
+		img.model__img(src= obj.img)
+
+		- for (var i = 0; i < icons.length; i++)
+			.model__icon(class="model__icon_type_" + icons[i])
+
+		.model__text= obj.text
+		.model__num= obj.num
+
+		.mobel__btn
+			button.button(type="button") Узнать больше
+
 block head
 	- pageTitle = 'LG OLED';
 	- classWidth = 'main_width_1260'
@@ -28,3 +42,28 @@ block content
 		include ../blocks/action
 		include ../blocks/screen
 		include ../blocks/setup
+		include ../blocks/console
+
+		section.compare
+
+			.compare__feat
+				button.button-feat(type="button")
+					span.button-feat_tt_up Сравните основные характеристики
+					br
+					span телевизоров LG
+
+			h2.compare__title
+				span Выберите свой
+				br
+				span.compare__title_color_red OLED
+				= " "
+				span телевизор
+
+			.compare-container
+
+				+model({
+					img: "images/gh.jpg",
+					icons: ["4k", "infinity", "respond"],
+					text: "Модель 2014 года! OLED телевизор с уникальным дизайном, поддержкой 3D и Smart TV",
+					num: "55EA970V"
+				})

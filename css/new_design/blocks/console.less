@@ -1,0 +1,63 @@
+.console {
+	position: relative;
+	padding: 86px 0 53px;
+	border-bottom: 1px solid #f3f3f3;
+	background: url('../images/oled/console-bg.jpg') 416px 205px no-repeat;
+
+	&-container {
+		padding-top: 48px;
+	}
+
+	&-wrap {
+		padding-right: 8px;
+		float: right;
+	}
+
+	&__item {
+		position: relative;
+		margin-bottom: 19px;
+		padding-left: 32px;
+		width: 400px;
+
+		&_float_r {
+			float: right;
+		}
+	}
+
+	&__item-title {
+		margin-bottom: 6px;
+		.helvetica-neue-roman();
+		font-size: 18px;
+		color: @red-title;
+	}
+
+	&__item-logo {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		&_type {
+
+			&_menu {
+				.sprite(@icon-console-menu);
+			}
+
+			&_wheel {
+				.sprite(@icon-console-wheel);
+			}
+
+			&_click {
+				.sprite(@icon-console-click);
+			}
+
+			&_all {
+				.sprite(@icon-console-all);
+			}
+
+			&_voice {
+				.sprite(@icon-console-voice);
+			}
+		}
+	}
+
+}
