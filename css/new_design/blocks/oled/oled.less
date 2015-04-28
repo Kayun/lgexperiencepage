@@ -1,65 +1,6 @@
 .oled {
 	padding-top: 14px;
 
-	&__banner {
-		position: relative;
-		width: 100%;
-		height: 442px;
-		color: #fff;
-		background: url('../images/oled/oled-bg.png') 0 0 no-repeat;
-
-		&-info {
-			position: absolute;
-			top: 100px;
-			right: 130px;
-			width: 330px;
-		}
-
-		&-logo {
-			display: inline-block;
-			.sprite(@logo-oled-white)
-		}
-
-		&-title {
-			margin-top: 16px;
-			text-transform: uppercase;
-			.helvetica-neue-roman();
-			font-size: 27px;
-			line-height: 36px;
-		}
-
-		&-text {
-			margin-top: 12px;
-			margin-bottom: 35px;
-			.helvetica-neue-thin();
-			font-size: 26px;
-		}
-
-		&-btn {
-			position: relative;
-			padding: 0 0 0 65px;
-			height: 52px;
-			display: inline-block;
-			.helvetica-neue-light();
-			font-size: 20px;
-			line-height: 52px;
-			color: #c5003d;
-			border: none;
-			background-color: transparent;
-			cursor: pointer;
-
-			&:before {
-				position: absolute;
-				top: 0;
-				left: 0;
-				content: ' ';
-				.sprite(@play-red);
-			}
-
-		}
-
-	}
-
 	&-wrap {
 		padding-top: 53px;
 	}

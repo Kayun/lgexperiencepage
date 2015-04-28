@@ -427,14 +427,14 @@ This must be run when you have at least 2 sprites.
 .menu__item-logo_type_ultra {
   top: -2px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -37px;
+  background-position: 0px -78px;
   width: 190px;
   height: 26px;
 }
 /* line 95, css\new_design\blocks\main\menu.less */
 .menu__item-logo_type_oled {
   background-image: url(../images/sprite.png);
-  background-position: -80px -107px;
+  background-position: -222px -112px;
   width: 134px;
   height: 22px;
 }
@@ -442,7 +442,7 @@ This must be run when you have at least 2 sprites.
 .menu__item-logo_type_webos {
   top: -3px;
   background-image: url(../images/sprite.png);
-  background-position: -80px -71px;
+  background-position: -80px -112px;
   width: 134px;
   height: 28px;
 }
@@ -534,14 +534,14 @@ This must be run when you have at least 2 sprites.
   margin-left: -127px;
   width: 254px;
   height: 265px;
-  background-image: url('../images/menu-ultra-hover.png');
+  background-image: url('../images/menu-ultra-hover.jpg');
 }
 /* line 204, css\new_design\blocks\main\menu.less */
 .menu__item-img_type_oled {
   margin-left: -184px;
   width: 368px;
   height: 305px;
-  background-image: url('../images/menu-oled-hover.png');
+  background-image: url('../images/menu-oled-hover.jpg');
 }
 /* line 211, css\new_design\blocks\main\menu.less */
 .menu__item-img_type_webos {
@@ -549,7 +549,7 @@ This must be run when you have at least 2 sprites.
   margin-left: -134px;
   width: 262px;
   height: 231px;
-  background-image: url('../images/menu-webos-hover.png');
+  background-image: url('../images/menu-webos-hover.jpg');
 }
 /* line 223, css\new_design\blocks\main\menu.less */
 .menu__item-badge {
@@ -563,14 +563,14 @@ This must be run when you have at least 2 sprites.
 /* line 233, css\new_design\blocks\main\menu.less */
 .menu__item-badge_type_ultra {
   background-image: url(../images/sprite.png);
-  background-position: -222px -107px;
+  background-position: -80px -148px;
   width: 106px;
   height: 20px;
 }
 /* line 237, css\new_design\blocks\main\menu.less */
 .menu__item-badge_type_webos {
   background-image: url(../images/sprite.png);
-  background-position: -295px -201px;
+  background-position: -194px -148px;
   width: 90px;
   height: 18px;
 }
@@ -657,7 +657,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_cinema-3d {
   margin-top: 7px;
   background-image: url(../images/sprite.png);
-  background-position: -198px -37px;
+  background-position: -211px -44px;
   width: 150px;
   height: 24px;
 }
@@ -665,7 +665,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_dvb-t2 {
   margin-top: 8px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -261px;
+  background-position: -197px -242px;
   width: 80px;
   height: 20px;
 }
@@ -673,7 +673,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_oled-4k {
   margin-top: 5px;
   background-image: url(../images/sprite.png);
-  background-position: -222px -71px;
+  background-position: -198px -78px;
   width: 148px;
   height: 20px;
 }
@@ -681,7 +681,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_ips {
   margin-top: 4px;
   background-image: url(../images/sprite.png);
-  background-position: -88px -261px;
+  background-position: -113px -348px;
   width: 50px;
   height: 16px;
 }
@@ -722,21 +722,21 @@ This must be run when you have at least 2 sprites.
 /* line 27, css\new_design\blocks\main\submenu.less */
 .submenu__item:hover .submenu__item-logo_type_tv {
   background-image: url(../images/sprite.png);
-  background-position: -256px -151px;
+  background-position: -64px -242px;
   width: 56px;
   height: 42px;
 }
 /* line 31, css\new_design\blocks\main\submenu.less */
 .submenu__item:hover .submenu__item-logo_type_audio {
   background-image: url(../images/sprite.png);
-  background-position: -96px -151px;
+  background-position: 0px -192px;
   width: 88px;
   height: 42px;
 }
 /* line 35, css\new_design\blocks\main\submenu.less */
 .submenu__item:hover .submenu__item-logo_type_monitor {
   background-image: url(../images/sprite.png);
-  background-position: -171px -201px;
+  background-position: -223px -292px;
   width: 54px;
   height: 36px;
 }
@@ -747,21 +747,21 @@ This must be run when you have at least 2 sprites.
 /* line 51, css\new_design\blocks\main\submenu.less */
 .submenu__item-logo_type_tv {
   background-image: url(../images/sprite.png);
-  background-position: -192px -151px;
+  background-position: 0px -242px;
   width: 56px;
   height: 42px;
 }
 /* line 55, css\new_design\blocks\main\submenu.less */
 .submenu__item-logo_type_audio {
   background-image: url(../images/sprite.png);
-  background-position: 0px -151px;
+  background-position: -96px -192px;
   width: 88px;
   height: 42px;
 }
 /* line 59, css\new_design\blocks\main\submenu.less */
 .submenu__item-logo_type_monitor {
   background-image: url(../images/sprite.png);
-  background-position: -233px -201px;
+  background-position: -285px -292px;
   width: 54px;
   height: 36px;
 }
@@ -775,157 +775,94 @@ This must be run when you have at least 2 sprites.
   padding-top: 14px;
 }
 /* line 4, css\new_design\blocks\oled\oled.less */
-.oled__banner {
-  position: relative;
-  width: 100%;
-  height: 442px;
-  color: #fff;
-  background: url('../images/oled/oled-bg.png') 0 0 no-repeat;
-}
-/* line 11, css\new_design\blocks\oled\oled.less */
-.oled__banner-info {
-  position: absolute;
-  top: 100px;
-  right: 130px;
-  width: 330px;
-}
-/* line 18, css\new_design\blocks\oled\oled.less */
-.oled__banner-logo {
-  display: inline-block;
-  background-image: url(../images/sprite.png);
-  background-position: 0px 0px;
-  width: 192px;
-  height: 29px;
-}
-/* line 23, css\new_design\blocks\oled\oled.less */
-.oled__banner-title {
-  margin-top: 16px;
-  text-transform: uppercase;
-  font-family: 'HelveticaNeue-Roman', Helvetica, Arial, sans-serif;
-  font-size: 27px;
-  line-height: 36px;
-}
-/* line 31, css\new_design\blocks\oled\oled.less */
-.oled__banner-text {
-  margin-top: 12px;
-  margin-bottom: 35px;
-  font-family: 'HelveticaNeue-Thin', Helvetica, Arial, sans-serif;
-  font-size: 26px;
-}
-/* line 38, css\new_design\blocks\oled\oled.less */
-.oled__banner-btn {
-  position: relative;
-  padding: 0 0 0 65px;
-  height: 52px;
-  display: inline-block;
-  font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  line-height: 52px;
-  color: #c5003d;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-/* line 51, css\new_design\blocks\oled\oled.less */
-.oled__banner-btn:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: ' ';
-  background-image: url(../images/sprite.png);
-  background-position: 0px -201px;
-  width: 52px;
-  height: 52px;
-}
-/* line 63, css\new_design\blocks\oled\oled.less */
 .oled-wrap {
   padding-top: 53px;
 }
-/* line 67, css\new_design\blocks\oled\oled.less */
+/* line 8, css\new_design\blocks\oled\oled.less */
 .oled__item {
   float: left;
   text-align: center;
   box-sizing: content-box;
 }
-/* line 74, css\new_design\blocks\oled\oled.less */
+/* line 15, css\new_design\blocks\oled\oled.less */
 .oled__item_width_227 {
   padding-left: 25px;
   width: 227px;
 }
-/* line 79, css\new_design\blocks\oled\oled.less */
+/* line 20, css\new_design\blocks\oled\oled.less */
 .oled__item_width_210 {
   padding-left: 42px;
   width: 210px;
 }
-/* line 84, css\new_design\blocks\oled\oled.less */
+/* line 25, css\new_design\blocks\oled\oled.less */
 .oled__item_width_219 {
   padding-left: 33px;
   width: 219px;
 }
-/* line 89, css\new_design\blocks\oled\oled.less */
+/* line 30, css\new_design\blocks\oled\oled.less */
 .oled__item_width_200 {
   padding-left: 52px;
   width: 200px;
 }
-/* line 94, css\new_design\blocks\oled\oled.less */
+/* line 35, css\new_design\blocks\oled\oled.less */
 .oled__item_width_177 {
   padding-left: 75px;
   width: 177px;
 }
-/* line 100, css\new_design\blocks\oled\oled.less */
+/* line 41, css\new_design\blocks\oled\oled.less */
 .oled__item-logo {
   position: relative;
   margin: 0 auto 19px;
 }
-/* line 106, css\new_design\blocks\oled\oled.less */
+/* line 47, css\new_design\blocks\oled\oled.less */
 .oled__item-logo_type_pixel {
   left: -13px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -289px;
+  background-position: -380px 0px;
   width: 41px;
   height: 41px;
 }
-/* line 111, css\new_design\blocks\oled\oled.less */
+/* line 52, css\new_design\blocks\oled\oled.less */
 .oled__item-logo_type_4k {
   left: -33px;
   margin-top: 4px;
   margin-bottom: 23px;
   background-image: url(../images/sprite.png);
-  background-position: -320px -151px;
+  background-position: -262px -192px;
   width: 63px;
   height: 33px;
 }
-/* line 118, css\new_design\blocks\oled\oled.less */
+/* line 59, css\new_design\blocks\oled\oled.less */
 .oled__item-logo_type_wrgb {
   left: -16px;
   margin-top: 1px;
   margin-bottom: 12px;
   background-image: url(../images/sprite.png);
-  background-position: -60px -201px;
+  background-position: -112px -292px;
   width: 49px;
   height: 47px;
 }
-/* line 125, css\new_design\blocks\oled\oled.less */
+/* line 66, css\new_design\blocks\oled\oled.less */
 .oled__item-logo_type_infinity {
   left: -21px;
   margin-top: 9px;
   margin-bottom: 26px;
   background-image: url(../images/sprite.png);
-  background-position: -101px -289px;
+  background-position: -52px -348px;
   width: 53px;
   height: 26px;
 }
-/* line 132, css\new_design\blocks\oled\oled.less */
+/* line 73, css\new_design\blocks\oled\oled.less */
 .oled__item-logo_type_respond {
   left: -27px;
   margin-top: 2px;
   margin-bottom: 23px;
   background-image: url(../images/sprite.png);
-  background-position: -49px -289px;
+  background-position: 0px -348px;
   width: 44px;
   height: 35px;
 }
-/* line 141, css\new_design\blocks\oled\oled.less */
+/* line 82, css\new_design\blocks\oled\oled.less */
 .oled__item-text {
   font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -934,7 +871,7 @@ This must be run when you have at least 2 sprites.
   line-height: 21px;
   letter-spacing: -0.1px;
 }
-/* line 149, css\new_design\blocks\oled\oled.less */
+/* line 90, css\new_design\blocks\oled\oled.less */
 .oled__item-text_font_bold {
   margin-bottom: 4px;
   display: inline-block;
@@ -971,7 +908,7 @@ This must be run when you have at least 2 sprites.
   margin-top: -38px;
   margin-left: 16px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -71px;
+  background-position: 0px -112px;
   width: 72px;
   height: 72px;
   cursor: pointer;
@@ -995,7 +932,7 @@ This must be run when you have at least 2 sprites.
   margin-bottom: 6px;
   display: inline-block;
   background-image: url(../images/sprite.png);
-  background-position: -200px 0px;
+  background-position: 0px -44px;
   width: 203px;
   height: 26px;
 }
@@ -1007,14 +944,14 @@ This must be run when you have at least 2 sprites.
   left: -133px;
   width: 748px;
   height: 402px;
-  background: url('../images/oled/oled-4k-bg.png') 0 0 no-repeat;
+  background: url('../images/oled/oled-4k-bg.jpg') 0 0 no-repeat;
 }
 /* line 1, css\new_design\blocks\oled\wrgb.less */
 .wrgb {
   position: relative;
   padding: 134px 0 149px;
   border-bottom: 1px solid #f3f3f3;
-  background: url('../images/oled/wrgb-bg.png') 598px 102px no-repeat;
+  background: url('../images/oled/wrgb-bg.jpg') 598px 102px no-repeat;
 }
 /* line 7, css\new_design\blocks\oled\wrgb.less */
 .wrgb-wrap {
@@ -1025,7 +962,7 @@ This must be run when you have at least 2 sprites.
   position: relative;
   padding: 112px 0 113px;
   border-bottom: 1px solid #f3f3f3;
-  background: url('../images/oled/infinity-bg.png') 0 49px no-repeat;
+  background: url('../images/oled/infinity-bg.jpg') 0 49px no-repeat;
 }
 /* line 7, css\new_design\blocks\oled\infinity.less */
 .infinity-wrap {
@@ -1037,7 +974,7 @@ This must be run when you have at least 2 sprites.
   position: relative;
   padding: 121px 0 128px;
   border-bottom: 1px solid #f3f3f3;
-  background: url('../images/oled/action-bg.png') 590px 55px no-repeat;
+  background: url('../images/oled/action-bg.jpg') 590px 55px no-repeat;
 }
 /* line 7, css\new_design\blocks\oled\action.less */
 .action-wrap {
@@ -1064,25 +1001,153 @@ This must be run when you have at least 2 sprites.
   left: -114px;
   width: 752px;
   height: 426px;
-  background: url('../images/oled/screen-bg.png') 0 0 no-repeat;
+  background: url('../images/oled/screen-bg.jpg') 0 0 no-repeat;
 }
 /* line 1, css\new_design\blocks\oled\setup.less */
 .setup {
   position: relative;
   padding: 61px 0 76px;
   border-bottom: 1px solid #f3f3f3;
-  background: url('../images/oled/setup-bg.png') 598px 52px no-repeat;
+  background: url('../images/oled/setup-bg.jpg') 598px 52px no-repeat;
 }
 /* line 8, css\new_design\blocks\oled\setup.less */
 .setup-wrap {
   width: 428px;
+}
+/* line 1, css\new_design\blocks\webos\webos.less */
+.webos {
+  padding-top: 14px;
+}
+/* line 4, css\new_design\blocks\webos\webos.less */
+.webos-wrap {
+  padding-top: 57px;
+}
+/* line 8, css\new_design\blocks\webos\webos.less */
+.webos__item {
+  width: 184px;
+  float: left;
+  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  color: #313245;
+  line-height: 23px;
+  letter-spacing: -0.3px;
+}
+/* line 8, css\new_design\components\text.less */
+.webos__item + .text {
+  margin-top: 10px;
+}
+/* line 12, css\new_design\components\text.less */
+.webos__item_font_sm {
+  font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif;
+}
+/* line 16, css\new_design\components\text.less */
+.webos__item_lh_21 {
+  line-height: 21px;
+}
+/* line 15, css\new_design\blocks\webos\webos.less */
+.webos__item_pos_left {
+  width: 420px;
+  padding-left: 158px;
+  padding-right: 58px;
+}
+/* line 22, css\new_design\blocks\webos\webos.less */
+.webos__item_pos_right {
+  width: 420px;
+  padding-left: 80px;
+  padding-right: 105px;
+}
+/* line 33, css\new_design\blocks\webos\webos.less */
+.webos__item-icon {
+  position: relative;
+  margin: 0 auto;
+}
+/* line 39, css\new_design\blocks\webos\webos.less */
+.webos__item-icon_type_4k {
+  margin-bottom: 11px;
+  background-image: url(../images/sprite.png);
+  background-position: -128px -242px;
+  width: 61px;
+  height: 34px;
+}
+/* line 44, css\new_design\blocks\webos\webos.less */
+.webos__item-icon_type_click {
+  top: -4px;
+  margin-bottom: 8px;
+  background-image: url(../images/sprite.png);
+  background-position: -380px -49px;
+  width: 28px;
+  height: 37px;
+}
+/* line 50, css\new_design\blocks\webos\webos.less */
+.webos__item-icon_type_lib {
+  top: -8px;
+  left: -14px;
+  margin-bottom: 4px;
+  background-image: url(../images/sprite.png);
+  background-position: -192px -192px;
+  width: 62px;
+  height: 40px;
+}
+/* line 61, css\new_design\blocks\webos\webos.less */
+.webos__item-text {
+  letter-spacing: 0;
+}
+/* line 65, css\new_design\blocks\webos\webos.less */
+.webos__video {
+  padding-top: 26px;
+}
+/* line 69, css\new_design\blocks\webos\webos.less */
+.webos__video-item {
+  width: 256px;
+  float: left;
+  border-right: 1px solid #fff;
+}
+/* line 75, css\new_design\blocks\webos\webos.less */
+.webos__video-clip {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: visible;
+  border-bottom: 3px solid transparent;
+  will-change: overflow;
+}
+/* line 83, css\new_design\blocks\webos\webos.less */
+.webos__video-clip:hover {
+  border-color: #d00946;
+  overflow: hidden;
+}
+/* line 89, css\new_design\blocks\webos\webos.less */
+.webos__video-img {
+  width: 100%;
+}
+/* line 93, css\new_design\blocks\webos\webos.less */
+.webos__video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  margin-top: -24px;
+  margin-left: -24px;
+  background-image: url(../images/sprite.png);
+  background-position: 0px -292px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+/* line 104, css\new_design\blocks\webos\webos.less */
+.webos__video-text {
+  margin-top: 10px;
+  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  color: #3a3232;
+  letter-spacing: -0.2px;
 }
 /* line 1, css\new_design\blocks\console.less */
 .console {
   position: relative;
   padding: 86px 0 53px;
   border-bottom: 1px solid #f3f3f3;
-  background: url('../images/oled/console-bg.png') 416px 205px no-repeat;
+  background: url('../images/console-bg.jpg') 416px 205px no-repeat;
 }
 /* line 7, css\new_design\blocks\console.less */
 .console-container {
@@ -1120,35 +1185,35 @@ This must be run when you have at least 2 sprites.
 /* line 41, css\new_design\blocks\console.less */
 .console__item-logo_type_menu {
   background-image: url(../images/sprite.png);
-  background-position: -204px -261px;
+  background-position: -380px -190px;
   width: 20px;
   height: 15px;
 }
 /* line 45, css\new_design\blocks\console.less */
 .console__item-logo_type_wheel {
   background-image: url(../images/sprite.png);
-  background-position: -34px -338px;
+  background-position: -380px -130px;
   width: 18px;
   height: 27px;
 }
 /* line 49, css\new_design\blocks\console.less */
 .console__item-logo_type_click {
   background-image: url(../images/sprite.png);
-  background-position: -162px -289px;
+  background-position: -406px -130px;
   width: 14px;
   height: 16px;
 }
 /* line 53, css\new_design\blocks\console.less */
 .console__item-logo_type_all {
   background-image: url(../images/sprite.png);
-  background-position: 0px -338px;
+  background-position: -380px -94px;
   width: 26px;
   height: 28px;
 }
 /* line 57, css\new_design\blocks\console.less */
 .console__item-logo_type_voice {
   background-image: url(../images/sprite.png);
-  background-position: -378px -71px;
+  background-position: -380px -165px;
   width: 20px;
   height: 17px;
 }
@@ -1209,14 +1274,14 @@ This must be run when you have at least 2 sprites.
 .menu-mini__logo_type_ultra {
   top: -1px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -37px;
+  background-position: 0px -78px;
   width: 190px;
   height: 26px;
 }
 /* line 36, css\new_design\components\menu-mini.less */
 .menu-mini__logo_type_oled {
   background-image: url(../images/sprite.png);
-  background-position: -80px -107px;
+  background-position: -222px -112px;
   width: 134px;
   height: 22px;
 }
@@ -1225,7 +1290,7 @@ This must be run when you have at least 2 sprites.
   top: 4px;
   left: -1px;
   background-image: url(../images/sprite.png);
-  background-position: -80px -71px;
+  background-position: -80px -112px;
   width: 134px;
   height: 28px;
 }
@@ -1233,9 +1298,9 @@ This must be run when you have at least 2 sprites.
 .menu-mini__home {
   position: absolute;
   top: 4px;
-  left: -88px;
+  left: -70px;
   background-image: url(../images/sprite.png);
-  background-position: -117px -201px;
+  background-position: -169px -292px;
   width: 46px;
   height: 46px;
   cursor: pointer;
@@ -1348,7 +1413,7 @@ This must be run when you have at least 2 sprites.
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 100%;
+  width: 205px;
 }
 /* line 22, css\new_design\components\model.less */
 .model__img img {
@@ -1377,21 +1442,21 @@ This must be run when you have at least 2 sprites.
 /* line 48, css\new_design\components\model.less */
 .model__icon_type_4k-mini {
   background-image: url(../images/sprite.png);
-  background-position: -146px -261px;
+  background-position: -171px -348px;
   width: 50px;
   height: 16px;
 }
 /* line 52, css\new_design\components\model.less */
 .model__icon_type_infinity-mini {
   background-image: url(../images/sprite.png);
-  background-position: -336px -107px;
+  background-position: -292px -148px;
   width: 63px;
   height: 16px;
 }
 /* line 56, css\new_design\components\model.less */
 .model__icon_type_respond-mini {
   background-image: url(../images/sprite.png);
-  background-position: -356px -37px;
+  background-position: -285px -242px;
   width: 45px;
   height: 20px;
 }
@@ -1414,4 +1479,93 @@ This must be run when you have at least 2 sprites.
   bottom: 20px;
   left: 50%;
   margin-left: -62px;
+}
+/* line 1, css\new_design\components\banner.less */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 442px;
+  color: #fff;
+}
+/* line 9, css\new_design\components\banner.less */
+.banner_type_ultra {
+  background: url('../images/ultra/ultra-bg.jpg') 0 0 no-repeat;
+}
+/* line 17, css\new_design\components\banner.less */
+.banner_type_oled {
+  background: url('../images/oled/oled-bg.jpg') 0 0 no-repeat;
+}
+/* line 20, css\new_design\components\banner.less */
+.banner_type_oled .banner__logo {
+  background-image: url(../images/sprite.png);
+  background-position: -180px 0px;
+  width: 192px;
+  height: 29px;
+}
+/* line 26, css\new_design\components\banner.less */
+.banner_type_webos {
+  background: url('../images/webos/webos-bg.jpg') 0 0 no-repeat;
+}
+/* line 31, css\new_design\components\banner.less */
+.banner_type_webos .banner__logo {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 172px;
+  height: 36px;
+}
+/* line 35, css\new_design\components\banner.less */
+.banner_type_webos .banner__info {
+  top: 76px;
+  right: 61px;
+}
+/* line 46, css\new_design\components\banner.less */
+.banner__info {
+  position: absolute;
+  top: 100px;
+  right: 130px;
+  width: 330px;
+}
+/* line 53, css\new_design\components\banner.less */
+.banner__logo {
+  display: inline-block;
+}
+/* line 57, css\new_design\components\banner.less */
+.banner__title {
+  margin-top: 16px;
+  text-transform: uppercase;
+  font-family: 'HelveticaNeue-Roman', Helvetica, Arial, sans-serif;
+  font-size: 27px;
+  line-height: 36px;
+}
+/* line 65, css\new_design\components\banner.less */
+.banner__text {
+  margin-top: 12px;
+  margin-bottom: 35px;
+  font-family: 'HelveticaNeue-Thin', Helvetica, Arial, sans-serif;
+  font-size: 26px;
+}
+/* line 72, css\new_design\components\banner.less */
+.banner__btn {
+  position: relative;
+  padding: 0 0 0 65px;
+  height: 48px;
+  display: inline-block;
+  font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 48px;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* line 85, css\new_design\components\banner.less */
+.banner__btn:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: ' ';
+  background-image: url(../images/sprite.png);
+  background-position: 0px -292px;
+  width: 48px;
+  height: 48px;
 }

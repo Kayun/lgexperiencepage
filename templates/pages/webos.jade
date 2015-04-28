@@ -1,0 +1,21 @@
+extends ../layouts/default
+
+block head
+	- pageTitle = 'LG WebOS';
+	- classWidth = 'main_width_1260'
+
+block content
+	nav.menu-mini
+
+		a.menu-mini__item(href="ultra.html")
+			.menu-mini__logo.menu-mini__logo_type_ultra
+
+		a.menu-mini__item(href="oled.html")
+			.menu-mini__logo.menu-mini__logo_type_oled
+
+		a.menu-mini__item.menu-mini__item_state_active(href="webos.html")
+			.menu-mini__logo.menu-mini__logo_type_webos
+
+		a.menu-mini__home(href="main.html")
+
+	include ../blocks/webos/webos
