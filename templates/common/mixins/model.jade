@@ -1,0 +1,18 @@
+mixin model(obj)
+	- var icons = obj["icons"];
+	.model
+		.model__img
+			img(src= obj.img)
+
+		.model-wrap
+
+			.model-wrap-icons
+
+				- for (var i = 0; i < icons.length; i++)
+					.model__icon(class="model__icon_type_" + icons[i])
+
+			.model__text= obj.text
+
+			.model__num= obj.num
+
+		button.button(type="button") Узнать больше

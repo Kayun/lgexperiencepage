@@ -1,27 +1,83 @@
 .model {
 	position: relative;
-	width: 225px;
+	padding: 10px;
+	width: 227px;
 	height: 375px;
+	display: inline-block;
+	vertical-align: top;
 	background-color: #fefefe;
 	border: 1px solid #f2f2f2;
 	border-radius: 3px;
 
+	& + .model {
+		margin-left: 39px;
+	}
+
+	&__img {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: 205px;
+
+		& img {
+			width: 100%;
+		}
+	}
+
+	&-wrap {
+		padding-top: 157px;
+		padding-bottom: 52px;
+		height: 100%;
+	}
+
+	&-wrap-icons {
+		margin-bottom: 31px;
+		font-size: 0;
+	}
+
 	&__icon {
 		display: inline-block;
+		vertical-align: middle;
+
+		& + .model__icon {
+			margin-left: 22px;
+		}
+
+		&_type {
+
+			&_4k-mini {
+				.sprite(@icon-oled-4k-mini)
+			}
+
+			&_infinity-mini {
+				.sprite(@icon-oled-infinity-mini)
+			}
+
+			&_respond-mini {
+				.sprite(@icon-oled-respond-mini)
+			}
+
+		}
+
 	}
 
 	&__text,
 	&__num {
+		padding-left: 6px;
 		.lgsmart-semibold();
 		font-size: 13px;
-		color: #464646;
+		line-height: 16px;
+		color: #909090;
 	}
 
-	&__btn {
+	&__num {
+		margin-top: 8px;
+	}
+
+	& .button {
 		position: absolute;
 		bottom: 20px;
-		left: 0;
-		width: 100%;
-		text-align: center;
+		left: 50%;
+		margin-left: -62px;
 	}
 }
