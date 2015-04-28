@@ -1,10 +1,12 @@
 .oled-4k {
 	position: relative;
 	padding: 94px 0 104px;
-	background: url('../images/oled/oled-4k-bg.jpg') 0 94px no-repeat;
+
 	border-bottom: 1px solid #f3f3f3;
 
 	&-wrap {
+		position: relative;
+		z-index: 2;
 		padding-top: 3px;
 		width: 426px;
 		float: right;
@@ -14,6 +16,16 @@
 		margin-bottom: 6px;
 		display: inline-block;
 		.sprite(@logo-oled-4k-big);
+	}
+
+	&__img {
+		position: absolute;
+		z-index: 1;
+		top: 85px;
+		left: -133px;
+		width: 748px;
+		height: 402px;
+		background: url('../images/oled/oled-4k-bg.png') 0 0 no-repeat;
 	}
 
 }
