@@ -1,0 +1,111 @@
+extends ../layouts/default
+
+block head
+	- pageTitle = 'LG Ultra';
+	- classWidth = 'main_width_1260'
+
+block content
+	nav.menu-mini
+
+		a.menu-mini__item.menu-mini__item_state_active(href="ultra.html")
+			.menu-mini__logo.menu-mini__logo_type_ultra
+
+		a.menu-mini__item(href="oled.html")
+			.menu-mini__logo.menu-mini__logo_type_oled
+
+		a.menu-mini__item(href="webos.html")
+			.menu-mini__logo.menu-mini__logo_type_webos
+
+		a.menu-mini__home(href="main.html")
+
+	section.banner.banner_type_ultra(role="banner")
+
+		.banner__info
+			.banner__logo
+
+			h1.banner__title(role="heading")
+				| Ультрачеткость,
+				br
+				| в каждой детали
+
+			.banner__text
+				| ULTRA HD 4K
+				br
+				| 8.3 млн пикселей
+
+			button.banner__btn(type="button")
+				| Посмотрите видео
+
+	section.features
+
+		.wrapper.clearfix
+
+			.features__item.features__item_pos_left
+
+				.features__item-icon.features__item-icon_type_ultra-4k
+
+				.features__item-text
+					| Качество изображения
+					br
+					| в 4 раза лучше чем Full HD
+
+			.features__item
+
+				.features__item-icon.features__item-icon_type_ang
+
+				.features__item-text
+					| Идеальная картинка
+					br
+					| при любых углах обзора
+
+			.features__item.features__item_pos_right.features__item_pl_116
+
+				.features__item-icon.features__item-icon_type_colorprime
+
+				.features__item-text
+					| Невероятно живые
+					br
+					| и яркие цвета
+
+	section.video.video_pt_48
+
+		.wrapper.clearfix
+
+			.video__item
+				.video__clip
+					img.video__img(src="assets/images/ultra/content/video-1.jpg")
+					.video__play
+
+				.video__text
+					| LG ULTRA HD ТВ реклама 1
+
+			.video__item
+				.video__clip
+					img.video__img(src="assets/images/ultra/content/video-2.jpg")
+					.video__play
+
+				.video__text
+					| Филипп Блум о телевизоре LG&nbsp;ULTRA&nbsp;HD&nbsp;4K
+
+			.video__item
+				.video__clip
+					img.video__img(src="assets/images/ultra/content/video-3.jpg")
+					.video__play
+
+				.video__text
+					| LG ULTRA HD ТВ реклама 2
+
+			.video__item
+				.video__clip
+					img.video__img(src="assets/images/ultra/content/video-4.jpg")
+					.video__play
+
+				.video__text
+					| Ultra HD реальность. А что бы вы сделали, если бы наступил
+					| конец света?
+
+	.wrapper
+
+		include ../blocks/ultra/colorprime
+		include ../blocks/ultra/color
+		include ../blocks/ultra/ultrahd

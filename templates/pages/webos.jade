@@ -18,7 +18,83 @@ block content
 
 		a.menu-mini__home(href="main.html")
 
-	include ../blocks/webos/webos
+	section.banner.banner_type_webos(role="banner")
+
+		.banner__info
+			.banner__logo
+
+			h1.banner__title(role="heading")
+				| Смотрите,
+				br
+				| как просто!
+
+			.banner__text
+				| Запуск в один клик
+
+			button.banner__btn(type="button")
+				| Посмотрите видео
+
+	section.features
+
+		.wrapper.clearfix
+
+			.features__item.features__item_pos_left
+
+				.features__item-icon.features__item-icon_type_4k
+
+				.features__item-text
+					| Просмотр 4К видео через интернет
+
+			.features__item
+
+				.features__item-icon.features__item-icon_type_click
+
+				.features__item-text
+					| Интуитивный интерфейс webOS
+
+			.features__item.features__item_pos_right
+
+				.features__item-icon.features__item-icon_type_lib
+
+				.features__item-text
+					| Доступ к обширной библиотеке фильмов в самых популярных
+					| видео-сервисах
+
+	section.video
+
+		.wrapper.clearfix
+
+			.video__item
+				.video__clip
+					img.video__img(src="assets/images/webos/content/video-1.jpg")
+					.video__play
+
+				.video__text
+					| Особенности и управление новым&nbsp;webOS
+
+			.video__item
+				.video__clip
+					img.video__img(src="assets/images/webos/content/video-2.jpg")
+					.video__play
+
+				.video__text
+					| BEAN BIRD — Футбольная тактика
+
+			.video__item
+				.video__clip
+					img.video__img(src="assets/images/webos/content/video-3.jpg")
+					.video__play
+
+				.video__text
+					| BEAN BIRD — Диагноз
+
+			.video__item
+				.video__clip
+					img.video__img(src="assets/images/webos/content/video-4.jpg")
+					.video__play
+
+				.video__text
+					| BEAN BIRD is Coming!
 
 	.wrapper
 		- var classMod = "setup_type_webos";

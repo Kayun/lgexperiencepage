@@ -1,0 +1,52 @@
+.video {
+	padding-top: 26px;
+	padding-bottom: 50px;
+
+	&_pt_48 {
+		padding-top: 48px;
+	}
+
+	&__item {
+		width: 256px;
+		float: left;
+		border-right: 1px solid #fff;
+	}
+
+	&__clip {
+		position: relative;
+		width: 100%;
+		height: 150px;
+		overflow: visible;
+		border-bottom: 3px solid transparent;
+		will-change: overflow;
+
+		&:hover {
+			border-color: #d00946;
+			overflow: hidden;
+		}
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__play {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: none;
+		margin-top: -24px;
+		margin-left: -24px;
+		.sprite(@play-white);
+		cursor: pointer;
+	}
+
+	&__text {
+		margin-top: 10px;
+		.lgsmart-regular();
+		font-size: 17px;
+		color: #3a3232;
+		letter-spacing: -.2px;
+	}
+
+}
