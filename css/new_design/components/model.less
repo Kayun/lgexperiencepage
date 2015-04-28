@@ -5,7 +5,7 @@
 	height: 375px;
 	display: inline-block;
 	vertical-align: top;
-	background-color: #fefefe;
+	background: linear-gradient(to top, #f8f8f8, #fff);
 	border: 1px solid #f2f2f2;
 	border-radius: 3px;
 
@@ -33,28 +33,76 @@
 	&-wrap-icons {
 		margin-bottom: 31px;
 		font-size: 0;
+
+		&_ml {
+
+			&_22 {
+
+				& .model__icon + .model__icon {
+					margin-left: 22px;
+				}
+			}
+
+			&_8 {
+
+				& .model__icon + .model__icon {
+					margin-left: 8px;
+				}
+			}
+
+		}
+
 	}
 
 	&__icon {
+		margin-bottom: 6px;
 		display: inline-block;
 		vertical-align: middle;
-
-		& + .model__icon {
-			margin-left: 22px;
-		}
 
 		&_type {
 
 			&_4k-mini {
-				.sprite(@icon-oled-4k-mini)
+				.sprite(@icon-4k-mini)
 			}
 
 			&_infinity-mini {
-				.sprite(@icon-oled-infinity-mini)
+				.sprite(@icon-infinity-mini)
 			}
 
 			&_respond-mini {
-				.sprite(@icon-oled-respond-mini)
+				.sprite(@icon-respond-mini)
+			}
+
+			&_4k-3d-mini {
+				.sprite(@icon-4k-3d-mini)
+			}
+
+			&_webos-mini {
+				.sprite(@icon-webos-mini)
+			}
+
+			&_dvb-t2-mini {
+				.sprite(@icon-dvb-t2-mini)
+			}
+
+			&_ips-4k-mini {
+				.sprite(@icon-ips-4k-mini)
+			}
+
+			&_ips-mini {
+				.sprite(@icon-ips-mini)
+			}
+
+			&_harman-mini {
+				.sprite(@icon-harman-mini)
+			}
+
+			&_wifi-mini {
+				.sprite(@icon-wifi-mini)
+			}
+
+			&_colorprime-mini {
+				.sprite(@icon-colorprime-mini)
 			}
 
 		}

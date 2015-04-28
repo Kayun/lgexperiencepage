@@ -21,4 +21,19 @@
 
 	}
 
+	&_type_point {
+		position: relative;
+
+		&:before {
+			position: absolute;
+			top: 12px;
+			left: -13px;
+			width: 7px;
+			height: 7px;
+			content: ' ';
+			border: 1px solid @red-title;
+			border-radius: 50%;
+		}
+	}
+
 }

@@ -19,3 +19,86 @@ block content
 		a.menu-mini__home(href="main.html")
 
 	include ../blocks/webos/webos
+
+	.wrapper
+		- var classMod = "setup_type_webos";
+		- var titleMod = "title_type_point";
+		include ../blocks/setup
+		include ../blocks/webos/connect
+		include ../blocks/webos/store
+		include ../blocks/webos/demo
+		include ../blocks/webos/collection
+		include ../blocks/webos/data
+		include ../blocks/webos/stream
+		include ../blocks/console
+
+		section.compare
+
+			.compare__feat
+				button.button-feat(type="button")
+					span.button-feat_tt_up Сравните основные характеристики
+					br
+					span телевизоров LG
+
+			h2.compare__title
+				span Рекомендованные
+				br
+				span.compare__title_color_red модели
+
+			.compare-container
+
+				+model({
+					img: "assets/images/webos/content/img-1.jpg",
+					icons: [
+						"4k-3d-mini",
+						"webos-mini",
+						"dvb-t2-mini",
+						"ips-4k-mini",
+						"harman-mini"
+					],
+					text: "Ультрачёткость в каждой детали",
+					num: "UF850V",
+					mrg: 8,
+				})
+
+				+model({
+					img: "assets/images/webos/content/img-2.jpg",
+					icons: [
+						"4k-3d-mini",
+						"webos-mini",
+						"dvb-t2-mini",
+						"ips-4k-mini",
+						"harman-mini"
+					],
+					text: "Ультрачёткость в каждой детали",
+					num: "UF850V",
+					mrg: 8,
+				})
+
+				+model({
+					img: "assets/images/webos/content/img-3.jpg",
+					icons: [
+						"4k-3d-mini",
+						"webos-mini",
+						"dvb-t2-mini",
+						"ips-mini",
+						"wifi-mini"
+					],
+					text: "Это не просто телевизор, это Smart TV",
+					num: "LF640V",
+					mrg: 8,
+				})
+
+				+model({
+					img: "assets/images/webos/content/img-4.jpg",
+					icons: [
+						"4k-3d-mini",
+						"webos-mini",
+						"dvb-t2-mini",
+						"colorprime-mini",
+						"harman-mini"
+					],
+					text: "Ультрачёткость в каждой детали",
+					num: "UF950V",
+					mrg: 8,
+				})

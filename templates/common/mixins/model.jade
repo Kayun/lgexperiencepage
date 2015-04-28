@@ -1,12 +1,17 @@
 mixin model(obj)
 	- var icons = obj["icons"];
+	- if (obj.mrg == 22 )
+		- var mrg = "model-wrap-icons_ml_22"
+	- else if (obj.mrg == 8 )
+		-  var mrg = "model-wrap-icons_ml_8"
+
 	.model
 		.model__img
 			img(src= obj.img)
 
 		.model-wrap
 
-			.model-wrap-icons
+			.model-wrap-icons(class= mrg)
 
 				- for (var i = 0; i < icons.length; i++)
 					.model__icon(class="model__icon_type_" + icons[i])

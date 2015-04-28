@@ -427,14 +427,14 @@ This must be run when you have at least 2 sprites.
 .menu__item-logo_type_ultra {
   top: -2px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -78px;
+  background-position: -204px -34px;
   width: 190px;
   height: 26px;
 }
 /* line 95, css\new_design\blocks\main\menu.less */
 .menu__item-logo_type_oled {
   background-image: url(../images/sprite.png);
-  background-position: -222px -112px;
+  background-position: -80px -163px;
   width: 134px;
   height: 22px;
 }
@@ -442,7 +442,7 @@ This must be run when you have at least 2 sprites.
 .menu__item-logo_type_webos {
   top: -3px;
   background-image: url(../images/sprite.png);
-  background-position: -80px -112px;
+  background-position: -204px -68px;
   width: 134px;
   height: 28px;
 }
@@ -563,14 +563,14 @@ This must be run when you have at least 2 sprites.
 /* line 233, css\new_design\blocks\main\menu.less */
 .menu__item-badge_type_ultra {
   background-image: url(../images/sprite.png);
-  background-position: -80px -148px;
+  background-position: -222px -163px;
   width: 106px;
   height: 20px;
 }
 /* line 237, css\new_design\blocks\main\menu.less */
 .menu__item-badge_type_webos {
   background-image: url(../images/sprite.png);
-  background-position: -194px -148px;
+  background-position: -204px -104px;
   width: 90px;
   height: 18px;
 }
@@ -657,7 +657,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_cinema-3d {
   margin-top: 7px;
   background-image: url(../images/sprite.png);
-  background-position: -211px -44px;
+  background-position: -80px -131px;
   width: 150px;
   height: 24px;
 }
@@ -665,7 +665,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_dvb-t2 {
   margin-top: 8px;
   background-image: url(../images/sprite.png);
-  background-position: -197px -242px;
+  background-position: -199px -261px;
   width: 80px;
   height: 20px;
 }
@@ -673,7 +673,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_oled-4k {
   margin-top: 5px;
   background-image: url(../images/sprite.png);
-  background-position: -198px -78px;
+  background-position: -238px -131px;
   width: 148px;
   height: 20px;
 }
@@ -681,7 +681,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_ips {
   margin-top: 4px;
   background-image: url(../images/sprite.png);
-  background-position: -113px -348px;
+  background-position: -111px -411px;
   width: 50px;
   height: 16px;
 }
@@ -722,21 +722,21 @@ This must be run when you have at least 2 sprites.
 /* line 27, css\new_design\blocks\main\submenu.less */
 .submenu__item:hover .submenu__item-logo_type_tv {
   background-image: url(../images/sprite.png);
-  background-position: -64px -242px;
+  background-position: -64px -261px;
   width: 56px;
   height: 42px;
 }
 /* line 31, css\new_design\blocks\main\submenu.less */
 .submenu__item:hover .submenu__item-logo_type_audio {
   background-image: url(../images/sprite.png);
-  background-position: 0px -192px;
+  background-position: -96px -211px;
   width: 88px;
   height: 42px;
 }
 /* line 35, css\new_design\blocks\main\submenu.less */
 .submenu__item:hover .submenu__item-logo_type_monitor {
   background-image: url(../images/sprite.png);
-  background-position: -223px -292px;
+  background-position: 0px -367px;
   width: 54px;
   height: 36px;
 }
@@ -747,21 +747,21 @@ This must be run when you have at least 2 sprites.
 /* line 51, css\new_design\blocks\main\submenu.less */
 .submenu__item-logo_type_tv {
   background-image: url(../images/sprite.png);
-  background-position: 0px -242px;
+  background-position: 0px -261px;
   width: 56px;
   height: 42px;
 }
 /* line 55, css\new_design\blocks\main\submenu.less */
 .submenu__item-logo_type_audio {
   background-image: url(../images/sprite.png);
-  background-position: -96px -192px;
+  background-position: 0px -211px;
   width: 88px;
   height: 42px;
 }
 /* line 59, css\new_design\blocks\main\submenu.less */
 .submenu__item-logo_type_monitor {
   background-image: url(../images/sprite.png);
-  background-position: -285px -292px;
+  background-position: -62px -367px;
   width: 54px;
   height: 36px;
 }
@@ -818,7 +818,7 @@ This must be run when you have at least 2 sprites.
 .oled__item-logo_type_pixel {
   left: -13px;
   background-image: url(../images/sprite.png);
-  background-position: -380px 0px;
+  background-position: -415px 0px;
   width: 41px;
   height: 41px;
 }
@@ -828,7 +828,7 @@ This must be run when you have at least 2 sprites.
   margin-top: 4px;
   margin-bottom: 23px;
   background-image: url(../images/sprite.png);
-  background-position: -262px -192px;
+  background-position: -128px -261px;
   width: 63px;
   height: 33px;
 }
@@ -838,7 +838,7 @@ This must be run when you have at least 2 sprites.
   margin-top: 1px;
   margin-bottom: 12px;
   background-image: url(../images/sprite.png);
-  background-position: -112px -292px;
+  background-position: -112px -311px;
   width: 49px;
   height: 47px;
 }
@@ -848,7 +848,7 @@ This must be run when you have at least 2 sprites.
   margin-top: 9px;
   margin-bottom: 26px;
   background-image: url(../images/sprite.png);
-  background-position: -52px -348px;
+  background-position: -292px -311px;
   width: 53px;
   height: 26px;
 }
@@ -858,7 +858,7 @@ This must be run when you have at least 2 sprites.
   margin-top: 2px;
   margin-bottom: 23px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -348px;
+  background-position: -124px -367px;
   width: 44px;
   height: 35px;
 }
@@ -908,7 +908,7 @@ This must be run when you have at least 2 sprites.
   margin-top: -38px;
   margin-left: 16px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -112px;
+  background-position: 0px -131px;
   width: 72px;
   height: 72px;
   cursor: pointer;
@@ -932,7 +932,7 @@ This must be run when you have at least 2 sprites.
   margin-bottom: 6px;
   display: inline-block;
   background-image: url(../images/sprite.png);
-  background-position: 0px -44px;
+  background-position: -204px 0px;
   width: 203px;
   height: 26px;
 }
@@ -1003,17 +1003,6 @@ This must be run when you have at least 2 sprites.
   height: 426px;
   background: url('../images/oled/screen-bg.jpg') 0 0 no-repeat;
 }
-/* line 1, css\new_design\blocks\oled\setup.less */
-.setup {
-  position: relative;
-  padding: 61px 0 76px;
-  border-bottom: 1px solid #f3f3f3;
-  background: url('../images/oled/setup-bg.jpg') 598px 52px no-repeat;
-}
-/* line 8, css\new_design\blocks\oled\setup.less */
-.setup-wrap {
-  width: 428px;
-}
 /* line 1, css\new_design\blocks\webos\webos.less */
 .webos {
   padding-top: 14px;
@@ -1065,7 +1054,7 @@ This must be run when you have at least 2 sprites.
 .webos__item-icon_type_4k {
   margin-bottom: 11px;
   background-image: url(../images/sprite.png);
-  background-position: -128px -242px;
+  background-position: -223px -311px;
   width: 61px;
   height: 34px;
 }
@@ -1074,7 +1063,7 @@ This must be run when you have at least 2 sprites.
   top: -4px;
   margin-bottom: 8px;
   background-image: url(../images/sprite.png);
-  background-position: -380px -49px;
+  background-position: -415px -49px;
   width: 28px;
   height: 37px;
 }
@@ -1084,7 +1073,7 @@ This must be run when you have at least 2 sprites.
   left: -14px;
   margin-bottom: 4px;
   background-image: url(../images/sprite.png);
-  background-position: -192px -192px;
+  background-position: -192px -211px;
   width: 62px;
   height: 40px;
 }
@@ -1095,14 +1084,15 @@ This must be run when you have at least 2 sprites.
 /* line 65, css\new_design\blocks\webos\webos.less */
 .webos__video {
   padding-top: 26px;
+  padding-bottom: 50px;
 }
-/* line 69, css\new_design\blocks\webos\webos.less */
+/* line 70, css\new_design\blocks\webos\webos.less */
 .webos__video-item {
   width: 256px;
   float: left;
   border-right: 1px solid #fff;
 }
-/* line 75, css\new_design\blocks\webos\webos.less */
+/* line 76, css\new_design\blocks\webos\webos.less */
 .webos__video-clip {
   position: relative;
   width: 100%;
@@ -1111,16 +1101,16 @@ This must be run when you have at least 2 sprites.
   border-bottom: 3px solid transparent;
   will-change: overflow;
 }
-/* line 83, css\new_design\blocks\webos\webos.less */
+/* line 84, css\new_design\blocks\webos\webos.less */
 .webos__video-clip:hover {
   border-color: #d00946;
   overflow: hidden;
 }
-/* line 89, css\new_design\blocks\webos\webos.less */
+/* line 90, css\new_design\blocks\webos\webos.less */
 .webos__video-img {
   width: 100%;
 }
-/* line 93, css\new_design\blocks\webos\webos.less */
+/* line 94, css\new_design\blocks\webos\webos.less */
 .webos__video-play {
   position: absolute;
   top: 50%;
@@ -1129,18 +1119,150 @@ This must be run when you have at least 2 sprites.
   margin-top: -24px;
   margin-left: -24px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -292px;
+  background-position: -56px -311px;
   width: 48px;
   height: 48px;
   cursor: pointer;
 }
-/* line 104, css\new_design\blocks\webos\webos.less */
+/* line 105, css\new_design\blocks\webos\webos.less */
 .webos__video-text {
   margin-top: 10px;
   font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
   font-size: 17px;
   color: #3a3232;
   letter-spacing: -0.2px;
+}
+/* line 1, css\new_design\blocks\webos\connect.less */
+.connect {
+  position: relative;
+  padding: 117px 0 ;
+  border-bottom: 1px solid #f3f3f3;
+  background: url('../images/webos/connect-bg.jpg') -20px 66px no-repeat;
+}
+/* line 7, css\new_design\blocks\webos\connect.less */
+.connect-wrap {
+  width: 428px;
+  float: right;
+}
+/* line 1, css\new_design\blocks\webos\store.less */
+.store {
+  position: relative;
+  padding: 88px 0 100px;
+  border-bottom: 1px solid #f3f3f3;
+  background: url('../images/webos/store-bg.jpg') 521px 28px no-repeat;
+}
+/* line 7, css\new_design\blocks\webos\store.less */
+.store-wrap {
+  width: 428px;
+}
+/* line 1, css\new_design\blocks\webos\demo.less */
+.demo {
+  position: relative;
+  padding: 28px 0 31px;
+  border-bottom: 1px solid #f3f3f3;
+}
+/* line 6, css\new_design\blocks\webos\demo.less */
+.demo-wrap {
+  position: relative;
+  width: 100%;
+  height: 545px;
+  border: 1px solid #ededed;
+  overflow: hidden;
+}
+/* line 14, css\new_design\blocks\webos\demo.less */
+.demo__img {
+  width: 100%;
+}
+/* line 18, css\new_design\blocks\webos\demo.less */
+.demo__btn {
+  position: absolute;
+  top: 167px;
+  right: 147px;
+  padding: 8px 0 8px 91px;
+  height: 72px;
+  width: 370px;
+  font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 31, css\new_design\blocks\webos\demo.less */
+.demo__btn:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: " ";
+  background-image: url(../images/sprite.png);
+  background-position: 0px -131px;
+  width: 72px;
+  height: 72px;
+}
+/* line 1, css\new_design\blocks\webos\collection.less */
+.collection {
+  position: relative;
+  padding: 177px 0 126px;
+  border-bottom: 1px solid #f3f3f3;
+}
+/* line 6, css\new_design\blocks\webos\collection.less */
+.collection-wrap {
+  width: 428px;
+  float: right;
+}
+/* line 11, css\new_design\blocks\webos\collection.less */
+.collection__img {
+  position: absolute;
+  top: 36px;
+  left: -83px;
+  width: 630px;
+  height: 447px;
+  background: url('../images/webos/collection-bg.jpg') 0 0 no-repeat;
+}
+/* line 1, css\new_design\blocks\webos\data.less */
+.data {
+  position: relative;
+  padding: 46px 0 222px;
+  border-bottom: 1px solid #f3f3f3;
+  background: url('../images/webos/data-bg.jpg') 279px 142px no-repeat;
+}
+/* line 7, css\new_design\blocks\webos\data.less */
+.data-wrap {
+  width: 428px;
+}
+/* line 1, css\new_design\blocks\webos\stream.less */
+.stream {
+  position: relative;
+  margin-bottom: -30px;
+  padding: 100px 0 125px;
+  border-bottom: 1px solid #f3f3f3;
+}
+/* line 7, css\new_design\blocks\webos\stream.less */
+.stream-wrap {
+  position: relative;
+  z-index: 2;
+  width: 428px;
+  float: right;
+}
+/* line 14, css\new_design\blocks\webos\stream.less */
+.stream__img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -133px;
+  width: 849px;
+  height: 450px;
+  background: url('../images/webos/stream-bg.jpg') 0 -19px no-repeat;
+}
+/* line 24, css\new_design\blocks\webos\stream.less */
+.stream__logo {
+  position: absolute;
+  z-index: 2;
+  bottom: 74px;
+  right: 245px;
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 196px;
+  height: 42px;
 }
 /* line 1, css\new_design\blocks\console.less */
 .console {
@@ -1185,35 +1307,35 @@ This must be run when you have at least 2 sprites.
 /* line 41, css\new_design\blocks\console.less */
 .console__item-logo_type_menu {
   background-image: url(../images/sprite.png);
-  background-position: -380px -190px;
+  background-position: -415px -225px;
   width: 20px;
   height: 15px;
 }
 /* line 45, css\new_design\blocks\console.less */
 .console__item-logo_type_wheel {
   background-image: url(../images/sprite.png);
-  background-position: -380px -130px;
+  background-position: -415px -165px;
   width: 18px;
   height: 27px;
 }
 /* line 49, css\new_design\blocks\console.less */
 .console__item-logo_type_click {
   background-image: url(../images/sprite.png);
-  background-position: -406px -130px;
+  background-position: -441px -165px;
   width: 14px;
   height: 16px;
 }
 /* line 53, css\new_design\blocks\console.less */
 .console__item-logo_type_all {
   background-image: url(../images/sprite.png);
-  background-position: -380px -94px;
+  background-position: -415px -129px;
   width: 26px;
   height: 28px;
 }
 /* line 57, css\new_design\blocks\console.less */
 .console__item-logo_type_voice {
   background-image: url(../images/sprite.png);
-  background-position: -380px -165px;
+  background-position: -415px -200px;
   width: 20px;
   height: 17px;
 }
@@ -1240,6 +1362,23 @@ This must be run when you have at least 2 sprites.
 .compare-container {
   padding-top: 54px;
   font-size: 0;
+}
+/* line 1, css\new_design\blocks\setup.less */
+.setup {
+  position: relative;
+  padding: 61px 0 76px;
+  border-bottom: 1px solid #f3f3f3;
+  background: url('../images/oled/setup-bg.jpg') 598px 52px no-repeat;
+}
+/* line 7, css\new_design\blocks\setup.less */
+.setup_type_webos {
+  padding: 68px 0 86px;
+  background: url('../images/webos/setup-bg.jpg') 395px 56px no-repeat;
+  border-top: 1px solid #f3f3f3;
+}
+/* line 13, css\new_design\blocks\setup.less */
+.setup-wrap {
+  width: 428px;
 }
 /* line 1, css\new_design\components\menu-mini.less */
 .menu-mini {
@@ -1274,14 +1413,14 @@ This must be run when you have at least 2 sprites.
 .menu-mini__logo_type_ultra {
   top: -1px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -78px;
+  background-position: -204px -34px;
   width: 190px;
   height: 26px;
 }
 /* line 36, css\new_design\components\menu-mini.less */
 .menu-mini__logo_type_oled {
   background-image: url(../images/sprite.png);
-  background-position: -222px -112px;
+  background-position: -80px -163px;
   width: 134px;
   height: 22px;
 }
@@ -1290,7 +1429,7 @@ This must be run when you have at least 2 sprites.
   top: 4px;
   left: -1px;
   background-image: url(../images/sprite.png);
-  background-position: -80px -112px;
+  background-position: -204px -68px;
   width: 134px;
   height: 28px;
 }
@@ -1300,7 +1439,7 @@ This must be run when you have at least 2 sprites.
   top: 4px;
   left: -70px;
   background-image: url(../images/sprite.png);
-  background-position: -169px -292px;
+  background-position: -169px -311px;
   width: 46px;
   height: 46px;
   cursor: pointer;
@@ -1324,6 +1463,21 @@ This must be run when you have at least 2 sprites.
 /* line 18, css\new_design\components\title.less */
 .title_mb_8 {
   margin-bottom: 8px;
+}
+/* line 24, css\new_design\components\title.less */
+.title_type_point {
+  position: relative;
+}
+/* line 27, css\new_design\components\title.less */
+.title_type_point:before {
+  position: absolute;
+  top: 12px;
+  left: -13px;
+  width: 7px;
+  height: 7px;
+  content: ' ';
+  border: 1px solid #d80546;
+  border-radius: 50%;
 }
 /* line 1, css\new_design\components\text.less */
 .text {
@@ -1400,7 +1554,7 @@ This must be run when you have at least 2 sprites.
   height: 375px;
   display: inline-block;
   vertical-align: top;
-  background-color: #fefefe;
+  background: linear-gradient(to top, #f8f8f8, #ffffff);
   border: 1px solid #f2f2f2;
   border-radius: 3px;
 }
@@ -1430,37 +1584,98 @@ This must be run when you have at least 2 sprites.
   margin-bottom: 31px;
   font-size: 0;
 }
-/* line 38, css\new_design\components\model.less */
-.model__icon {
-  display: inline-block;
-  vertical-align: middle;
-}
-/* line 42, css\new_design\components\model.less */
-.model__icon + .model__icon {
+/* line 41, css\new_design\components\model.less */
+.model-wrap-icons_ml_22 .model__icon + .model__icon {
   margin-left: 22px;
 }
 /* line 48, css\new_design\components\model.less */
+.model-wrap-icons_ml_8 .model__icon + .model__icon {
+  margin-left: 8px;
+}
+/* line 57, css\new_design\components\model.less */
+.model__icon {
+  margin-bottom: 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 64, css\new_design\components\model.less */
 .model__icon_type_4k-mini {
   background-image: url(../images/sprite.png);
-  background-position: -171px -348px;
+  background-position: -53px -411px;
   width: 50px;
   height: 16px;
 }
-/* line 52, css\new_design\components\model.less */
+/* line 68, css\new_design\components\model.less */
 .model__icon_type_infinity-mini {
   background-image: url(../images/sprite.png);
-  background-position: -292px -148px;
+  background-position: -336px -163px;
   width: 63px;
   height: 16px;
 }
-/* line 56, css\new_design\components\model.less */
+/* line 72, css\new_design\components\model.less */
 .model__icon_type_respond-mini {
   background-image: url(../images/sprite.png);
-  background-position: -285px -242px;
+  background-position: 0px -411px;
   width: 45px;
   height: 20px;
 }
-/* line 64, css\new_design\components\model.less */
+/* line 76, css\new_design\components\model.less */
+.model__icon_type_4k-3d-mini {
+  background-image: url(../images/sprite.png);
+  background-position: -346px -68px;
+  width: 58px;
+  height: 26px;
+}
+/* line 80, css\new_design\components\model.less */
+.model__icon_type_webos-mini {
+  background-image: url(../images/sprite.png);
+  background-position: -176px -367px;
+  width: 69px;
+  height: 13px;
+}
+/* line 84, css\new_design\components\model.less */
+.model__icon_type_dvb-t2-mini {
+  background-image: url(../images/sprite.png);
+  background-position: -176px -388px;
+  width: 57px;
+  height: 14px;
+}
+/* line 88, css\new_design\components\model.less */
+.model__icon_type_ips-4k-mini {
+  background-image: url(../images/sprite.png);
+  background-position: -302px -104px;
+  width: 88px;
+  height: 16px;
+}
+/* line 92, css\new_design\components\model.less */
+.model__icon_type_ips-mini {
+  background-image: url(../images/sprite.png);
+  background-position: -353px -311px;
+  width: 54px;
+  height: 16px;
+}
+/* line 96, css\new_design\components\model.less */
+.model__icon_type_harman-mini {
+  background-image: url(../images/sprite.png);
+  background-position: -262px -211px;
+  width: 99px;
+  height: 20px;
+}
+/* line 100, css\new_design\components\model.less */
+.model__icon_type_wifi-mini {
+  background-image: url(../images/sprite.png);
+  background-position: -415px -94px;
+  width: 38px;
+  height: 27px;
+}
+/* line 104, css\new_design\components\model.less */
+.model__icon_type_colorprime-mini {
+  background-image: url(../images/sprite.png);
+  background-position: -287px -261px;
+  width: 84px;
+  height: 15px;
+}
+/* line 112, css\new_design\components\model.less */
 .model__text,
 .model__num {
   padding-left: 6px;
@@ -1469,11 +1684,11 @@ This must be run when you have at least 2 sprites.
   line-height: 16px;
   color: #909090;
 }
-/* line 73, css\new_design\components\model.less */
+/* line 121, css\new_design\components\model.less */
 .model__num {
   margin-top: 8px;
 }
-/* line 77, css\new_design\components\model.less */
+/* line 125, css\new_design\components\model.less */
 .model .button {
   position: absolute;
   bottom: 20px;
@@ -1498,7 +1713,7 @@ This must be run when you have at least 2 sprites.
 /* line 20, css\new_design\components\banner.less */
 .banner_type_oled .banner__logo {
   background-image: url(../images/sprite.png);
-  background-position: -180px 0px;
+  background-position: 0px -94px;
   width: 192px;
   height: 29px;
 }
@@ -1509,7 +1724,7 @@ This must be run when you have at least 2 sprites.
 /* line 31, css\new_design\components\banner.less */
 .banner_type_webos .banner__logo {
   background-image: url(../images/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -50px;
   width: 172px;
   height: 36px;
 }
@@ -1565,7 +1780,7 @@ This must be run when you have at least 2 sprites.
   left: 0;
   content: ' ';
   background-image: url(../images/sprite.png);
-  background-position: 0px -292px;
+  background-position: -56px -311px;
   width: 48px;
   height: 48px;
 }
