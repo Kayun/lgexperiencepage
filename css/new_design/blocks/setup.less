@@ -1,13 +1,48 @@
 .setup {
 	position: relative;
-	padding: 61px 0 76px;
-	border-bottom: 1px solid #f3f3f3;
+	padding-top: 61px;
 	background: url('../images/oled/setup-bg.jpg') 598px 52px no-repeat;
 
-	&_type_webos {
-		padding: 68px 0 86px;
-		background: url('../images/webos/setup-bg.jpg') 395px 56px no-repeat;
-		border-top: 1px solid #f3f3f3;
+	& .wrapper {
+		padding-bottom: 76px;
+		border-bottom: 1px solid #f3f3f3;
+	}
+
+	&_type {
+
+		&_webos {
+			background: url('../images/webos/setup-bg.jpg') 513px 56px no-repeat;
+
+			& .wrapper {
+				padding-top: 68px;
+				padding-bottom: 86px;
+				border-top: 1px solid #f3f3f3;
+			}
+
+		}
+
+		&_ultra {
+			padding-top: 76px;
+			background: url('../images/ultra/setup-bg.jpg') 119px 66px no-repeat;
+
+			& .setup-wrap {
+				float: right;
+			}
+
+			& .wrapper {
+				padding-bottom: 110px;
+			}
+
+			& .title {
+				margin-bottom: 17px;
+			}
+
+			& h3 {
+				display: none;
+			}
+
+		}
+
 	}
 
 	&-wrap {

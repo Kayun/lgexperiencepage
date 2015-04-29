@@ -108,4 +108,86 @@ block content
 
 		include ../blocks/ultra/colorprime
 		include ../blocks/ultra/color
-		include ../blocks/ultra/ultrahd
+		include ../blocks/ultra/ultra-hd
+		include ../blocks/ultra/ultra-3d
+		include ../blocks/ultra/ips
+		include ../blocks/stream
+
+	include ../blocks/ultra/sound
+	- var classMod = "setup_type_ultra";
+	include ../blocks/setup
+
+	section.compare
+
+		.wrapper
+
+			.compare__feat
+				button.button-feat(type="button")
+					span.button-feat_tt_up Сравните основные характеристики
+					br
+					span телевизоров LG
+
+			h2.compare__title
+				span Выбери свой
+				br
+				span.compare__title_color_red 4K ULTRA HD
+				= " "
+				span телевизор
+
+			.compare-container
+
+				+model({
+					img: "assets/images/ultra/content/img-1.jpg",
+					icons: [
+						"4k-3d-mini",
+						"webos-mini",
+						"dvb-t2-mini",
+						"ips-4k-mini",
+						"harman-mini"
+					],
+					text: "Флагманский 4K 3D ULTRA HD телевизор 2014 года с функцией Smart TV на новой платформе webOS",
+					num: "65UB980V",
+					mrg: 8,
+				})
+
+				+model({
+					img: "assets/images/ultra/content/img-2.jpg",
+					icons: [
+						"4k-3d-mini",
+						"webos-mini",
+						"dvb-t2-mini",
+						"ips-4k-mini",
+						"harman-mini"
+					],
+					text: "Флагманский 4K 3D ULTRA HD телевизор 2014 года с функцией Smart TV на новой платформе webOS",
+					num: "79UB980V",
+					mrg: 8,
+				})
+
+				+model({
+					img: "assets/images/ultra/content/img-3.jpg",
+					icons: [
+						"4k-3d-mini",
+						"webos-mini",
+						"dvb-t2-mini",
+						"ips-mini",
+						"wifi-mini"
+					],
+					text: "Флагманский 4K 3D ULTRA HD телевизор 2014 года с функцией Smart TV на новой платформе webOS",
+					num: "84UB980V",
+					mrg: 8,
+				})
+
+				+model({
+					img: "assets/images/ultra/content/img-4.jpg",
+					icons: [
+						"4k-3d-mini",
+						"webos-mini",
+						"dvb-t2-mini",
+						"colorprime-mini",
+						"harman-mini"
+					],
+					text: "Ультрачёткость в каждой детали",
+					num: "UF950V",
+					mrg: 8,
+				})

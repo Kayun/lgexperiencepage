@@ -96,16 +96,18 @@ block content
 				.video__text
 					| BEAN BIRD is Coming!
 
+
+	- var classMod = "setup_type_webos";
+	- var titleMod = "title_type_point";
+	include ../blocks/setup
+
 	.wrapper
-		- var classMod = "setup_type_webos";
-		- var titleMod = "title_type_point";
-		include ../blocks/setup
 		include ../blocks/webos/connect
 		include ../blocks/webos/store
 		include ../blocks/webos/demo
 		include ../blocks/webos/collection
 		include ../blocks/webos/data
-		include ../blocks/webos/stream
+		include ../blocks/stream
 		include ../blocks/console
 
 		section.compare
