@@ -21,25 +21,6 @@
 		background: url('../images/ultra/ultra3d-bg.jpg') 0 0 no-repeat;
 	}
 
-	&__glasses {
-		position: relative;
-		z-index: 2;
-		margin: 46px 0 28px 35px;
-		width: 281px;
-		height: 115px;
-		background: url('../images/ultra/glasses-3d.png') 0 0 no-repeat;
-	}
-
-	&__screen {
-		position: absolute;
-		z-index: 2;
-		top: 155px;
-		left: 0;
-		width: 524px;
-		height: 420px;
-		background: url('../images/ultra/screen-3d.png') 0 0 no-repeat;
-	}
-
 	&__ball {
 		position: absolute;
 		z-index: 3;
@@ -68,6 +49,19 @@
 		width: 291px;
 		height: 140px;
 		background: url('../images/ultra/eagle-3d.png') 0 0 no-repeat;
+	}
+
+	&__logo {
+		margin: 31px 0 131px 272px;
+		.sprite(@logo-ultra-3d)
+	}
+
+	&__btn {
+		position: absolute;
+		z-index: 2;
+		width: 230px;
+		bottom: 95px;
+		left: 208px;
 	}
 
 }
