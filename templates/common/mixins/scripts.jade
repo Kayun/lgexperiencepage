@@ -1,0 +1,4 @@
+mixin scripts(scripts)
+	each src in scripts
+		- src = "assets/scripts/" + src;
+		script(src= src)

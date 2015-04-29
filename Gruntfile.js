@@ -169,19 +169,16 @@ module.exports = function(grunt) {
 			options: {
 				separator: ';',
 			},
-			script: {
-				src: [
-					'js/libs/*.js',
-					'common.js'
-				],
-				dest: 'dist/assets/scripts/common.js'
+			scriptLibs: {
+				src: ['js/libs/*.js'],
+				dest: 'dist/assets/scripts/vendor.js'
 			}
 		},
 
 		uglify: {
 			dist: {
-				src: 'dist/assets/scripts/common.js',
-				dest: 'dist/assets/scripts/common.min.js'
+				src: 'dist/assets/scripts/vendor.js',
+				dest: 'dist/assets/scripts/vendor.min.js'
 			}
 		},
 
@@ -203,6 +200,16 @@ module.exports = function(grunt) {
 					cwd: 'images/new_design/svg',
 					src: ['*.svg'],
 					dest: 'dist/assets/images/svg',
+					filter: 'isFile'
+				}]
+			},
+
+			script: {
+				files: [{
+					expand: true,
+					cwd: 'js/scripts',
+					src: ['*.js'],
+					dest: 'dist/assets/scripts',
 					filter: 'isFile'
 				}]
 			}
@@ -270,6 +277,16 @@ module.exports = function(grunt) {
 			copySVG: {
 				files: ['images/new_design/svg/*.svg'],
 				tasks: ['newer:copy:svg']
+			},
+
+			copyScript: {
+				files: ['js/scripts/*.js'],
+				tasks: ['newer:copy:script']
+			},
+
+			scriptLibs: {
+				files: ['js/libs/*.js'],
+				tasks: ['concat']
 			},
 
 			livereload: {

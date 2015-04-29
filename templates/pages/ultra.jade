@@ -21,19 +21,28 @@ block content
 	section.banner.banner_type_ultra(role="banner")
 
 		.banner__info
-			.banner__logo
+			.banner__logo.js-banner-logo
 
 			h1.banner__title(role="heading")
-				| Ультрачеткость,
+				span Ультрачеткость
+				span.js-banner-text-6 ,
 				br
-				| в каждой детали
+				span.js-banner-text-6 в каждой
+				= " "
+				span.js-banner-text-3 детали
 
 			.banner__text
-				| ULTRA HD 4K
+				span.js-banner-text-2 ULTRA
+				= " "
+				span.js-banner-text-7 HD
+				= " "
+				span.js-banner-text-5 4K
 				br
-				| 8.3 млн пикселей
+				span.js-banner-text-4 8.3 млн
+				= " "
+				span.js-banner-text-1 пикселей
 
-			button.banner__btn(type="button")
+			button.banner__btn.js-banner-btn(type="button")
 				| Посмотрите видео
 
 	section.features
@@ -191,3 +200,10 @@ block content
 					num: "UF950V",
 					mrg: 8,
 				})
+
+block script
+
+	+scripts([
+		"vendor.js",
+		"banner.js"
+	])
