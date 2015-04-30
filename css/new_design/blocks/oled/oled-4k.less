@@ -6,7 +6,7 @@
 
 	&-wrap {
 		position: relative;
-		z-index: 2;
+		z-index: 3;
 		padding-top: 3px;
 		width: 426px;
 		float: right;
@@ -20,12 +20,22 @@
 
 	&__img {
 		position: absolute;
-		z-index: 1;
+		z-index: 2;
 		top: 85px;
 		left: -133px;
-		width: 748px;
-		height: 402px;
-		background: url('../images/oled/oled-4k-bg.jpg') 0 0 no-repeat;
+		width: 733px;
+		height: 401px;
+		background: url('../images/oled/oled-4k-bg.png') 0 0 no-repeat;
+	}
+
+	&__img-inner{
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 500px;
+		height: 285px;
+		background: url('../images/oled/galaxy.jpg') 0 0 no-repeat;
 	}
 
 }
