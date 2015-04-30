@@ -20,19 +20,23 @@ block content
 
 	section.banner.banner_type_webos(role="banner")
 
-		.banner__info
-			.banner__logo
+		img.banner__img.js-banner-img(src="assets/images/webos/webos-bg.jpg")
 
-			h1.banner__title(role="heading")
+		.banner__info.js-banner-info
+			.banner__logo.banner__logo_state_hide.js-banner-logo
+
+			h1.banner__title.banner__title_state_hide.js-banner-title(role="heading")
 				| Смотрите,
 				br
 				| как просто!
 
-			.banner__text
+			.banner__text.banner__text_state_hide.js-banner-text
 				| Запуск в один клик
 
-			button.banner__btn(type="button")
+			button.banner__btn.banner__btn_state_hide.js-banner-btn(type="button")
 				| Посмотрите видео
+
+		div.banner__video.js-banner-video#bannerPlayerWebos
 
 	section.features
 
@@ -180,3 +184,21 @@ block content
 					num: "UF950V",
 					mrg: 8,
 				})
+
+block scriptAfter
+
+	+scripts([
+		"vendor.js",
+		"banner.js"
+	])
+
+block scriptBefore
+
+	script.
+
+		var script = document.createElement('script'),
+			beforeScript = document.getElementsByTagName('script')[0];
+
+		script.src = 'https://www.youtube.com/iframe_api';
+		script.async = true;
+		beforeScript.parentNode.insertBefore(script, beforeScript);

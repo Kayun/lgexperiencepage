@@ -8,7 +8,6 @@
 	&_type {
 
 		&_ultra {
-			background: url('../images/ultra/ultra-bg.jpg') 0 0 no-repeat;
 
 			& .banner {
 
@@ -26,7 +25,6 @@
 		}
 
 		&_oled {
-			background: url('../images/oled/oled-bg.jpg') 0 0 no-repeat;
 
 			& .banner__logo {
 				.sprite(@logo-oled-white)
@@ -35,7 +33,6 @@
 		}
 
 		&_webos {
-			background: url('../images/webos/webos-bg.jpg') 0 0 no-repeat;
 
 			& .banner {
 
@@ -54,8 +51,23 @@
 
 	}
 
+	&__img {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		width: 1260px;
+		height: 442px;
+	}
+
+	&__video {
+		position: relative;
+		z-index: 1;
+	}
+
 	&__info {
 		position: absolute;
+		z-index: 3;
 		top: 100px;
 		right: 130px;
 		width: 330px;
@@ -92,6 +104,7 @@
 		border: none;
 		background-color: transparent;
 		cursor: pointer;
+		outline: none;
 
 		&:before {
 			position: absolute;
@@ -103,4 +116,33 @@
 
 	}
 
+}
+
+.banner__logo,
+.banner__title,
+.banner__text,
+.banner__btn {
+	opacity: 1;
+	transition: opacity .5s ease;
+	will-change: opacity;
+
+	&_state_hide {
+		opacity: 0;
+	}
+
+}
+
+.banner__btn {
+	transition: opacity 3s ease;
+}
+
+.banner__img,
+.banner__info {
+	opacity: 1;
+	transition: opacity 2s ease;
+	will-change: opacity;
+
+	&_state_hide {
+		opacity: 0;
+	}
 }

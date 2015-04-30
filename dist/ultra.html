@@ -8,6 +8,13 @@
 	</head>
 	<body>
 		<link href="assets/styles/common.css" rel="stylesheet">
+		<script>
+		var script = document.createElement('script'),
+			beforeScript = document.getElementsByTagName('script')[0];
+		script.src = 'https://www.youtube.com/iframe_api';
+		script.async = true;
+		beforeScript.parentNode.insertBefore(script, beforeScript);
+		</script>
 		<!--[if lte IE 8]> <link href="assets/styles/ie8.css" rel="stylesheet"> <![endif]-->
 		<!--[if IE 7]> <link href="assets/styles/ie7.css" rel="stylesheet"> <![endif]-->
 		<!--[if lt IE 9]> <script>document.createElement('header');document.createElement('nav');document.createElement('section');document.createElement('article');document.createElement('aside');document.createElement('footer');</script> <![endif]-->
@@ -24,14 +31,15 @@
 				</a>
 				<a href="main.html" class="menu-mini__home"></a>
 			</nav>
-			<section role="banner" class="banner banner_type_ultra">
-				<div class="banner__info">
-					<div class="banner__logo js-banner-logo"></div>
-					<h1 role="heading" class="banner__title"><span>Ультрачеткость</span><span class="js-banner-text-6">,</span><br><span class="js-banner-text-6">в каждой</span> <span class="js-banner-text-3">детали</span></h1>
-					<div class="banner__text"><span class="js-banner-text-2">ULTRA</span> <span class="js-banner-text-7">HD</span> <span class="js-banner-text-5">4K</span>
-						<br><span class="js-banner-text-4">8.3 млн</span> <span class="js-banner-text-1">пикселей</span></div>
-					<button type="button" class="banner__btn js-banner-btn">Посмотрите видео</button>
+			<section role="banner" class="banner banner_type_ultra"><img src="assets/images/ultra/ultra-bg.jpg" class="banner__img js-banner-img">
+				<div class="banner__info js-banner-info">
+					<div class="banner__logo banner__logo_state_hide js-banner-logo"></div>
+					<h1 role="heading" class="banner__title banner__title_state_hide js-banner-title"><span>Ультрачеткость,</span><br><span>в каждой детали</span></h1>
+					<div class="banner__text banner__text_state_hide js-banner-text"><span>ULTRA HD 4K</span>
+						<br><span>8.3 млн пикселей</span></div>
+					<button type="button" class="banner__btn banner__btn_state_hide js-banner-btn">Посмотрите видео</button>
 				</div>
+				<div id="bannerPlayerUltra" class="banner__video"></div>
 			</section>
 			<section class="features">
 				<div class="wrapper clearfix">

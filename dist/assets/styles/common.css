@@ -2031,61 +2031,64 @@ This must be run when you have at least 2 sprites.
   height: 442px;
   color: #fff;
 }
-/* line 10, css\new_design\components\banner.less */
-.banner_type_ultra {
-  background: url('../images/ultra/ultra-bg.jpg') 0 0 no-repeat;
-}
-/* line 15, css\new_design\components\banner.less */
+/* line 14, css\new_design\components\banner.less */
 .banner_type_ultra .banner__logo {
   background-image: url(../images/sprite.png);
   background-position: -234px 0px;
   width: 260px;
   height: 34px;
 }
-/* line 19, css\new_design\components\banner.less */
+/* line 18, css\new_design\components\banner.less */
 .banner_type_ultra .banner__info {
   top: 106px;
   right: 141px;
 }
-/* line 28, css\new_design\components\banner.less */
-.banner_type_oled {
-  background: url('../images/oled/oled-bg.jpg') 0 0 no-repeat;
-}
-/* line 31, css\new_design\components\banner.less */
+/* line 29, css\new_design\components\banner.less */
 .banner_type_oled .banner__logo {
   background-image: url(../images/sprite.png);
   background-position: 0px -99px;
   width: 192px;
   height: 29px;
 }
-/* line 37, css\new_design\components\banner.less */
-.banner_type_webos {
-  background: url('../images/webos/webos-bg.jpg') 0 0 no-repeat;
-}
-/* line 42, css\new_design\components\banner.less */
+/* line 39, css\new_design\components\banner.less */
 .banner_type_webos .banner__logo {
   background-image: url(../images/sprite.png);
   background-position: -204px -49px;
   width: 172px;
   height: 36px;
 }
-/* line 46, css\new_design\components\banner.less */
+/* line 43, css\new_design\components\banner.less */
 .banner_type_webos .banner__info {
   top: 76px;
   right: 61px;
 }
-/* line 57, css\new_design\components\banner.less */
+/* line 54, css\new_design\components\banner.less */
+.banner__img {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 1260px;
+  height: 442px;
+}
+/* line 63, css\new_design\components\banner.less */
+.banner__video {
+  position: relative;
+  z-index: 1;
+}
+/* line 68, css\new_design\components\banner.less */
 .banner__info {
   position: absolute;
+  z-index: 3;
   top: 100px;
   right: 130px;
   width: 330px;
 }
-/* line 64, css\new_design\components\banner.less */
+/* line 76, css\new_design\components\banner.less */
 .banner__logo {
   display: inline-block;
 }
-/* line 68, css\new_design\components\banner.less */
+/* line 80, css\new_design\components\banner.less */
 .banner__title {
   margin-top: 16px;
   text-transform: uppercase;
@@ -2093,14 +2096,14 @@ This must be run when you have at least 2 sprites.
   font-size: 27px;
   line-height: 36px;
 }
-/* line 76, css\new_design\components\banner.less */
+/* line 88, css\new_design\components\banner.less */
 .banner__text {
   margin-top: 12px;
   margin-bottom: 35px;
   font-family: 'HelveticaNeue-Thin', Helvetica, Arial, sans-serif;
   font-size: 26px;
 }
-/* line 83, css\new_design\components\banner.less */
+/* line 95, css\new_design\components\banner.less */
 .banner__btn {
   position: relative;
   padding: 0 0 0 65px;
@@ -2113,8 +2116,9 @@ This must be run when you have at least 2 sprites.
   border: none;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
 }
-/* line 96, css\new_design\components\banner.less */
+/* line 109, css\new_design\components\banner.less */
 .banner__btn:before {
   position: absolute;
   top: 0;
@@ -2124,4 +2128,36 @@ This must be run when you have at least 2 sprites.
   background-position: 0px -350px;
   width: 48px;
   height: 48px;
+}
+/* line 121, css\new_design\components\banner.less */
+.banner__logo,
+.banner__title,
+.banner__text,
+.banner__btn {
+  opacity: 1;
+  transition: opacity .5s ease;
+  will-change: opacity;
+}
+/* line 129, css\new_design\components\banner.less */
+.banner__logo_state_hide,
+.banner__title_state_hide,
+.banner__text_state_hide,
+.banner__btn_state_hide {
+  opacity: 0;
+}
+/* line 135, css\new_design\components\banner.less */
+.banner__btn {
+  transition: opacity 3s ease;
+}
+/* line 139, css\new_design\components\banner.less */
+.banner__img,
+.banner__info {
+  opacity: 1;
+  transition: opacity 2s ease;
+  will-change: opacity;
+}
+/* line 145, css\new_design\components\banner.less */
+.banner__img_state_hide,
+.banner__info_state_hide {
+  opacity: 0;
 }

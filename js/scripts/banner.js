@@ -1,45 +1,98 @@
 document.ready = function () {
-	var $text = $('span[class^="js-banner-text"]'),
+	var $text = $('.js-banner-text'),
 		$logo = $('.js-banner-logo'),
-		$btn = $('.js-banner-btn');
-
-	$text.each(function () {
-		$(this).css('opacity', 0);
-	});
-
-	$logo.css('opacity', 0);
-	$btn.css('opacity', 0);
+		$title = $('.js-banner-title'),
+		$btn = $('.js-banner-btn'),
+		titleHideClass = 'banner__title_state_hide',
+		textHideClass = 'banner__text_state_hide',
+		logoHideClass = 'banner__logo_state_hide',
+		btnHideClass = 'banner__btn_state_hide';
 
 	setTimeout(function () {
-		var i = 1
+		$logo.removeClass(logoHideClass);
+	}, 1000);
 
-		$text.each(function () {
-			$(this).css('transition', 'opacity .3s ease');
-		});
+	setTimeout(function () {
+		$title.removeClass(titleHideClass);
+	}, 1500);
 
-		$logo.css('transition', 'opacity .3s ease');
-		$btn.css('transition', 'opacity 1s ease');
+	setTimeout(function () {
+		$text.removeClass(textHideClass);
+	}, 2000);
 
-		var interva = setInterval(function () {
+	setTimeout(function () {
+		$btn.removeClass(btnHideClass);
+	}, 2500);
 
-			$text.each(function () {
+}
 
-				if ($(this).hasClass('js-banner-text-' + i)) {
-					$(this).css('opacity', 1);
-				}
+function onYouTubeIframeAPIReady() {
 
-				if (i >= $text.length) {
-					clearInterval(interva);
-					setTimeout(function () {$logo.css('opacity', 1);}, 100);
-					setTimeout(function () {$btn.css('opacity', 1);}, 1000);
-				}
+	var ultraPlayer = new YT.Player ('bannerPlayerUltra', {
+		height: '442',
+		width: '1260',
+		videoId: 'W9vgYbH8Jcg',
+		playerVars : {
+			autohide: 1,
+			controls: 1,
+			fs: 0,
+			modestbranding: 0,
+			showinfo: 0,
+		},
+		events: {
+			'onReady': playVideo,
+		}
+	});
 
-			});
+	var oledPlayer = new YT.Player ('bannerPlayerOled', {
+		height: '442',
+		width: '1260',
+		videoId: 'NiRkoX2p94o',
+		playerVars : {
+			autohide: 1,
+			controls: 1,
+			fs: 0,
+			modestbranding: 0,
+			showinfo: 0,
+		},
+		events: {
+			'onReady': playVideo,
+		}
+	});
 
-			i++;
+	var webosPlayer = new YT.Player ('bannerPlayerWebos', {
+		height: '442',
+		width: '1260',
+		videoId: 'kWbRVrrpb4w',
+		playerVars : {
+			autohide: 1,
+			controls: 1,
+			fs: 0,
+			modestbranding: 0,
+			showinfo: 0,
+		},
+		events: {
+			'onReady': playVideo,
+		}
+	});
+}
 
-		}, 100);
+function playVideo(event) {
 
-	}, 3000);
+	var $img = $('.js-banner-img'),
+		$info = $('.js-banner-info'),
+		$btn = $('.js-banner-btn'),
+		$player = $('.js-banner-video'),
+		imgHideClass = 'banner__img_state_hide',
+		infoHideClass = 'banner__info_state_hide';
+
+	$btn.bind('click', function () {
+		$img.addClass(imgHideClass);
+		$info.addClass(infoHideClass);
+		setTimeout(function () {
+			$player.css('z-index', 10);
+		}, 2000);
+		event.target.playVideo();
+	});
 
 }

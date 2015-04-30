@@ -7,6 +7,8 @@ html(lang='ru')
 	body
 		link(href="assets/styles/common.css" rel="stylesheet")
 
+		block scriptBefore
+
 		+ei("lte IE 8") <link href="assets/styles/ie8.css" rel="stylesheet">
 		+ei("IE 7") <link href="assets/styles/ie7.css" rel="stylesheet">
 
@@ -17,5 +19,5 @@ html(lang='ru')
 			block content
 			include ../partials/footer
 
-		block script
+		block scriptAfter
 

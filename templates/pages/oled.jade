@@ -20,17 +20,21 @@ block content
 
 	section.banner.banner_type_oled(role="banner")
 
-		.banner__info
-			.banner__logo
+		img.banner__img.js-banner-img(src="assets/images/oled/oled-bg.jpg")
 
-			h1.banner__title(role="heading")
+		.banner__info.js-banner-info
+			.banner__logo.banner__logo_state_hide.js-banner-logo
+
+			h1.banner__title.banner__title_state_hide.js-banner-title(role="heading")
 				| Наивысшая ступень развития ТВ!
 
-			.banner__text
+			.banner__text.banner__text_state_hide.js-banner-text
 				| Совершенный цвет, бесконечная контрастность
 
-			button.banner__btn(type="button")
+			button.banner__btn.banner__btn_state_hide.js-banner-btn(type="button")
 				| Посмотрите видео
+
+		div.banner__video.js-banner-video#bannerPlayerOled
 
 	include ../blocks/oled/oled
 
@@ -76,3 +80,21 @@ block content
 					num: "55EC930V",
 					mrg: 22
 				})
+
+block scriptAfter
+
+	+scripts([
+		"vendor.js",
+		"banner.js"
+	])
+
+block scriptBefore
+
+	script.
+
+		var script = document.createElement('script'),
+			beforeScript = document.getElementsByTagName('script')[0];
+
+		script.src = 'https://www.youtube.com/iframe_api';
+		script.async = true;
+		beforeScript.parentNode.insertBefore(script, beforeScript);

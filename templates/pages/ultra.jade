@@ -20,30 +20,24 @@ block content
 
 	section.banner.banner_type_ultra(role="banner")
 
-		.banner__info
-			.banner__logo.js-banner-logo
+		img.banner__img.js-banner-img(src="assets/images/ultra/ultra-bg.jpg")
+		.banner__info.js-banner-info
+			.banner__logo.banner__logo_state_hide.js-banner-logo
 
-			h1.banner__title(role="heading")
-				span Ультрачеткость
-				span.js-banner-text-6 ,
+			h1.banner__title.banner__title_state_hide.js-banner-title(role="heading")
+				span Ультрачеткость,
 				br
-				span.js-banner-text-6 в каждой
-				= " "
-				span.js-banner-text-3 детали
+				span в каждой детали
 
-			.banner__text
-				span.js-banner-text-2 ULTRA
-				= " "
-				span.js-banner-text-7 HD
-				= " "
-				span.js-banner-text-5 4K
+			.banner__text.banner__text_state_hide.js-banner-text
+				span ULTRA HD 4K
 				br
-				span.js-banner-text-4 8.3 млн
-				= " "
-				span.js-banner-text-1 пикселей
+				span 8.3 млн пикселей
 
-			button.banner__btn.js-banner-btn(type="button")
+			button.banner__btn.banner__btn_state_hide.js-banner-btn(type="button")
 				| Посмотрите видео
+
+		div.banner__video#bannerPlayerUltra
 
 	section.features
 
@@ -201,9 +195,21 @@ block content
 					mrg: 8,
 				})
 
-block script
+block scriptAfter
 
 	+scripts([
 		"vendor.js",
 		"banner.js"
 	])
+
+block scriptBefore
+
+	script.
+
+		var script = document.createElement('script'),
+			beforeScript = document.getElementsByTagName('script')[0];
+
+		script.src = 'https://www.youtube.com/iframe_api';
+		script.async = true;
+		beforeScript.parentNode.insertBefore(script, beforeScript);
+

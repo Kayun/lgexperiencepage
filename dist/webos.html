@@ -8,6 +8,13 @@
 	</head>
 	<body>
 		<link href="assets/styles/common.css" rel="stylesheet">
+		<script>
+		var script = document.createElement('script'),
+			beforeScript = document.getElementsByTagName('script')[0];
+		script.src = 'https://www.youtube.com/iframe_api';
+		script.async = true;
+		beforeScript.parentNode.insertBefore(script, beforeScript);
+		</script>
 		<!--[if lte IE 8]> <link href="assets/styles/ie8.css" rel="stylesheet"> <![endif]-->
 		<!--[if IE 7]> <link href="assets/styles/ie7.css" rel="stylesheet"> <![endif]-->
 		<!--[if lt IE 9]> <script>document.createElement('header');document.createElement('nav');document.createElement('section');document.createElement('article');document.createElement('aside');document.createElement('footer');</script> <![endif]-->
@@ -24,13 +31,14 @@
 				</a>
 				<a href="main.html" class="menu-mini__home"></a>
 			</nav>
-			<section role="banner" class="banner banner_type_webos">
-				<div class="banner__info">
-					<div class="banner__logo"></div>
-					<h1 role="heading" class="banner__title">Смотрите,<br>как просто!</h1>
-					<div class="banner__text">Запуск в один клик</div>
-					<button type="button" class="banner__btn">Посмотрите видео</button>
+			<section role="banner" class="banner banner_type_webos"><img src="assets/images/webos/webos-bg.jpg" class="banner__img js-banner-img">
+				<div class="banner__info js-banner-info">
+					<div class="banner__logo banner__logo_state_hide js-banner-logo"></div>
+					<h1 role="heading" class="banner__title banner__title_state_hide js-banner-title">Смотрите,<br>как просто!</h1>
+					<div class="banner__text banner__text_state_hide js-banner-text">Запуск в один клик</div>
+					<button type="button" class="banner__btn banner__btn_state_hide js-banner-btn">Посмотрите видео</button>
 				</div>
+				<div id="bannerPlayerWebos" class="banner__video js-banner-video"></div>
 			</section>
 			<section class="features">
 				<div class="wrapper clearfix">
@@ -237,5 +245,7 @@
 				</section>
 			</div>
 		</div>
+		<script src="assets/scripts/vendor.js"></script>
+		<script src="assets/scripts/banner.js"></script>
 	</body>
 </html>
