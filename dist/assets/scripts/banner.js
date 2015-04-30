@@ -15,48 +15,22 @@ var $img = $('.js-banner-img'),
 	$btn = $('.js-banner-btn'),
 	imgHideClass = 'banner__img_state_hide',
 	infoHideClass = 'banner__info_state_hide',
+	activeVideoClass = 'video__item_state_active',
 	flag = false;
 
 // Инициализация плееров в блоке banner
 
 function onYouTubeIframeAPIReady() {
 
-	var ultraPlayer = new YT.Player ('bannerPlayerUltra', {
-		height: '442',
-		width: '1260',
-		videoId: 'W9vgYbH8Jcg',
-		playerVars : {
-			autohide: 1,
-			controls: 2,
-			fs: 0,
-			modestbranding: 0,
-			showinfo: 0,
-		},
-		events: {
-			'onReady': playVideo
-		}
-	});
+	var $player = $('.js-banner-video'),
+		idPlayer = $player.attr('id'),
+		idVideo = $player.attr('data-video-id'),
+		player;
 
-	var oledPlayer = new YT.Player ('bannerPlayerOled', {
+	player = new YT.Player (idPlayer, {
 		height: '442',
 		width: '1260',
-		videoId: 'NiRkoX2p94o',
-		playerVars : {
-			autohide: 1,
-			controls: 2,
-			fs: 0,
-			modestbranding: 0,
-			showinfo: 0,
-		},
-		events: {
-			'onReady': playVideo
-		}
-	});
-
-	var webosPlayer = new YT.Player ('bannerPlayerWebos', {
-		height: '442',
-		width: '1260',
-		videoId: 'kWbRVrrpb4w',
+		videoId: idVideo,
 		playerVars : {
 			autohide: 1,
 			controls: 2,
@@ -74,7 +48,8 @@ function onYouTubeIframeAPIReady() {
 // Функция запуска видео
 
 function playVideo(event) {
-	var $player = $('.js-banner-video');
+	var $player = $('.js-banner-video'),
+		$firstVideo = $('.js-video-first');
 
 	$btn.bind('click', function () {
 		$img.addClass(imgHideClass);
@@ -83,6 +58,7 @@ function playVideo(event) {
 		setTimeout(function () {
 			$player.css('z-index', '10');
 		}, 2000);
+		$firstVideo.addClass(activeVideoClass);
 
 		event.target.playVideo();
 		flag = true;
@@ -123,9 +99,8 @@ function changeVideo(event) {
 // Функция переключения активного видео
 
 function activeVideo(elem) {
-	var activeClass = 'video__item_state_active';
-	elem.siblings().removeClass(activeClass);
-	elem.addClass(activeClass);
+	elem.siblings().removeClass(activeVideoClass);
+	elem.addClass(activeVideoClass);
 }
 
 // Функция появления текста
