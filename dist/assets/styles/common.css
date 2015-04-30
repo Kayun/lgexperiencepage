@@ -1663,26 +1663,32 @@ This must be run when you have at least 2 sprites.
   width: 256px;
   float: left;
   border-right: 1px solid #fff;
+  cursor: pointer;
 }
-/* line 15, css\new_design\blocks\video.less */
+/* line 17, css\new_design\blocks\video.less */
+.video__item_state_active .video__clip {
+  border-color: #d00946;
+  overflow: hidden;
+}
+/* line 24, css\new_design\blocks\video.less */
 .video__clip {
   position: relative;
   width: 100%;
   height: 150px;
   overflow: visible;
   border-bottom: 3px solid transparent;
-  will-change: overflow;
+  will-change: overflow, border-color;
 }
-/* line 23, css\new_design\blocks\video.less */
+/* line 32, css\new_design\blocks\video.less */
 .video__clip:hover {
   border-color: #d00946;
   overflow: hidden;
 }
-/* line 29, css\new_design\blocks\video.less */
+/* line 38, css\new_design\blocks\video.less */
 .video__img {
   width: 100%;
 }
-/* line 33, css\new_design\blocks\video.less */
+/* line 42, css\new_design\blocks\video.less */
 .video__play {
   position: absolute;
   top: 50%;
@@ -1696,7 +1702,7 @@ This must be run when you have at least 2 sprites.
   height: 48px;
   cursor: pointer;
 }
-/* line 44, css\new_design\blocks\video.less */
+/* line 53, css\new_design\blocks\video.less */
 .video__text {
   margin-top: 10px;
   font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;

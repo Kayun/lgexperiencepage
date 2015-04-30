@@ -10,6 +10,15 @@
 		width: 256px;
 		float: left;
 		border-right: 1px solid #fff;
+		cursor: pointer;
+
+		&_state_active {
+
+			& .video__clip {
+				border-color: #d00946;
+				overflow: hidden;
+			}
+		}
 	}
 
 	&__clip {
@@ -18,7 +27,7 @@
 		height: 150px;
 		overflow: visible;
 		border-bottom: 3px solid transparent;
-		will-change: overflow;
+		will-change: overflow, border-color;
 
 		&:hover {
 			border-color: #d00946;

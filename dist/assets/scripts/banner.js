@@ -34,13 +34,13 @@ function onYouTubeIframeAPIReady() {
 		videoId: 'W9vgYbH8Jcg',
 		playerVars : {
 			autohide: 1,
-			controls: 1,
+			controls: 2,
 			fs: 0,
 			modestbranding: 0,
 			showinfo: 0,
 		},
 		events: {
-			'onReady': playVideo,
+			'onReady': playVideo
 		}
 	});
 
@@ -50,13 +50,13 @@ function onYouTubeIframeAPIReady() {
 		videoId: 'NiRkoX2p94o',
 		playerVars : {
 			autohide: 1,
-			controls: 1,
+			controls: 2,
 			fs: 0,
 			modestbranding: 0,
 			showinfo: 0,
 		},
 		events: {
-			'onReady': playVideo,
+			'onReady': playVideo
 		}
 	});
 
@@ -66,33 +66,71 @@ function onYouTubeIframeAPIReady() {
 		videoId: 'kWbRVrrpb4w',
 		playerVars : {
 			autohide: 1,
-			controls: 1,
+			controls: 2,
 			fs: 0,
 			modestbranding: 0,
 			showinfo: 0,
 		},
 		events: {
-			'onReady': playVideo,
+			'onReady': playVideo
 		}
 	});
 }
 
-function playVideo(event) {
+var $img = $('.js-banner-img'),
+	$info = $('.js-banner-info'),
+	$btn = $('.js-banner-btn'),
+	imgHideClass = 'banner__img_state_hide',
+	infoHideClass = 'banner__info_state_hide',
+	flag = false;
 
-	var $img = $('.js-banner-img'),
-		$info = $('.js-banner-info'),
-		$btn = $('.js-banner-btn'),
-		$player = $('.js-banner-video'),
-		imgHideClass = 'banner__img_state_hide',
-		infoHideClass = 'banner__info_state_hide';
+function playVideo(event) {
+	var $player = $('.js-banner-video');
 
 	$btn.bind('click', function () {
 		$img.addClass(imgHideClass);
 		$info.addClass(infoHideClass);
+
 		setTimeout(function () {
-			$player.css('z-index', 10);
+			$player.css('z-index', '10');
 		}, 2000);
+
 		event.target.playVideo();
+		flag = true;
 	});
 
+	changeVideo(event);
+
+}
+
+function changeVideo(event) {
+	var $switchers = $('.js-video-switch'),
+		player = event.target,
+		id;
+
+	$switchers.each(function () {
+		$(this).bind('click', function () {
+			activeVideo($(this));
+			id = $(this).attr('data-video-id');
+			player.loadVideoById({videoId: id});
+
+			if (!flag) {
+
+				$img.addClass(imgHideClass);
+				$info.addClass(infoHideClass);
+				setTimeout(function () {
+					$player.css('z-index', 10);
+				}, 2000);
+
+			}
+
+		});
+
+	});
+}
+
+function activeVideo(elem) {
+	var activeClass = 'video__item_state_active';
+	elem.siblings().removeClass(activeClass);
+	elem.addClass(activeClass);
 }
