@@ -1534,11 +1534,7 @@ This must be run when you have at least 2 sprites.
 .setup_type_ultra .title {
   margin-bottom: 17px;
 }
-/* line 40, css\new_design\blocks\setup.less */
-.setup_type_ultra h3 {
-  display: none;
-}
-/* line 48, css\new_design\blocks\setup.less */
+/* line 44, css\new_design\blocks\setup.less */
 .setup-wrap {
   width: 428px;
 }
@@ -2076,13 +2072,14 @@ This must be run when you have at least 2 sprites.
   left: 0;
   width: 1260px;
   height: 442px;
+  background-color: #fff;
 }
-/* line 63, css\new_design\components\banner.less */
+/* line 64, css\new_design\components\banner.less */
 .banner__video {
   position: relative;
   z-index: 1;
 }
-/* line 68, css\new_design\components\banner.less */
+/* line 69, css\new_design\components\banner.less */
 .banner__info {
   position: absolute;
   z-index: 3;
@@ -2090,11 +2087,11 @@ This must be run when you have at least 2 sprites.
   right: 130px;
   width: 330px;
 }
-/* line 76, css\new_design\components\banner.less */
+/* line 77, css\new_design\components\banner.less */
 .banner__logo {
   display: inline-block;
 }
-/* line 80, css\new_design\components\banner.less */
+/* line 81, css\new_design\components\banner.less */
 .banner__title {
   margin-top: 16px;
   text-transform: uppercase;
@@ -2102,14 +2099,14 @@ This must be run when you have at least 2 sprites.
   font-size: 27px;
   line-height: 36px;
 }
-/* line 88, css\new_design\components\banner.less */
+/* line 89, css\new_design\components\banner.less */
 .banner__text {
   margin-top: 12px;
   margin-bottom: 35px;
   font-family: 'HelveticaNeue-Thin', Helvetica, Arial, sans-serif;
   font-size: 26px;
 }
-/* line 95, css\new_design\components\banner.less */
+/* line 96, css\new_design\components\banner.less */
 .banner__btn {
   position: relative;
   padding: 0 0 0 65px;
@@ -2124,7 +2121,7 @@ This must be run when you have at least 2 sprites.
   cursor: pointer;
   outline: none;
 }
-/* line 109, css\new_design\components\banner.less */
+/* line 110, css\new_design\components\banner.less */
 .banner__btn:before {
   position: absolute;
   top: 0;
@@ -2135,7 +2132,7 @@ This must be run when you have at least 2 sprites.
   width: 48px;
   height: 48px;
 }
-/* line 121, css\new_design\components\banner.less */
+/* line 122, css\new_design\components\banner.less */
 .banner__logo,
 .banner__title,
 .banner__text,
@@ -2144,25 +2141,25 @@ This must be run when you have at least 2 sprites.
   transition: opacity .5s ease;
   will-change: opacity;
 }
-/* line 129, css\new_design\components\banner.less */
+/* line 130, css\new_design\components\banner.less */
 .banner__logo_state_hide,
 .banner__title_state_hide,
 .banner__text_state_hide,
 .banner__btn_state_hide {
   opacity: 0;
 }
-/* line 135, css\new_design\components\banner.less */
+/* line 136, css\new_design\components\banner.less */
 .banner__btn {
   transition: opacity 3s ease;
 }
-/* line 139, css\new_design\components\banner.less */
+/* line 140, css\new_design\components\banner.less */
 .banner__img,
 .banner__info {
   opacity: 1;
   transition: opacity 2s ease;
   will-change: opacity;
 }
-/* line 145, css\new_design\components\banner.less */
+/* line 146, css\new_design\components\banner.less */
 .banner__img_state_hide,
 .banner__info_state_hide {
   opacity: 0;
