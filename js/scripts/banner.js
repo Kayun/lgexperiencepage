@@ -1,6 +1,14 @@
 document.ready = function() {
 	'use strict';
 
+	// Анимация появления текста
+	textAnim();
+	$img.onload(function () {
+
+	});
+
+}
+
 	// Глобальные переменные
 
 	var $img = $('.js-banner-img'),
@@ -9,12 +17,6 @@ document.ready = function() {
 		imgHideClass = 'banner__img_state_hide',
 		infoHideClass = 'banner__info_state_hide',
 		flag = false;
-
-	// Анимация появления текста
-	textAnim();
-	$img.onload(function () {
-
-	});
 
 	// Инициализайия плееров в блоке banner
 
@@ -128,6 +130,8 @@ document.ready = function() {
 		elem.addClass(activeClass);
 	}
 
+	// Функция появления текста
+
 	function textAnim() {
 		var $text = $('.js-banner-text'),
 			$logo = $('.js-banner-logo'),
@@ -154,4 +158,4 @@ document.ready = function() {
 		}, 2500);
 
 	}
-}
+
