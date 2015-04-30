@@ -72,6 +72,7 @@ function playVideo(event) {
 
 function changeVideo(event) {
 	var $switchers = $('.js-video-switch'),
+		$player = $('.js-banner-video'),
 		player = event.target,
 		id;
 
