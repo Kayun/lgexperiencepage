@@ -2,10 +2,30 @@
 	position: relative;
 	padding: 46px 0 222px;
 	border-bottom: 1px solid #f3f3f3;
-	background: url('../images/webos/data-bg.jpg') 279px 142px no-repeat;
+
 
 	&-wrap {
+		position: relative;
+		z-index: 3;
 		width: 428px;
 	}
 
+	&__img {
+		position: absolute;
+		z-index: 2;
+		bottom: 37px;
+		right: 0;
+		width: 748px;
+		height: 358px;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-image: none;
+	}
+
+	&__video {
+		position: absolute;
+		z-index: 1;
+		bottom: -13px;
+		right: -67px;
+	}
 }

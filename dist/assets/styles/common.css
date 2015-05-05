@@ -350,6 +350,11 @@ This must be run when you have at least 2 sprites.
   margin: 0 auto;
   width: 1025px;
 }
+/* line 15, css\new_design\base\base.less */
+.vjs-control-bar,
+.vjs-caption-settings {
+  display: none;
+}
 /* line 1, css\new_design\blocks\main\menu.less */
 .menu {
   position: relative;
@@ -954,7 +959,7 @@ This must be run when you have at least 2 sprites.
   left: -43px;
   width: 550px;
   height: 400px;
-  background: url('../images/oled/galaxy.jpg') 0 -15px no-repeat;
+  background: url('../images/oled/galaxy.jpg') 0 -7px no-repeat;
 }
 /* line 1, css\new_design\blocks\oled\wrgb.less */
 .wrgb {
@@ -1165,7 +1170,7 @@ This must be run when you have at least 2 sprites.
 /* line 11, css\new_design\blocks\webos\collection.less */
 .collection__img {
   position: absolute;
-  top: 50px;
+  top: 37px;
   left: -83px;
   width: 630px;
   height: 459px;
@@ -1174,7 +1179,7 @@ This must be run when you have at least 2 sprites.
 /* line 20, css\new_design\blocks\webos\collection.less */
 .collection__anim {
   position: absolute;
-  top: 61px;
+  top: 48px;
   left: -64px;
   width: 560px;
   height: 373px;
@@ -1185,11 +1190,31 @@ This must be run when you have at least 2 sprites.
   position: relative;
   padding: 46px 0 222px;
   border-bottom: 1px solid #f3f3f3;
-  background: url('../images/webos/data-bg.jpg') 279px 142px no-repeat;
 }
 /* line 7, css\new_design\blocks\webos\data.less */
 .data-wrap {
+  position: relative;
+  z-index: 3;
   width: 428px;
+}
+/* line 13, css\new_design\blocks\webos\data.less */
+.data__img {
+  position: absolute;
+  z-index: 2;
+  bottom: 37px;
+  right: 0;
+  width: 748px;
+  height: 358px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: none;
+}
+/* line 25, css\new_design\blocks\webos\data.less */
+.data__video {
+  position: absolute;
+  z-index: 1;
+  bottom: -13px;
+  right: -67px;
 }
 /* line 1, css\new_design\blocks\webos\stream.less */
 .stream {

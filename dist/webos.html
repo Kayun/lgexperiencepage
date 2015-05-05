@@ -7,13 +7,21 @@
 		<title>LG WebOS</title>
 	</head>
 	<body>
+		<link href="//vjs.zencdn.net/4.12/video-js.css">
 		<link href="assets/styles/common.css" rel="stylesheet">
 		<script>
-		var script = document.createElement('script'),
-			beforeScript = document.getElementsByTagName('script')[0];
-		script.src = 'https://www.youtube.com/iframe_api';
-		script.async = true;
-		beforeScript.parentNode.insertBefore(script, beforeScript);
+		var scripts = [
+			'https://www.youtube.com/iframe_api',
+			'//vjs.zencdn.net/4.12/video.js'
+		]
+		scripts.forEach(function(item)
+		{
+			var script = document.createElement('script'),
+				beforeScript = document.getElementsByTagName('script')[0];
+			script.src = item;
+			script.async = true;
+			beforeScript.parentNode.insertBefore(script, beforeScript);
+		})
 		</script>
 		<!--[if lte IE 8]> <link href="assets/styles/ie8.css" rel="stylesheet"> <![endif]-->
 		<!--[if IE 7]> <link href="assets/styles/ie7.css" rel="stylesheet"> <![endif]-->
@@ -122,14 +130,18 @@
 						<p class="text">В приложени "3D World" на телевизорах LG, оснащенных системой webOS, собрана уникальная коллекция полнометражных 3D-фильмов. Любимые фильмы от Disney и других голливудских студий обеспечат первоклассное семейное развлечение, а удобных очков CINEMA 3D из комплекта телевизора хватит на всех.</p>
 					</div>
 					<div class="collection__img"></div>
-					<div data-400-top="top: 61px; left: -95px" data-200-top="top: 40px; left: -67px" class="collection__anim"></div>
+					<div data-400-top="top: 48px; left: -95px" data-200-top="top: 27px; left: -67px" class="collection__anim"></div>
 				</section>
-				<section class="data">
+				<section id="dateSection" class="data">
 					<div class="data-wrap">
 						<h2 role="heading" class="title">Обмен данными</h2>
 						<p class="text">LG webOS – это не только продвинутая система Smart TV, но и максимально удобная интеграция с другими устройствами.</p>
 						<p class="text">Вы можете просматривать файлы с внешних устройств на экране телевизора через LG webOS Share, а также транслировать изображение по воздуху через Miracast, либо подключить мобильное устройство через MHL. Вы не встретите лишних ограничений на своем пути, когда захотите поделиться лучшими моментам из жизни на большом экране!</p>
 					</div>
+					<div class="data__img js-data-img"></div>
+					<video id="dataVideo" class="data__video video-js vjs-default-skin">
+						<source src="assets/video/carousel.mp4" type="video/mp4">
+					</video>
 				</section>
 				<section class="stream clearfix">
 					<div class="stream-wrap">
@@ -250,5 +262,6 @@
 		<script src="assets/scripts/vendor.js"></script>
 		<script src="assets/scripts/banner.js"></script>
 		<script src="assets/scripts/common.js"></script>
+		<script src="assets/scripts/webos.js"></script>
 	</body>
 </html>

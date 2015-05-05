@@ -4,6 +4,9 @@ block head
 	- pageTitle = 'LG WebOS';
 	- classWidth = 'main_width_1260'
 
+block link
+	link(href="//vjs.zencdn.net/4.12/video-js.css")
+
 block content
 	nav.menu-mini
 
@@ -189,16 +192,26 @@ block scriptAfter
 	+scripts([
 		"vendor.js",
 		"banner.js",
-		"common.js"
+		"common.js",
+		"webos.js"
 	])
 
 block scriptBefore
 
 	script.
 
-		var script = document.createElement('script'),
+		var scripts = [
+			'https://www.youtube.com/iframe_api',
+			'//vjs.zencdn.net/4.12/video.js'
+		]
+
+		scripts.forEach(function(item) {
+			var script = document.createElement('script'),
 			beforeScript = document.getElementsByTagName('script')[0];
 
-		script.src = 'https://www.youtube.com/iframe_api';
-		script.async = true;
-		beforeScript.parentNode.insertBefore(script, beforeScript);
+			script.src = item;
+			script.async = true;
+			beforeScript.parentNode.insertBefore(script, beforeScript);
+		})
+
+

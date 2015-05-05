@@ -204,6 +204,16 @@ module.exports = function(grunt) {
 				}]
 			},
 
+			video: {
+				files: [{
+					expand: true,
+					cwd: 'videos',
+					src: ['carousel.mp4'],
+					dest: 'dist/assets/video',
+					filter: 'isFile'
+				}]
+			},
+
 			script: {
 				files: [{
 					expand: true,
