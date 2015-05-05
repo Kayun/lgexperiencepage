@@ -1,12 +1,23 @@
 .infinity {
 	position: relative;
+	z-index: 1;
 	padding: 112px 0 113px;
 	border-bottom: 1px solid #f3f3f3;
-	background: url('../images/oled/infinity-bg.jpg') 0 49px no-repeat;
+	background: url('../images/oled/infinity-bg.jpg') -48px 39px no-repeat;
 
 	&-wrap {
 		float: right;
 		width: 428px;
+	}
+
+	&__img {
+		position: absolute;
+		z-index: 2;
+		top: 32px;
+		left: -59px;
+		width: 527px;
+		height: 345px;
+		background: url('../images/oled/horse.png') 0 0 no-repeat;
 	}
 
 }

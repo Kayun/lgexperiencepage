@@ -1,6 +1,5 @@
 .setup {
 	position: relative;
-	padding-top: 61px;
 	background: url('../images/oled/setup-bg.jpg') 598px 52px no-repeat;
 
 	& .wrapper {
@@ -17,6 +16,27 @@
 				padding-top: 68px;
 				padding-bottom: 86px;
 				border-top: 1px solid #f3f3f3;
+			}
+
+			& .setup__help {
+				position: absolute;
+				top: 115px;
+				right: 222px;
+				width: 149px;
+				height: 59px;
+				display: block;
+				background: url('../images/webos/help.png') 0 0 no-repeat
+
+			}
+
+			& .setup__lines {
+				position: absolute;
+				top: 107px;
+				right: 193px;
+				width: 35px;
+				height: 59px;
+				display: block;
+				background: url('../images/webos/lines.png') 0 0 no-repeat
 			}
 
 		}
@@ -43,6 +63,11 @@
 
 	&-wrap {
 		width: 428px;
+	}
+
+	&__help,
+	&__lines {
+		display: none;
 	}
 
 }
