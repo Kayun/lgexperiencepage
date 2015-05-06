@@ -21,23 +21,31 @@ $window.load(function () {
 
 		function dataVideo (player) {
 
+			player.on('pause', function () {
+				setTimeout(function () {
+					player.currentTime(0);
+					player.play();
+				}, 5000);
+			});
+
+			player.on('play', function () {
+				setTimeout(function () {
+					player.pause();
+				}, 3000);
+			});
+
 			$document.bind('scroll', function () {
 				if (flag) {
 
-					if ($dataSection.position().top + $dataSection.innerHeight()-100 <= $document.scrollTop() + $window.height()) {
+					if ($dataSection.position().top + $dataSection.innerHeight() <= $document.scrollTop() + $window.height()) {
 						player.play();
+						set
 						flag = !flag;
 					}
 
 				} else {
 					return false
 				}
-			});
-
-			player.on('ended', function () {
-				setTimeout(function () {
-					player.play();
-				}, 5000);
 			});
 		}
 	}
