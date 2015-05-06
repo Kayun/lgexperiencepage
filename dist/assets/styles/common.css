@@ -956,7 +956,7 @@ This must be run when you have at least 2 sprites.
   position: absolute;
   z-index: 1;
   top: 45px;
-  left: -43px;
+  left: -34px;
   width: 550px;
   height: 400px;
   background: url('../images/oled/galaxy.jpg') 0 -7px no-repeat;
@@ -1031,11 +1031,30 @@ This must be run when you have at least 2 sprites.
   position: relative;
   padding: 121px 0 128px;
   border-bottom: 1px solid #f3f3f3;
-  background: url('../images/oled/action-bg.jpg') 590px 55px no-repeat;
 }
 /* line 7, css\new_design\blocks\oled\action.less */
 .action-wrap {
   width: 425px;
+}
+/* line 11, css\new_design\blocks\oled\action.less */
+.action__img1 {
+  position: absolute;
+  z-index: 2;
+  top: 7px;
+  right: -38px;
+  width: 504px;
+  height: 436px;
+  background: url('../images/oled/action-bg.jpg') 0 0 no-repeat;
+}
+/* line 21, css\new_design\blocks\oled\action.less */
+.action__img2 {
+  position: absolute;
+  z-index: 1;
+  top: 7px;
+  right: -38px;
+  width: 504px;
+  height: 436px;
+  background: url('../images/oled/action-bg-before.jpg') 0 0 no-repeat;
 }
 /* line 1, css\new_design\blocks\oled\screen.less */
 .screen {
@@ -1257,18 +1276,17 @@ This must be run when you have at least 2 sprites.
   padding: 107px 0 61px;
   border-bottom: 1px solid #f3f3f3;
   border-top: 1px solid #f3f3f3;
-  background: url('../images/ultra/colorprime-bg.jpg') 534px 79px no-repeat;
 }
-/* line 8, css\new_design\blocks\ultra\colorprime.less */
+/* line 7, css\new_design\blocks\ultra\colorprime.less */
 .colorprime-wrap {
   width: 428px;
   margin-bottom: 42px;
 }
-/* line 13, css\new_design\blocks\ultra\colorprime.less */
+/* line 12, css\new_design\blocks\ultra\colorprime.less */
 .colorprime__btn {
   margin: 0;
 }
-/* line 17, css\new_design\blocks\ultra\colorprime.less */
+/* line 16, css\new_design\blocks\ultra\colorprime.less */
 .colorprime__logo {
   margin: 0 35px 0 14px;
   display: inline-block;
@@ -1277,7 +1295,7 @@ This must be run when you have at least 2 sprites.
   width: 117px;
   height: 22px;
 }
-/* line 25, css\new_design\blocks\ultra\colorprime.less */
+/* line 24, css\new_design\blocks\ultra\colorprime.less */
 .colorprime__chek + label {
   position: relative;
   height: 20px;
@@ -1288,12 +1306,12 @@ This must be run when you have at least 2 sprites.
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
-/* line 36, css\new_design\blocks\ultra\colorprime.less */
+/* line 35, css\new_design\blocks\ultra\colorprime.less */
 .colorprime__chek:not(checked) {
   position: absolute;
   opacity: 0;
 }
-/* line 42, css\new_design\blocks\ultra\colorprime.less */
+/* line 41, css\new_design\blocks\ultra\colorprime.less */
 .colorprime__chek:not(checked) + label:before {
   position: absolute;
   top: -1px;
@@ -1307,13 +1325,33 @@ This must be run when you have at least 2 sprites.
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), inset 0 3px 3px rgba(0, 0, 0, 0.3);
   transition: left .3s ease;
 }
-/* line 61, css\new_design\blocks\ultra\colorprime.less */
+/* line 60, css\new_design\blocks\ultra\colorprime.less */
 .colorprime__chek:checked + label {
   background-color: #f04879;
 }
-/* line 64, css\new_design\blocks\ultra\colorprime.less */
+/* line 63, css\new_design\blocks\ultra\colorprime.less */
 .colorprime__chek:checked + label:before {
   left: 14px;
+}
+/* line 70, css\new_design\blocks\ultra\colorprime.less */
+.colorprime__img1 {
+  position: absolute;
+  z-index: 2;
+  top: 80px;
+  right: -37px;
+  width: 527px;
+  height: 362px;
+  background: url('../images/ultra/colorprime-bg.jpg') 0 0 no-repeat;
+}
+/* line 80, css\new_design\blocks\ultra\colorprime.less */
+.colorprime__img2 {
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  right: -37px;
+  width: 527px;
+  height: 362px;
+  background: url('../images/ultra/colorprime-bg-before.jpg') 0 0 no-repeat;
 }
 /* line 1, css\new_design\blocks\ultra\color.less */
 .color {
@@ -1701,21 +1739,20 @@ This must be run when you have at least 2 sprites.
 .features__item {
   width: 184px;
   float: left;
-  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Light', Helvetica, Arial, sans-serif;
   font-size: 19px;
   color: #313245;
   line-height: 23px;
-  letter-spacing: -0.3px;
 }
-/* line 8, css\new_design\components\text.less */
+/* line 7, css\new_design\components\text.less */
 .features__item + .text {
   margin-top: 10px;
 }
-/* line 12, css\new_design\components\text.less */
+/* line 11, css\new_design\components\text.less */
 .features__item_font_sm {
   font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif;
 }
-/* line 16, css\new_design\components\text.less */
+/* line 15, css\new_design\components\text.less */
 .features__item_lh_21 {
   line-height: 21px;
 }
@@ -1962,21 +1999,20 @@ This must be run when you have at least 2 sprites.
 }
 /* line 1, css\new_design\components\text.less */
 .text {
-  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Light', Helvetica, Arial, sans-serif;
   font-size: 19px;
   color: #313245;
   line-height: 23px;
-  letter-spacing: -0.3px;
 }
-/* line 8, css\new_design\components\text.less */
+/* line 7, css\new_design\components\text.less */
 .text + .text {
   margin-top: 10px;
 }
-/* line 12, css\new_design\components\text.less */
+/* line 11, css\new_design\components\text.less */
 .text_font_sm {
   font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif;
 }
-/* line 16, css\new_design\components\text.less */
+/* line 15, css\new_design\components\text.less */
 .text_lh_21 {
   line-height: 21px;
 }

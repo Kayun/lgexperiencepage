@@ -2,10 +2,30 @@
 	position: relative;
 	padding: 121px 0 128px;
 	border-bottom: 1px solid #f3f3f3;
-	background: url('../images/oled/action-bg.jpg') 590px 55px no-repeat;
+
 
 	&-wrap {
 		width: 425px;
+	}
+
+	&__img1 {
+		position: absolute;
+		z-index: 2;
+		top: 7px;
+		right: -38px;
+		width: 504px;
+		height: 436px;
+		background: url('../images/oled/action-bg.jpg') 0 0 no-repeat;
+	}
+
+	&__img2 {
+		position: absolute;
+		z-index: 1;
+		top: 7px;
+		right: -38px;
+		width: 504px;
+		height: 436px;
+		background: url('../images/oled/action-bg-before.jpg') 0 0 no-repeat;
 	}
 
 }

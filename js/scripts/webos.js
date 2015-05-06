@@ -15,7 +15,6 @@ $window.load(function () {
 			controls: false,
 			preload: 'auto',
 			autoplay: false,
-			loop: true
 		}).ready(function() {
 			dataVideo (this)
 		});
@@ -33,6 +32,12 @@ $window.load(function () {
 				} else {
 					return false
 				}
+			});
+
+			player.on('ended', function () {
+				setTimeout(function () {
+					player.play();
+				}, 5000);
 			});
 		}
 	}
