@@ -30,6 +30,7 @@ $window.load(function () {
 						} else if (count == 6) {
 							clearInterval(interval);
 							setTimeout(function () {
+								$animContainer.removeClass(animCountClass + count);
 								count = 1;
 							}, 300);
 							$animContainer.removeClass(animCountClass + (count - 1));

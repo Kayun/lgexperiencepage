@@ -1707,30 +1707,55 @@ This must be run when you have at least 2 sprites.
 /* line 51, css\new_design\blocks\setup.less */
 .setup_type_ultra {
   padding-top: 76px;
-  background: url('../images/ultra/setup-bg.jpg') 119px 66px no-repeat;
 }
-/* line 55, css\new_design\blocks\setup.less */
+/* line 54, css\new_design\blocks\setup.less */
 .setup_type_ultra .setup-wrap {
   float: right;
 }
-/* line 59, css\new_design\blocks\setup.less */
+/* line 58, css\new_design\blocks\setup.less */
 .setup_type_ultra .wrapper {
   padding-bottom: 110px;
 }
-/* line 63, css\new_design\blocks\setup.less */
+/* line 62, css\new_design\blocks\setup.less */
 .setup_type_ultra .title {
   margin-bottom: 17px;
 }
+/* line 66, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__img {
+  right: 705px;
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
 /* line 71, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__container {
+  right: 797px;
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+/* line 76, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__block {
+  -webkit-transform: skewX(-11deg) scaleX(-1) !important;
+      -ms-transform: skewX(-11deg) scaleX(-1) !important;
+          transform: skewX(-11deg) scaleX(-1) !important;
+}
+/* line 79, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__block:before {
+  -webkit-transform: rotate(-4deg);
+      -ms-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+}
+/* line 88, css\new_design\blocks\setup.less */
 .setup-wrap {
   width: 428px;
 }
-/* line 75, css\new_design\blocks\setup.less */
+/* line 92, css\new_design\blocks\setup.less */
 .setup__help,
 .setup__lines {
   display: none;
 }
-/* line 80, css\new_design\blocks\setup.less */
+/* line 97, css\new_design\blocks\setup.less */
 .setup__img {
   position: absolute;
   z-index: 2;
@@ -1740,97 +1765,98 @@ This must be run when you have at least 2 sprites.
   height: 426px;
   background: url('../images/oled/setup-bg.png') 0 0 no-repeat;
 }
-/* line 90, css\new_design\blocks\setup.less */
+/* line 107, css\new_design\blocks\setup.less */
 .setup__container {
   position: absolute;
   top: 264px;
   right: 36px;
   width: 305px;
   height: 105px;
+  transition: background-color 0.3s ease;
 }
-/* line 99, css\new_design\blocks\setup.less */
+/* line 117, css\new_design\blocks\setup.less */
 .setup__container_frame_1 {
   background-color: #dbb43b;
 }
-/* line 102, css\new_design\blocks\setup.less */
+/* line 120, css\new_design\blocks\setup.less */
 .setup__container_frame_1 .setup__block:nth-child(1) {
   z-index: 3;
   top: -15px;
   left: 10px;
 }
-/* line 109, css\new_design\blocks\setup.less */
+/* line 127, css\new_design\blocks\setup.less */
 .setup__container_frame_2 {
   background-color: #e42247;
 }
-/* line 112, css\new_design\blocks\setup.less */
+/* line 130, css\new_design\blocks\setup.less */
 .setup__container_frame_2 .setup__block:nth-child(2) {
   z-index: 3;
   top: -15px;
   left: 50px;
 }
-/* line 119, css\new_design\blocks\setup.less */
+/* line 137, css\new_design\blocks\setup.less */
 .setup__container_frame_3 {
   background-color: #896aad;
 }
-/* line 122, css\new_design\blocks\setup.less */
+/* line 140, css\new_design\blocks\setup.less */
 .setup__container_frame_3 .setup__block:nth-child(3) {
   z-index: 3;
   top: -15px;
   left: 92px;
 }
-/* line 129, css\new_design\blocks\setup.less */
+/* line 147, css\new_design\blocks\setup.less */
 .setup__container_frame_4 {
   background-color: #d18635;
 }
-/* line 132, css\new_design\blocks\setup.less */
+/* line 150, css\new_design\blocks\setup.less */
 .setup__container_frame_4 .setup__block:nth-child(4) {
   z-index: 3;
   top: -15px;
   left: 129px;
 }
-/* line 139, css\new_design\blocks\setup.less */
+/* line 157, css\new_design\blocks\setup.less */
 .setup__container_frame_5 {
   background-color: #cf155e;
 }
-/* line 142, css\new_design\blocks\setup.less */
+/* line 160, css\new_design\blocks\setup.less */
 .setup__container_frame_5 .setup__block:nth-child(5) {
   z-index: 3;
   top: -15px;
   left: 171px;
 }
-/* line 149, css\new_design\blocks\setup.less */
+/* line 167, css\new_design\blocks\setup.less */
 .setup__container_frame_6 {
   background-color: #2ea9b1;
 }
-/* line 152, css\new_design\blocks\setup.less */
+/* line 170, css\new_design\blocks\setup.less */
 .setup__container_frame_6 .setup__block:nth-child(6) {
   z-index: 3;
   top: -15px;
   left: 214px;
 }
-/* line 161, css\new_design\blocks\setup.less */
+/* line 179, css\new_design\blocks\setup.less */
 .setup__block {
   position: absolute;
   z-index: 1;
   top: 0;
-  transition: top 0.3s ease, left 0.3s ease, z-index 0;
+  -webkit-transform: skewX(-11deg) scaleX(1);
+      -ms-transform: skewX(-11deg) scaleX(1);
+          transform: skewX(-11deg) scaleX(1);
+  transition: all .3s ease;
 }
-/* line 167, css\new_design\blocks\setup.less */
+/* line 186, css\new_design\blocks\setup.less */
 .setup__block:before {
   position: absolute;
   content: '';
 }
-/* line 172, css\new_design\blocks\setup.less */
+/* line 191, css\new_design\blocks\setup.less */
 .setup__block:nth-child(1) {
   left: 7px;
   width: 41px;
   height: 80px;
   background-color: #dbb43b;
-  -webkit-transform: skewX(-11deg);
-      -ms-transform: skewX(-11deg);
-          transform: skewX(-11deg);
 }
-/* line 179, css\new_design\blocks\setup.less */
+/* line 197, css\new_design\blocks\setup.less */
 .setup__block:nth-child(1):before {
   top: 23px;
   left: 4px;
@@ -1839,17 +1865,14 @@ This must be run when you have at least 2 sprites.
   width: 32px;
   height: 41px;
 }
-/* line 186, css\new_design\blocks\setup.less */
+/* line 204, css\new_design\blocks\setup.less */
 .setup__block:nth-child(2) {
   left: 47px;
   width: 43px;
   height: 85px;
   background-color: #e42247;
-  -webkit-transform: skewX(-11deg);
-      -ms-transform: skewX(-11deg);
-          transform: skewX(-11deg);
 }
-/* line 193, css\new_design\blocks\setup.less */
+/* line 210, css\new_design\blocks\setup.less */
 .setup__block:nth-child(2):before {
   top: 35px;
   left: 6px;
@@ -1858,17 +1881,14 @@ This must be run when you have at least 2 sprites.
   width: 29px;
   height: 19px;
 }
-/* line 200, css\new_design\blocks\setup.less */
+/* line 217, css\new_design\blocks\setup.less */
 .setup__block:nth-child(3) {
   left: 89px;
   width: 38px;
   height: 90px;
   background-color: #896aad;
-  -webkit-transform: skewX(-11deg);
-      -ms-transform: skewX(-11deg);
-          transform: skewX(-11deg);
 }
-/* line 207, css\new_design\blocks\setup.less */
+/* line 223, css\new_design\blocks\setup.less */
 .setup__block:nth-child(3):before {
   top: 38px;
   left: 1px;
@@ -1877,17 +1897,14 @@ This must be run when you have at least 2 sprites.
   width: 34px;
   height: 15px;
 }
-/* line 214, css\new_design\blocks\setup.less */
+/* line 230, css\new_design\blocks\setup.less */
 .setup__block:nth-child(4) {
   left: 126px;
   width: 43px;
   height: 95px;
   background-color: #d18635;
-  -webkit-transform: skewX(-11deg);
-      -ms-transform: skewX(-11deg);
-          transform: skewX(-11deg);
 }
-/* line 221, css\new_design\blocks\setup.less */
+/* line 236, css\new_design\blocks\setup.less */
 .setup__block:nth-child(4):before {
   top: 42px;
   left: 4px;
@@ -1896,17 +1913,14 @@ This must be run when you have at least 2 sprites.
   width: 35px;
   height: 15px;
 }
-/* line 228, css\new_design\blocks\setup.less */
+/* line 243, css\new_design\blocks\setup.less */
 .setup__block:nth-child(5) {
   left: 168px;
   width: 44px;
   height: 100px;
   background-color: #cf155e;
-  -webkit-transform: skewX(-11deg);
-      -ms-transform: skewX(-11deg);
-          transform: skewX(-11deg);
 }
-/* line 235, css\new_design\blocks\setup.less */
+/* line 249, css\new_design\blocks\setup.less */
 .setup__block:nth-child(5):before {
   top: 42px;
   left: 9px;
@@ -1915,17 +1929,14 @@ This must be run when you have at least 2 sprites.
   width: 27px;
   height: 15px;
 }
-/* line 242, css\new_design\blocks\setup.less */
+/* line 256, css\new_design\blocks\setup.less */
 .setup__block:nth-child(6) {
   left: 211px;
   width: 51px;
   height: 105px;
   background-color: #2ea9b1;
-  -webkit-transform: skewX(-11deg);
-      -ms-transform: skewX(-11deg);
-          transform: skewX(-11deg);
 }
-/* line 249, css\new_design\blocks\setup.less */
+/* line 262, css\new_design\blocks\setup.less */
 .setup__block:nth-child(6):before {
   top: 44px;
   left: 8px;
@@ -1934,17 +1945,14 @@ This must be run when you have at least 2 sprites.
   width: 36px;
   height: 15px;
 }
-/* line 256, css\new_design\blocks\setup.less */
+/* line 269, css\new_design\blocks\setup.less */
 .setup__block:nth-child(7) {
   right: -3px;
   width: 47px;
   height: 115px;
   background-color: #86a645;
-  -webkit-transform: skewX(-11deg);
-      -ms-transform: skewX(-11deg);
-          transform: skewX(-11deg);
 }
-/* line 265, css\new_design\blocks\setup.less */
+/* line 277, css\new_design\blocks\setup.less */
 .setup__point {
   position: absolute;
   z-index: 4;
@@ -1953,13 +1961,13 @@ This must be run when you have at least 2 sprites.
   width: 28px;
   height: 28px;
   background: url(../images/point.png) 0 0 no-repeat;
-  transition: left 1.8s linear;
+  transition: left 2.1s linear;
 }
-/* line 275, css\new_design\blocks\setup.less */
+/* line 287, css\new_design\blocks\setup.less */
 .setup__point_state_action {
-  left: 225px;
+  left: 297px;
 }
-/* line 279, css\new_design\blocks\setup.less */
+/* line 291, css\new_design\blocks\setup.less */
 .setup__point_duration {
   transition-duration: 0s !important;
 }
