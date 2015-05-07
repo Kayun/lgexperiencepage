@@ -41,7 +41,7 @@ $window.load(function () {
 
 				setTimeout(function () {
 					$animContainer.removeClass(animCountClass + count);
-				}, 300);
+				}, 200);
 
 				setTimeout(function () {
 					var int = setInterval(function () {
@@ -56,8 +56,8 @@ $window.load(function () {
 							count--;
 						}
 
-					}, 300);
-				}, 750);
+					}, 200);
+				}, 550);
 
 				$animContainer.removeClass(animCountClass + (count - 1));
 				$animContainer.addClass(animCountClass + count);
@@ -68,14 +68,14 @@ $window.load(function () {
 				count++;
 			}
 
-		}, 300);
+		}, 200);
 		setTimeout(function () {
 			$setupPoint.addClass(setupPointActionClass);
 			setTimeout(function () {
 				$setupPoint.removeClass(setupPointActionClass);
-			}, 2300);
+			}, 1550);
 
-		}, 300);
+		}, 200);
 	}
 
 });
