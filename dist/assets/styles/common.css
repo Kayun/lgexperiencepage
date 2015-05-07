@@ -1947,8 +1947,8 @@ This must be run when you have at least 2 sprites.
 }
 /* line 269, css\new_design\blocks\setup.less */
 .setup__block:nth-child(7) {
-  right: -3px;
-  width: 47px;
+  right: -4px;
+  width: 49px;
   height: 115px;
   background-color: #86a645;
 }
@@ -1957,7 +1957,7 @@ This must be run when you have at least 2 sprites.
   position: absolute;
   z-index: 4;
   top: 20px;
-  left: 10px;
+  left: -35px;
   width: 28px;
   height: 28px;
   background: url(../images/point.png) 0 0 no-repeat;

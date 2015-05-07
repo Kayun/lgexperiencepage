@@ -14,64 +14,68 @@ $window.load(function () {
 
 		$document.bind('scroll', function () {
 
-			if (flag) {
 
-				if ($setupSection.position().top +
-					$setupSection.innerHeight() <= $document.scrollTop() +
-					$window.height()) {
+			if ($setupSection.position().top +
+				$setupSection.innerHeight() <= $document.scrollTop() +
+				$window.height()) {
 
-					flag = !flag;
+				if (flag) {
+					anim();
+					setInterval(function () {
+						anim();
+					}, 8000);
+				}
+			}
+		});
+	}
 
-					var interval = setInterval(function () {
-						if (count === 1) {
-							$animContainer.addClass(animCountClass + count);
-							count++;
+	function anim() {
+		var interval = setInterval(function () {
+			if (count === 1) {
+				$animContainer.addClass(animCountClass + count);
+				count++;
 
-						} else if (count == 6) {
-							clearInterval(interval);
-							setTimeout(function () {
-								$animContainer.removeClass(animCountClass + count);
-								count = 1;
-							}, 300);
-							$animContainer.removeClass(animCountClass + (count - 1));
-							$animContainer.addClass(animCountClass + count);
+			} else if (count == 6) {
+				clearInterval(interval);
 
+				setTimeout(function () {
+					$animContainer.removeClass(animCountClass + count);
+				}, 300);
+
+				setTimeout(function () {
+					var int = setInterval(function () {
+
+						if (count === 0) {
+							$animContainer.removeClass(animCountClass + (count + 1));
+							clearInterval(int);
+							flag = !flag;
+							count = 1;
 						} else {
-							$animContainer.removeClass(animCountClass + (count - 1));
+							$animContainer.removeClass(animCountClass + (count + 1));
 							$animContainer.addClass(animCountClass + count);
-							count++;
+							count--;
 						}
 
 					}, 300);
-					setTimeout(function () {
-						setTimeout(function () {
-							$setupPoint.addClass(setupPointActionClass);
-						}, 1);
+				}, 800);
 
-						$setupPoint.removeClass(setupPointDurationClass);
-					}, 300);
-				}
+				$animContainer.removeClass(animCountClass + (count - 1));
+				$animContainer.addClass(animCountClass + count);
 
+			} else {
+				$animContainer.removeClass(animCountClass + (count - 1));
+				$animContainer.addClass(animCountClass + count);
+				count++;
 			}
 
-			if ($setupSection.position().top +
-				$setupSection.innerHeight() > $document.scrollTop() +
-				$window.height()) {
+		}, 300);
+		setTimeout(function () {
+			$setupPoint.addClass(setupPointActionClass);
+			setTimeout(function () {
+				$setupPoint.removeClass(setupPointActionClass);
+			}, 2300);
 
-				flag = !flag;
-				setTimeout(function () {
-					$setupPoint.removeClass(setupPointActionClass);
-				}, 1);
-
-				$animContainer.removeClass(animCountClass + 6);
-				$setupPoint.addClass(setupPointDurationClass);
-			}
-		});
-
-
-
-
-
-
+		}, 300);
 	}
+
 });
