@@ -24,6 +24,7 @@ $window.load(function () {
 					setInterval(function () {
 						anim();
 					}, 8000);
+					flag = !flag;
 				}
 			}
 		});
@@ -48,7 +49,6 @@ $window.load(function () {
 						if (count === 0) {
 							$animContainer.removeClass(animCountClass + (count + 1));
 							clearInterval(int);
-							flag = !flag;
 							count = 1;
 						} else {
 							$animContainer.removeClass(animCountClass + (count + 1));
@@ -57,7 +57,7 @@ $window.load(function () {
 						}
 
 					}, 300);
-				}, 800);
+				}, 750);
 
 				$animContainer.removeClass(animCountClass + (count - 1));
 				$animContainer.addClass(animCountClass + count);
