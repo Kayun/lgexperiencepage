@@ -686,7 +686,7 @@ This must be run when you have at least 2 sprites.
 .technology__item-logo_type_ips {
   margin-top: 4px;
   background-image: url(../images/sprite.png);
-  background-position: -89px -455px;
+  background-position: -53px -455px;
   width: 50px;
   height: 16px;
 }
@@ -1608,35 +1608,35 @@ This must be run when you have at least 2 sprites.
 /* line 41, css\new_design\blocks\console.less */
 .console__item-logo_type_menu {
   background-image: url(../images/sprite.png);
-  background-position: -502px -96px;
+  background-position: -502px -240px;
   width: 20px;
   height: 15px;
 }
 /* line 45, css\new_design\blocks\console.less */
 .console__item-logo_type_wheel {
   background-image: url(../images/sprite.png);
-  background-position: -502px -36px;
+  background-position: -502px -157px;
   width: 18px;
   height: 27px;
 }
 /* line 49, css\new_design\blocks\console.less */
 .console__item-logo_type_click {
   background-image: url(../images/sprite.png);
-  background-position: -502px -119px;
+  background-position: -502px -263px;
   width: 14px;
   height: 16px;
 }
 /* line 53, css\new_design\blocks\console.less */
 .console__item-logo_type_all {
   background-image: url(../images/sprite.png);
-  background-position: -502px 0px;
+  background-position: -502px -94px;
   width: 26px;
   height: 28px;
 }
 /* line 57, css\new_design\blocks\console.less */
 .console__item-logo_type_voice {
   background-image: url(../images/sprite.png);
-  background-position: -502px -71px;
+  background-position: -502px -215px;
   width: 20px;
   height: 17px;
 }
@@ -1664,28 +1664,27 @@ This must be run when you have at least 2 sprites.
   padding-top: 54px;
   font-size: 0;
 }
-/* line 1, css\new_design\blocks\setup.less */
+/* line 8, css\new_design\blocks\setup.less */
 .setup {
   position: relative;
-  background: url('../images/oled/setup-bg.jpg') 598px 52px no-repeat;
 }
-/* line 5, css\new_design\blocks\setup.less */
+/* line 11, css\new_design\blocks\setup.less */
 .setup .wrapper {
   padding-top: 61px;
   padding-bottom: 76px;
   border-bottom: 1px solid #f3f3f3;
 }
-/* line 13, css\new_design\blocks\setup.less */
+/* line 19, css\new_design\blocks\setup.less */
 .setup_type_webos {
   background: url('../images/webos/setup-bg.jpg') 513px 56px no-repeat;
 }
-/* line 16, css\new_design\blocks\setup.less */
+/* line 22, css\new_design\blocks\setup.less */
 .setup_type_webos .wrapper {
   padding-top: 68px;
   padding-bottom: 86px;
   border-top: 1px solid #f3f3f3;
 }
-/* line 22, css\new_design\blocks\setup.less */
+/* line 28, css\new_design\blocks\setup.less */
 .setup_type_webos .setup__help {
   position: absolute;
   top: 115px;
@@ -1695,7 +1694,7 @@ This must be run when you have at least 2 sprites.
   display: block;
   background: url('../images/webos/help.png') 0 0 no-repeat;
 }
-/* line 33, css\new_design\blocks\setup.less */
+/* line 39, css\new_design\blocks\setup.less */
 .setup_type_webos .setup__lines {
   position: absolute;
   top: 107px;
@@ -1705,31 +1704,264 @@ This must be run when you have at least 2 sprites.
   display: block;
   background: url('../images/webos/lines.png') 0 0 no-repeat;
 }
-/* line 45, css\new_design\blocks\setup.less */
+/* line 51, css\new_design\blocks\setup.less */
 .setup_type_ultra {
   padding-top: 76px;
   background: url('../images/ultra/setup-bg.jpg') 119px 66px no-repeat;
 }
-/* line 49, css\new_design\blocks\setup.less */
+/* line 55, css\new_design\blocks\setup.less */
 .setup_type_ultra .setup-wrap {
   float: right;
 }
-/* line 53, css\new_design\blocks\setup.less */
+/* line 59, css\new_design\blocks\setup.less */
 .setup_type_ultra .wrapper {
   padding-bottom: 110px;
 }
-/* line 57, css\new_design\blocks\setup.less */
+/* line 63, css\new_design\blocks\setup.less */
 .setup_type_ultra .title {
   margin-bottom: 17px;
 }
-/* line 65, css\new_design\blocks\setup.less */
+/* line 71, css\new_design\blocks\setup.less */
 .setup-wrap {
   width: 428px;
 }
-/* line 69, css\new_design\blocks\setup.less */
+/* line 75, css\new_design\blocks\setup.less */
 .setup__help,
 .setup__lines {
   display: none;
+}
+/* line 80, css\new_design\blocks\setup.less */
+.setup__img {
+  position: absolute;
+  z-index: 2;
+  top: 51px;
+  right: 0;
+  width: 433px;
+  height: 426px;
+  background: url('../images/oled/setup-bg.png') 0 0 no-repeat;
+}
+/* line 90, css\new_design\blocks\setup.less */
+.setup__container {
+  position: absolute;
+  top: 264px;
+  right: 36px;
+  width: 305px;
+  height: 105px;
+}
+/* line 99, css\new_design\blocks\setup.less */
+.setup__container_frame_1 {
+  background-color: #dbb43b;
+}
+/* line 102, css\new_design\blocks\setup.less */
+.setup__container_frame_1 .setup__block:nth-child(1) {
+  z-index: 3;
+  top: -15px;
+  left: 10px;
+}
+/* line 109, css\new_design\blocks\setup.less */
+.setup__container_frame_2 {
+  background-color: #e42247;
+}
+/* line 112, css\new_design\blocks\setup.less */
+.setup__container_frame_2 .setup__block:nth-child(2) {
+  z-index: 3;
+  top: -15px;
+  left: 50px;
+}
+/* line 119, css\new_design\blocks\setup.less */
+.setup__container_frame_3 {
+  background-color: #896aad;
+}
+/* line 122, css\new_design\blocks\setup.less */
+.setup__container_frame_3 .setup__block:nth-child(3) {
+  z-index: 3;
+  top: -15px;
+  left: 92px;
+}
+/* line 129, css\new_design\blocks\setup.less */
+.setup__container_frame_4 {
+  background-color: #d18635;
+}
+/* line 132, css\new_design\blocks\setup.less */
+.setup__container_frame_4 .setup__block:nth-child(4) {
+  z-index: 3;
+  top: -15px;
+  left: 129px;
+}
+/* line 139, css\new_design\blocks\setup.less */
+.setup__container_frame_5 {
+  background-color: #cf155e;
+}
+/* line 142, css\new_design\blocks\setup.less */
+.setup__container_frame_5 .setup__block:nth-child(5) {
+  z-index: 3;
+  top: -15px;
+  left: 171px;
+}
+/* line 149, css\new_design\blocks\setup.less */
+.setup__container_frame_6 {
+  background-color: #2ea9b1;
+}
+/* line 152, css\new_design\blocks\setup.less */
+.setup__container_frame_6 .setup__block:nth-child(6) {
+  z-index: 3;
+  top: -15px;
+  left: 214px;
+}
+/* line 161, css\new_design\blocks\setup.less */
+.setup__block {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  transition: top 0.3s ease, left 0.3s ease, z-index 0;
+}
+/* line 167, css\new_design\blocks\setup.less */
+.setup__block:before {
+  position: absolute;
+  content: '';
+}
+/* line 172, css\new_design\blocks\setup.less */
+.setup__block:nth-child(1) {
+  left: 7px;
+  width: 41px;
+  height: 80px;
+  background-color: #dbb43b;
+  -webkit-transform: skewX(-11deg);
+      -ms-transform: skewX(-11deg);
+          transform: skewX(-11deg);
+}
+/* line 179, css\new_design\blocks\setup.less */
+.setup__block:nth-child(1):before {
+  top: 23px;
+  left: 4px;
+  background-image: url(../images/sprite.png);
+  background-position: -502px 0px;
+  width: 32px;
+  height: 41px;
+}
+/* line 186, css\new_design\blocks\setup.less */
+.setup__block:nth-child(2) {
+  left: 47px;
+  width: 43px;
+  height: 85px;
+  background-color: #e42247;
+  -webkit-transform: skewX(-11deg);
+      -ms-transform: skewX(-11deg);
+          transform: skewX(-11deg);
+}
+/* line 193, css\new_design\blocks\setup.less */
+.setup__block:nth-child(2):before {
+  top: 35px;
+  left: 6px;
+  background-image: url(../images/sprite.png);
+  background-position: -502px -130px;
+  width: 29px;
+  height: 19px;
+}
+/* line 200, css\new_design\blocks\setup.less */
+.setup__block:nth-child(3) {
+  left: 89px;
+  width: 38px;
+  height: 90px;
+  background-color: #896aad;
+  -webkit-transform: skewX(-11deg);
+      -ms-transform: skewX(-11deg);
+          transform: skewX(-11deg);
+}
+/* line 207, css\new_design\blocks\setup.less */
+.setup__block:nth-child(3):before {
+  top: 38px;
+  left: 1px;
+  background-image: url(../images/sprite.png);
+  background-position: -212px -455px;
+  width: 34px;
+  height: 15px;
+}
+/* line 214, css\new_design\blocks\setup.less */
+.setup__block:nth-child(4) {
+  left: 126px;
+  width: 43px;
+  height: 95px;
+  background-color: #d18635;
+  -webkit-transform: skewX(-11deg);
+      -ms-transform: skewX(-11deg);
+          transform: skewX(-11deg);
+}
+/* line 221, css\new_design\blocks\setup.less */
+.setup__block:nth-child(4):before {
+  top: 42px;
+  left: 4px;
+  background-image: url(../images/sprite.png);
+  background-position: -169px -455px;
+  width: 35px;
+  height: 15px;
+}
+/* line 228, css\new_design\blocks\setup.less */
+.setup__block:nth-child(5) {
+  left: 168px;
+  width: 44px;
+  height: 100px;
+  background-color: #cf155e;
+  -webkit-transform: skewX(-11deg);
+      -ms-transform: skewX(-11deg);
+          transform: skewX(-11deg);
+}
+/* line 235, css\new_design\blocks\setup.less */
+.setup__block:nth-child(5):before {
+  top: 42px;
+  left: 9px;
+  background-image: url(../images/sprite.png);
+  background-position: -502px -192px;
+  width: 27px;
+  height: 15px;
+}
+/* line 242, css\new_design\blocks\setup.less */
+.setup__block:nth-child(6) {
+  left: 211px;
+  width: 51px;
+  height: 105px;
+  background-color: #2ea9b1;
+  -webkit-transform: skewX(-11deg);
+      -ms-transform: skewX(-11deg);
+          transform: skewX(-11deg);
+}
+/* line 249, css\new_design\blocks\setup.less */
+.setup__block:nth-child(6):before {
+  top: 44px;
+  left: 8px;
+  background-image: url(../images/sprite.png);
+  background-position: -457px -206px;
+  width: 36px;
+  height: 15px;
+}
+/* line 256, css\new_design\blocks\setup.less */
+.setup__block:nth-child(7) {
+  right: -3px;
+  width: 47px;
+  height: 115px;
+  background-color: #86a645;
+  -webkit-transform: skewX(-11deg);
+      -ms-transform: skewX(-11deg);
+          transform: skewX(-11deg);
+}
+/* line 265, css\new_design\blocks\setup.less */
+.setup__point {
+  position: absolute;
+  z-index: 4;
+  top: 20px;
+  left: 10px;
+  width: 28px;
+  height: 28px;
+  background: url(../images/point.png) 0 0 no-repeat;
+  transition: left 1.8s linear;
+}
+/* line 275, css\new_design\blocks\setup.less */
+.setup__point_state_action {
+  left: 225px;
+}
+/* line 279, css\new_design\blocks\setup.less */
+.setup__point_duration {
+  transition-duration: 0s !important;
 }
 /* line 1, css\new_design\blocks\features.less */
 .features {
@@ -1790,7 +2022,7 @@ This must be run when you have at least 2 sprites.
   top: -4px;
   margin-bottom: 8px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -455px;
+  background-position: -502px -49px;
   width: 28px;
   height: 37px;
 }
@@ -2122,7 +2354,7 @@ This must be run when you have at least 2 sprites.
 /* line 64, css\new_design\components\model.less */
 .model__icon_type_4k-mini {
   background-image: url(../images/sprite.png);
-  background-position: -147px -455px;
+  background-position: -111px -455px;
   width: 50px;
   height: 16px;
 }
@@ -2136,7 +2368,7 @@ This must be run when you have at least 2 sprites.
 /* line 72, css\new_design\components\model.less */
 .model__icon_type_respond-mini {
   background-image: url(../images/sprite.png);
-  background-position: -36px -455px;
+  background-position: 0px -455px;
   width: 45px;
   height: 20px;
 }

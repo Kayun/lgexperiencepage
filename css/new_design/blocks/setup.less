@@ -1,6 +1,12 @@
+@color-block-1: #dbb43b;
+@color-block-2: #e42247;
+@color-block-3: #896aad;
+@color-block-4: #d18635;
+@color-block-5: #cf155e;
+@color-block-6: #2ea9b1;
+
 .setup {
 	position: relative;
-	background: url('../images/oled/setup-bg.jpg') 598px 52px no-repeat;
 
 	& .wrapper {
 		padding-top: 61px;
@@ -69,6 +75,210 @@
 	&__help,
 	&__lines {
 		display: none;
+	}
+
+	&__img {
+		position: absolute;
+		z-index: 2;
+		top: 51px;
+		right: 0;
+		width: 433px;
+		height: 426px;
+		background: url('../images/oled/setup-bg.png') 0 0 no-repeat;
+	}
+
+	&__container {
+		position: absolute;
+		top: 264px;
+		right: 36px;
+		width: 305px;
+		height: 105px;
+
+		&_frame {
+
+			&_1 {
+				background-color: @color-block-1;
+
+				& .setup__block:nth-child(1) {
+					z-index: 3;
+					top: -15px;
+					left: 10px;
+				}
+			}
+
+			&_2 {
+				background-color: @color-block-2;
+
+				& .setup__block:nth-child(2) {
+					z-index: 3;
+					top: -15px;
+					left: 50px;
+				}
+			}
+
+			&_3 {
+				background-color: @color-block-3;
+
+				& .setup__block:nth-child(3) {
+					z-index: 3;
+					top: -15px;
+					left: 92px;
+				}
+			}
+
+			&_4 {
+				background-color: @color-block-4;
+
+				& .setup__block:nth-child(4) {
+					z-index: 3;
+					top: -15px;
+					left: 129px;
+				}
+			}
+
+			&_5 {
+				background-color: @color-block-5;
+
+				& .setup__block:nth-child(5) {
+					z-index: 3;
+					top: -15px;
+					left: 171px;
+				}
+			}
+
+			&_6 {
+				background-color: @color-block-6;
+
+				& .setup__block:nth-child(6) {
+					z-index: 3;
+					top: -15px;
+					left: 214px;
+				}
+			}
+		}
+	}
+
+	&__block {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		transition: top .3s ease, left .3s ease, z-index 0;
+
+		&:before {
+			position: absolute;
+			content: '';
+		}
+
+		&:nth-child(1) {
+			left: 7px;
+			width: 41px;
+			height: 80px;
+			background-color: @color-block-1;
+			transform: skewX(-11deg);
+
+			&:before {
+				top: 23px;
+				left: 4px;
+				.sprite(@icon-setup-block1)
+			}
+		}
+
+		&:nth-child(2) {
+			left: 47px;
+			width: 43px;
+			height: 85px;
+			background-color: @color-block-2;
+			transform: skewX(-11deg);
+
+			&:before {
+				top: 35px;
+				left: 6px;
+				.sprite(@icon-setup-block2)
+			}
+		}
+
+		&:nth-child(3) {
+			left: 89px;
+			width: 38px;
+			height: 90px;
+			background-color: @color-block-3;
+			transform: skewX(-11deg);
+
+			&:before {
+				top: 38px;
+				left: 1px;
+				.sprite(@icon-setup-block3)
+			}
+		}
+
+		&:nth-child(4) {
+			left: 126px;
+			width: 43px;
+			height: 95px;
+			background-color: @color-block-4;
+			transform: skewX(-11deg);
+
+			&:before {
+				top: 42px;
+				left: 4px;
+				.sprite(@icon-setup-block4)
+			}
+		}
+
+		&:nth-child(5) {
+			left: 168px;
+			width: 44px;
+			height: 100px;
+			background-color: @color-block-5;
+			transform: skewX(-11deg);
+
+			&:before {
+				top: 42px;
+				left: 9px;
+				.sprite(@icon-setup-block5)
+			}
+		}
+
+		&:nth-child(6) {
+			left: 211px;
+			width: 51px;
+			height: 105px;
+			background-color: @color-block-6;
+			transform: skewX(-11deg);
+
+			&:before {
+				top: 44px;
+				left: 8px;
+				.sprite(@icon-setup-block6)
+			}
+		}
+
+		&:nth-child(7) {
+			right: -3px;
+			width: 47px;
+			height: 115px;
+			background-color: #86a645;
+			transform: skewX(-11deg)
+		}
+	}
+
+	&__point {
+		position: absolute;
+		z-index: 4;
+		top: 20px;
+		left: 10px;
+		width: 28px;
+		height: 28px;
+		background: url(../images/point.png) 0 0 no-repeat;
+		transition: left 1.8s linear;
+
+		&_state_action {
+			left: 225px;
+		}
+
+		&_duration {
+			transition-duration: 0s !important;
+		}
 	}
 
 }
