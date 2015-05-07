@@ -360,7 +360,7 @@ This must be run when you have at least 2 sprites.
   position: relative;
   padding-top: 20px;
   width: 100%;
-  height: 465px;
+  height: 485px;
   font-size: 0;
 }
 /* line 8, css\new_design\blocks\main\menu.less */
@@ -439,7 +439,7 @@ This must be run when you have at least 2 sprites.
 /* line 95, css\new_design\blocks\main\menu.less */
 .menu__item-logo_type_oled {
   background-image: url(../images/sprite.png);
-  background-position: -356px -136px;
+  background-position: -222px -170px;
   width: 134px;
   height: 22px;
 }
@@ -568,7 +568,7 @@ This must be run when you have at least 2 sprites.
 /* line 233, css\new_design\blocks\main\menu.less */
 .menu__item-badge_type_ultra {
   background-image: url(../images/sprite.png);
-  background-position: -236px -206px;
+  background-position: -205px -206px;
   width: 106px;
   height: 20px;
 }
@@ -579,129 +579,110 @@ This must be run when you have at least 2 sprites.
   width: 90px;
   height: 18px;
 }
-/* line 1, css\new_design\blocks\main\technology.less */
-.technology {
-  padding: 0 27px;
-}
-/* line 4, css\new_design\blocks\main\technology.less */
+/* line 3, css\new_design\blocks\main\technology.less */
 .technology__title {
-  padding-top: 44px;
-  padding-bottom: 36px;
+  padding: 44px 27px 42px;
   font-family: 'helvetica-light', Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 28px;
   color: #7b7b7b;
 }
-/* line 13, css\new_design\blocks\main\technology.less */
+/* line 11, css\new_design\blocks\main\technology.less */
 .technology__item {
-  width: 215px;
+  width: 328px;
+  height: 155px;
   float: left;
-}
-/* line 17, css\new_design\blocks\main\technology.less */
-.technology__item:first-child {
-  margin-left: 5px;
-}
-/* line 21, css\new_design\blocks\main\technology.less */
-.technology__item + .technology__item {
-  margin-left: 20px;
-}
-/* line 26, css\new_design\blocks\main\technology.less */
-.technology__item-container {
-  width: 100%;
-  height: 188px;
-  border: 1px solid #efefef;
   background-color: #fff;
+  border: 1px solid #efefef;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-/* line 34, css\new_design\blocks\main\technology.less */
-.technology__item-container:hover {
+/* line 20, css\new_design\blocks\main\technology.less */
+.technology__item:hover {
   background-color: #efefef;
 }
-/* line 39, css\new_design\blocks\main\technology.less */
+/* line 24, css\new_design\blocks\main\technology.less */
+.technology__item + .technology__item {
+  margin-left: 6px;
+}
+/* line 29, css\new_design\blocks\main\technology.less */
+.technology__item-container {
+  padding-left: 185px;
+  width: 100%;
+  height: 100%;
+}
+/* line 35, css\new_design\blocks\main\technology.less */
 .technology__item-img {
   margin: 0 auto;
+  float: left;
   background-position: 0 0;
   background-repeat: no-repeat;
 }
-/* line 46, css\new_design\blocks\main\technology.less */
+/* line 43, css\new_design\blocks\main\technology.less */
 .technology__item-img_type_cinema-3d {
   margin-top: 12px;
+  margin-left: 16px;
   width: 150px;
   height: 126px;
   background-image: url('../images/cinema-3d.png');
 }
-/* line 53, css\new_design\blocks\main\technology.less */
+/* line 51, css\new_design\blocks\main\technology.less */
 .technology__item-img_type_dvb-t2 {
   margin-top: 19px;
-  padding-left: 10px;
+  margin-left: 13px;
   width: 166px;
   height: 122px;
   background-image: url('../images/dvb-t2.png');
-  background-position-x: 10px;
 }
-/* line 62, css\new_design\blocks\main\technology.less */
-.technology__item-img_type_oled-4k {
-  margin-top: 28px;
-  width: 200px;
-  height: 118px;
-  background-image: url('../images/oled-4k.png');
-}
-/* line 69, css\new_design\blocks\main\technology.less */
+/* line 59, css\new_design\blocks\main\technology.less */
 .technology__item-img_type_ips {
   margin-top: 31px;
-  width: 158px;
-  height: 118px;
+  margin-left: 18px;
+  width: 146px;
+  height: 109px;
   background-image: url('../images/ips.png');
 }
-/* line 80, css\new_design\blocks\main\technology.less */
+/* line 71, css\new_design\blocks\main\technology.less */
 .technology__item-logo {
-  margin: 0 auto;
+  margin-top: 38px;
+  display: inline-block;
 }
-/* line 85, css\new_design\blocks\main\technology.less */
+/* line 77, css\new_design\blocks\main\technology.less */
 .technology__item-logo_type_cinema-3d {
-  margin-top: 7px;
   background-image: url(../images/sprite.png);
-  background-position: -198px -136px;
-  width: 150px;
-  height: 24px;
+  background-position: -364px -170px;
+  width: 125px;
+  height: 21px;
 }
-/* line 90, css\new_design\blocks\main\technology.less */
+/* line 81, css\new_design\blocks\main\technology.less */
 .technology__item-logo_type_dvb-t2 {
-  margin-top: 8px;
   background-image: url(../images/sprite.png);
-  background-position: -411px -99px;
-  width: 80px;
-  height: 20px;
-}
-/* line 95, css\new_design\blocks\main\technology.less */
-.technology__item-logo_type_oled-4k {
-  margin-top: 5px;
-  background-image: url(../images/sprite.png);
-  background-position: -80px -206px;
-  width: 148px;
-  height: 20px;
-}
-/* line 100, css\new_design\blocks\main\technology.less */
-.technology__item-logo_type_ips {
-  margin-top: 4px;
-  background-image: url(../images/sprite.png);
-  background-position: -53px -455px;
-  width: 50px;
+  background-position: -110px -406px;
+  width: 70px;
   height: 16px;
 }
-/* line 107, css\new_design\blocks\main\technology.less */
+/* line 85, css\new_design\blocks\main\technology.less */
+.technology__item-logo_type_ips {
+  background-image: url(../images/sprite.png);
+  background-position: -157px -455px;
+  width: 49px;
+  height: 16px;
+}
+/* line 91, css\new_design\blocks\main\technology.less */
 .technology__item-text {
-  margin-top: 15px;
-  padding: 0 3px;
+  margin-top: 11px;
   font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
-  font-size: 17px;
-  line-height: 19px;
+  font-size: 15px;
+  line-height: 16px;
   color: #3a3939;
+}
+/* line 98, css\new_design\blocks\main\technology.less */
+.technology__item-text_mt_6 {
+  margin-top: 6px;
 }
 /* line 1, css\new_design\blocks\main\submenu.less */
 .submenu {
-  padding: 56px 0;
+  padding: 87px 0;
   text-align: center;
   background: radial-gradient(at bottom, #f8f8f8, #ffffff 60%);
 }
@@ -853,7 +834,7 @@ This must be run when you have at least 2 sprites.
   margin-top: 9px;
   margin-bottom: 26px;
   background-image: url(../images/sprite.png);
-  background-position: -413px -350px;
+  background-position: -49px -406px;
   width: 53px;
   height: 26px;
 }
@@ -863,7 +844,7 @@ This must be run when you have at least 2 sprites.
   margin-top: 2px;
   margin-bottom: 23px;
   background-image: url(../images/sprite.png);
-  background-position: -49px -406px;
+  background-position: -347px -350px;
   width: 44px;
   height: 35px;
 }
@@ -1291,7 +1272,7 @@ This must be run when you have at least 2 sprites.
   margin: 0 35px 0 14px;
   display: inline-block;
   background-image: url(../images/sprite.png);
-  background-position: -370px -170px;
+  background-position: -80px -206px;
   width: 117px;
   height: 22px;
 }
@@ -1722,40 +1703,120 @@ This must be run when you have at least 2 sprites.
 }
 /* line 66, css\new_design\blocks\setup.less */
 .setup_type_ultra .setup__img {
-  right: 705px;
-  -webkit-transform: scaleX(-1);
-      -ms-transform: scaleX(-1);
-          transform: scaleX(-1);
+  top: 65px;
+  right: 660px;
+  width: 481px;
+  height: 321px;
+  background: url('../images/ultra/setup-bg.png') 0 0 no-repeat;
 }
-/* line 71, css\new_design\blocks\setup.less */
+/* line 74, css\new_design\blocks\setup.less */
 .setup_type_ultra .setup__container {
-  right: 797px;
-  -webkit-transform: scaleX(-1);
-      -ms-transform: scaleX(-1);
-          transform: scaleX(-1);
+  right: 699px;
+  top: 257px;
 }
-/* line 76, css\new_design\blocks\setup.less */
-.setup_type_ultra .setup__block {
-  -webkit-transform: skewX(-11deg) scaleX(-1) !important;
-      -ms-transform: skewX(-11deg) scaleX(-1) !important;
-          transform: skewX(-11deg) scaleX(-1) !important;
+/* line 82, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__container_frame_1 .setup__block:nth-child(1) {
+  left: 9px;
 }
-/* line 79, css\new_design\blocks\setup.less */
+/* line 90, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__container_frame_2 .setup__block:nth-child(2) {
+  left: 51px;
+}
+/* line 97, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__container_frame_3 .setup__block:nth-child(3) {
+  left: 92px;
+}
+/* line 104, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__container_frame_4 .setup__block:nth-child(4) {
+  left: 129px;
+}
+/* line 111, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__container_frame_5 .setup__block:nth-child(5) {
+  left: 171px;
+}
+/* line 118, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__container_frame_6 .setup__block:nth-child(6) {
+  left: 214px;
+}
+/* line 127, css\new_design\blocks\setup.less */
 .setup_type_ultra .setup__block:before {
   -webkit-transform: rotate(-4deg);
       -ms-transform: rotate(-4deg);
           transform: rotate(-4deg);
 }
-/* line 88, css\new_design\blocks\setup.less */
+/* line 131, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__block:nth-child(1) {
+  left: 6px;
+  height: 105px;
+}
+/* line 136, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__block:nth-child(2) {
+  left: 48px;
+  width: 41px;
+  height: 95px;
+}
+/* line 141, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__block:nth-child(2):before {
+  top: 32px;
+  -webkit-transform: rotate(-6deg);
+      -ms-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+/* line 149, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__block:nth-child(3):before {
+  top: 32px;
+  -webkit-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+/* line 156, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__block:nth-child(4) {
+  height: 90px;
+}
+/* line 159, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__block:nth-child(4):before {
+  top: 33px;
+  -webkit-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+/* line 166, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__block:nth-child(5) {
+  height: 90px;
+}
+/* line 169, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__block:nth-child(5):before {
+  top: 33px;
+  -webkit-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+/* line 176, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__block:nth-child(6) {
+  height: 85px;
+}
+/* line 179, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__block:nth-child(6):before {
+  top: 31px;
+}
+/* line 185, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__block:nth-child(7) {
+  right: -2px;
+}
+/* line 193, css\new_design\blocks\setup.less */
+.setup_type_ultra .setup__point_state_action {
+  left: 272px;
+}
+/* line 202, css\new_design\blocks\setup.less */
 .setup-wrap {
   width: 428px;
 }
-/* line 92, css\new_design\blocks\setup.less */
+/* line 206, css\new_design\blocks\setup.less */
 .setup__help,
 .setup__lines {
   display: none;
 }
-/* line 97, css\new_design\blocks\setup.less */
+/* line 211, css\new_design\blocks\setup.less */
 .setup__img {
   position: absolute;
   z-index: 2;
@@ -1765,7 +1826,7 @@ This must be run when you have at least 2 sprites.
   height: 426px;
   background: url('../images/oled/setup-bg.png') 0 0 no-repeat;
 }
-/* line 107, css\new_design\blocks\setup.less */
+/* line 221, css\new_design\blocks\setup.less */
 .setup__container {
   position: absolute;
   top: 264px;
@@ -1774,89 +1835,90 @@ This must be run when you have at least 2 sprites.
   height: 105px;
   transition: background-color 0.2s ease;
 }
-/* line 117, css\new_design\blocks\setup.less */
+/* line 231, css\new_design\blocks\setup.less */
 .setup__container_frame_1 {
   background-color: #dbb43b;
 }
-/* line 120, css\new_design\blocks\setup.less */
+/* line 234, css\new_design\blocks\setup.less */
 .setup__container_frame_1 .setup__block:nth-child(1) {
   z-index: 3;
   top: -15px;
   left: 10px;
 }
-/* line 127, css\new_design\blocks\setup.less */
+/* line 241, css\new_design\blocks\setup.less */
 .setup__container_frame_2 {
   background-color: #e42247;
 }
-/* line 130, css\new_design\blocks\setup.less */
+/* line 244, css\new_design\blocks\setup.less */
 .setup__container_frame_2 .setup__block:nth-child(2) {
   z-index: 3;
   top: -15px;
   left: 50px;
 }
-/* line 137, css\new_design\blocks\setup.less */
+/* line 251, css\new_design\blocks\setup.less */
 .setup__container_frame_3 {
   background-color: #896aad;
 }
-/* line 140, css\new_design\blocks\setup.less */
+/* line 254, css\new_design\blocks\setup.less */
 .setup__container_frame_3 .setup__block:nth-child(3) {
   z-index: 3;
   top: -15px;
   left: 92px;
 }
-/* line 147, css\new_design\blocks\setup.less */
+/* line 261, css\new_design\blocks\setup.less */
 .setup__container_frame_4 {
   background-color: #d18635;
 }
-/* line 150, css\new_design\blocks\setup.less */
+/* line 264, css\new_design\blocks\setup.less */
 .setup__container_frame_4 .setup__block:nth-child(4) {
   z-index: 3;
   top: -15px;
   left: 129px;
 }
-/* line 157, css\new_design\blocks\setup.less */
+/* line 271, css\new_design\blocks\setup.less */
 .setup__container_frame_5 {
   background-color: #cf155e;
 }
-/* line 160, css\new_design\blocks\setup.less */
+/* line 274, css\new_design\blocks\setup.less */
 .setup__container_frame_5 .setup__block:nth-child(5) {
   z-index: 3;
   top: -15px;
   left: 171px;
 }
-/* line 167, css\new_design\blocks\setup.less */
+/* line 281, css\new_design\blocks\setup.less */
 .setup__container_frame_6 {
   background-color: #2ea9b1;
 }
-/* line 170, css\new_design\blocks\setup.less */
+/* line 284, css\new_design\blocks\setup.less */
 .setup__container_frame_6 .setup__block:nth-child(6) {
   z-index: 3;
   top: -15px;
   left: 214px;
 }
-/* line 179, css\new_design\blocks\setup.less */
+/* line 293, css\new_design\blocks\setup.less */
 .setup__block {
   position: absolute;
   z-index: 1;
   top: 0;
-  -webkit-transform: skewX(-11deg) scaleX(1);
-      -ms-transform: skewX(-11deg) scaleX(1);
-          transform: skewX(-11deg) scaleX(1);
+  -webkit-transform: skewX(-11deg);
+      -ms-transform: skewX(-11deg);
+          transform: skewX(-11deg);
   transition: all .2s ease;
+  will-change: left, top;
 }
-/* line 186, css\new_design\blocks\setup.less */
+/* line 301, css\new_design\blocks\setup.less */
 .setup__block:before {
   position: absolute;
   content: '';
 }
-/* line 191, css\new_design\blocks\setup.less */
+/* line 306, css\new_design\blocks\setup.less */
 .setup__block:nth-child(1) {
   left: 7px;
   width: 41px;
   height: 80px;
   background-color: #dbb43b;
 }
-/* line 197, css\new_design\blocks\setup.less */
+/* line 312, css\new_design\blocks\setup.less */
 .setup__block:nth-child(1):before {
   top: 23px;
   left: 4px;
@@ -1865,14 +1927,14 @@ This must be run when you have at least 2 sprites.
   width: 32px;
   height: 41px;
 }
-/* line 204, css\new_design\blocks\setup.less */
+/* line 319, css\new_design\blocks\setup.less */
 .setup__block:nth-child(2) {
   left: 47px;
   width: 43px;
   height: 85px;
   background-color: #e42247;
 }
-/* line 210, css\new_design\blocks\setup.less */
+/* line 325, css\new_design\blocks\setup.less */
 .setup__block:nth-child(2):before {
   top: 35px;
   left: 6px;
@@ -1881,46 +1943,46 @@ This must be run when you have at least 2 sprites.
   width: 29px;
   height: 19px;
 }
-/* line 217, css\new_design\blocks\setup.less */
+/* line 332, css\new_design\blocks\setup.less */
 .setup__block:nth-child(3) {
   left: 89px;
   width: 38px;
   height: 90px;
   background-color: #896aad;
 }
-/* line 223, css\new_design\blocks\setup.less */
+/* line 338, css\new_design\blocks\setup.less */
 .setup__block:nth-child(3):before {
   top: 38px;
   left: 1px;
   background-image: url(../images/sprite.png);
-  background-position: -212px -455px;
+  background-position: -301px -455px;
   width: 34px;
   height: 15px;
 }
-/* line 230, css\new_design\blocks\setup.less */
+/* line 345, css\new_design\blocks\setup.less */
 .setup__block:nth-child(4) {
   left: 126px;
   width: 43px;
   height: 95px;
   background-color: #d18635;
 }
-/* line 236, css\new_design\blocks\setup.less */
+/* line 351, css\new_design\blocks\setup.less */
 .setup__block:nth-child(4):before {
   top: 42px;
   left: 4px;
   background-image: url(../images/sprite.png);
-  background-position: -169px -455px;
+  background-position: -258px -455px;
   width: 35px;
   height: 15px;
 }
-/* line 243, css\new_design\blocks\setup.less */
+/* line 358, css\new_design\blocks\setup.less */
 .setup__block:nth-child(5) {
   left: 168px;
   width: 44px;
   height: 100px;
   background-color: #cf155e;
 }
-/* line 249, css\new_design\blocks\setup.less */
+/* line 364, css\new_design\blocks\setup.less */
 .setup__block:nth-child(5):before {
   top: 42px;
   left: 9px;
@@ -1929,30 +1991,30 @@ This must be run when you have at least 2 sprites.
   width: 27px;
   height: 15px;
 }
-/* line 256, css\new_design\blocks\setup.less */
+/* line 371, css\new_design\blocks\setup.less */
 .setup__block:nth-child(6) {
   left: 211px;
   width: 51px;
   height: 105px;
   background-color: #2ea9b1;
 }
-/* line 262, css\new_design\blocks\setup.less */
+/* line 377, css\new_design\blocks\setup.less */
 .setup__block:nth-child(6):before {
   top: 44px;
   left: 8px;
   background-image: url(../images/sprite.png);
-  background-position: -457px -206px;
+  background-position: -214px -455px;
   width: 36px;
   height: 15px;
 }
-/* line 269, css\new_design\blocks\setup.less */
+/* line 384, css\new_design\blocks\setup.less */
 .setup__block:nth-child(7) {
   right: -4px;
   width: 49px;
   height: 115px;
   background-color: #86a645;
 }
-/* line 277, css\new_design\blocks\setup.less */
+/* line 392, css\new_design\blocks\setup.less */
 .setup__point {
   position: absolute;
   z-index: 4;
@@ -1962,14 +2024,11 @@ This must be run when you have at least 2 sprites.
   height: 28px;
   background: url(../images/point.png) 0 0 no-repeat;
   transition: left 1.4s linear;
+  will-change: left;
 }
-/* line 287, css\new_design\blocks\setup.less */
+/* line 403, css\new_design\blocks\setup.less */
 .setup__point_state_action {
   left: 297px;
-}
-/* line 291, css\new_design\blocks\setup.less */
-.setup__point_duration {
-  transition-duration: 0s !important;
 }
 /* line 1, css\new_design\blocks\features.less */
 .features {
@@ -2050,7 +2109,7 @@ This must be run when you have at least 2 sprites.
   left: -2px;
   margin-bottom: 11px;
   background-image: url(../images/sprite.png);
-  background-position: -151px -406px;
+  background-position: -449px -350px;
   width: 41px;
   height: 34px;
 }
@@ -2059,7 +2118,7 @@ This must be run when you have at least 2 sprites.
   top: -2px;
   margin-bottom: 11px;
   background-image: url(../images/sprite.png);
-  background-position: -101px -406px;
+  background-position: -399px -350px;
   width: 42px;
   height: 34px;
 }
@@ -2069,7 +2128,7 @@ This must be run when you have at least 2 sprites.
   left: -32px;
   margin-bottom: 19px;
   background-image: url(../images/sprite.png);
-  background-position: -222px -170px;
+  background-position: -198px -136px;
   width: 140px;
   height: 26px;
 }
@@ -2178,7 +2237,7 @@ This must be run when you have at least 2 sprites.
 /* line 36, css\new_design\components\menu-mini.less */
 .menu-mini__logo_type_oled {
   background-image: url(../images/sprite.png);
-  background-position: -356px -136px;
+  background-position: -222px -170px;
   width: 134px;
   height: 22px;
 }
@@ -2362,28 +2421,28 @@ This must be run when you have at least 2 sprites.
 /* line 64, css\new_design\components\model.less */
 .model__icon_type_4k-mini {
   background-image: url(../images/sprite.png);
-  background-position: -111px -455px;
+  background-position: -99px -455px;
   width: 50px;
   height: 16px;
 }
 /* line 68, css\new_design\components\model.less */
 .model__icon_type_infinity-mini {
   background-image: url(../images/sprite.png);
-  background-position: -431px -250px;
+  background-position: -426px -206px;
   width: 63px;
   height: 16px;
 }
 /* line 72, css\new_design\components\model.less */
 .model__icon_type_respond-mini {
   background-image: url(../images/sprite.png);
-  background-position: 0px -455px;
+  background-position: -46px -455px;
   width: 45px;
   height: 20px;
 }
 /* line 76, css\new_design\components\model.less */
 .model__icon_type_4k-3d-mini {
   background-image: url(../images/sprite.png);
-  background-position: -347px -350px;
+  background-position: -411px -99px;
   width: 58px;
   height: 26px;
 }
@@ -2397,7 +2456,7 @@ This must be run when you have at least 2 sprites.
 /* line 84, css\new_design\components\model.less */
 .model__icon_type_dvb-t2-mini {
   background-image: url(../images/sprite.png);
-  background-position: -308px -406px;
+  background-position: -188px -406px;
   width: 57px;
   height: 14px;
 }
@@ -2411,21 +2470,21 @@ This must be run when you have at least 2 sprites.
 /* line 92, css\new_design\components\model.less */
 .model__icon_type_ips-mini {
   background-image: url(../images/sprite.png);
-  background-position: -246px -406px;
+  background-position: -431px -250px;
   width: 54px;
   height: 16px;
 }
 /* line 96, css\new_design\components\model.less */
 .model__icon_type_harman-mini {
   background-image: url(../images/sprite.png);
-  background-position: -350px -206px;
+  background-position: -319px -206px;
   width: 99px;
   height: 20px;
 }
 /* line 100, css\new_design\components\model.less */
 .model__icon_type_wifi-mini {
   background-image: url(../images/sprite.png);
-  background-position: -200px -406px;
+  background-position: 0px -455px;
   width: 38px;
   height: 27px;
 }

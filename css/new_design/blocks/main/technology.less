@@ -1,9 +1,7 @@
 .technology {
-	padding: 0 27px;
 
 	&__title {
-		padding-top: 44px;
-		padding-bottom: 36px;
+		padding: 44px 27px 42px;
 		.helvetica-light();
 		font-size: 17px;
 		line-height: 28px;
@@ -11,33 +9,32 @@
 	}
 
 	&__item {
-		width: 215px;
+		width: 328px;
+		height: 155px;
 		float: left;
-
-		&:first-child {
-			margin-left: 5px;
-		}
-
-		& + .technology__item {
-			margin-left: 20px;
-		}
-	}
-
-	&__item-container {
-		width: 100%;
-		height: 188px;
-		border: 1px solid #efefef;
 		background-color: #fff;
+		border: 1px solid #efefef;
 		cursor: pointer;
 		transition: background-color .3s ease;
 
 		&:hover {
 			background-color: #efefef;
 		}
+
+		& + .technology__item {
+			margin-left: 6px;
+		}
+	}
+
+	&__item-container {
+		padding-left: 185px;
+		width: 100%;
+		height: 100%;
 	}
 
 	&__item-img {
 		margin: 0 auto;
+		float: left;
 		background-position: 0 0;
 		background-repeat: no-repeat;
 
@@ -45,6 +42,7 @@
 
 			&_cinema-3d {
 				margin-top: 12px;
+				margin-left: 16px;
 				width: 150px;
 				height: 126px;
 				background-image: url('../images/cinema-3d.png');
@@ -52,24 +50,17 @@
 
 			&_dvb-t2 {
 				margin-top: 19px;
-				padding-left: 10px;
+				margin-left: 13px;
 				width: 166px;
 				height: 122px;
 				background-image: url('../images/dvb-t2.png');
-				background-position-x: 10px;
-			}
-
-			&_oled-4k {
-				margin-top: 28px;
-				width: 200px;
-				height: 118px;
-				background-image: url('../images/oled-4k.png');
 			}
 
 			&_ips {
 				margin-top: 31px;
-				width: 158px;
-				height: 118px;
+				margin-left: 18px;
+				width: 146px;
+				height: 109px;
 				background-image: url('../images/ips.png');
 			}
 
@@ -78,38 +69,34 @@
 	}
 
 	&__item-logo {
-		margin: 0 auto;
+		margin-top: 38px;
+		display: inline-block;
 
 		&_type {
 
 			&_cinema-3d {
-				margin-top: 7px;
 				.sprite(@logo-cinema-3d)
 			}
 
 			&_dvb-t2 {
-				margin-top: 8px;
 				.sprite(@logo-dvb-t2)
 			}
 
-			&_oled-4k {
-				margin-top: 5px;
-				.sprite(@logo-oled-4k)
-			}
-
 			&_ips {
-				margin-top: 4px;
 				.sprite(@logo-ips)
 			}
 		}
 	}
 
 	&__item-text {
-		margin-top: 15px;
-		padding: 0 3px;
+		margin-top: 11px;
 		.lgsmart-regular();
-		font-size: 17px;
-		line-height: 19px;
+		font-size: 15px;
+		line-height: 16px;
 		color: @dark-gray;
+
+		&_mt_6 {
+			margin-top: 6px;
+		}
 	}
 }

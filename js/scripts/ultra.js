@@ -30,59 +30,68 @@ $window.load(function () {
 				$checkbox.removeAttr('checked')
 			}
 
-			if (flag) {
-
-				if ($setupSection.position().top +
-					$setupSection.innerHeight() <= $document.scrollTop() +
-					$window.height()) {
-
-					flag = !flag;
-
-					var interval = setInterval(function () {
-						if (count === 1) {
-							$animContainer.addClass(animCountClass + count);
-							count++;
-
-						} else if (count == 6) {
-							clearInterval(interval);
-							setTimeout(function () {
-								count = 1;
-							}, 300);
-							$animContainer.removeClass(animCountClass + (count - 1));
-							$animContainer.addClass(animCountClass + count);
-
-						} else {
-							$animContainer.removeClass(animCountClass + (count - 1));
-							$animContainer.addClass(animCountClass + count);
-							count++;
-						}
-
-					}, 300);
-					setTimeout(function () {
-						setTimeout(function () {
-							$setupPoint.addClass(setupPointActionClass);
-						}, 1);
-
-						$setupPoint.removeClass(setupPointDurationClass);
-					}, 300);
-				}
-
-			}
-
 			if ($setupSection.position().top +
-				$setupSection.innerHeight() > $document.scrollTop() +
+				$setupSection.innerHeight() <= $document.scrollTop() +
 				$window.height()) {
 
-				flag = !flag;
-				setTimeout(function () {
-					$setupPoint.removeClass(setupPointActionClass);
-				}, 1);
-
-				$animContainer.removeClass(animCountClass + 6);
-				$setupPoint.addClass(setupPointDurationClass);
+				if (flag) {
+					anim();
+					setInterval(function () {
+						anim();
+					}, 7000);
+					flag = !flag;
+				}
 			}
 		});
 
+	}
+
+	function anim() {
+		var interval = setInterval(function () {
+			if (count === 1) {
+				$animContainer.addClass(animCountClass + count);
+				count++;
+
+			} else if (count == 6) {
+				clearInterval(interval);
+
+				setTimeout(function () {
+					$animContainer.removeClass(animCountClass + count);
+				}, 200);
+
+				setTimeout(function () {
+					var int = setInterval(function () {
+
+						if (count === 0) {
+							$animContainer.removeClass(animCountClass + (count + 1));
+							clearInterval(int);
+							count = 1;
+						} else {
+							$animContainer.removeClass(animCountClass + (count + 1));
+							$animContainer.addClass(animCountClass + count);
+							count--;
+						}
+
+					}, 200);
+				}, 550);
+
+				$animContainer.removeClass(animCountClass + (count - 1));
+				$animContainer.addClass(animCountClass + count);
+
+			} else {
+				$animContainer.removeClass(animCountClass + (count - 1));
+				$animContainer.addClass(animCountClass + count);
+				count++;
+			}
+
+		}, 200);
+		setTimeout(function () {
+			$setupPoint.addClass(setupPointActionClass);
+			setTimeout(function () {
+				$setupPoint.removeClass(setupPointActionClass);
+			}, 1550);
+
+		}, 200);
 	}
 
 })

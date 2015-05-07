@@ -64,20 +64,134 @@
 			}
 
 			& .setup__img {
-				right: 705px;
-				transform: scaleX(-1);
+				top: 65px;
+				right: 660px;
+				width: 481px;
+				height: 321px;
+				background: url('../images/ultra/setup-bg.png') 0 0 no-repeat
 			}
 
 			& .setup__container {
-				right: 797px;
-				transform: scaleX(-1);
+				right: 699px;
+				top: 257px;
+
+				&_frame {
+
+					&_1 {
+
+						& .setup__block:nth-child(1) {
+							left: 9px;
+						}
+
+					}
+
+					&_2 {
+
+						& .setup__block:nth-child(2) {
+							left: 51px;
+						}
+					}
+
+					&_3 {
+
+						& .setup__block:nth-child(3) {
+							left: 92px;
+						}
+					}
+
+					&_4 {
+
+						& .setup__block:nth-child(4) {
+							left: 129px;
+						}
+					}
+
+					&_5 {
+
+						& .setup__block:nth-child(5) {
+							left: 171px;
+						}
+					}
+
+					&_6 {
+
+						& .setup__block:nth-child(6) {
+							left: 214px;
+						}
+					}
+				}
 			}
 
 			& .setup__block {
-				transform: skewX(-11deg) scaleX(-1) !important;
 
 				&:before {
 					transform: rotate(-4deg);
+				}
+
+				&:nth-child(1) {
+					left: 6px;
+					height: 105px;
+				}
+
+				&:nth-child(2) {
+					left: 48px;
+					width: 41px;
+					height: 95px;
+
+					&:before {
+						top: 32px;
+						transform: rotate(-6deg);
+					}
+				}
+
+				&:nth-child(3) {
+
+					&:before {
+						top: 32px;
+						transform: rotate(-2deg);
+					}
+
+				}
+
+				&:nth-child(4) {
+					height: 90px;
+
+					&:before {
+						top: 33px;
+						transform: rotate(-2deg);
+					}
+
+				}
+
+				&:nth-child(5) {
+					height: 90px;
+
+					&:before {
+						top: 33px;
+						transform: rotate(-3deg);
+					}
+
+				}
+
+				&:nth-child(6) {
+					height: 85px;
+
+					&:before {
+						top: 31px;
+					}
+
+				}
+
+				&:nth-child(7) {
+					right: -2px;
+
+				}
+			}
+
+			& .setup__point {
+
+				&_state_action {
+					left: 272px;
 				}
 			}
 
@@ -180,8 +294,9 @@
 		position: absolute;
 		z-index: 1;
 		top: 0;
-		transform: skewX(-11deg) scaleX(1);
+		transform: skewX(-11deg);
 		transition: all .2s ease;
+		will-change: left, top;
 
 		&:before {
 			position: absolute;
@@ -283,13 +398,10 @@
 		height: 28px;
 		background: url(../images/point.png) 0 0 no-repeat;
 		transition: left 1.4s linear;
+		will-change: left;
 
 		&_state_action {
 			left: 297px;
-		}
-
-		&_duration {
-			transition-duration: 0s !important;
 		}
 	}
 
