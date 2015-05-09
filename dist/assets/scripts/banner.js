@@ -1,11 +1,8 @@
-document.ready = function() {
+$(window).load(function() {
 
 	textAnim();
-	$img.onload(function () {
 
-	});
-
-}
+});
 
 // Глобальные переменные
 
@@ -15,7 +12,7 @@ var $img = $('.js-banner-img'),
 	imgHideClass = 'banner__img_state_hide',
 	infoHideClass = 'banner__info_state_hide',
 	activeVideoClass = 'video__item_state_active',
-	flag = false;
+	flag = true;
 
 // Инициализация плееров в блоке banner
 
@@ -60,7 +57,7 @@ function playVideo(event) {
 		$firstVideo.addClass(activeVideoClass);
 
 		event.target.playVideo();
-		flag = true;
+		flag = !flag;
 	});
 
 	changeVideo(event);
@@ -77,11 +74,12 @@ function changeVideo(event) {
 
 	$switchers.each(function () {
 		$(this).bind('click', function () {
-			activeVideo($(this));
-			id = $(this).attr('data-video-id');
+			var $this = $(this);
+			activeVideo($this);
+			id = $this.attr('data-video-id');
 			player.loadVideoById({videoId: id});
 
-			if (!flag) {
+			if (flag) {
 
 				$img.addClass(imgHideClass);
 				$info.addClass(infoHideClass);

@@ -222,7 +222,18 @@ module.exports = function(grunt) {
 					dest: 'dist/assets/scripts',
 					filter: 'isFile'
 				}]
-			}
+			},
+
+			style: {
+				files: [{
+					expand: true,
+					cwd: 'css',
+					src: ['lg.min.css', 'fonts.css'],
+					dest: 'dist/assets/styles',
+					filter: 'isFile'
+				}]
+			},
+
 		},
 
 		browserSync: {

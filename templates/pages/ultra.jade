@@ -34,7 +34,7 @@ block content
 				br
 				span 8.3 млн пикселей
 
-			button.banner__btn.banner__btn_state_hide.js-banner-btn(type="button")
+			.banner__btn.banner__btn_state_hide.js-banner-btn
 				| Посмотрите видео
 
 		div.banner__video.js-banner-video#bannerPlayerUltra(data-video-id="W9vgYbH8Jcg")
@@ -70,7 +70,7 @@ block content
 					br
 					| и яркие цвета
 
-	section.video.video_pt_48
+	section.video.video_pt_51
 
 		.wrapper.clearfix
 
@@ -114,18 +114,64 @@ block content
 		include ../blocks/ultra/ultra-hd
 		include ../blocks/ultra/ultra-3d
 		include ../blocks/ultra/ips
-		include ../blocks/stream
+		section.stream.stream_type_ultra.clearfix
+			.stream-wrap
+
+				h2.title(role="heading") Смотрите 4K-видео через&nbsp;интернет
+
+				p.text
+					| Популярные видеосервисы Okko и ivi.ru запустили на телевизорах
+					| LG стриминг 4K-фильмов через интернет. Это стало возможным благодаря
+					| мощной аппаратной начинке LG и поддержке новейшего кодека HEVC.
+					| Ваш телевизор уже готов к переходу онлайн-кинотеатров на
+					| требовательный формат ULTRA HD 4K.
+
+			.stream__img
+			.stream__logo
 
 	include ../blocks/ultra/sound
 	- var classMod = "setup_type_ultra";
-	include ../blocks/setup
+	section.setup#setupSection(class= classMod ? classMod : "")
+
+		.wrapper.clearfix
+
+			.setup-wrap
+
+				h2.title(role="heading" class= titleMod ? titleMod : "")
+					| Широкие возможности webOS
+
+				p.text
+					| WebOS содержит сотни приложений, тысячи фильмов и&nbsp;дает доступ к
+					| другому контенту. Дружелюбный интерфейс webOS будет понятен даже
+					| новичкам без опыта использования Smart TV.
+
+				p.text
+
+					| Многозадачный режим позволяет работать одновременно с несколькими
+					| приложениями, раскрывая и сворачивая их по мере надобности.
+					| А чтобы не потеряться в общем изобилии, к вашим услугам есть
+					| специальный сервис, подбирающий рекомендованный контент из интернета
+					| и локальных ресурсов.
+
+		.setup__img
+
+		.setup__container.js-setup-cont
+			.setup__block
+			.setup__block
+			.setup__block
+			.setup__block
+			.setup__block
+			.setup__block
+			.setup__block
+
+			.setup__point.js-setup-point
 
 	section.compare
 
 		.wrapper
 
 			.compare__feat
-				button.button-feat(type="button")
+				.button-feat
 					span.button-feat_tt_up Сравните основные характеристики
 					br
 					span телевизоров LG
@@ -199,8 +245,8 @@ block scriptAfter
 
 	+scripts([
 		"vendor.js",
-		"banner.js",
 		"common.js",
+		"banner.js",
 		"ultra.js"
 	])
 
@@ -208,10 +254,16 @@ block scriptBefore
 
 	script.
 
-		var script = document.createElement('script'),
+		var scripts = [
+			'https://www.youtube.com/iframe_api',
+		]
+
+		scripts.forEach(function(item) {
+			var script = document.createElement('script'),
 			beforeScript = document.getElementsByTagName('script')[0];
 
-		script.src = 'https://www.youtube.com/iframe_api';
-		script.async = true;
-		beforeScript.parentNode.insertBefore(script, beforeScript);
+			script.src = item;
+			script.async = true;
+			beforeScript.parentNode.insertBefore(script, beforeScript);
+		})
 

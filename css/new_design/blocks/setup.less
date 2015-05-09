@@ -4,13 +4,14 @@
 @color-block-4: #d18635;
 @color-block-5: #cf155e;
 @color-block-6: #2ea9b1;
+@color-block-7: #86a645;
 
 .setup {
 	position: relative;
 
 	& .wrapper {
-		padding-top: 61px;
-		padding-bottom: 76px;
+		padding-top: 90px;
+		padding-bottom: 78px;
 		border-bottom: 1px solid #f3f3f3;
 	}
 
@@ -21,7 +22,7 @@
 
 			& .wrapper {
 				padding-top: 68px;
-				padding-bottom: 86px;
+				padding-bottom: 98px;
 				border-top: 1px solid #f3f3f3;
 			}
 
@@ -46,17 +47,22 @@
 				background: url('../images/webos/lines.png') 0 0 no-repeat
 			}
 
+			& .setup__img,
+			& .setup__container {
+				display: none;
+			}
+
 		}
 
 		&_ultra {
-			padding-top: 76px;
+			padding-top: 9px;
 
 			& .setup-wrap {
 				float: right;
 			}
 
 			& .wrapper {
-				padding-bottom: 110px;
+				padding-bottom: 93px;
 			}
 
 			& .title {
@@ -116,7 +122,14 @@
 					&_6 {
 
 						& .setup__block:nth-child(6) {
-							left: 214px;
+							left: 205px;
+						}
+					}
+
+					&_7 {
+
+						& .setup__block:nth-child(7) {
+							right: 12px;
 						}
 					}
 				}
@@ -124,13 +137,14 @@
 
 			& .setup__block {
 
-				&:before {
-					transform: rotate(-4deg);
-				}
-
 				&:nth-child(1) {
 					left: 6px;
 					height: 105px;
+
+					&:before {
+						top: 27px;
+						.sprite(@icon-setup-ultra-block1)
+					}
 				}
 
 				&:nth-child(2) {
@@ -140,7 +154,7 @@
 
 					&:before {
 						top: 32px;
-						transform: rotate(-6deg);
+						.sprite(@icon-setup-ultra-block2)
 					}
 				}
 
@@ -148,7 +162,7 @@
 
 					&:before {
 						top: 32px;
-						transform: rotate(-2deg);
+						.sprite(@icon-setup-ultra-block3)
 					}
 
 				}
@@ -157,33 +171,48 @@
 					height: 90px;
 
 					&:before {
-						top: 33px;
-						transform: rotate(-2deg);
+						top: 35px;
+						left: 1px;
+						.sprite(@icon-setup-ultra-block4)
 					}
 
 				}
 
 				&:nth-child(5) {
 					height: 90px;
+					width: 34px;
 
 					&:before {
-						top: 33px;
-						transform: rotate(-3deg);
+						top: 34px;
+						left: 5px;
+						.sprite(@icon-setup-ultra-block5)
 					}
 
 				}
 
 				&:nth-child(6) {
 					height: 85px;
+					width: 48px;
+					left: 202px;
 
 					&:before {
-						top: 31px;
+						top: 34px;
+						left: 3px;
+						.sprite(@icon-setup-ultra-block6)
 					}
 
 				}
 
 				&:nth-child(7) {
-					right: -2px;
+					height: 85px;
+					right: 16px;
+					width: 40px;
+
+					&:before {
+						top: 32px;
+						left: 4px;
+						.sprite(@icon-setup-ultra-block7)
+					}
 
 				}
 			}
@@ -214,7 +243,7 @@
 		top: 51px;
 		right: 0;
 		width: 433px;
-		height: 426px;
+		height: 402px;
 		background: url('../images/oled/setup-bg.png') 0 0 no-repeat;
 	}
 
@@ -285,6 +314,16 @@
 					z-index: 3;
 					top: -15px;
 					left: 214px;
+				}
+			}
+
+			&_7 {
+				background-color: @color-block-7;
+
+				& .setup__block:nth-child(7) {
+					z-index: 3;
+					top: -15px;
+					right: -2px;
 				}
 			}
 		}
@@ -386,6 +425,12 @@
 			width: 49px;
 			height: 115px;
 			background-color: #86a645;
+
+			&:before {
+				top: 46px;
+				left: 6px;
+				.sprite(@icon-setup-block7)
+			}
 		}
 	}
 

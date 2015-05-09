@@ -4,12 +4,17 @@
 	&__title {
 		.helvetica-neue-thin();
 		font-size: 25px;
-		color: #505050;
-		letter-spacing: -.5px;
 
-		&_color_red {
-			color: @red-title;
+		line-height: 30px !important;
+
+		& span {
+			color: #505050 !important;
 		}
+
+		& span.compare__title_color_red {
+			color: @red-title !important;
+		}
+
 	}
 
 	&__feat {

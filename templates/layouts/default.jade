@@ -10,6 +10,11 @@ html(lang='ru')
 
 		link(href="assets/styles/common.css" rel="stylesheet")
 
+		// для отладки, перед релизом убрать
+
+		link(href="assets/styles/lg.min.css" rel="stylesheet")
+		link(href="assets/styles/fonts.css" rel="stylesheet")
+
 		block scriptBefore
 
 		+ei("lte IE 8") <link href="assets/styles/ie8.css" rel="stylesheet">
@@ -17,10 +22,10 @@ html(lang='ru')
 
 		+ei("lt IE 9") <script>document.createElement('header');document.createElement('nav');document.createElement('section');document.createElement('article');document.createElement('aside');document.createElement('footer');</script>
 
+		include ../partials/header
 		.main(class=classWidth ? classWidth : "")
-			include ../partials/header
 			block content
-			include ../partials/footer
+		include ../partials/footer
 
 		block scriptAfter
 

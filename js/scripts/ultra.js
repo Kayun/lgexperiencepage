@@ -24,9 +24,9 @@ $window.load(function () {
 			}
 
 			if ($colorPrimeSection.position().top +
-				$colorPrimeSection.innerHeight() >= $document.scrollTop() +
+				$colorPrimeSection.innerHeight() > $document.scrollTop() +
 				$window.height()) {
-
+				console.log("ok")
 				$checkbox.removeAttr('checked')
 			}
 
@@ -52,7 +52,7 @@ $window.load(function () {
 				$animContainer.addClass(animCountClass + count);
 				count++;
 
-			} else if (count == 6) {
+			} else if (count == 7) {
 				clearInterval(interval);
 
 				setTimeout(function () {
@@ -89,7 +89,7 @@ $window.load(function () {
 			$setupPoint.addClass(setupPointActionClass);
 			setTimeout(function () {
 				$setupPoint.removeClass(setupPointActionClass);
-			}, 1550);
+			}, 2000);
 
 		}, 200);
 	}

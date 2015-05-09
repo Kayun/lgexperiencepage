@@ -8,3 +8,20 @@ block content
 	include ../blocks/main/technology
 	include ../blocks/main/submenu
 
+block scriptAfter
+
+	+scripts([
+
+	])
+
+block scriptBefore
+
+	script.
+
+		var script = document.createElement('script'),
+			beforeScript = document.getElementsByTagName('script')[0];
+
+		script.src = '//code.jquery.com/jquery-1.9.2.min.js';
+		script.async = true;
+		beforeScript.parentNode.insertBefore(script, beforeScript);
+
