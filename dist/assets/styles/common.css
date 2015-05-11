@@ -367,8 +367,9 @@ html {
   width: 100%;
   height: 485px;
   font-size: 0;
+  display: table;
 }
-/* line 8, css\new_design\blocks\main\menu.less */
+/* line 9, css\new_design\blocks\main\menu.less */
 .menu__item {
   position: relative;
   height: 465px;
@@ -377,63 +378,67 @@ html {
   vertical-align: top;
   text-decoration: none;
 }
-/* line 18, css\new_design\blocks\main\menu.less */
+/* line 17, css\new_design\blocks\main\menu.less */
+.menu__item:hover {
+  text-decoration: none;
+}
+/* line 23, css\new_design\blocks\main\menu.less */
 .menu__item_pos_left,
 .menu__item_pos_right {
   width: 28%;
 }
-/* line 25, css\new_design\blocks\main\menu.less */
+/* line 30, css\new_design\blocks\main\menu.less */
 .menu__item_pos_left .menu__item-bd-wrap {
   border-left: 1px solid #f6f6f6;
 }
-/* line 29, css\new_design\blocks\main\menu.less */
+/* line 34, css\new_design\blocks\main\menu.less */
 .menu__item_pos_left .menu__item-wrap {
   z-index: 2;
 }
-/* line 32, css\new_design\blocks\main\menu.less */
+/* line 37, css\new_design\blocks\main\menu.less */
 .menu__item_pos_left .menu__item-wrap:hover {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
   box-shadow: 5px 1px 15px -5px rgba(0, 0, 0, 0.1);
 }
-/* line 43, css\new_design\blocks\main\menu.less */
+/* line 48, css\new_design\blocks\main\menu.less */
 .menu__item_pos_right .menu__item-bd-wrap {
   border-right: 1px solid #f6f6f6;
 }
-/* line 47, css\new_design\blocks\main\menu.less */
+/* line 52, css\new_design\blocks\main\menu.less */
 .menu__item_pos_right .menu__item-wrap {
   z-index: 1;
 }
-/* line 50, css\new_design\blocks\main\menu.less */
+/* line 55, css\new_design\blocks\main\menu.less */
 .menu__item_pos_right .menu__item-wrap:hover {
   -webkit-transform: translateX(-20%);
       -ms-transform: translateX(-20%);
           transform: translateX(-20%);
   box-shadow: -5px 1px 15px -5px rgba(0, 0, 0, 0.1);
 }
-/* line 59, css\new_design\blocks\main\menu.less */
+/* line 64, css\new_design\blocks\main\menu.less */
 .menu__item_pos_center {
   width: 44%;
 }
-/* line 62, css\new_design\blocks\main\menu.less */
+/* line 67, css\new_design\blocks\main\menu.less */
 .menu__item_pos_center .menu__item-wrap {
   z-index: 2;
   box-shadow: -5px 1px 15px -5px rgba(0, 0, 0, 0.1), 5px 1px 15px -5px rgba(0, 0, 0, 0.1);
 }
-/* line 67, css\new_design\blocks\main\menu.less */
+/* line 72, css\new_design\blocks\main\menu.less */
 .menu__item_pos_center .menu__item-wrap:hover {
   -webkit-transform: translateX(-10%);
       -ms-transform: translateX(-10%);
           transform: translateX(-10%);
   padding: 0 35px;
 }
-/* line 80, css\new_design\blocks\main\menu.less */
+/* line 85, css\new_design\blocks\main\menu.less */
 .menu__item-logo {
   position: relative;
   display: inline-block;
 }
-/* line 86, css\new_design\blocks\main\menu.less */
+/* line 91, css\new_design\blocks\main\menu.less */
 .menu__item-logo_type_ultra {
   top: -2px;
   background-image: url(../images/sprite.png);
@@ -441,14 +446,14 @@ html {
   width: 190px;
   height: 26px;
 }
-/* line 95, css\new_design\blocks\main\menu.less */
+/* line 96, css\new_design\blocks\main\menu.less */
 .menu__item-logo_type_oled {
   background-image: url(../images/sprite.png);
   background-position: -222px -170px;
   width: 134px;
   height: 22px;
 }
-/* line 99, css\new_design\blocks\main\menu.less */
+/* line 100, css\new_design\blocks\main\menu.less */
 .menu__item-logo_type_webos {
   top: -3px;
   background-image: url(../images/sprite.png);
@@ -456,11 +461,11 @@ html {
   width: 134px;
   height: 28px;
 }
-/* line 108, css\new_design\blocks\main\menu.less */
+/* line 109, css\new_design\blocks\main\menu.less */
 .menu__item-bd-wrap {
   height: 100%;
 }
-/* line 112, css\new_design\blocks\main\menu.less */
+/* line 113, css\new_design\blocks\main\menu.less */
 .menu__item-wrap {
   position: absolute;
   z-index: 1;
@@ -479,7 +484,7 @@ html {
   transition: all .3s ease;
   will-change: width, height, transform;
 }
-/* line 128, css\new_design\blocks\main\menu.less */
+/* line 129, css\new_design\blocks\main\menu.less */
 .menu__item-wrap:hover {
   z-index: 3;
   top: 32px;
@@ -487,32 +492,32 @@ html {
   height: 433px;
   border-top-width: 4px;
 }
-/* line 135, css\new_design\blocks\main\menu.less */
+/* line 136, css\new_design\blocks\main\menu.less */
 .menu__item-wrap:hover .menu__item-img {
   z-index: 3;
 }
-/* line 140, css\new_design\blocks\main\menu.less */
+/* line 141, css\new_design\blocks\main\menu.less */
 .menu__item-wrap:hover .menu__item-img_type_ultra {
   bottom: -20px;
   margin-left: -165px;
   width: 331px;
   height: 356px;
 }
-/* line 147, css\new_design\blocks\main\menu.less */
+/* line 148, css\new_design\blocks\main\menu.less */
 .menu__item-wrap:hover .menu__item-img_type_oled {
   bottom: -35px;
   margin-left: -210px;
   width: 419px;
   height: 346px;
 }
-/* line 154, css\new_design\blocks\main\menu.less */
+/* line 155, css\new_design\blocks\main\menu.less */
 .menu__item-wrap:hover .menu__item-img_type_webos {
   bottom: 9px;
   margin-left: -174px;
   width: 335px;
   height: 295px;
 }
-/* line 169, css\new_design\blocks\main\menu.less */
+/* line 170, css\new_design\blocks\main\menu.less */
 .menu__item-text {
   padding: 36px 0 0 26px;
   font-family: 'helvetica-light', Helvetica, Arial, sans-serif;
@@ -522,11 +527,11 @@ html {
   text-align: left;
   transition: padding-right 0.3s ease;
 }
-/* line 178, css\new_design\blocks\main\menu.less */
+/* line 179, css\new_design\blocks\main\menu.less */
 .menu__item-text_pos_center {
   padding: 36px 34px 0;
 }
-/* line 183, css\new_design\blocks\main\menu.less */
+/* line 184, css\new_design\blocks\main\menu.less */
 .menu__item-img {
   position: absolute;
   z-index: 3;
@@ -538,7 +543,7 @@ html {
   transition: all .3s ease;
   will-change: width, height, margin-left, bottom;
 }
-/* line 196, css\new_design\blocks\main\menu.less */
+/* line 197, css\new_design\blocks\main\menu.less */
 .menu__item-img_type_ultra {
   bottom: 15px;
   margin-left: -127px;
@@ -546,14 +551,14 @@ html {
   height: 265px;
   background-image: url('../images/menu-ultra-hover.jpg');
 }
-/* line 204, css\new_design\blocks\main\menu.less */
+/* line 205, css\new_design\blocks\main\menu.less */
 .menu__item-img_type_oled {
   margin-left: -184px;
   width: 368px;
   height: 305px;
   background-image: url('../images/menu-oled-hover.jpg');
 }
-/* line 211, css\new_design\blocks\main\menu.less */
+/* line 212, css\new_design\blocks\main\menu.less */
 .menu__item-img_type_webos {
   bottom: 29px;
   margin-left: -134px;
@@ -561,7 +566,7 @@ html {
   height: 231px;
   background-image: url('../images/menu-webos-hover.jpg');
 }
-/* line 223, css\new_design\blocks\main\menu.less */
+/* line 224, css\new_design\blocks\main\menu.less */
 .menu__item-badge {
   position: absolute;
   z-index: 3;
@@ -570,14 +575,14 @@ html {
   transition: top .3s ease;
   will-change: top;
 }
-/* line 233, css\new_design\blocks\main\menu.less */
+/* line 234, css\new_design\blocks\main\menu.less */
 .menu__item-badge_type_ultra {
   background-image: url(../images/sprite.png);
   background-position: -205px -206px;
   width: 106px;
   height: 20px;
 }
-/* line 237, css\new_design\blocks\main\menu.less */
+/* line 238, css\new_design\blocks\main\menu.less */
 .menu__item-badge_type_webos {
   background-image: url(../images/sprite.png);
   background-position: -333px -250px;
@@ -734,29 +739,30 @@ html {
 /* line 46, css\new_design\blocks\main\submenu.less */
 .submenu__item-logo {
   margin: 0 auto;
+  cursor: pointer;
 }
-/* line 51, css\new_design\blocks\main\submenu.less */
+/* line 52, css\new_design\blocks\main\submenu.less */
 .submenu__item-logo_type_tv {
   background-image: url(../images/sprite.png);
   background-position: 0px -300px;
   width: 56px;
   height: 42px;
 }
-/* line 55, css\new_design\blocks\main\submenu.less */
+/* line 56, css\new_design\blocks\main\submenu.less */
 .submenu__item-logo_type_audio {
   background-image: url(../images/sprite.png);
   background-position: 0px -250px;
   width: 88px;
   height: 42px;
 }
-/* line 59, css\new_design\blocks\main\submenu.less */
+/* line 60, css\new_design\blocks\main\submenu.less */
 .submenu__item-logo_type_monitor {
   background-image: url(../images/sprite.png);
   background-position: -223px -350px;
   width: 54px;
   height: 36px;
 }
-/* line 67, css\new_design\blocks\main\submenu.less */
+/* line 68, css\new_design\blocks\main\submenu.less */
 .submenu__item-text {
   margin-top: 10px;
   line-height: 19px;

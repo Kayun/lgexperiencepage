@@ -65,3 +65,7 @@
   background-size: cover;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-webos-hover.png', sizingMethod='scale')";
 }
+/* line 1, css\new_design\ie8\blocks\data.less */
+.data__img {
+  background-image: url('../images/webos/data-bg.jpg');
+}

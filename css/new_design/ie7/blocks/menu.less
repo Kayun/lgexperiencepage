@@ -1,3 +1,60 @@
 .menu {
-	transform: rotate(90deg);
+
+	&__item {
+		zoom: 1;
+		*display: inline;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: none !important;
+		}
+
+	}
+
+	&__item-wrap:hover {
+		left: 0 !important;
+		padding: 0 !important;
+		width: 100% !important;
+		height: 430px;
+
+		& .menu__item-img {
+
+			&_type {
+
+				&_ultra {
+					bottom: 15px;
+					margin-left: -127px;
+					width: 254px;
+					height: 265px;
+				}
+
+				&_oled {
+					bottom: 0;
+					margin-left: -184px;
+					width: 368px;
+					height: 305px;
+				}
+
+				&_webos {
+					bottom: 29px;
+					margin-left: -134px;
+					width: 262px;
+					height: 231px;
+				}
+
+			}
+
+		}
+
+	}
+
+	&__item-img {
+
+		& img {
+			height: auto !important;
+			width: 100% !important;
+		}
+
+	}
+
 }
