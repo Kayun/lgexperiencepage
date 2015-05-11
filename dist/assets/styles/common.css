@@ -441,31 +441,34 @@ html {
 /* line 91, css\new_design\blocks\main\menu.less */
 .menu__item-logo_type_ultra {
   top: -2px;
-  background-image: url(../images/sprite.png);
-  background-position: 0px -136px;
   width: 190px;
-  height: 26px;
-}
-/* line 96, css\new_design\blocks\main\menu.less */
-.menu__item-logo_type_oled {
-  background-image: url(../images/sprite.png);
-  background-position: -222px -170px;
-  width: 134px;
-  height: 22px;
+  height: 27px;
+  background-image: url('../images/svg/logo-ultra.svg');
+  background-position: 0 0;
+  background-size: 190px 27px;
 }
 /* line 100, css\new_design\blocks\main\menu.less */
+.menu__item-logo_type_oled {
+  width: 134px;
+  height: 22px;
+  background-image: url('../images/svg/logo-oled.svg');
+  background-position: 0 0;
+  background-size: 134px 22px;
+}
+/* line 108, css\new_design\blocks\main\menu.less */
 .menu__item-logo_type_webos {
   top: -3px;
-  background-image: url(../images/sprite.png);
-  background-position: -80px -170px;
   width: 134px;
   height: 28px;
+  background-image: url('../images/svg/logo-webos.svg');
+  background-position: 0 0;
+  background-size: 134px 28px;
 }
-/* line 109, css\new_design\blocks\main\menu.less */
+/* line 121, css\new_design\blocks\main\menu.less */
 .menu__item-bd-wrap {
   height: 100%;
 }
-/* line 113, css\new_design\blocks\main\menu.less */
+/* line 125, css\new_design\blocks\main\menu.less */
 .menu__item-wrap {
   position: absolute;
   z-index: 1;
@@ -484,7 +487,7 @@ html {
   transition: all .3s ease;
   will-change: width, height, transform;
 }
-/* line 129, css\new_design\blocks\main\menu.less */
+/* line 141, css\new_design\blocks\main\menu.less */
 .menu__item-wrap:hover {
   z-index: 3;
   top: 32px;
@@ -492,32 +495,32 @@ html {
   height: 433px;
   border-top-width: 4px;
 }
-/* line 136, css\new_design\blocks\main\menu.less */
+/* line 148, css\new_design\blocks\main\menu.less */
 .menu__item-wrap:hover .menu__item-img {
   z-index: 3;
 }
-/* line 141, css\new_design\blocks\main\menu.less */
+/* line 153, css\new_design\blocks\main\menu.less */
 .menu__item-wrap:hover .menu__item-img_type_ultra {
   bottom: -20px;
   margin-left: -165px;
   width: 331px;
   height: 356px;
 }
-/* line 148, css\new_design\blocks\main\menu.less */
+/* line 160, css\new_design\blocks\main\menu.less */
 .menu__item-wrap:hover .menu__item-img_type_oled {
   bottom: -35px;
   margin-left: -210px;
   width: 419px;
   height: 346px;
 }
-/* line 155, css\new_design\blocks\main\menu.less */
+/* line 167, css\new_design\blocks\main\menu.less */
 .menu__item-wrap:hover .menu__item-img_type_webos {
   bottom: 9px;
   margin-left: -174px;
   width: 335px;
   height: 295px;
 }
-/* line 170, css\new_design\blocks\main\menu.less */
+/* line 182, css\new_design\blocks\main\menu.less */
 .menu__item-text {
   padding: 36px 0 0 26px;
   font-family: 'helvetica-light', Helvetica, Arial, sans-serif;
@@ -527,11 +530,11 @@ html {
   text-align: left;
   transition: padding-right 0.3s ease;
 }
-/* line 179, css\new_design\blocks\main\menu.less */
+/* line 191, css\new_design\blocks\main\menu.less */
 .menu__item-text_pos_center {
   padding: 36px 34px 0;
 }
-/* line 184, css\new_design\blocks\main\menu.less */
+/* line 196, css\new_design\blocks\main\menu.less */
 .menu__item-img {
   position: absolute;
   z-index: 3;
@@ -543,7 +546,7 @@ html {
   transition: all .3s ease;
   will-change: width, height, margin-left, bottom;
 }
-/* line 197, css\new_design\blocks\main\menu.less */
+/* line 209, css\new_design\blocks\main\menu.less */
 .menu__item-img_type_ultra {
   bottom: 15px;
   margin-left: -127px;
@@ -551,14 +554,14 @@ html {
   height: 265px;
   background-image: url('../images/menu-ultra-hover.jpg');
 }
-/* line 205, css\new_design\blocks\main\menu.less */
+/* line 217, css\new_design\blocks\main\menu.less */
 .menu__item-img_type_oled {
   margin-left: -184px;
   width: 368px;
   height: 305px;
   background-image: url('../images/menu-oled-hover.jpg');
 }
-/* line 212, css\new_design\blocks\main\menu.less */
+/* line 224, css\new_design\blocks\main\menu.less */
 .menu__item-img_type_webos {
   bottom: 29px;
   margin-left: -134px;
@@ -566,7 +569,7 @@ html {
   height: 231px;
   background-image: url('../images/menu-webos-hover.jpg');
 }
-/* line 224, css\new_design\blocks\main\menu.less */
+/* line 236, css\new_design\blocks\main\menu.less */
 .menu__item-badge {
   position: absolute;
   z-index: 3;
@@ -575,14 +578,14 @@ html {
   transition: top .3s ease;
   will-change: top;
 }
-/* line 234, css\new_design\blocks\main\menu.less */
+/* line 246, css\new_design\blocks\main\menu.less */
 .menu__item-badge_type_ultra {
   background-image: url(../images/sprite.png);
   background-position: -205px -206px;
   width: 106px;
   height: 20px;
 }
-/* line 238, css\new_design\blocks\main\menu.less */
+/* line 250, css\new_design\blocks\main\menu.less */
 .menu__item-badge_type_webos {
   background-image: url(../images/sprite.png);
   background-position: -333px -250px;
@@ -639,7 +642,7 @@ html {
 /* line 51, css\new_design\blocks\main\technology.less */
 .technology__item-img_type_dvb-t2 {
   margin-top: 19px;
-  margin-left: 13px;
+  margin-left: 17px;
   width: 166px;
   height: 122px;
   background-image: url('../images/dvb-t2.png');

@@ -84,23 +84,20 @@
 
 	}
 
-	&__item-img {
+	&__item-logo {
 
 		&_type {
 
 			&_ultra {
-				background-size: cover;
-				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-ultra-hover.png', sizingMethod='scale')";
+				.sprite(@logo-ultra);
 			}
 
 			&_oled {
-				background-size: cover;
-				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-oled-hover.png', sizingMethod='scale')";
+				.sprite(@logo-oled);
 			}
 
 			&_webos {
-				background-size: cover;
-				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/menu-webos-hover.png', sizingMethod='scale')";
+				.sprite(@logo-webos);
 			}
 
 		}
