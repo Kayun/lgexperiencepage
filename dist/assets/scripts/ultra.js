@@ -12,7 +12,7 @@ var $colorPrimeSection = $('#colorPrime'),
 	flag = true;
 
 $window.load(function () {
-	if (!device.mobile() || !device.tablet() || !isIE8() || !isIE7()) {
+	if (!device.mobile() && !device.tablet() && !isIE8() && !isIE7()) {
 
 		$document.bind('scroll', function () {
 
@@ -43,6 +43,9 @@ $window.load(function () {
 				}
 			}
 		});
+
+	} else if (device.mobile() || device.tablet()) {
+		var
 
 	}
 

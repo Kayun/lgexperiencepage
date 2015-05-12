@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=7,IE=9,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
-		<title>LG WebOS</title>
 	</head>
 	<body>
 		<link href="//vjs.zencdn.net/4.12/video-js.css">
@@ -17,14 +16,14 @@
 			'https://www.youtube.com/iframe_api',
 			'//vjs.zencdn.net/4.12/video.js',
 		]
-		scripts.forEach(function(item)
+		for (var index = 0; index < scripts.length; index++)
 		{
 			var script = document.createElement('script'),
-				beforeScript = document.getElementsByTagName('script')[0];
-			script.src = item;
-			script.async = true;
-			beforeScript.parentNode.insertBefore(script, beforeScript);
-		})
+				beforeScript = document.getElementsByTagName('head')[0];
+			script.type = "text/javascript";
+			script.src = scripts[index];
+			beforeScript.appendChild(script);
+		}
 		</script>
 		<!--[if lte IE 8]> <link href="assets/styles/ie8.css" rel="stylesheet"> <![endif]-->
 		<!--[if IE 7]> <link href="assets/styles/ie7.css" rel="stylesheet"> <![endif]-->
@@ -583,7 +582,7 @@
 				</section>
 				<section class="demo">
 					<div class="demo-wrap"><img src="assets/images/webos/demo-bg.jpg" class="demo__img">
-						<div class="demo__btn">Запустить демо-режим webOS</div>
+						<div class="demo__btn js-demo-btn">Запустить демо-режим webOS</div>
 					</div>
 				</section>
 				<section class="collection clearfix">
@@ -601,7 +600,7 @@
 						<p class="text">Вы можете просматривать файлы с внешних устройств на экране телевизора через LG webOS Share, а также транслировать изображение по воздуху через Miracast, либо подключить мобильное устройство через MHL. Вы не встретите лишних ограничений на своем пути, когда захотите поделиться лучшими моментам из жизни на большом экране!</p>
 					</div>
 					<div class="data__img js-data-img"></div>
-					<video id="dataVideo" class="data__video video-js vjs-default-skin">
+					<video id="dataVideo" class="data__video mobile video-js vjs-default-skin">
 						<source src="assets/video/carousel.mp4" type="video/mp4">
 					</video>
 				</section>

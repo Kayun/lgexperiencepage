@@ -170,6 +170,10 @@ This must be run when you have at least 2 sprites.
 .action__img1 {
   display: none;
 }
+/* line 1, css\new_design\ie8\blocks\demo.less */
+.demo__btn {
+  width: 279px;
+}
 /* line 7, css\new_design\ie8\components\menu-mini.less */
 .menu-mini__logo_type_ultra {
   background-image: url(../images/sprite.png);

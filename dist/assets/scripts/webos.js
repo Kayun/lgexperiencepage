@@ -2,19 +2,25 @@ var	dataPlayer,
 	$window = $(window),
 	$document = $(document),
 	$dataPlayer = $('#dataVideo'),
+	$demoBtn = $('.js-demo-btn'),
 	$dataSection = $('#dateSection'),
 	$dataImg = $('.js-data-img'),
 	flag = true;
 
 $window.load(function () {
-	if(!device.mobile() || !device.tablet() || !isIE8() || !isIE7()) {
+
+	if (isIE8() || isIE7()) {
+		$demoBtn.append('<div class="demo__btn-icon"></div>');
+	}
+
+	if(!device.mobile() && !device.tablet() && !isIE8() && !isIE7()) {
 
 		dataPlayer = videojs('dataVideo', {
 			width: 900,
 			height: 436,
 			controls: false,
 			preload: 'auto',
-			autoplay: false,
+			autoplay: false
 		}).ready(function() {
 			var player = this;
 			player.on('pause', function () {

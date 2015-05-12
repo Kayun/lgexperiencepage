@@ -10,7 +10,7 @@ var $window = $(window),
 	flag = true;
 
 $window.load(function () {
-	if (!device.mobile() || !device.tablet() || !isIE8() || !isIE7()) {
+	if (!device.mobile() && !device.tablet() && !isIE8() && !isIE7()) {
 
 		$document.bind('scroll', function () {
 

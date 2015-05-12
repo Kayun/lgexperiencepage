@@ -205,13 +205,12 @@ block scriptBefore
 			'//vjs.zencdn.net/4.12/video.js',
 		]
 
-		scripts.forEach(function(item) {
+		for (var index = 0; index < scripts.length; index++) {
 			var script = document.createElement('script'),
-			beforeScript = document.getElementsByTagName('script')[0];
-
-			script.src = item;
-			script.async = true;
-			beforeScript.parentNode.insertBefore(script, beforeScript);
-		})
+				beforeScript = document.getElementsByTagName('head')[0];
+			script.type = "text/javascript";
+			script.src = scripts[index];
+			beforeScript.appendChild(script);
+		}
 
 

@@ -360,6 +360,12 @@ body {
 .vjs-caption-settings {
   display: none;
 }
+@media only screen and (max-width: 1259px) {
+  /* line 28, css\new_design\base\base.less */
+  .mobile {
+    display: none !important;
+  }
+}
 /* line 1, css\new_design\blocks\main\menu.less */
 .menu {
   position: relative;
@@ -1180,7 +1186,8 @@ body {
   cursor: pointer;
 }
 /* line 31, css\new_design\blocks\webos\demo.less */
-.demo__btn:before {
+.demo__btn:before,
+.demo__btn-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -1250,6 +1257,12 @@ body {
   bottom: 15px;
   right: -67px;
 }
+@media only screen and (max-width: 1259px) {
+  /* line 36, css\new_design\blocks\webos\data.less */
+  .data__img {
+    background-image: url('../images/webos/data-bg.jpg');
+  }
+}
 /* line 1, css\new_design\blocks\webos\stream.less */
 .stream {
   position: relative;
@@ -1262,7 +1275,7 @@ body {
   top: 12px;
   left: -170px;
   width: 1086px;
-  height: 474px;
+  height: 432px;
   background-image: url('../images/ultra/stream-bg.jpg');
 }
 /* line 18, css\new_design\blocks\webos\stream.less */
@@ -1276,11 +1289,11 @@ body {
 .stream__img {
   position: absolute;
   z-index: 1;
-  top: -20px;
+  top: 0;
   left: -133px;
   width: 849px;
   height: 450px;
-  background: url('../images/webos/stream-bg.jpg') 0 0 no-repeat;
+  background: url('../images/webos/stream-bg.jpg') 0 -20px no-repeat;
 }
 /* line 35, css\new_design\blocks\webos\stream.less */
 .stream__logo {
@@ -1474,6 +1487,12 @@ body {
   background: url('../images/ultra/ultrahd-bg.jpg') 0 0 no-repeat;
   border-bottom: 2px solid #d61049;
   box-sizing: content-box;
+}
+@media only screen and (max-width: 1259px) {
+  /* line 77, css\new_design\blocks\ultra\ultra-hd.less */
+  .ultra-hd {
+    background-image: url('../images/ultra/ultrahd-bg.jpg');
+  }
 }
 /* line 1, css\new_design\blocks\ultra\ultra-3d.less */
 .ultra-3d {
