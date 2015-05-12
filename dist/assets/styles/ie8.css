@@ -152,7 +152,11 @@ This must be run when you have at least 2 sprites.
 .setup_type_ultra {
   background: url('../images/ultra/setup-full-bg.jpg') 119px 76px no-repeat;
 }
-/* line 11, css\new_design\ie8\blocks\setup.less */
+/* line 10, css\new_design\ie8\blocks\setup.less */
+.setup_type_webos {
+  background: url('../images/webos/setup-bg.jpg') 513px 56px no-repeat;
+}
+/* line 15, css\new_design\ie8\blocks\setup.less */
 .setup__img,
 .setup__container {
   display: none;

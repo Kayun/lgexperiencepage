@@ -16,11 +16,7 @@ $window.load(function () {
 			preload: 'auto',
 			autoplay: false,
 		}).ready(function() {
-			dataVideo (this)
-		});
-
-		function dataVideo (player) {
-
+			var player = this;
 			player.on('pause', function () {
 				setTimeout(function () {
 					player.currentTime(0);
@@ -31,7 +27,7 @@ $window.load(function () {
 			player.on('play', function () {
 				setTimeout(function () {
 					player.pause();
-				}, 3000);
+				}, 3100);
 			});
 
 			$document.bind('scroll', function () {
@@ -39,15 +35,12 @@ $window.load(function () {
 
 					if ($dataSection.position().top + $dataSection.innerHeight() <= $document.scrollTop() + $window.height()) {
 						player.play();
-						set
 						flag = !flag;
 					}
 
-				} else {
-					return false
 				}
 			});
-		}
+		});
 	}
 
 	function isIE8() {
