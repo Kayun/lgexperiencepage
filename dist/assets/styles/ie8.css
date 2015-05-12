@@ -144,13 +144,26 @@ This must be run when you have at least 2 sprites.
 .compare-container {
   width: 100%;
 }
-/* line 5, css\new_design\ie8\blocks\setup.less */
+/* line 1, css\new_design\ie8\blocks\setup.less */
+.setup {
+  background: url('../images/oled/setup-full-bg.jpg') 592px 52px no-repeat;
+}
+/* line 6, css\new_design\ie8\blocks\setup.less */
 .setup_type_ultra {
   background: url('../images/ultra/setup-full-bg.jpg') 119px 76px no-repeat;
 }
-/* line 10, css\new_design\ie8\blocks\setup.less */
+/* line 11, css\new_design\ie8\blocks\setup.less */
 .setup__img,
 .setup__container {
+  display: none;
+}
+/* line 1, css\new_design\ie8\blocks\wrgb.less */
+.wrgb__btn {
+  right: 148px;
+  width: 272px;
+}
+/* line 1, css\new_design\ie8\blocks\action.less */
+.action__img1 {
   display: none;
 }
 /* line 7, css\new_design\ie8\components\menu-mini.less */
