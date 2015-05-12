@@ -361,8 +361,8 @@ body {
   display: none;
 }
 @media only screen and (max-width: 1259px) {
-  /* line 28, css\new_design\base\base.less */
-  .mobile {
+  /* line 26, css\new_design\base\base.less */
+  .mobile-hide {
     display: none !important;
   }
 }

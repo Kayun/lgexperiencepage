@@ -26,7 +26,7 @@ $window.load(function () {
 			if ($colorPrimeSection.position().top +
 				$colorPrimeSection.innerHeight() > $document.scrollTop() +
 				$window.height()) {
-				console.log("ok")
+
 				$checkbox.removeAttr('checked')
 			}
 
@@ -43,9 +43,6 @@ $window.load(function () {
 				}
 			}
 		});
-
-	} else if (device.mobile() || device.tablet()) {
-		var
 
 	}
 
