@@ -107,3 +107,105 @@ This must be run when you have at least 2 sprites.
 .data__img {
   background-image: url('../images/webos/data-bg.jpg');
 }
+/* line 7, css\new_design\ie8\blocks\features.less */
+.features__item_pos_left {
+  width: 204px;
+}
+/* line 11, css\new_design\ie8\blocks\features.less */
+.features__item_pos_right {
+  width: 199px;
+}
+/* line 1, css\new_design\ie8\blocks\video.less */
+.video__item {
+  width: 255px;
+}
+/* line 3, css\new_design\ie8\blocks\colorprime.less */
+.colorprime__chek,
+.colorprime__img1,
+.colorprime__line {
+  display: none;
+}
+/* line 8, css\new_design\ie8\blocks\colorprime.less */
+.colorprime__chek + label,
+.colorprime__img1 + label,
+.colorprime__line + label {
+  display: none;
+}
+/* line 1, css\new_design\ie8\blocks\ultra-hd.less */
+.ultra-hd {
+  background-image: url('../images/ultra/ultrahd-bg.jpg');
+}
+/* line 4, css\new_design\ie8\blocks\ultra-hd.less */
+.ultra-hd__switch,
+.ultra-hd__img {
+  display: none;
+}
+/* line 3, css\new_design\ie8\blocks\compare.less */
+.compare-container {
+  width: 100%;
+}
+/* line 5, css\new_design\ie8\blocks\setup.less */
+.setup_type_ultra {
+  background: url('../images/ultra/setup-full-bg.jpg') 119px 76px no-repeat;
+}
+/* line 10, css\new_design\ie8\blocks\setup.less */
+.setup__img,
+.setup__container {
+  display: none;
+}
+/* line 7, css\new_design\ie8\components\menu-mini.less */
+.menu-mini__logo_type_ultra {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -136px;
+  width: 190px;
+  height: 26px;
+}
+/* line 11, css\new_design\ie8\components\menu-mini.less */
+.menu-mini__logo_type_oled {
+  background-image: url(../images/sprite.png);
+  background-position: -222px -170px;
+  width: 134px;
+  height: 22px;
+}
+/* line 15, css\new_design\ie8\components\menu-mini.less */
+.menu-mini__logo_type_webos {
+  background-image: url(../images/sprite.png);
+  background-position: -80px -170px;
+  width: 134px;
+  height: 28px;
+}
+/* line 3, css\new_design\ie8\components\banner.less */
+.banner iframe {
+  position: relative;
+  z-index: 1;
+}
+/* line 8, css\new_design\ie8\components\banner.less */
+.banner__img {
+  zoom: 1;
+}
+/* line 1, css\new_design\ie8\components\buttons.less */
+.button-feat,
+.button-model {
+  background-color: #f82375;
+  background-image: none;
+}
+/* line 7, css\new_design\ie8\components\buttons.less */
+.button-feat:hover,
+.button-model:hover {
+  background-color: #f21f69;
+}
+/* line 12, css\new_design\ie8\components\buttons.less */
+.button-feat {
+  height: 48px;
+}
+/* line 1, css\new_design\ie8\components\model.less */
+.model {
+  width: 205px;
+  *display: inline;
+  zoom: 1;
+}
+/* line 6, css\new_design\ie8\components\model.less */
+.model__icon {
+  *display: inline;
+  zoom: 1;
+}

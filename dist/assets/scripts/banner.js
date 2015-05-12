@@ -1,5 +1,9 @@
 $(window).load(function() {
 
+	if (isIE8() || isIE7()) {
+		$btn.append('<div class="banner__btn-icon"></div>');
+	}
+
 	textAnim();
 
 });
@@ -13,6 +17,8 @@ var $img = $('.js-banner-img'),
 	infoHideClass = 'banner__info_state_hide',
 	activeVideoClass = 'video__item_state_active',
 	flag = true;
+
+
 
 // Инициализация плееров в блоке banner
 
@@ -32,7 +38,7 @@ function onYouTubeIframeAPIReady() {
 			controls: 2,
 			fs: 0,
 			modestbranding: 0,
-			showinfo: 0,
+			showinfo: 0
 		},
 		events: {
 			'onReady': playVideo

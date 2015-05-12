@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 			dist: {
 
 				options: {
-					browsers: ['last 2 versions', 'ie 9']
+					browsers: ['last 2 versions', 'ie 9', 'safari 5.1']
 				},
 
 				src: 'dist/assets/styles/common.css'

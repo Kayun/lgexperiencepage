@@ -4,7 +4,8 @@
 		padding-top: 10px;
 		width: 1023px;
 		font-size: 0;
-		background: linear-gradient(to top, #fbfbfb, transparent);
+		display: table;
+		background: linear-gradient(to top, #fbfbfb, #fff);
 		border-bottom: 1px solid @reb-menu;
 
 	&__item {
@@ -30,17 +31,29 @@
 
 			&_ultra {
 				top: -1px;
-				.sprite(@logo-ultra);
+				width: 190px;
+				height: 27px;
+				background-image: url('../images/svg/logo-ultra.svg');
+				background-position: 0 0;
+				background-size: 190px 27px;
 			}
 
 			&_oled {
-				.sprite(@logo-oled);
+				width: 134px;
+				height: 22px;
+				background-image: url('../images/svg/logo-oled.svg');
+				background-position: 0 0;
+				background-size: 134px 22px;
 			}
 
 			&_webos {
 				top: 4px;
 				left: -1px;
-				.sprite(@logo-webos);
+				width: 134px;
+				height: 28px;
+				background-image: url('../images/svg/logo-webos.svg');
+				background-position: 0 0;
+				background-size: 134px 28px;
 			}
 
 		}
