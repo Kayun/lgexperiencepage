@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=7,IE=9,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<title>LG WebOS</title>
+	</head>
+	<body>
+		<link href="//vjs.zencdn.net/4.12/video-js.css">
+		<link href="assets/styles/common.css" rel="stylesheet">
+		<!-- для отладки, перед релизом убрать-->
+		<link href="assets/styles/lg.min.css" rel="stylesheet">
+		<link href="assets/styles/fonts.css" rel="stylesheet">
+		<script>
+		var scripts = [
+			'https://www.youtube.com/iframe_api',
+			'//vjs.zencdn.net/4.12/video.js',
+		]
+		scripts.forEach(function(item)
+		{
+			var script = document.createElement('script'),
+				beforeScript = document.getElementsByTagName('script')[0];
+			script.src = item;
+			script.async = true;
+			beforeScript.parentNode.insertBefore(script, beforeScript);
+		})
+		</script>
+		<!--[if lte IE 8]> <link href="assets/styles/ie8.css" rel="stylesheet"> <![endif]-->
+		<!--[if IE 7]> <link href="assets/styles/ie7.css" rel="stylesheet"> <![endif]-->
+		<!--[if lt IE 9]> <script>document.createElement('header');document.createElement('nav');document.createElement('section');document.createElement('article');document.createElement('aside');document.createElement('footer');</script> <![endif]-->
+		<header>
+			<div class="innerwrap"><a id="logo" href="http://www.lg.com/ru" role="banner" title="Домашняя страница" class="ir">LG &Rcy;&ocy;&scy;&scy;&icy;&yacy;</a>
+				<div id="utils">
+					<ul class="util-links">
+						<li><a href="http://www.lg.com/ru/press-release">&Pcy;&rcy;&iecy;&scy;&scy;-&rcy;&iecy;&lcy;&icy;&zcy;&ycy;</a></li>
+						<li><a href="http://www.lg.com/ru/about-lg">&Ocy;&bcy; LG</a></li>
+						<li><a href="http://www.lg.com/ru/brand-shop">&Fcy;&icy;&rcy;&mcy;&iecy;&ncy;&ncy;&ycy;&jcy; &mcy;&acy;&gcy;&acy;&zcy;&icy;&ncy; LG</a></li>
+						<li><a href="https://www.lg.com/ru/support/mylg-login" class="signin">&Vcy;&khcy;&ocy;&dcy; &vcy; &lcy;&icy;&chcy;&ncy;&ycy;&jcy; &kcy;&acy;&bcy;&icy;&ncy;&iecy;&tcy;</a></li>
+					</ul>
+					<div class="search">
+						<form action="http://www.lg.com/ru/search.lg" data-sc-item="search-predictive" method="post" role="search">
+							<label for="search">
+								<input id="search" data-alignment="right" data-url="/ru/response/psearch-enhanced" name="search" placeholder="Поиск" title="Поиск" type="search" class="psearch">
+							</label>
+							<input name="N" type="hidden" value="0">
+							<input name="Ntk" type="hidden" value="All">
+							<input name="Ntx" type="hidden" value="mode+matchallpartial">
+							<button type="submit" class="btn-search">Search</button>
+						</form>
+					</div>
+				</div>
+				<nav role="navigation" class="main-navigation">
+					<ul role="menubar">
+						<li aria-haspopup="true" role="menuitem">
+							<h2><a data-depth="1" href="http://www.lg.com/ru/tv-audio-video" role="menuitem">&Tcy;&Vcy; / &Acy;&Ucy;&Dcy;&Icy;&Ocy; / &Vcy;&Icy;&Dcy;&IEcy;&Ocy;</a></h2>
+							<div role="menu" class="gnb-submenu mega-gnb">
+								<ul>
+									<li class="columnA"><a data-depth="3" href="http://www.lg.com/ru/televisions" role="menuitem"><span>&Tcy;&iecy;&lcy;&iecy;&vcy;&icy;&zcy;&ocy;&rcy;&ycy;</span><img alt="" height="114" src="/ru/images/global/nav/lg-televisions-lm860v.png" width="116"></a>
+										<div class="cols padT15">
+											<ul>
+												<li><a data-depth="4" href="http://www.lg.com/ru/televisions/all-televisions" role="menuitem">&Vcy;&scy;&iecy; &Tcy;&iecy;&lcy;&iecy;&vcy;&icy;&zcy;&ocy;&rcy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/oled-televisions" role="menuitem">OLED &Tcy;&iecy;&lcy;&iecy;&vcy;&icy;&zcy;&ocy;&rcy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/ultrahd-4k-televisions" role="menuitem">ULTRA HD 4K &tcy;&iecy;&lcy;&iecy;&vcy;&icy;&zcy;&ocy;&rcy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/lcd-led-televisions" role="menuitem">&Tcy;&iecy;&lcy;&iecy;&vcy;&icy;&zcy;&ocy;&rcy;&ycy; LCD / LED</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/plasma-televisions" role="menuitem">&Pcy;&lcy;&acy;&zcy;&mcy;&iecy;&ncy;&ncy;&ycy;&iecy; &tcy;&iecy;&lcy;&iecy;&vcy;&icy;&zcy;&ocy;&rcy;&ycy;</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="columnA"><a data-depth="3" href="http://www.lg.com/ru/audio" role="menuitem"><span>&Acy;&ucy;&dcy;&icy;&ocy;</span><img alt="" height="114" src="/ru/images/global/nav/lg-audio-hb976tzw.png" width="116"></a>
+										<div class="cols padT15">
+											<ul>
+												<li><a data-depth="4" href="http://www.lg.com/ru/home-theaters" role="menuitem">&Dcy;&ocy;&mcy;&acy;&shcy;&ncy;&icy;&iecy; &kcy;&icy;&ncy;&ocy;&tcy;&iecy;&acy;&tcy;&rcy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/soundbars" role="menuitem">&Scy;&acy;&ucy;&ncy;&dcy;&bcy;&acy;&rcy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/minisystems" role="menuitem">&Mcy;&ucy;&zcy;&ycy;&kcy;&acy;&lcy;&softcy;&ncy;&ycy;&iecy; &tscy;&iecy;&ncy;&tcy;&rcy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/audio-system" role="menuitem">&Acy;&ucy;&dcy;&icy;&ocy;&scy;&icy;&scy;&tcy;&iecy;&mcy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/x-boom-systems" role="menuitem">&Scy;&vcy;&iecy;&rcy;&khcy;&mcy;&ocy;&shchcy;&ncy;&ycy;&iecy; &mcy;&icy;&ncy;&icy;&scy;&icy;&scy;&tcy;&iecy;&mcy;&ycy; X-Boom</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="columnA"><a data-depth="3" href="http://www.lg.com/ru/video" role="menuitem"><span>&Vcy;&icy;&dcy;&iecy;&ocy;</span><img alt="" height="114" src="/ru/images/global/nav/lg-video-bd690.png" width="116"></a>
+										<div class="cols padT15">
+											<ul>
+												<li><a data-depth="4" href="http://www.lg.com/ru/blu-ray-players" role="menuitem">Blu-ray &pcy;&lcy;&iecy;&iecy;&rcy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/karaoke-system" role="menuitem">&Kcy;&acy;&rcy;&acy;&ocy;&kcy;&iecy;-&scy;&icy;&scy;&tcy;&iecy;&mcy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/dvd-players" role="menuitem">DVD &pcy;&lcy;&iecy;&iecy;&rcy;&ycy;</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="columnC">
+										<ul>
+											<li><a data-depth="3" href="http://www.lg.com/ru/smart-audio" role="menuitem"><span>Smart Audio</span><img alt="" height="114" src="/ru/images/global/nav/smart-audio.png" width="116"></a></li>
+										</ul>
+									</li>
+									<li class="learn-about">
+										<h3>&Ucy;&zcy;&ncy;&acy;&jcy; &bcy;&ocy;&lcy;&softcy;&shcy;&iecy;</h3>
+										<nav><a href="#" class="btn-prev">previous</a><a href="#" class="btn-next">next</a></nav>
+										<div class="learn-wrap">
+											<ul>
+												<li>
+													<a href="http://www.lg.com/ru/tv-audio-video/HEProductExperiencePage/av/mscFlow__overview"><img alt="" height="81" src="/ru/images/global/nav/smart-audio-bluetooth.png" width="89"><em>&Scy;&mcy;&acy;&rcy;&tcy; &Acy;&ucy;&dcy;&icy;&ocy;</em>
+														<p>&Bcy;&iecy;&scy;&pcy;&rcy;&ocy;&vcy;&ocy;&dcy;&ncy;&ycy;&iecy; &acy;&ucy;&dcy;&icy;&ocy;&scy;&icy;&scy;&tcy;&iecy;&mcy;&ycy; &scy; wi-fi &icy; bluetooth</p><span>&Ucy;&zcy;&ncy;&acy;&tcy;&softcy; &bcy;&ocy;&lcy;&softcy;&shcy;&iecy;</span></a>
+												</li>
+												<li>
+													<a href="http://www.lg.com/ru/tv-audio-video/HEProductExperiencePage/tv/uhdTV_overview"><img alt="" height="81" src="/ru/images/global/nav/ultra-hd-tv-4k.png" width="89"><em>ULTRA HD TV 4K</em>
+														<p>&Ucy;&lcy;&softcy;&tcy;&rcy;&acy;&chcy;&iecy;&tcy;&kcy;&ocy;&scy;&tcy;&softcy; &vcy; &kcy;&acy;&zhcy;&dcy;&ocy;&jcy; &dcy;&iecy;&tcy;&acy;&lcy;&icy; &vcy;&acy;&shcy;&iecy;&gcy;&ocy; &tcy;&iecy;&lcy;&iecy;&vcy;&icy;&zcy;&ocy;&rcy;&acy;</p><span>&Ucy;&zcy;&ncy;&acy;&tcy;&softcy; &bcy;&ocy;&lcy;&softcy;&shcy;&iecy;</span></a>
+												</li>
+												<li>
+													<a href="http://www.lg.com/ru/tv-audio-video/HEProductExperiencePage/tv/webOS_overview_gtie8"><img alt="" height="81" src="/ru/images/global/nav/smart-experience.png" width="89"><em>Smart TV</em>
+														<p>&Tcy;&iecy;&pcy;&iecy;&rcy;&softcy; 3D-&tcy;&iecy;&lcy;&iecy;&vcy;&icy;&zcy;&ocy;&rcy;&ycy; &scy;&ocy; Smart TV</p><span>&Ucy;&zcy;&ncy;&acy;&tcy;&softcy; &bcy;&ocy;&lcy;&softcy;&shcy;&iecy;</span></a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li aria-haspopup="true" role="menuitem">
+							<h2><a data-depth="1" href="http://www.lg.com/ru/computer-products" role="menuitem">IT &Pcy;&Rcy;&Ocy;&Dcy;&Ucy;&Kcy;&TScy;&Icy;&YAcy;</a></h2>
+							<div role="menu" class="gnb-submenu">
+								<ul>
+									<li class="columnA">
+										<a data-depth="3" href="http://www.lg.com/ru/monitors" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/lg-monitors-d2342p.png" width="116"><span>&Mcy;&ocy;&ncy;&icy;&tcy;&ocy;&rcy;&ycy;</span></a>
+										<div class="cols">
+											<ul>
+												<li><a data-depth="4" href="http://www.lg.com/ru/monitors/all-monitors" role="menuitem">&Vcy;&scy;&iecy; &mcy;&ocy;&ncy;&icy;&tcy;&ocy;&rcy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/ultrawide-monitors" role="menuitem">UltraWide &Mcy;&ocy;&ncy;&icy;&tcy;&ocy;&rcy;&ycy; 21:9</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/ips-screens" role="menuitem">IPS &Mcy;&ocy;&ncy;&icy;&tcy;&ocy;&rcy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/3d-monitors" role="menuitem">3D &Mcy;&ocy;&ncy;&icy;&tcy;&ocy;&rcy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/led-monitors" role="menuitem">LED &Mcy;&ocy;&ncy;&icy;&tcy;&ocy;&rcy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/cloud-monitors" role="menuitem">Cloud &Mcy;&ocy;&ncy;&icy;&tcy;&ocy;&rcy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/personal-tv" role="menuitem">&Pcy;&iecy;&rcy;&scy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&iecy; &Tcy;&Vcy;</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="columnA">
+										<a data-depth="3" href="http://www.lg.com/ru/projectors" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/lg-projectors-pg60g.png" width="116"><span>&Pcy;&rcy;&ocy;&iecy;&kcy;&tcy;&ocy;&rcy;&ycy;</span></a>
+									</li>
+									<li class="columnC">
+										<ul>
+											<li>
+												<a data-depth="3" href="http://www.lg.com/ru/pocket-photo-printer" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/pocket-photo-printer.png" width="116"><span>&Kcy;&acy;&rcy;&mcy;&acy;&ncy;&ncy;&ycy;&jcy; &fcy;&ocy;&tcy;&ocy;&pcy;&rcy;&icy;&ncy;&tcy;&iecy;&rcy;</span></a>
+											</li>
+										</ul>
+									</li>
+									<li class="learn-about">
+										<h3>&Ucy;&zcy;&ncy;&acy;&jcy; &bcy;&ocy;&lcy;&softcy;&shcy;&iecy;</h3>
+										<ul>
+											<li><a href="http://www.lg.com/ru/computer-products/ultrawide-screens">&Mcy;&ocy;&ncy;&icy;&tcy;&ocy;&rcy;&ycy; UltraWide &fcy;&ocy;&rcy;&mcy;&acy;&tcy;&acy; 21:9</a></li>
+											<li><a href="http://www.lg.com/ru/computer-products/ips-monitors">&ZHcy;&icy;&vcy;&ocy;&jcy; &tscy;&vcy;&iecy;&tcy; &scy; &mcy;&ocy;&ncy;&icy;&tcy;&ocy;&rcy;&acy;&mcy;&icy; LG IPS</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li aria-haspopup="true" role="menuitem">
+							<h2><a data-depth="1" href="http://www.lg.com/ru/mobile" role="menuitem">&Scy;&Mcy;&Acy;&Rcy;&Tcy;&Fcy;&Ocy;&Ncy;&Ycy; / &Pcy;&Lcy;&Acy;&Ncy;&SHcy;&IEcy;&Tcy;&Ycy;</a></h2>
+							<div role="menu" class="gnb-submenu">
+								<ul>
+									<li class="columnA">
+										<a data-depth="3" href="http://www.lg.com/ru/smartphones" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/lg-mobile-phones-e615.png" width="116"><span>&Scy;&mcy;&acy;&rcy;&tcy;&fcy;&ocy;&ncy;&ycy;</span></a>
+										<div class="cols">
+											<ul>
+												<li><a data-depth="4" href="http://www.lg.com/ru/smartphones/all-smartphones" role="menuitem">&Vcy;&scy;&iecy; &scy;&mcy;&acy;&rcy;&tcy;&fcy;&ocy;&ncy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/g-style-smartphones" role="menuitem">&Scy;&mcy;&acy;&rcy;&tcy;&fcy;&ocy;&ncy;&ycy; G-&scy;&iecy;&rcy;&icy;&icy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/l-style-smartphones" role="menuitem">&Scy;&mcy;&acy;&rcy;&tcy;&fcy;&ocy;&ncy;&ycy; L-&scy;&iecy;&rcy;&icy;&icy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/dual-sim-smartphones" role="menuitem">&Scy;&mcy;&acy;&rcy;&tcy;&fcy;&ocy;&ncy;&ycy; &scy; 2 SIM-&kcy;&acy;&rcy;&tcy;&acy;&mcy;&icy;</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="columnA">
+										<a data-depth="3" href="http://www.lg.com/ru/pads" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/G-Pad_B_6_rus.png" width="116"><span>&Pcy;&lcy;&acy;&ncy;&shcy;&iecy;&tcy;&ycy;</span></a>
+									</li>
+									<li class="columnA">
+										<a data-depth="3" href="http://www.lg.com/ru/wearable" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/wearable-gnb.png" width="116"><span>&Ncy;&ocy;&scy;&icy;&mcy;&ycy;&iecy; &ucy;&scy;&tcy;&rcy;&ocy;&jcy;&scy;&tcy;&vcy;&acy;</span></a>
+									</li>
+									<li class="columnA">
+										<a data-depth="3" href="http://www.lg.com/ru/mobile-phone-accessories" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/LG-bluetooth-headsets-HBM-235.png" width="116"><span>&Acy;&kcy;&scy;&iecy;&scy;&scy;&ucy;&acy;&rcy;&ycy;</span></a>
+									</li>
+									<li class="learn-about">
+										<h3>&Ucy;&zcy;&ncy;&acy;&jcy; &bcy;&ocy;&lcy;&softcy;&shcy;&iecy;</h3>
+										<ul>
+											<li><a href="http://www.lg.com/ru/g3" target="_blank">LG G3</a></li>
+											<li><a href="http://www.lg.com/ru/support/pc-suite" target="_blank">&Scy;&kcy;&acy;&chcy;&acy;&tcy;&softcy; PC Suite</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li aria-haspopup="true" role="menuitem">
+							<h2><a data-depth="1" href="http://www.lg.com/ru/home-appliances" role="menuitem">&Bcy;&Ycy;&Tcy;&Ocy;&Vcy;&Acy;&YAcy; &Tcy;&IEcy;&KHcy;&Ncy;&Icy;&Kcy;&Acy;</a></h2>
+							<div role="menu" class="gnb-submenu">
+								<ul>
+									<li class="columnA">
+										<a data-depth="3" href="http://www.lg.com/ru/refrigerators" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/lg-refrigerators-gc-b439wlqk.png" width="116"><span>&KHcy;&ocy;&lcy;&ocy;&dcy;&icy;&lcy;&softcy;&ncy;&icy;&kcy;&icy;</span></a>
+										<div class="cols">
+											<ul>
+												<li><a data-depth="4" href="http://www.lg.com/ru/refrigerators/all-refrigerators" role="menuitem">&Vcy;&scy;&iecy; &KHcy;&ocy;&lcy;&ocy;&dcy;&icy;&lcy;&softcy;&ncy;&icy;&kcy;&icy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/refrigerators-bottom-freezer" role="menuitem">&KHcy;&ocy;&lcy;&ocy;&dcy;&icy;&lcy;&softcy;&ncy;&icy;&kcy;&icy; &scy; &ncy;&icy;&zhcy;&ncy;&iecy;&jcy; &mcy;&ocy;&rcy;&ocy;&zcy;&icy;&lcy;&softcy;&ncy;&ocy;&jcy; &kcy;&acy;&mcy;&iecy;&rcy;&ocy;&jcy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/refrigerators-top-freezer" role="menuitem">&KHcy;&ocy;&lcy;&ocy;&dcy;&icy;&lcy;&softcy;&ncy;&icy;&kcy;&icy; &scy; &vcy;&iecy;&rcy;&khcy;&ncy;&iecy;&jcy; &mcy;&ocy;&rcy;&ocy;&zcy;&icy;&lcy;&softcy;&ncy;&ocy;&jcy; &kcy;&acy;&mcy;&iecy;&rcy;&ocy;&jcy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/refrigerators-side-by-side" role="menuitem">&KHcy;&ocy;&lcy;&ocy;&dcy;&icy;&lcy;&softcy;&ncy;&icy;&kcy;&icy; Side-by-Side</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/refrigerators-single-door" role="menuitem">&Ocy;&dcy;&ncy;&ocy;&kcy;&acy;&mcy;&iecy;&rcy;&ncy;&ycy;&iecy; &khcy;&ocy;&lcy;&ocy;&dcy;&icy;&lcy;&softcy;&ncy;&icy;&kcy;&icy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/refrigerators-freezers" role="menuitem">&Mcy;&ocy;&rcy;&ocy;&zcy;&icy;&lcy;&softcy;&ncy;&ycy;&iecy; &kcy;&acy;&mcy;&iecy;&rcy;&ycy;</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="columnA">
+										<a data-depth="3" href="http://www.lg.com/ru/washing-machines" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/lg-washing-machines-f1088ld.png" width="116"><span>&Scy;&tcy;&icy;&rcy;&acy;&lcy;&softcy;&ncy;&ycy;&iecy; &mcy;&acy;&shcy;&icy;&ncy;&ycy;</span></a>
+										<div class="cols">
+											<ul>
+												<li><a data-depth="4" href="http://www.lg.com/ru/washing-machines/all-washing-machines" role="menuitem">&Vcy;&scy;&iecy; &Scy;&tcy;&icy;&rcy;&acy;&lcy;&softcy;&ncy;&ycy;&iecy; &mcy;&acy;&shcy;&icy;&ncy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/standard-washing-machines" role="menuitem">&Scy;&tcy;&acy;&ncy;&dcy;&acy;&rcy;&tcy;&ncy;&ycy;&iecy; &scy;&tcy;&icy;&rcy;&acy;&lcy;&softcy;&ncy;&ycy;&iecy; &mcy;&acy;&shcy;&icy;&ncy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/narrow-washing-machines" role="menuitem">&Ucy;&zcy;&kcy;&icy;&iecy; &scy;&tcy;&icy;&rcy;&acy;&lcy;&softcy;&ncy;&ycy;&iecy; &mcy;&acy;&shcy;&icy;&ncy;&ycy;</a></li>
+												<li><a data-depth="4" href="http://www.lg.com/ru/super-narrow-washing-machines" role="menuitem">C&ucy;&pcy;&iecy;&rcy;&ucy;&zcy;&kcy;&icy;&iecy; &scy;&tcy;&icy;&rcy;&acy;&lcy;&softcy;&ncy;&ycy;&iecy; &mcy;&acy;&shcy;&icy;&ncy;&ycy;</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="columnA">
+										<div class="head">
+											<a data-depth="2" href="http://www.lg.com/ru/vacuum-cleaners" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/VK81101HF_full_116x114.png" width="116"></a>
+										</div>
+										<div class="cols">
+											<ul>
+												<li><a data-depth="3" href="http://www.lg.com/ru/vacuum-cleaners" role="menuitem">&Pcy;&ycy;&lcy;&iecy;&scy;&ocy;&scy;&ycy;</a>
+													<ul>
+														<li><a data-depth="4" href="http://www.lg.com/ru/vacuum-cleaners/all-vacuum-cleaners" role="menuitem">&Vcy;&scy;&iecy; &pcy;&ycy;&lcy;&iecy;&scy;&ocy;&scy;&ycy;</a></li>
+														<li><a data-depth="4" href="http://www.lg.com/ru/vacuum-cleaners-cordless" role="menuitem">&Bcy;&iecy;&scy;&pcy;&rcy;&ocy;&vcy;&ocy;&dcy;&ncy;&ycy;&iecy; &pcy;&ycy;&lcy;&iecy;&scy;&ocy;&scy;&ycy;</a></li>
+														<li><a data-depth="4" href="http://www.lg.com/ru/vacuum-cleaners-bagless" role="menuitem">&Pcy;&ycy;&lcy;&iecy;&scy;&ocy;&scy;&ycy; &bcy;&iecy;&zcy; &mcy;&iecy;&shcy;&kcy;&acy;<br>&dcy;&lcy;&yacy; &scy;&bcy;&ocy;&rcy;&acy; &pcy;&ycy;&lcy;&icy;</a></li>
+														<li><a data-depth="4" href="http://www.lg.com/ru/vacuum-cleaners-wet-and-dry-cleaning" role="menuitem">&Pcy;&ycy;&lcy;&iecy;&scy;&ocy;&scy;&ycy; &dcy;&lcy;&yacy; &vcy;&lcy;&acy;&zhcy;&ncy;&ocy;&jcy;<br>&icy; &scy;&ucy;&khcy;&ocy;&jcy; &ucy;&bcy;&ocy;&rcy;&kcy;&icy;</a></li>
+														<li><a data-depth="4" href="http://www.lg.com/ru/vacuum-cleaners-kompressor" role="menuitem">&Pcy;&ycy;&lcy;&iecy;&scy;&ocy;&scy;&ycy; Kompressor</a></li>
+														<li><a data-depth="4" href="http://www.lg.com/ru/vacuum-cleaners-simplebin" role="menuitem">&Pcy;&ycy;&lcy;&iecy;&scy;&ocy;&scy;&ycy; Simple Bin</a></li>
+														<li><a data-depth="4" href="http://www.lg.com/ru/vc-robots" role="menuitem">&Rcy;&ocy;&bcy;&ocy;&tcy;&ycy;-&pcy;&ycy;&lcy;&iecy;&scy;&ocy;&scy;&ycy;</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="columnA">
+										<div class="head">
+											<a data-depth="2" href="http://www.lg.com/ru/microwaves" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/lg-microwave-ovens-mb4024jl.png" width="116"></a>
+										</div>
+										<div class="cols">
+											<ul>
+												<li><a data-depth="3" href="http://www.lg.com/ru/lightwave-ovens" role="menuitem">&Pcy;&iecy;&chcy;&icy; Lightwave</a></li>
+												<li><a data-depth="3" href="http://www.lg.com/ru/microwaves" role="menuitem">&Mcy;&icy;&kcy;&rcy;&ocy;&vcy;&ocy;&lcy;&ncy;&ocy;&vcy;&ycy;&iecy; &pcy;&iecy;&chcy;&icy;</a></li>
+												<li><a data-depth="3" href="http://www.lg.com/ru/breadmakers" role="menuitem">&KHcy;&lcy;&iecy;&bcy;&ocy;&pcy;&iecy;&chcy;&icy;</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="columnA">
+										<a data-depth="3" href="http://www.lg.com/ru/built-in-appliances" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/panel.png" width="116"><span>&Vcy;&scy;&tcy;&rcy;&acy;&icy;&vcy;&acy;&iecy;&mcy;&acy;&yacy; &tcy;&iecy;&khcy;&ncy;&icy;&kcy;&acy;</span></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li aria-haspopup="true" role="menuitem">
+							<h2><a data-depth="1" href="http://www.lg.com/ru/airconditioners" role="menuitem">&Kcy;&Ocy;&Ncy;&Dcy;&Icy;&TScy;&Icy;&Ocy;&Ncy;&IEcy;&Rcy;&Ycy;</a></h2>
+							<div role="menu" class="gnb-submenu">
+								<ul>
+									<li class="columnC">
+										<ul>
+											<li>
+												<a data-depth="3" href="http://www.lg.com/ru/airconditioners-split-systems" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/01_condition.png" width="116"><span>&Bcy;&ycy;&tcy;&ocy;&vcy;&ycy;&iecy; &scy;&pcy;&lcy;&icy;&tcy;-&scy;&icy;&scy;&tcy;&iecy;&mcy;&ycy;</span></a>
+											</li>
+											<li>
+												<noindex>
+													<a data-depth="3" href="http://lgaircon.ru/models/polupromyshlennye-split-sistemy" rel="nofollow" role="menuitem" target="_blank"><img alt="" height="114" src="/ru/images/global/nav/03_condition.png" width="116"><span>&Pcy;&ocy;&lcy;&ucy;&pcy;&rcy;&ocy;&mcy;&ycy;&shcy;&lcy;&iecy;&ncy;&ncy;&ycy;&iecy; &scy;&pcy;&lcy;&icy;&tcy;-&scy;&icy;&scy;&tcy;&iecy;&mcy;&ycy;</span></a>
+												</noindex>
+											</li>
+											<li>
+												<noindex>
+													<a data-depth="3" href="http://lgaircon.ru/models/multi-split-sistemy" rel="nofollow" role="menuitem" target="_blank"><img alt="" height="114" src="/ru/images/global/nav/02_condition.png" width="116"><span>&Mcy;&ucy;&lcy;&softcy;&tcy;&icy; &scy;&pcy;&lcy;&icy;&tcy;-&scy;&icy;&scy;&tcy;&iecy;&mcy;&ycy;</span></a>
+												</noindex>
+											</li>
+											<li>
+												<noindex>
+													<a data-depth="3" href="http://lgaircon.ru/models/vrf-sistemy" rel="nofollow" role="menuitem" target="_blank"><img alt="" height="114" src="/ru/images/global/nav/04_condition.png" width="116"><span>VRF &scy;&icy;&scy;&tcy;&iecy;&mcy;&ycy;</span></a>
+												</noindex>
+											</li>
+										</ul>
+									</li>
+									<li class="learn-about">
+										<h3>&Ucy;&zcy;&ncy;&acy;&jcy; &bcy;&ocy;&lcy;&softcy;&shcy;&iecy;</h3>
+										<ul>
+											<li>
+												<noindex><a href="http://www.lg-artcool.com/ru/index.do" rel="nofollow" target="_blank">LG Artcool</a></noindex>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li aria-haspopup="true" role="menuitem">
+							<h2><noindex><a data-depth="1" href="http://www.lgvccompany.com/ru" rel="nofollow" role="menuitem" target="_blank">&Acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&softcy;&ncy;&ocy;&iecy;</a></noindex></h2>
+							<div role="menu" class="gnb-submenu">
+								<ul>
+									<li class="columnC">
+										<ul>
+											<li>
+												<noindex>
+													<a data-depth="3" href="http://www.lgvccompany.com/ru/xev-solution" rel="nofollow" role="menuitem" target="_blank"><img alt="" height="114" src="/ru/images/global/nav/automotive_01.png" width="116"><span>&Tcy;&IEcy;&KHcy;&Ncy;&Ocy;&Lcy;&Ocy;&Gcy;&Icy;&Icy; &Ecy;&Lcy;&IEcy;&Kcy;&Tcy;&Rcy;&Ocy;&Mcy;&Ocy;&Bcy;&Icy;&Lcy;&YAcy;<font style="text-transform: lowercase;">x<EV></EV></font></span></a>
+												</noindex>
+											</li>
+											<li>
+												<noindex>
+													<a data-depth="3" href="http://www.lgvccompany.com/ru/safety-convenience-devices" rel="nofollow" role="menuitem" target="_blank"><img alt="" height="114" src="/ru/images/global/nav/automotive_03.png" width="116"><span>&Ucy;&scy;&tcy;&rcy;&ocy;&jcy;&scy;&tcy;&vcy;&acy; &dcy;&lcy;&yacy; &bcy;&iecy;&zcy;&ocy;&pcy;&acy;&scy;&ncy;&ocy;&scy;&tcy;&icy; &icy; &ucy;&dcy;&ocy;&bcy;&scy;&tcy;&vcy;&acy;</span></a>
+												</noindex>
+											</li>
+											<li>
+												<noindex>
+													<a data-depth="3" href="http://www.lgvccompany.com/ru/infotainment-devices" rel="nofollow" role="menuitem" target="_blank"><img alt="" height="114" src="/ru/images/global/nav/automotive_02.png" width="116"><span>&Icy;&ncy;&fcy;&ocy;&rcy;&mcy;&acy;&tscy;&icy;&ocy;&ncy;&ncy;&ocy;-&rcy;&acy;&zcy;&vcy;&lcy;&iecy;&kcy;&acy;&tcy;&iecy;&lcy;&softcy;&ncy;&ycy;&iecy; &ucy;&scy;&tcy;&rcy;&ocy;&jcy;&scy;&tcy;&vcy;&acy;</span></a>
+												</noindex>
+											</li>
+											<li>
+												<noindex>
+													<a data-depth="3" href="http://www.lgvccompany.com/ru/vehicle-engineering" rel="nofollow" role="menuitem" target="_blank"><img alt="" height="114" src="/ru/images/global/nav/automotive_04.png" width="116"><span>&Pcy;&rcy;&ocy;&iecy;&kcy;&tcy;&icy;&rcy;&ocy;&vcy;&acy;&ncy;&icy;&iecy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy;</span></a>
+												</noindex>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li aria-haspopup="true" role="menuitem">
+							<h2><noindex><a data-depth="1" href="http://www.lg-b2b.ru/" rel="nofollow" role="menuitem" target="_blank">&Kcy;&Ocy;&Mcy;&Mcy;&IEcy;&Rcy;&CHcy;&IEcy;&Scy;&Kcy;&Icy;&IEcy; &Pcy;&Rcy;&Ocy;&Dcy;&Ucy;&Kcy;&Tcy;&Ycy;</a></noindex></h2>
+							<div role="menu" class="gnb-submenu">
+								<ul>
+									<li class="columnA">
+										<noindex>
+											<a data-depth="3" href="http://www.lg-b2b.ru/products/23/" rel="nofollow" role="menuitem" target="_blank"><img alt="" height="114" src="/ru/images/global/nav/b2b-professional-panels-displayes.png" width="116"><span>&Pcy;&rcy;&ocy;&fcy;&iecy;&scy;&scy;&icy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&iecy;<br>&pcy;&acy;&ncy;&iecy;&lcy;&icy; &icy; &dcy;&icy;&scy;&pcy;&lcy;&iecy;&icy;</span></a>
+										</noindex>
+										<div class="cols">
+											<ul>
+												<li>
+													<noindex><a href="http://www.lg-b2b.ru/products/led-displei/" rel="nofollow" target="_blank">LED &dcy;&icy;&scy;&pcy;&lcy;&iecy;&icy;</a></noindex>
+												</li>
+												<li>
+													<noindex><a href="http://www.lg-b2b.ru/products/special/" rel="nofollow" target="_blank">&Scy;&pcy;&iecy;&tscy;&icy;&acy;&lcy;&softcy;&ncy;&ycy;&iecy; &dcy;&icy;&scy;&pcy;&lcy;&iecy;&icy;</a></noindex>
+												</li>
+												<li>
+													<noindex><a href="http://www.lg-b2b.ru/products/39/" rel="nofollow" target="_blank">&Dcy;&icy;&scy;&pcy;&lcy;&iecy;&icy; &dcy;&lcy;&yacy; &vcy;&icy;&dcy;&iecy;&ocy;&scy;&tcy;&iecy;&ncy;</a></noindex>
+												</li>
+												<li>
+													<noindex><a href="http://www.lg-b2b.ru/products/controller/" rel="nofollow" target="_blank">&Kcy;&ocy;&ncy;&tcy;&rcy;&ocy;&lcy;&lcy;&iecy;&rcy;&ycy;/&Mcy;&iecy;&dcy;&icy;&acy;&pcy;&lcy;&iecy;&iecy;&rcy;&ycy;</a></noindex>
+												</li>
+												<li>
+													<noindex><a href="http://www.lg-b2b.ru/products/accessory/" rel="nofollow" target="_blank">&Acy;&kcy;&scy;&iecy;&scy;&scy;&ucy;&acy;&rcy;&ycy;</a></noindex>
+												</li>
+												<li>
+													<noindex><a href="http://www.lg-b2b.ru/products/72/" rel="nofollow" target="_blank">&Pcy;&rcy;&ocy;&gcy;&rcy;&acy;&mcy;&mcy;&ncy;&ocy;&iecy; &ocy;&bcy;&iecy;&scy;&pcy;&iecy;&chcy;&iecy;&ncy;&icy;&iecy;</a></noindex>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="columnA">
+										<div class="head"><img alt="" height="114" src="/ru/images/global/nav/b2b-tvs.png" width="116"></div>
+										<div class="cols">
+											<ul>
+												<li>
+													<noindex><a data-depth="3" href="http://www.lg-b2b.ru/products/21/" rel="nofollow" role="menuitem" target="_blank">&Kcy;&ocy;&mcy;&mcy;&iecy;&rcy;&chcy;&iecy;&scy;&kcy;&icy;&iecy; &tcy;&iecy;&lcy;&iecy;&vcy;&icy;&zcy;&ocy;&rcy;&ycy;</a></noindex>
+												</li>
+												<li>
+													<noindex><a data-depth="3" href="http://www.lg-b2b.ru/products/6/" rel="nofollow" role="menuitem" target="_blank">&Gcy;&ocy;&scy;&tcy;&icy;&ncy;&icy;&chcy;&ncy;&ycy;&iecy; &tcy;&iecy;&lcy;&iecy;&vcy;&icy;&zcy;&ocy;&rcy;&ycy;</a></noindex>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="columnA">
+										<noindex>
+											<a data-depth="3" href="http://www.lg-b2b.ru/products/3/" rel="nofollow" role="menuitem" target="_blank"><img alt="" height="114" src="/ru/images/global/nav/b2b-video-camera.png" width="116"><span>&Scy;&icy;&scy;&tcy;&iecy;&mcy;&ycy;<br>&vcy;&icy;&dcy;&iecy;&ocy;&ncy;&acy;&bcy;&lcy;&yucy;&dcy;&iecy;&ncy;&icy;&yacy;</span></a>
+										</noindex>
+										<div class="cols">
+											<ul>
+												<li>
+													<noindex><a href="http://www.lg-b2b.ru/products/28/" rel="nofollow" target="_blank">&Acy;&ncy;&acy;&lcy;&ocy;&gcy;&ocy;&vcy;&ycy;&iecy; &kcy;&acy;&mcy;&iecy;&rcy;&ycy;</a></noindex>
+												</li>
+												<li>
+													<noindex><a href="http://www.lg-b2b.ru/products/29/" rel="nofollow" target="_blank">IP &Vcy;&icy;&dcy;&iecy;&ocy;&kcy;&acy;&mcy;&iecy;&rcy;&ycy;</a></noindex>
+												</li>
+												<li>
+													<noindex><a href="http://www.lg-b2b.ru/products/30/" rel="nofollow" target="_blank">&TScy;&icy;&fcy;&rcy;&ocy;&vcy;&ycy;&iecy; &vcy;&icy;&dcy;&iecy;&ocy;&rcy;&iecy;&gcy;&icy;&scy;&tcy;&rcy;&acy;&tcy;&ocy;&rcy;&ycy;</a></noindex>
+												</li>
+												<li>
+													<noindex><a href="http://www.lg-b2b.ru/products/33/" rel="nofollow" target="_blank">&Mcy;&ocy;&ncy;&icy;&tcy;&ocy;&rcy;&ycy;</a></noindex>
+												</li>
+												<li>
+													<noindex><a href="http://www.lg-b2b.ru/products/31/" rel="nofollow" target="_blank">&Pcy;&rcy;&ocy;&gcy;&rcy;&acy;&mcy;&mcy;&ncy;&ocy;&iecy; &ocy;&bcy;&iecy;&scy;&pcy;&iecy;&chcy;&iecy;&ncy;&icy;&iecy;</a></noindex>
+												</li>
+												<li>
+													<noindex><a href="http://www.lg-b2b.ru/products/32/" rel="nofollow" target="_blank">&Acy;&kcy;&scy;&iecy;&scy;&scy;&ucy;&acy;&rcy;&ycy;</a></noindex>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="learn-about">
+										<h3>&Ucy;&zcy;&ncy;&acy;&tcy;&softcy; &bcy;&ocy;&lcy;&softcy;&shcy;&iecy;</h3>
+										<ul>
+											<li>
+												<noindex><a href="http://www.lg-b2b.ru/realize/" rel="nofollow" target="_blank">&Rcy;&iecy;&acy;&lcy;&icy;&zcy;&ocy;&vcy;&acy;&ncy;&ncy;&ycy;&iecy; &pcy;&rcy;&ocy;&iecy;&kcy;&tcy;&ycy;</a></noindex>
+											</li>
+											<li>
+												<noindex><a href="http://www.lg-b2b.ru/solutions/" rel="nofollow" target="_blank">&Rcy;&iecy;&shcy;&iecy;&ncy;&icy;&yacy; B2B</a></noindex>
+											</li>
+											<li>
+												<noindex><a href="http://www.lg-b2b.ru/partners/cabinet/events/" rel="nofollow" target="_blank">&Icy;&ncy;&fcy;&ocy;&rcy;&mcy;&acy;&tscy;&icy;&yacy; &dcy;&lcy;&yacy; &pcy;&acy;&rcy;&tcy;&ncy;&iecy;&rcy;&ocy;&vcy;</a></noindex>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li aria-haspopup="true" role="menuitem">
+							<h2><a data-depth="1" href="http://www.lg.com/ru/lg-live" role="menuitem">LG LIVE</a></h2>
+							<div role="menu" class="gnb-submenu">
+								<ul>
+									<li class="columnA">
+										<a data-depth="3" href="http://www.lg.com/ru/lg-live" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/OUR-STORY.png" width="116"><span>&Ncy;&acy;&shcy;&acy; &icy;&scy;&tcy;&ocy;&rcy;&icy;&yacy;</span></a>
+										<div class="cols">
+											<ul>
+												<li><a data-depth="4" href="http://www.lg.com/ru/lg-live" role="menuitem">&Ucy;&zcy;&ncy;&acy;&jcy;&tcy;&iecy;, &kcy;&acy;&kcy; &vcy;&mcy;&iecy;&scy;&tcy;&iecy; &scy; LG &Vcy;&ycy;<br>&ncy;&acy;&khcy;&ocy;&dcy;&icy;&tcy;&iecy; &vcy;&dcy;&ocy;&khcy;&ncy;&ocy;&vcy;&iecy;&ncy;&icy;&iecy;<br>&vcy; &pcy;&ocy;&vcy;&scy;&iecy;&dcy;&ncy;&iecy;&vcy;&ncy;&ocy;&jcy; &zhcy;&icy;&zcy;&ncy;&icy;.</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="columnC">
+										<ul>
+											<li>
+												<a data-depth="3" href="http://www.lg.com/ru/lg-live#social-board" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/SOCIAL-BOARD.png" width="116"><span>&Scy;&ocy;&tscy;&icy;&acy;&lcy;&softcy;&ncy;&acy;&yacy; &scy;&iecy;&tcy;&softcy;</span></a>
+											</li>
+											<li>
+												<a data-depth="3" href="http://www.lg.com/ru/lg-live#inside-lg" role="menuitem"><img alt="" height="114" src="/ru/images/global/nav/INSIDE-LG.png" width="116"><span>&Vcy;&ncy;&ucy;&tcy;&rcy;&icy; LG</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li aria-haspopup="true" role="menuitem" class="support-menu">
+							<h2><a data-depth="1" href="http://www.lg.com/ru/support" role="menuitem">&Pcy;&Ocy;&Dcy;&Dcy;&IEcy;&Rcy;&ZHcy;&Kcy;&Acy;</a></h2>
+							<div role="menu" class="gnb-submenu mega-gnb">
+								<ul>
+									<li class="columnC support-ico">
+										<a data-depth="3" href="https://www.lg.com/ru/support/product-registration" role="menuitem"><img alt="" height="77" src="/ru/images/global/nav/ico-support-01.png" width="66">&Rcy;&iecy;&gcy;&icy;&scy;&tcy;&rcy;&acy;&tscy;&icy;&yacy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;&acy;</a>
+									</li>
+									<li class="columnC support-ico">
+										<a data-depth="3" href="http://www.lg.com/ru/support/software-manuals" role="menuitem"><img alt="" height="77" src="/ru/images/global/nav/ico-support-05.png" width="66">&Zcy;&acy;&gcy;&rcy;&ucy;&zcy;&kcy;&icy;: &Pcy;&Ocy; &icy; &rcy;&ucy;&kcy;&ocy;&vcy;&ocy;&dcy;&scy;&tcy;&vcy;&acy;</a>
+									</li>
+									<li class="columnC support-ico">
+										<a data-depth="3" href="http://www.lg.com/ru/support/videos" role="menuitem"><img alt="" height="77" src="/ru/images/global/nav/ico-support-02.png" width="66">&Vcy;&icy;&dcy;&iecy;&ocy;: &ucy;&rcy;&ocy;&kcy;&icy; &icy; &mcy;&acy;&tcy;&iecy;&rcy;&icy;&acy;&lcy;&ycy;</a>
+									</li>
+									<li class="columnC support-ico">
+										<a data-depth="3" href="http://www.lg.com/ru/support/product-help" role="menuitem"><img alt="" height="77" src="/ru/images/global/nav/ico-support-03.png" width="66">&Vcy;&ocy;&pcy;&rcy;&ocy;&scy;&ycy; &icy; &ocy;&tcy;&vcy;&iecy;&tcy;&ycy;</a>
+									</li>
+									<li class="columnC support-ico">
+										<a data-depth="3" href="https://www.lg.com/ru/support/repair-service/schedule-repair" role="menuitem"><img alt="" height="77" src="/ru/images/global/nav/ico-support-04.png" width="66">&Gcy;&acy;&rcy;&acy;&ncy;&tcy;&icy;&yacy; &icy; &scy;&iecy;&rcy;&vcy;&icy;&scy;</a>
+									</li>
+									<li class="learn-about">
+										<h3>&Vcy;&ycy;&bcy;&iecy;&rcy;&icy;&tcy;&iecy; &rcy;&acy;&zcy;&dcy;&iecy;&lcy;</h3>
+										<nav><a href="#" class="btn-prev">&Pcy;&rcy;&iecy;&dcy;&ycy;&dcy;&ucy;&shchcy;&icy;&jcy;</a><a href="#" class="btn-next">&Scy;&lcy;&iecy;&dcy;&ucy;&yucy;&shchcy;&icy;&jcy;</a></nav>
+										<div class="learn-wrap">
+											<ul>
+												<li>
+													<a href="https://www.lg.com/ru/support/contact-customer-support"><img alt="" height="36" src="/lg3-common-v4/images/megagnb/cs_learnabout_contactus.png" width="36"><span>&Ncy;&acy;&shcy;&icy; &kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy;</span></a>
+												</li>
+												<li>
+													<a href="http://www.lg.com/ru/support/support-notice"><img alt="" height="36" src="/lg3-common-v4/images/megagnb/cs_learnabout_announcements.png" width="36"><span>&Ncy;&ocy;&vcy;&ocy;&scy;&tcy;&icy;</span></a>
+												</li>
+												<li>
+													<a href="http://www.lg.com/ru/support/service-center"><img alt="" height="36" src="/lg3-common-v4/images/megagnb/cs_learnabout_extendedservice.png" width="36"><span>&Fcy;&icy;&rcy;&mcy;&iecy;&ncy;&ncy;&ycy;&jcy; &Scy;&iecy;&rcy;&vcy;&icy;&scy; LG</span></a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="main main_width_1260">
+			<nav class="menu-mini">
+				<a href="ultra.html" class="menu-mini__item">
+					<div class="menu-mini__logo menu-mini__logo_type_ultra"></div>
+				</a>
+				<a href="oled.html" class="menu-mini__item">
+					<div class="menu-mini__logo menu-mini__logo_type_oled"></div>
+				</a>
+				<a href="webos.html" class="menu-mini__item menu-mini__item_state_active">
+					<div class="menu-mini__logo menu-mini__logo_type_webos"></div>
+				</a>
+				<a href="main.html" class="menu-mini__home"></a>
+			</nav>
+			<section role="banner" class="banner banner_type_webos"><img src="assets/images/webos/webos-bg.jpg" class="banner__img js-banner-img">
+				<div class="banner__info js-banner-info">
+					<div class="banner__logo banner__logo_state_hide js-banner-logo"></div>
+					<h1 role="heading" class="banner__title banner__title_state_hide js-banner-title">Смотрите,<br>как просто!</h1>
+					<div class="banner__text banner__text_state_hide js-banner-text">Запуск в один клик</div>
+					<div class="banner__btn banner__btn_state_hide js-banner-btn">Посмотрите видео</div>
+				</div>
+				<div id="bannerPlayerWebos" data-video-id="kWbRVrrpb4w" class="banner__video js-banner-video"></div>
+			</section>
+			<section class="features">
+				<div class="wrapper clearfix">
+					<div class="features__item features__item_pos_left">
+						<div class="features__item-icon features__item-icon_type_4k"></div>
+						<div class="features__item-text">Просмотр 4К видео через интернет</div>
+					</div>
+					<div class="features__item">
+						<div class="features__item-icon features__item-icon_type_click"></div>
+						<div class="features__item-text">Интуитивный интерфейс webOS</div>
+					</div>
+					<div class="features__item features__item_pos_right">
+						<div class="features__item-icon features__item-icon_type_lib"></div>
+						<div class="features__item-text">Доступ к обширной библиотеке фильмов в самых популярных видео-сервисах
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="video">
+				<div class="wrapper clearfix">
+					<div data-video-id="kWbRVrrpb4w" class="video__item js-video-switch js-video-first">
+						<div class="video__clip"><img src="assets/images/webos/content/video-1.jpg" class="video__img">
+							<div class="video__play"></div>
+						</div>
+						<div class="video__text">Особенности и управление новым&nbsp;webOS</div>
+					</div>
+					<div data-video-id="ZRXYo9H4FvY" class="video__item js-video-switch">
+						<div class="video__clip"><img src="assets/images/webos/content/video-2.jpg" class="video__img">
+							<div class="video__play"></div>
+						</div>
+						<div class="video__text">BEAN BIRD — Футбольная тактика</div>
+					</div>
+					<div data-video-id="YuIIhGUitGo" class="video__item js-video-switch">
+						<div class="video__clip"><img src="assets/images/webos/content/video-3.jpg" class="video__img">
+							<div class="video__play"></div>
+						</div>
+						<div class="video__text">BEAN BIRD — Диагноз</div>
+					</div>
+					<div data-video-id="S4awLeeRdZU" class="video__item js-video-switch">
+						<div class="video__clip"><img src="assets/images/webos/content/video-4.jpg" class="video__img">
+							<div class="video__play"></div>
+						</div>
+						<div class="video__text">BEAN BIRD is Coming!</div>
+					</div>
+				</div>
+			</section>
+			<section id="setupSection" class="setup setup_type_webos">
+				<div class="wrapper clearfix">
+					<div class="setup-wrap">
+						<h2 role="heading" class="title">Широкие возможности webOS</h2>
+						<p class="text">WebOS содержит сотни приложений, тысячи фильмов и&nbsp;дает доступ к другому контенту. Дружелюбный интерфейс webOS будет понятен даже новичкам без опыта использования Smart TV. Многозадачный режим позволяет работать одновременно с несколькими приложениями, раскрывая и сворачивая их по мере надобности.</p>
+						<p class="text">А чтобы не потеряться в общем изобилии, к вашим услугам есть специальный сервис, подбирающий рекомендованный контент из интернета и локальных ресурсов.</p>
+					</div>
+				</div>
+				<div data-700-top="opacity: 0" data-600-top="opacity: 1" class="setup__help"></div>
+				<div data-600-top="opacity: 0" data-500-top="opacity: 1" class="setup__lines"></div>
+				<div class="setup__img"></div>
+				<div class="setup__container js-setup-cont">
+					<div class="setup__block"></div>
+					<div class="setup__block"></div>
+					<div class="setup__block"></div>
+					<div class="setup__block"></div>
+					<div class="setup__block"></div>
+					<div class="setup__block"></div>
+					<div class="setup__block"></div>
+					<div class="setup__point js-setup-point"></div>
+				</div>
+			</section>
+			<div class="wrapper">
+				<section class="connect clearfix">
+					<div class="connect-wrap">
+						<h2 role="heading" class="title title_mb_3">Помощник подключений</h2>
+						<h3 class="title title_type_sub">включи и используй</h3>
+						<p class="text">В дружелюбном интерфейсе webOS все необходимое доступно за пару кликов. К примеру, чтобы подключить к телевизору новое устройство, необязательно изучать недра меню и список портов. Как только вы подключите кабель, на экране появится окошко предпросмотра, и можно будет одним нажатием переключиться на обнаруженный сигнал.</p>
+					</div>
+				</section>
+				<section class="store">
+					<div class="store-wrap">
+						<h2 role="heading" class="title title_mb_3">LG Store</h2>
+						<h3 class="title title_type_sub">все лучшее в одном сервисе</h3>
+						<p class="text">Главное богатство умного телевизора – обилие контента на любой вкус. В LG Store вы найдете видео по запросу, 3D-видео, музыкальные сервисы, игры и многое другое. Вас ждут сотни приложений и тысячи фильмов, а чтобы не заблудиться в этом многообразии, в LG webOS предусмотрена система рекомендаций. Телевизор предложит вам, что посмотреть, исходя из ваших персональных вкусов.</p>
+					</div>
+				</section>
+				<section class="demo">
+					<div class="demo-wrap"><img src="assets/images/webos/demo-bg.jpg" class="demo__img">
+						<div class="demo__btn">Запустить демо-режим webOS</div>
+					</div>
+				</section>
+				<section class="collection clearfix">
+					<div class="collection-wrap">
+						<h2 role="heading" class="title">3D коллекция фильмов</h2>
+						<p class="text">В приложени "3D World" на телевизорах LG, оснащенных системой webOS, собрана уникальная коллекция полнометражных 3D-фильмов. Любимые фильмы от Disney и других голливудских студий обеспечат первоклассное семейное развлечение, а удобных очков CINEMA 3D из комплекта телевизора хватит на всех.</p>
+					</div>
+					<div class="collection__img"></div>
+					<div data-650-top="top: 48px; left: -95px" data-350-top="top: 50px; left: -66px" class="collection__anim"></div>
+				</section>
+				<section id="dateSection" class="data">
+					<div class="data-wrap">
+						<h2 role="heading" class="title">Обмен данными</h2>
+						<p class="text">LG webOS – это не только продвинутая система Smart TV, но и максимально удобная интеграция с другими устройствами.</p>
+						<p class="text">Вы можете просматривать файлы с внешних устройств на экране телевизора через LG webOS Share, а также транслировать изображение по воздуху через Miracast, либо подключить мобильное устройство через MHL. Вы не встретите лишних ограничений на своем пути, когда захотите поделиться лучшими моментам из жизни на большом экране!</p>
+					</div>
+					<div class="data__img js-data-img"></div>
+					<video id="dataVideo" class="data__video video-js vjs-default-skin">
+						<source src="assets/video/carousel.mp4" type="video/mp4">
+					</video>
+				</section>
+				<section class="stream clearfix">
+					<div class="stream-wrap">
+						<h2 role="heading" class="title">Смотрите 4K-видео через&nbsp;интернет</h2>
+						<p class="text">Популярные видеосервисы Okko и ivi.ru запустили на телевизорах LG стриминг 4K-фильмов через интернет. Это стало возможным благодаря мощной аппаратной начинке LG и поддержке новейшего кодека HEVC. Ваш телевизор уже готов к переходу онлайн-кинотеатров на требовательный формат ULTRA HD 4K.</p>
+					</div>
+					<div class="stream__img"></div>
+					<div class="stream__logo"></div>
+				</section>
+				<section class="console">
+					<h2 role="heading" class="title title_mb_8">Пульт Magic Remote</h2>
+					<p class="text">Пульт Magic Remote – невероятно простой и удобный способ управления всеми возможностями webOS. По своей интуитивности он может поспорить с компьютерной мышкой. Встроенный микрофон для голосовых команд и дополнительные кнопки с цифрами позволяют с&nbsp;легкостью заменить кнопочный пульт.</p>
+					<div class="console-container">
+						<div class="console-wrap">
+							<div class="console__item">
+								<div class="console__item-logo console__item-logo_type_all"></div>
+								<h3 class="console__item-title">Универсальный пульт</h3>
+								<div class="text text_lh_21">Можно использовать ваш пульт от телевизора еще и для других устройств, например внешней аудиoсистемы, BluRay-проигрывателя или даже спутникового ресивера. Один пульт для всех устройств —максимальное удобство.</div>
+							</div>
+							<div class="console__item">
+								<div class="console__item-logo console__item-logo_type_voice"></div>
+								<h3 class="console__item-title">Голосовое управление</h3>
+								<div class="text text_lh_21"><span>В</span> <span class="text text_font_sm">Magic Remote</span> <span>встроен микрофон. Вы можете давать телевизору голосовые команды
+или же вместо утомительного набора текста просто надиктовать его.
+Для моделей со встроенным микрофоном можете давать команды телевизору
+прямо с дивана.</span></div>
+							</div>
+						</div>
+						<div class="console__item">
+							<div class="console__item-logo console__item-logo_type_menu"></div>
+							<h3 class="console__item-title">Меню</h3>
+							<div class="text"><span>Нажмите эту кнопку, чтобы увидеть ваши приложения и сервисы</span> <span class="text text_font_sm">Smart TV.</span></div>
+						</div>
+						<div class="console__item">
+							<div class="console__item-logo console__item-logo_type_wheel"></div>
+							<h3 class="console__item-title">Колесико</h3>
+							<div class="text">Для максимального удобства в пульт добавлено колесико для прокрутки между экранами в&nbsp;интернет-браузере или в приложениях.</div>
+						</div>
+						<div class="console__item">
+							<div class="console__item-logo console__item-logo_type_click"></div>
+							<h3 class="console__item-title">Наведи-и-Кликни</h3>
+							<div class="text"><span>Использовать</span> <span class="text text_font_sm">Magic Remote</span> <span>так же просто, как и&nbsp;обычную компьютерную мышку. Наведите
+курсор и кликните.</span></div>
+						</div>
+					</div>
+				</section>
+				<section class="compare">
+					<div class="compare__feat">
+						<div class="button-feat"><span class="button-feat_tt_up">Сравните основные характеристики</span>
+							<br><span>телевизоров LG</span></div>
+					</div>
+					<h2 class="compare__title"><span>Рекомендованные</span><br><span class="compare__title_color_red">модели</span></h2>
+					<div class="compare-container">
+						<div class="model">
+							<div class="model__img"><img src="assets/images/webos/content/img-1.jpg" /></div>
+							<div class="model-wrap">
+								<div class="model-wrap-icons model-wrap-icons_ml_8">
+									<div class="model__icon model__icon_type_4k-3d-mini"></div>
+									<div class="model__icon model__icon_type_webos-mini"></div>
+									<div class="model__icon model__icon_type_dvb-t2-mini"></div>
+									<div class="model__icon model__icon_type_ips-4k-mini"></div>
+									<div class="model__icon model__icon_type_harman-mini"></div>
+								</div>
+								<div class="model__text">Ультрачёткость в каждой детали</div>
+								<div class="model__num">UF850V</div>
+							</div>
+							<div class="button-model">Узнать больше</div>
+						</div>
+						<div class="model">
+							<div class="model__img"><img src="assets/images/webos/content/img-2.jpg" /></div>
+							<div class="model-wrap">
+								<div class="model-wrap-icons model-wrap-icons_ml_8">
+									<div class="model__icon model__icon_type_4k-3d-mini"></div>
+									<div class="model__icon model__icon_type_webos-mini"></div>
+									<div class="model__icon model__icon_type_dvb-t2-mini"></div>
+									<div class="model__icon model__icon_type_ips-4k-mini"></div>
+									<div class="model__icon model__icon_type_harman-mini"></div>
+								</div>
+								<div class="model__text">Ультрачёткость в каждой детали</div>
+								<div class="model__num">UF850V</div>
+							</div>
+							<div class="button-model">Узнать больше</div>
+						</div>
+						<div class="model">
+							<div class="model__img"><img src="assets/images/webos/content/img-3.jpg" /></div>
+							<div class="model-wrap">
+								<div class="model-wrap-icons model-wrap-icons_ml_8">
+									<div class="model__icon model__icon_type_4k-3d-mini"></div>
+									<div class="model__icon model__icon_type_webos-mini"></div>
+									<div class="model__icon model__icon_type_dvb-t2-mini"></div>
+									<div class="model__icon model__icon_type_ips-mini"></div>
+									<div class="model__icon model__icon_type_wifi-mini"></div>
+								</div>
+								<div class="model__text">Это не просто телевизор, это Smart TV</div>
+								<div class="model__num">LF640V</div>
+							</div>
+							<div class="button-model">Узнать больше</div>
+						</div>
+						<div class="model">
+							<div class="model__img"><img src="assets/images/webos/content/img-4.jpg" /></div>
+							<div class="model-wrap">
+								<div class="model-wrap-icons model-wrap-icons_ml_8">
+									<div class="model__icon model__icon_type_4k-3d-mini"></div>
+									<div class="model__icon model__icon_type_webos-mini"></div>
+									<div class="model__icon model__icon_type_dvb-t2-mini"></div>
+									<div class="model__icon model__icon_type_colorprime-mini"></div>
+									<div class="model__icon model__icon_type_harman-mini"></div>
+								</div>
+								<div class="model__text">Ультрачёткость в каждой детали</div>
+								<div class="model__num">UF950V</div>
+							</div>
+							<div class="button-model">Узнать больше</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<footer role="contentinfo">
+			<div class="innerwrap">
+				<div id="map" class="uk">
+					<h4>&Scy;&Tcy;&Rcy;&Acy;&Ncy;&Acy; / &YAcy;&Zcy;&Ycy;&Kcy;</h4>&#x9;&#x9;&#x9;
+					<form class="countryform">
+						<div class="styled-select large">
+							<label>
+								<select id="country" name="country" data-uri="/ru/response/footerCountries" title="СТРАНА / ЯЗЫК" class="lazy">
+									<option value="http://www.lg.com/ru">Russia / &Rcy;&ucy;&scy;&scy;&kcy;&icy;&jcy;</option>
+								</select>
+							</label>
+						</div>&#x9;&#x9;&#x9;&#x9;
+						<button type="submit" title="Выберите страну" class="button white small right no-margin">&Pcy;&iecy;&rcy;&iecy;&jcy;&tcy;&icy;</button>
+					</form>&#x9;&#x9;&#x9;
+					<div class="map-img"><span class="loader"><img alt="Russia" width="345px" height="177px" data-src="/ru/images/global/lg_worldwide_map_ru.jpg" src="/lg3-common/images/global/b.gif" class="active">&#x9;&#x9;&#x9;&#x9;&#x9;<noscript><img data-src="/ru/images/global/lg_worldwide_map_ru.jpg" src="/lg3-common/images/global/b.gif" alt="Russia" width="345" height="177"></noscript></span></div>
+				</div>&#x9;&#x9;
+				<nav role="navigation" class="col_wrap">
+					<ul role="menu">
+						<li class="col one">
+							<h4 role="menuitem">&Pcy;&Rcy;&Ocy;&Dcy;&Ucy;&Kcy;&Tcy;&Ycy;</h4>&#x9;&#x9;&#x9;&#x9;&#x9;
+							<ul role="menu">
+								<li><a role="menuitem" href="http://www.lg.com/ru/tv-audio-video">&Tcy;&Vcy;/&Acy;&ucy;&dcy;&icy;&ocy;/&Vcy;&icy;&dcy;&iecy;&ocy;</a></li>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li><a role="menuitem" href="http://www.lg.com/ru/computer-products">IT &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tscy;&icy;&yacy;</a></li>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li><a role="menuitem" href="http://www.lg.com/ru/mobile">&Scy;&mcy;&acy;&rcy;&tcy;&fcy;&ocy;&ncy;&ycy;/&Tcy;&iecy;&lcy;&iecy;&fcy;&ocy;&ncy;&ycy;</a></li>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li><a role="menuitem" href="http://www.lg.com/ru/home-appliances">&Bcy;&ycy;&tcy;&ocy;&vcy;&acy;&yacy; &tcy;&iecy;&khcy;&ncy;&icy;&kcy;&acy;</a></li>&#x9;&#x9;&#x9; &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li>
+									<noindex><a role="menuitem" target="_blank" title="Открыть новое окно" rel="nofollow" href="http://www.lgaircon.ru">&Kcy;&ocy;&ncy;&dcy;&icy;&tscy;&icy;&ocy;&ncy;&iecy;&rcy;&ycy;</a></noindex>
+								</li>&#x9; &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li>
+									<noindex><a role="menuitem" target="_blank" title="Открыть новое окно" rel="nofollow" href="http://www.lg-b2b.ru">&Kcy;&ocy;&mcy;&mcy;&iecy;&rcy;&chcy;&iecy;&scy;&kcy;&icy;&iecy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;&ycy;</a></noindex>
+								</li>
+							</ul>
+						</li>&#x9;&#x9;&#x9;&#x9;
+						<li class="col two">
+							<h4 role="menuitem">LG LIVE</h4>&#x9;&#x9;&#x9;&#x9;&#x9;
+							<ul role="menu">
+								<li><a role="menuitem" href="http://www.lg.com/ru/lg-live">&Ncy;&acy;&shcy;&acy; &icy;&scy;&tcy;&ocy;&rcy;&icy;&yacy;</a></li>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li><a role="menuitem" href="http://www.lg.com/ru/lg-live#social-board">&Scy;&ocy;&tscy;&icy;&acy;&lcy;&softcy;&ncy;&acy;&yacy; &scy;&iecy;&tcy;&softcy;</a></li>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li><a role="menuitem" href="http://www.lg.com/ru/lg-live#inside-lg">&Vcy;&ncy;&ucy;&tcy;&rcy;&icy; LG</a></li>
+							</ul>
+						</li>&#x9;&#x9;&#x9;&#x9;
+						<li class="col three">
+							<h4 role="menuitem">&Ocy; &Kcy;&Ocy;&Mcy;&Pcy;&Acy;&Ncy;&Icy;&Icy;</h4>&#x9;&#x9;&#x9;&#x9;&#x9;
+							<ul role="menu">
+								<li><a role="menuitem" href="https://www.lg.com/ru/support/contact-customer-support">&Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy;</a></li>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li><a role="menuitem" href="http://www.lg.com/ru/support">&Pcy;&ocy;&dcy;&dcy;&iecy;&rcy;&zhcy;&kcy;&acy;</a></li>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li><a role="menuitem" href="http://www.lg.com/ru/glossary">&Gcy;&lcy;&ocy;&scy;&scy;&acy;&rcy;&icy;&jcy;</a></li>&#x9;&#x9; &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li><a role="menuitem" href="http://www.lg.com/ru/about-lg">&Ocy;&bcy; LG</a></li>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li><a role="menuitem" href="http://www.lg.com/ru/careers">&Vcy;&acy;&kcy;&acy;&ncy;&scy;&icy;&icy;</a></li>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li><a role="menuitem" href="http://www.lg.com/ru/brand-shop">&Fcy;&icy;&rcy;&mcy;&iecy;&ncy;&ncy;&ycy;&jcy; &mcy;&acy;&gcy;&acy;&zcy;&icy;&ncy; LG</a></li>
+							</ul>
+						</li>&#x9;&#x9;&#x9;&#x9;
+						<li class="col four">
+							<h4 role="menuitem">&Pcy;&Ocy;&Dcy;&Dcy;&IEcy;&Rcy;&ZHcy;&Kcy;&Acy;</h4>&#x9;&#x9;&#x9;&#x9;&#x9;
+							<ul role="menu">
+								<li><a role="menuitem" href="https://www.lg.com/ru/support/product-registration">&Rcy;&iecy;&gcy;&icy;&scy;&tcy;&rcy;&acy;&tscy;&icy;&yacy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;&acy;</a></li>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li><a role="menuitem" href="http://www.lg.com/ru/support/software-manuals">&Pcy;&Ocy; &icy; &rcy;&ucy;&kcy;&ocy;&vcy;&ocy;&dcy;&scy;&tcy;&vcy;&acy;</a></li>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li><a role="menuitem" href="http://www.lg.com/ru/support/product-help">&Vcy;&ocy;&pcy;&rcy;&ocy;&scy;&ycy; &icy; &ocy;&tcy;&vcy;&iecy;&tcy;&ycy;</a></li>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li><a role="menuitem" href="https://www.lg.com/ru/support/repair-service/schedule-repair">&Gcy;&acy;&rcy;&acy;&ncy;&tcy;&icy;&yacy; &icy; &scy;&iecy;&rcy;&vcy;&icy;&scy;</a></li>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								<li><a role="menuitem" href="http://www.lg.com/ru/support/service-center">&Fcy;&icy;&rcy;&mcy;&iecy;&ncy;&ncy;&ycy;&jcy; &Scy;&iecy;&rcy;&vcy;&icy;&scy; LG</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<!-- LGEGMO-261 start-->
+				<div class="legal"><span class="copy">Copyright &copy; 2015 LG Electronics. &Vcy;&scy;&iecy; &pcy;&rcy;&acy;&vcy;&acy; &zcy;&acy;&shchcy;&icy;&shchcy;&iecy;&ncy;&ycy;.</span>
+					<br>
+					<!-- LGEGMO-261 end-->
+					<ul>
+						<li><a href="http://www.lg.com/ru/sitemap">&Kcy;&Acy;&Rcy;&Tcy;&Acy; &Scy;&Acy;&Jcy;&Tcy;&Acy;</a></li>&#x9;&#x9;&#x9;&#x9;
+						<li><a href="http://www.lg.com/ru/privacy">&Kcy;&ocy;&ncy;&fcy;&icy;&dcy;&iecy;&ncy;&tscy;&icy;&acy;&lcy;&softcy;&ncy;&ocy;&scy;&tcy;&softcy;</a></li>&#x9;&#x9;&#x9;&#x9;
+						<li><a href="http://www.lg.com/ru/legal">&Pcy;&rcy;&acy;&vcy;&ocy;&vcy;&acy;&yacy; &icy;&ncy;&fcy;&ocy;&rcy;&mcy;&acy;&tscy;&icy;&yacy;</a></li>
+					</ul>
+				</div>
+				<!-- LGEGMO-261 start-->
+				<style>
+				footer {
+					height: 305px
+				}
+				
+				footer div.follow {
+					margin-top: -14px
+				}
+				
+				.legal li:first-child {
+					border-left: 1px solid #999999
+				}
+				
+				.lt-ie9 .wid100p {
+					width: 100%
+				}
+				</style>&#x9;&#x9;
+				<div class="footerBanner">
+					<div class="jeongDo"><a target="_blank" href="/global/about-lg/corporate-information/jeong-do-management"><span>jeong do management</span></a></div>&#x9;&#x9;&#x9;
+					<div class="follow followbl"><span class="tit"></span>
+						<div class="sns-btn">
+							<a href="#" class="prev"></a>
+							<a href="#" class="next"></a>
+						</div>
+						<div class="sns-inner">LGERU-1840 start sns 중 habrahabr.ru 삭제<a target="_blank" href="http://www.facebook.com/LGRussia" data-sc-item="footer-follow" title="LG Официальная группа в Facebook, Открыть новое окно" class="ir fb">Facebook</a><a target="_blank" href="https://twitter.com/#!/lg_russia" data-sc-item="footer-follow" title="LG Официально в Twitter, Открыть новое окно" class="ir tw">Twitter</a>
+							<a target="_blank" href="http://vk.com/lgrussia" data-sc-item="footer-follow" title="LG Официальная группа ВКоктакте, Открыть новое окно" class="ir vk"></a>
+							<a target="_blank" href="http://odnoklassniki.ru/LGRussia" data-sc-item="footer-follow" title="LG Официально в Одноклассники, Открыть новое окно" class="ir od"></a>
+							<a target="_blank" href="http://www.lg.com/ru/blog/" data-sc-item="footer-follow" title="LG Официальный блог, Открыть новое окно" class="ir bl"></a><a target="_blank" href="http://youtube.com/lgrussia" data-sc-item="footer-follow" title="LG Официально на Youtube, Открыть новое окно" class="ir yt">YouTube</a></div>
+					</div>
+				</div>
+				<div style="float: left;margin-top:0px;width:auto;clear:none" class="legal wid100p">
+					<a href="http://www.lgcorp.com/about/affiliatesList.dev" target="_blank" title="Открыть новое окно" style="padding: 0pt;text-transform:none"></a>
+				</div>
+			</div>
+			<div style="height:60px" class="goTop hidden"><span style="cursor:pointer"><img src="/ru/images/btn-page-top-ru.png" data-over-img="/ru/images/btn-page-top-over-ru.png"></span></div>
+		</footer>
+		<script src="assets/scripts/vendor.js"></script>
+		<script src="assets/scripts/banner.js"></script>
+		<script src="assets/scripts/common.js"></script>
+		<script src="assets/scripts/webos.js"></script>
+	</body>
+</html>

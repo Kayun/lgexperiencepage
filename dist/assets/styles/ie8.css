@@ -1,0 +1,228 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+/* line 9, css\new_design\ie8\blocks\menu.less */
+.menu__item_pos_left .menu__item-wrap:hover {
+  left: 0;
+}
+/* line 17, css\new_design\ie8\blocks\menu.less */
+.menu__item_pos_right .menu__item-wrap:hover {
+  left: -26%;
+}
+/* line 26, css\new_design\ie8\blocks\menu.less */
+.menu__item_pos_center .menu__item-wrap:hover {
+  left: -13%;
+}
+/* line 29, css\new_design\ie8\blocks\menu.less */
+.menu__item_pos_center .menu__item-wrap:hover:before {
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 12px;
+  height: 100%;
+  content: ' ';
+  background: url('../images/ie/menu-shadow-left.png') repeat-y 0 0;
+}
+/* line 39, css\new_design\ie8\blocks\menu.less */
+.menu__item_pos_center .menu__item-wrap:hover:after {
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 12px;
+  height: 100%;
+  content: ' ';
+  background: url('../images/ie/menu-shadow-right.png') repeat-y 0 0;
+}
+/* line 63, css\new_design\ie8\blocks\menu.less */
+.menu__item-wrap:hover:before {
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 12px;
+  height: 100%;
+  content: ' ';
+  background: url('../images/ie/menu-shadow-left.png') repeat-y 0 0;
+}
+/* line 73, css\new_design\ie8\blocks\menu.less */
+.menu__item-wrap:hover:after {
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 12px;
+  height: 100%;
+  content: ' ';
+  background: url('../images/ie/menu-shadow-right.png') repeat-y 0 0;
+}
+/* line 91, css\new_design\ie8\blocks\menu.less */
+.menu__item-logo_type_ultra {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -136px;
+  width: 190px;
+  height: 26px;
+}
+/* line 95, css\new_design\ie8\blocks\menu.less */
+.menu__item-logo_type_oled {
+  background-image: url(../images/sprite.png);
+  background-position: -222px -170px;
+  width: 134px;
+  height: 22px;
+}
+/* line 99, css\new_design\ie8\blocks\menu.less */
+.menu__item-logo_type_webos {
+  background-image: url(../images/sprite.png);
+  background-position: -80px -170px;
+  width: 134px;
+  height: 28px;
+}
+/* line 1, css\new_design\ie8\blocks\data.less */
+.data__img {
+  background-image: url('../images/webos/data-bg.jpg');
+}
+/* line 7, css\new_design\ie8\blocks\features.less */
+.features__item_pos_left {
+  width: 204px;
+}
+/* line 11, css\new_design\ie8\blocks\features.less */
+.features__item_pos_right {
+  width: 199px;
+}
+/* line 1, css\new_design\ie8\blocks\video.less */
+.video__item {
+  width: 255px;
+}
+/* line 3, css\new_design\ie8\blocks\colorprime.less */
+.colorprime__chek,
+.colorprime__img1,
+.colorprime__line {
+  display: none;
+}
+/* line 8, css\new_design\ie8\blocks\colorprime.less */
+.colorprime__chek + label,
+.colorprime__img1 + label,
+.colorprime__line + label {
+  display: none;
+}
+/* line 1, css\new_design\ie8\blocks\ultra-hd.less */
+.ultra-hd {
+  background-image: url('../images/ultra/ultrahd-bg.jpg');
+}
+/* line 4, css\new_design\ie8\blocks\ultra-hd.less */
+.ultra-hd__switch,
+.ultra-hd__img {
+  display: none;
+}
+/* line 3, css\new_design\ie8\blocks\compare.less */
+.compare-container {
+  width: 100%;
+}
+/* line 1, css\new_design\ie8\blocks\setup.less */
+.setup {
+  background: url('../images/oled/setup-full-bg.jpg') 592px 52px no-repeat;
+}
+/* line 6, css\new_design\ie8\blocks\setup.less */
+.setup_type_ultra {
+  background: url('../images/ultra/setup-full-bg.jpg') 119px 76px no-repeat;
+}
+/* line 10, css\new_design\ie8\blocks\setup.less */
+.setup_type_webos {
+  background: url('../images/webos/setup-bg.jpg') 513px 56px no-repeat;
+}
+/* line 15, css\new_design\ie8\blocks\setup.less */
+.setup__img,
+.setup__container {
+  display: none;
+}
+/* line 1, css\new_design\ie8\blocks\wrgb.less */
+.wrgb__btn {
+  right: 148px;
+  width: 272px;
+}
+/* line 1, css\new_design\ie8\blocks\action.less */
+.action__img1 {
+  display: none;
+}
+/* line 7, css\new_design\ie8\components\menu-mini.less */
+.menu-mini__logo_type_ultra {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -136px;
+  width: 190px;
+  height: 26px;
+}
+/* line 11, css\new_design\ie8\components\menu-mini.less */
+.menu-mini__logo_type_oled {
+  background-image: url(../images/sprite.png);
+  background-position: -222px -170px;
+  width: 134px;
+  height: 22px;
+}
+/* line 15, css\new_design\ie8\components\menu-mini.less */
+.menu-mini__logo_type_webos {
+  background-image: url(../images/sprite.png);
+  background-position: -80px -170px;
+  width: 134px;
+  height: 28px;
+}
+/* line 3, css\new_design\ie8\components\banner.less */
+.banner iframe {
+  position: relative;
+  z-index: 1;
+}
+/* line 8, css\new_design\ie8\components\banner.less */
+.banner__img {
+  zoom: 1;
+}
+/* line 1, css\new_design\ie8\components\buttons.less */
+.button-feat,
+.button-model {
+  background-color: #f82375;
+  background-image: none;
+}
+/* line 7, css\new_design\ie8\components\buttons.less */
+.button-feat:hover,
+.button-model:hover {
+  background-color: #f21f69;
+}
+/* line 12, css\new_design\ie8\components\buttons.less */
+.button-feat {
+  height: 48px;
+}
+/* line 1, css\new_design\ie8\components\model.less */
+.model {
+  width: 205px;
+  *display: inline;
+  zoom: 1;
+}
+/* line 6, css\new_design\ie8\components\model.less */
+.model__icon {
+  *display: inline;
+  zoom: 1;
+}
