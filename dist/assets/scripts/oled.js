@@ -102,7 +102,7 @@ function pixelAnim() {
 		pixelMaskRotateClass = 'pixel__mask_transform_rotate',
 		pixelImgHideClass = 'pixel__img_state_hide';
 
-	$playBtn.on('click', function () {
+	$playBtn.bind('click', function () {
 		$(this).addClass(playBtnHideClass);
 		$pixelText.addClass(pixelTextHideClass);
 		$pixelImg.addClass(pixelImgHideClass);

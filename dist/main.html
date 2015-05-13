@@ -6,16 +6,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
 	</head>
 	<body>
-		<link href="assets/styles/common.css" rel="stylesheet">
-		<!-- для отладки, перед релизом убрать-->
-		<link href="assets/styles/lg.min.css" rel="stylesheet">
-		<link href="assets/styles/fonts.css" rel="stylesheet">
 		<script>
-		var script = document.createElement('script'),
-			beforeScript = document.getElementsByTagName('script')[0];
-		script.src = '//code.jquery.com/jquery-1.9.2.min.js';
-		script.async = true;
-		beforeScript.parentNode.insertBefore(script, beforeScript);
+		var links = [
+			'assets/styles/common.css',
+			'assets/styles/lg.min.css',
+			'assets/styles/fonts.css',
+			'assets/styles/default.css',
+		];
+		for (var index = 0; index < links.length; index++)
+		{
+			var link = document.createElement('link'),
+				head = document.getElementsByTagName('head')[0];
+			link.rel = "stylesheet";
+			link.href = links[index];
+			head.appendChild(link);
+		}
+		</script>
+		<script>
+		var scripts = [
+			'//code.jquery.com/jquery-1.6.1.min.js',
+		];
+		for (var index = 0; index < scripts.length; index++)
+		{
+			var script = document.createElement('script'),
+				head = document.getElementsByTagName('head')[0];
+			script.type = "text/javascript";
+			script.src = scripts[index];
+			head.appendChild(script);
+		}
 		</script>
 		<!--[if lte IE 8]> <link href="assets/styles/ie8.css" rel="stylesheet"> <![endif]-->
 		<!--[if IE 7]> <link href="assets/styles/ie7.css" rel="stylesheet"> <![endif]-->

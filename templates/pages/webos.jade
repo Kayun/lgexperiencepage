@@ -5,7 +5,25 @@ block head
 	- classWidth = 'main_width_1260'
 
 block link
-	link(href="//vjs.zencdn.net/4.12/video-js.css")
+
+	script.
+
+		var links = [
+			'assets/styles/common.css',
+			'assets/styles/lg.min.css',
+			'assets/styles/fonts.css',
+			'assets/styles/default.css',
+			'//vjs.zencdn.net/4.12/video-js.css'
+		];
+
+		for (var index = 0; index < links.length; index++) {
+			var link = document.createElement('link'),
+				head = document.getElementsByTagName('head')[0];
+
+			link.rel = "stylesheet";
+			link.href = links[index];
+			head.appendChild(link);
+		}
 
 block content
 	nav.menu-mini
@@ -227,10 +245,11 @@ block scriptBefore
 
 		for (var index = 0; index < scripts.length; index++) {
 			var script = document.createElement('script'),
-				beforeScript = document.getElementsByTagName('head')[0];
+				head = document.getElementsByTagName('head')[0];
+
 			script.type = "text/javascript";
 			script.src = scripts[index];
-			beforeScript.appendChild(script);
+			head.appendChild(script);
 		}
 
 

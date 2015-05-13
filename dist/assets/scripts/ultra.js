@@ -1,5 +1,4 @@
 var $colorPrimeSection = $('#colorPrime'),
-	$checkbox = $('#chek'),
 	$window = $(window),
 	$document = $(document),
 	$setupSection = $('#setupSection'),
@@ -16,23 +15,6 @@ $window.load(function () {
 	if (!device.mobile() && !device.tablet() && !isIE8() && !isIE7()) {
 
 		$document.bind('scroll', function () {
-
-			if ($colorPrimeSection.position().top +
-				$colorPrimeSection.innerHeight() + 500 <= $document.scrollTop() +
-				$window.height() && flagChek) {
-
-				$checkbox.attr('checked', 'checked');
-				flagChek = !flagChek;
-			}
-
-			if ($colorPrimeSection.position().top +
-				$colorPrimeSection.innerHeight() + 500 > $document.scrollTop() +
-				$window.height() && !flagChek) {
-
-				$checkbox.removeAttr('checked');
-				flagChek = !flagChek;
-				console.log($checkbox);
-			}
 
 			if ($setupSection.position().top +
 				$setupSection.innerHeight() <= $document.scrollTop() +

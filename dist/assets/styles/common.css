@@ -530,7 +530,7 @@ body {
 /* line 182, css\new_design\blocks\main\menu.less */
 .menu__item-text {
   padding: 36px 0 0 26px;
-  font-family: 'helvetica-light', Helvetica, Arial, sans-serif;
+  font-family: 'helvetica-light', Helvetica, Arial, sans-serif !important;
   font-size: 17px;
   line-height: 28px;
   color: #7b7b7b;
@@ -605,7 +605,7 @@ body {
 /* line 3, css\new_design\blocks\main\technology.less */
 .technology__title {
   padding: 44px 27px 42px;
-  font-family: 'helvetica-light', Helvetica, Arial, sans-serif;
+  font-family: 'helvetica-light', Helvetica, Arial, sans-serif !important;
   font-size: 17px;
   line-height: 28px;
   color: #7b7b7b;
@@ -695,7 +695,7 @@ body {
 /* line 91, css\new_design\blocks\main\technology.less */
 .technology__item-text {
   margin-top: 11px;
-  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif !important;
   font-size: 15px;
   line-height: 16px;
   color: #3a3939;
@@ -716,7 +716,7 @@ body {
   position: relative;
   width: 90px;
   display: inline-block;
-  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif !important;
   font-size: 17px;
   color: #7b7b7b;
   text-align: center;
@@ -876,7 +876,7 @@ body {
 }
 /* line 82, css\new_design\blocks\oled\oled.less */
 .oled__item-text {
-  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif !important;
   font-size: 18px;
   color: #313245;
   text-align: left;
@@ -887,7 +887,7 @@ body {
 .oled__item-text_font_bold {
   margin-bottom: 4px;
   display: inline-block;
-  font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif !important;
   font-size: 19px;
   letter-spacing: -0.5px;
 }
@@ -1257,7 +1257,7 @@ body {
   padding: 8px 0 8px 91px;
   height: 72px;
   width: 370px;
-  font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif !important;
   font-size: 30px;
   line-height: 30px;
   color: #fff;
@@ -1509,7 +1509,7 @@ body {
 /* line 33, css\new_design\blocks\ultra\ultra-hd.less */
 .ultra-hd__label {
   display: inline-block;
-  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif !important;
   color: #7e7e7e;
   font-size: 24px;
   text-transform: uppercase;
@@ -1711,7 +1711,7 @@ body {
 /* line 27, css\new_design\blocks\console.less */
 .console__item-title {
   margin-bottom: 6px;
-  font-family: 'HelveticaNeue-Roman', Helvetica, Arial, sans-serif;
+  font-family: 'HelveticaNeue-Roman', Helvetica, Arial, sans-serif !important;
   font-size: 18px;
   color: #d80546;
   text-transform: none;
@@ -1763,7 +1763,7 @@ body {
 }
 /* line 4, css\new_design\blocks\compare.less */
 .compare__title {
-  font-family: 'HelveticaNeue-Thin', Helvetica, Arial, sans-serif;
+  font-family: 'HelveticaNeue-Thin', Helvetica, Arial, sans-serif !important;
   font-size: 25px;
   line-height: 30px !important;
 }
@@ -2236,7 +2236,7 @@ body {
 .features__item {
   width: 184px;
   float: left;
-  font-family: 'LGSmart-Light', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Light', Helvetica, Arial, sans-serif !important;
   font-size: 19px;
   color: #313245;
   line-height: 23px;
@@ -2247,7 +2247,7 @@ body {
 }
 /* line 11, css\new_design\components\text.less */
 .features__item_font_sm {
-  font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif !important;
 }
 /* line 15, css\new_design\components\text.less */
 .features__item_lh_21 {
@@ -2391,7 +2391,7 @@ body {
 /* line 53, css\new_design\blocks\video.less */
 .video__text {
   margin-top: 10px;
-  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif !important;
   font-size: 16px;
   color: #313245;
   letter-spacing: .2px;
@@ -2503,7 +2503,7 @@ body {
 }
 /* line 1, css\new_design\components\text.less */
 .text {
-  font-family: 'LGSmart-Light', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Light', Helvetica, Arial, sans-serif !important;
   font-size: 19px;
   color: #313245;
   line-height: 23px;
@@ -2514,7 +2514,7 @@ body {
 }
 /* line 11, css\new_design\components\text.less */
 .text_font_sm {
-  font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif !important;
 }
 /* line 15, css\new_design\components\text.less */
 .text_lh_21 {
@@ -2525,7 +2525,7 @@ body {
   padding: 12px 18px 0;
   width: 310px;
   height: 60px;
-  font-family: 'HelveticaNeue-Roman', Helvetica, Arial, sans-serif;
+  font-family: 'HelveticaNeue-Roman', Helvetica, Arial, sans-serif !important;
   font-size: 13px;
   line-height: 18px;
   color: #fff;
@@ -2559,7 +2559,7 @@ body {
   height: 32px;
   width: 125px;
   display: inline-block;
-  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Regular', Helvetica, Arial, sans-serif !important;
   font-size: 17px;
   color: #fff;
   text-align: center;
@@ -2715,7 +2715,7 @@ body {
 .model__text,
 .model__num {
   padding-left: 6px;
-  font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif;
+  font-family: 'LGSmart-Semibold', Helvetica, Arial, sans-serif !important;
   font-size: 13px;
   line-height: 16px;
   color: #909090;
@@ -2801,7 +2801,7 @@ body {
 .banner__title {
   margin-top: 16px;
   text-transform: uppercase;
-  font-family: 'HelveticaNeue-Roman', Helvetica, Arial, sans-serif;
+  font-family: 'HelveticaNeue-Roman', Helvetica, Arial, sans-serif !important;
   font-size: 27px;
   line-height: 36px;
 }
@@ -2813,7 +2813,7 @@ body {
 .banner__text {
   margin-top: 12px;
   margin-bottom: 35px;
-  font-family: 'HelveticaNeue-Thin', Helvetica, Arial, sans-serif;
+  font-family: 'HelveticaNeue-Thin', Helvetica, Arial, sans-serif !important;
   font-size: 26px;
 }
 /* line 100, css\new_design\components\banner.less */
@@ -2822,7 +2822,7 @@ body {
   padding: 0 0 0 65px;
   height: 48px;
   display: inline-block;
-  font-family: 'HelveticaNeue-Thin', Helvetica, Arial, sans-serif;
+  font-family: 'HelveticaNeue-Thin', Helvetica, Arial, sans-serif !important;
   font-size: 20px;
   line-height: 48px;
   color: #fff;

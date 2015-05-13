@@ -1,0 +1,496 @@
+body * {/* font-family:Arial,Helvetica,Sans-serif !important */}
+header {font-family:Arial,Helvetica,Sans-serif !important}
+
+.lt-ie8 .lg-support .registraion .aform .con-type .privacys label.clear {float:none; }
+
+/* ADD icon CSS */
+div.follow.followbl a{margin-top:5px}
+div.follow.followbl a.ir.vk{background:url("/ru/images/global/lg-global-sprite-v2.png") no-repeat;background-position: -247px -368px;margin-left:4px}
+div.follow.followbl a.ir.od{background:url("/ru/images/global/lg-global-sprite-v2.png") no-repeat;background-position: -278px -368px}
+div.follow.followbl a.ir.hb{background:url("/ru/images/global/lg-global-sprite-v2.png") no-repeat;background-position: -308px -368px}
+
+/* Modify Broken Layout /youngyoukwon /2012-08-27 */
+#hero-area.find #hero-nav ul li {border-right: 0;text-transform: none;font-size: 9px}
+
+/* top paging , kuhyunrim , 2012-08-28*/
+.grid.no-top-border .response .page-controls.top .sort{width:100%;margin-bottom:5px}
+
+/* Repair Broken Share by youngyoukwon 2012-08-29 */
+.lg-support #shareClick {width:182px}
+
+/* main carousel , kuhyunrim , 2012-08-30 */
+div.carousel div.content h3{overflow:hidden;text-overflow:ellipsis}
+
+/* wide view , kuhyunrim , 2012-08-30 */
+.column.wide .product-list-wrap, .grid.wide .product{margin-left:-32px !important}
+
+/* wide link area modify , kuhyunrim , 2012-08-30 */
+#search-page.wrapper .tabpanel .panels #products_panel.panel article.row div.details a{width:auto;clear:none;display:inline;float:none !important}
+#search-page.wrapper .tabpanel .panels #products_panel.panel article.row div.details a.wide{clear:left;display:block;float:left !important;height:15px}
+#search-page.wrapper .tabpanel .panels #products_panel.panel article.row div.details a h2{width:auto;float:none;display:inline}
+#search-page.wrapper .tabpanel .panels #support_panel.panel article.supportage div.details a{width:auto}
+#search-page.wrapper .tabpanel .panels #support_panel.panel article.supportage div.details a h2{width:auto}
+
+/* it not upper case changed 2012-10-19*/
+.product-info div h3{text-transform:none}
+
+/* gnb */
+header nav li.primary a.primary:link, header nav li.primary a.primary:visited{font-size:11px}
+
+/* mobile-support */
+.mobile-support-wrap { height:auto; background-position:477px 5px; }
+.mobile-support-wrap .box-area { display:block; width:200px; float:left; height:76px; margin-bottom:10px; margin-right:10px; }
+.mobile-support-wrap .box-area .info { height:auto; }
+.mobile-support-wrap:after { display:block; clear:both; content:""; }	
+
+/* input box width , main search area */
+/* .support-main .searchBox .tits{width:330px !important}
+.support-main .searchBox .searchForm{width:584px !important}
+.support-main .searchBox .searchForm label input{width:465px !important} */
+
+/* support bottom banner */
+.support-main .banners ul li a { height:75px; }
+
+/* innovation header */
+.section-head{min-height:155px;height:auto}
+.section-head h1{padding-bottom:14px}
+.tech .txtbox p{line-height:22px}
+.inno-subnav1 a.right { width:320px; }
+.tech3 .showimg4 { bottom:15px; }
+
+/* color swatch leesubong 2012-09-03 */
+.swatch {background:url('/ru/images/lg-swatch-sprite-ru.gif') no-repeat 0 0 !important}
+.swatch.white {background-position:0 0 !important}
+.swatch.black {background-position:-14px 0 !important}
+.swatch.aluminum {background-position:-28px 0 !important}
+.swatch.beige {background-position:-42px 0 !important}
+.swatch.glossy-white {background-position:-56px 0 !important}
+.swatch.pink-and-white {background-position:-70px 0 !important}
+.swatch.zercal {background-position:-84px 0 !important}
+.swatch.golden {background-position:-98px 0 !important}
+.swatch.red-wine {background-position:-112px 0 !important}
+.swatch.stainless-steel {background-position:-126px 0 !important}
+.swatch.silver {background-position:-140px 0 !important}
+.swatch.glossy-silver {background-position:-154px 0 !important}
+.swatch.titanium {background-position:-168px 0 !important}
+
+/* glance_btn text, YOONEUNMI 2012-09-03 */
+.product-list-wrap .product button.glance-btn {left: 50px;width: 120px}
+
+/* support desc position modify , younyoungseo , 2012-09-03 */
+.lg-support .aform .support-registraion .description { margin-top:-5px; }
+
+/* ips-monitor , kuhyunrim , 2012-09-03 */
+.lt-ie10 .where-to-buy-info .tablist .tab{padding-bottom:26px}
+
+/* Edit Script For Main  */
+#ru-page .carousel .content h3{font-size:10px;height:30px;margin-top:6px}
+
+/* compare layout , kuhyunrim , 2012-09-04 */
+.compare-modal-content #compare-filter{display:inline-block}
+.compare-modal-content #compare-filter label{display:inline-block;margin:0 15px 10px 0;white-space:nowrap}
+.lt-ie9 .compare-modal-content #compare-filter label{margin-bottom:5px}
+
+/* compare print layout , kuhyunrim , 2012-09-04 */
+.compare.compare-print #items-wrapper{height:auto;margin-bottom:20px}
+.compare.compare-print  #items-wrapper .items{height:auto}
+.compare.compare-print  #items-wrapper .items .item{height:auto}
+.compare.compare-print  #items-wrapper .items p.model-name{height:66px;max-height:none}
+
+/* Main carousel , kuhyunrim , 2012-09-04 */
+#ru-page .product-innovations .carousel ul li .content h3{height:36px;margin-top:6px;font-size:10px;line-height:12px}
+
+/*gnb fix*/
+nav li.columnA, nav li.columnB, nav li.columnC { padding-left:20px; padding-right:20px; }
+
+.servicecenter p, .servicecenter .info-wrapper h4 { font-size:12px !important; }
+
+
+/* Footer Icon Position Adjust /younbyoukwon /2012-09-06 */
+.tagline .wrapper .questions .support a {width: 73px !important}
+.tagline .wrapper .questions .support a.email {background-position: 17px -275px}
+.tagline .wrapper .questions .support a.phone {background-position: -102px -275px}
+.tagline .wrapper .questions .support a.register {background-position: -224px -275px}
+
+/* font-style italic > normal , kuhyunrim , 2012-09-07 */
+.title-area span.highlight, .aform label .alerts, .error-msgs li, .tooltip form span.req{font-style:normal !important}
+
+/* ru hero transition , kuhyunrim , 2012-09-10 */
+div.hero p{margin-top:-150px}
+
+/* Repair Broken Share by youngyoukwon 2012-09-10 */
+.lg-support #shareClick{width:207px !important;height:33px}
+
+/* auto adjust columns gap in footer */
+/* LGERU-1347 :20131226 modify */
+footer li.col{width:auto !important;margin-right:46px}
+/* //LGERU-1347 :20131226 modify */
+footer li.col.four{margin-right:0}
+footer div.legal{clear:both;width:100%}
+footer div.follow{margin-top:-47px}
+
+
+/* innovation font overlap leesubong 2012-09-10 */
+.articles .arrow-large li {height:auto}
+
+/* change the main picture on FOTA page by young su choi 2012-10-09 */
+.fota-area { 
+background: url('/ru/images/support/bg-fota.png') no-repeat 514px 0 !important 
+} 
+
+/* SNS spacer Adjust by youngyoukwon 2012.12.03 */
+.social-share.new-share .gpi-share .gplusBtn {width: 50px}
+.social-share.new-share .gpi-share .faceBtn {width: 120px !important;margin-right: 10px;padding-left: 10px}
+.social-share.new-share .gpi-share .faceBtn iframe{width:130px !important}
+.ie8 .social-share.new-share {width:400px;float:right}
+.ie7 .social-share.new-share {width:400px;float:right}
+
+.ie8 .breadcrumbs{min-width:auto !important;max-width:auto !important}
+.ie8 .share hotspot gpi-share{max-width:530px !important}
+.ie8 .social-share.new-share .gpi-share .faceBtn{width:125px !important;margin-right: 5px}
+
+
+.ie8 .social-share.new-share .gpi-share .faceBtn iframe{width:125px !important}
+.ie8 .social-share.share-tit-left.new-share .gpi-share{max-width:530px !important}
+.social-share.new-share .gpi-share .vkBtn{width:100px}
+.social-share.share-send-top.new-share .gpi-share .vkBtn{width:144px}
+
+/*.ie7 .breadcrumbs{min-width:auto !important;max-width:auto !important}*/
+.ie7 .share hotspot gpi-share{max-width:530px !important}
+.ie7 .social-share.new-share .gpi-share .faceBtn{width:125px !important;margin-right: 5px}
+.ie7 .social-share.new-share .gpi-share .faceBtn iframe{width:125px !important}
+.ie7 .social-share.share-tit-left.new-share .gpi-share{max-width:530px !important}
+
+.lt-ie9 .social-share.new-share.share-send-top {width:630px}
+#product-display .social-share.new-share .gpi-share .faceBtn{width:108px !important; margin-right:0px}
+#product-display .social-share.new-share .gpi-share .twitBtn{width:108px !important; margin-right:0px}
+#product-display .social-share {max-width:480px !important}
+/* 360C by leejunhee 2012.12.07 */
+.three60 .content div{width:300px}
+
+/* SNS by parkJ 2012.12.11 */
+.social-share.share-tit-left.new-share .gpi-share h4 {float:none !important;margin: -7px 0 5px 10px}
+.survey h1 {max-width: 500px}
+.survey h3 {font-size: 17px;font-weight: normal;margin: 10px 0 10px}
+.survey fieldset.poll {margin: 20px 0 0;padding: 0}
+.survey fieldset.poll span.question {display: block;font-size: 12px;line-height: 20px;margin: 0 0 5px;width: 600px}
+.survey fieldset.poll p {/* margin-left: 20px;*/}
+.survey form p {margin: 0 0 5px;width: 600px}
+.survey p {font-size: 12px;line-height: 20px;margin: 0 0 25px}
+.survey fieldset.poll input.radio-survey {background: none repeat scroll 0 0 transparent !important;display: inline;height: 12px;margin: 0 0 0 10px;padding: 0 !important;vertical-align: middle;width: 15px}
+.survey fieldset.poll input.check-survey {background: none repeat scroll 0 0 transparent !important;display: inline;height: 12px;margin: 0 0 0 10px;padding: 0 !important;vertical-align: middle;width: 15px}
+.survey fieldset.poll input.text-survey {background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #CCCCCC;color: #333333;font-size: 11px;font-weight: normal;height: 20px;margin-right: 5px;padding-left: 5px;width: 338px}
+.survey fieldset.poll label {clear: none;display: inline;font-size: 12px;font-weight: normal;margin: 0 0 5px 0}
+.survey-submit {clear: both;padding-top: 7px;padding-bottom: 5px;text-align: center !important}
+.survey div.error span {display: none}
+.survey div.error {margin: 0 0 15px}
+#surveyForm div.error {color: #E04358}
+.survey {width: 745px;float: right;padding-top: 3px}
+.surveySuccess {float: right;padding-top: 3px}
+.lt-ie9 .surveySuccess {padding-top: 45px}
+.voting-result .bg-bar img {height: 13px}
+.voting-result .bg-bar-left img {width: 4px;margin-right: -4px}
+.voting-result .bg-bar-right img {width: 4px;margin-left: -3px}
+.btn-left .forward{font-size: 17px;font-weight: normal;margin: 10px 0;	text-transform: uppercase}
+.lg-support div#share{z-index:4999}
+.share a.vk, .share span.vk{background:url("/ru/images/global/vk_logo_small_blue.png") no-repeat;top:5px;width:21px;position:relative}
+iframe#vkwidget1_tt{z-index:10000 !important}
+
+/* LGERU-837 : 20130315 add*/
+.press-releases-ul{margin-left: 0px}
+.press-releases-ul li p:first-child {padding-left: 100px; text-indent: -100px;margin-bottom: 7px;color: #222222}
+.press-releases-ul li p:first-child a{background: url("/lg3-common/images/global/lg-global-sprite-v2.png") no-repeat scroll 14px -155px transparent;font-weight:bold; padding-left: 25px}
+.press-releases-ul li p {padding-left: 100px;margin-bottom: 11px;color:#5d5c5c}
+html.ie9 .press-releases-ul li p:first-child {padding-left: 96px; text-indent: -96px}
+html.ie9 .press-releases-ul li p {padding-left: 97px}
+.grid.no-line {border-bottom: medium none !important;border-top: medium none !important}
+.page-controls.pageC-pressReleases{margin-top: -69px;margin-right:14px}
+
+/* LGEUS-2798 : 20130405 */
+.grid-page .product div.copy-area p.product-compare label{width:100%;text-align:right;white-space: nowrap}
+.lt-ie9 .grid-page .product div.copy-area p.product-compare label input.compare{float:none}
+
+/* LGERU-922 : 20130422 */
+.social-share.share-tit-left.new-share .gpi-share{padding-right:45px}
+/* //LGERU-922 : 20130422 */
+
+/*  LGERU-868 20130430 add*/
+.survey textarea {background: none repeat scroll 0 0 #FFFFFF;vborder: 1px solid #CCCCCC;color: #333333;font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;font-weight: normal;height: 200px;margin-right: 5px;padding: 5px;width: 600px;overflow:hidden;margin-left:10px;
+}
+.survey textarea.smallArea{height: 100px;margin-top:10px}
+/* // LGERU-868 20130430 add*/ 
+/* LGERU-900 : 20130507 add*/
+#hero-area.find .options {margin-top:3px !important;height:100%}
+/* //LGERU-900 : 20130507 add*/
+/* LGERU-1035: 20130715 add */
+.visit-online {min-height:580px}
+.where-to-buy-info .visit-online h2{padding-bottom: 30px}
+.visit-online ul li p.retailer-site{display:inline-block;float:left; width: 132px; height: 30px; text-align: center; vertical-align: middle; line-height:30px; padding:0; margin:0}
+.lt-ie9 .visit-online ul li p.retailer-site a.small.button{float:none;display:inline-block}
+.visit-online ul li p.retailer-site a.buy-store{font-size: 14px}
+.visit-online-disc{width: 410px;float: left;margin-left: 62px}
+.visit-online ul li p.retailer-site img {height:30px}
+/* //LGERU-1035 : 20130715 add */
+/* LGERU-1020 : 20130809 add */
+.find-a-store .filter .search-form{width:480px}
+.find-a-store .search-btn{vertical-align:-17px !important}
+.locations-directions ul.locations a{display:inline-block;text-decoration:none}
+.locations-directions ul.locations h5{display:inline;margin:0px 5px 0 0;position:relative;top:-10px}
+/* //LGERU-1020 : 20130809 add */
+
+.locations-directions .grid ul.content-pages > li{width:450px}
+ul.content-pages ul.locations li{width:45%;margin-right:17px}
+.lt-ie9 .find-a-store .search-form .postal-code-items .styled-input{width:125px}
+.find-a-store .search-form .postal-code-items .styled-input{width:130px}
+
+/* LGERU-1210 : 20131108 add */
+.visit-online-disc {float: left;margin: 10px 0 0 23px;width: 930px}
+/* //LGERU-1210 : 20131108 add */
+
+/* LGERU-1197 : 20131112 add */
+.page-controls span.sort .styled-select.large {width: 128px}
+.page-controls span.sort .styled-select.large select {width: 130px}
+.webkit .page-controls span.sort .styled-select.large select {width: 132px}
+.page-controls .styled-select{background: none;margin-right: 3px}
+.webkit .page-controls .styled-select{background: #fff url("/lg3-common/images/global/lg-styled-select-bg.gif") no-repeat right}
+.lt-ie9 .page-controls .styled-select.large{width:131px;min-width:131px}
+.lt-ie9 .page-controls span.sort .styled-select.large {width: 131px}
+.page-controls a.clear-compare {margin-right: 1px;margin-left: 1px}
+.page-controls a.view-all {margin-left: 0px}
+.page-controls .sort span{margin-right: 5px}
+.pager .pages a {margin: 0 0px;padding-left: 2px}
+/* //LGERU-1197 : 20131112 add */
+
+/* LGERU-1232 : 20131114 add */
+.where-to-buy-info .locations li {word-break: normal}
+/* //LGERU-1232 : 20131114 add */
+
+/* LGERU-1171 : 20131101 add */
+.social-share.new-share .gpi-share .okBtn {width: 100px}
+.share a.ok, .share span.ok {background-image: url("/ru/images/global/lg-global-sprite-v2.png"); background-repeat: no-repeat; background-attachment:scroll; background-position:-247px -588px; top: 5px; width: 21px}
+.social-share.new-share .gpi-share .faceBtn{width:115px !important; margin-right:0px}
+ #product-display .social-share.new-share .gpi-share .faceBtn{width:115px !important; margin-right:0px}
+.ie7 .social-share.new-share .gpi-share .faceBtn,
+.ie7 #product-display .social-share.new-share .gpi-share .faceBtn {width:110px !important}
+.lt-ie8 .social-share.new-share .gpi-share .faceBtn,
+.lt-ie8 #product-display .social-share.new-share .gpi-share .faceBtn {width:110px !important}
+/* //LGERU-1171 : 20131101 add */
+
+/* LGERU-1234 : 20131119 add */
+.find-a-store .filter .search-form .styled-select.large select {width: 145px}
+.find-a-store .filter .search-form .styled-select {background: none}
+.lt-ie9 .find-a-store .filter .search-form .styled-select.large select{width:163px !important}
+#map .styled-select {background: #ffffff}
+.lt-ie9 #map .styled-select {background: none}
+#map .styled-select.large select{width:165px}
+.lt-ie9 #map .styled-select.large select{width:163px}
+.webkit #map .styled-select,.webkit .find-a-store .filter .search-form .styled-select{background: #fff url("/lg3-common/images/global/lg-styled-select-bg.gif") no-repeat right}
+.webkit .find-a-store .filter .search-form .styled-select.large select {width: 147px}
+.webkit #map .styled-select.large select{width:167px}
+/* LGERU-1234 : 20131119 add */
+/* LGERU-1284 : 20131204 add */
+.filtered .styled-select{background: none;margin-right: 3px}
+.filtered .styled-select select {width: 77px}
+.lt-ie9 .filtered .styled-select select {width: 75px}
+.webkit  .filtered .styled-select{background: #fff url("/lg3-common/images/global/lg-styled-select-bg.gif") no-repeat right}
+.webkit  .filtered .styled-select select{width: 78px !important; }
+/* LGERU-1284 : 20131204 add */
+/* LGERU-1283 : 20131212 add */
+.ru-press-release-section .column2 a, .ru-press-release-section .column2 a:active, .ru-press-release-section .column2 a:visited{color:#D80546}
+/* //LGERU-1283 : 20131212 add */
+/* LGERU-1297 : 20131224 add */
+.compare .compare-view #num-products {color: #D80546}
+/* //LGERU-1297 : 20131224 add */ 
+/* LGERU-1341 :20131219 add */
+#expert_panel .exprt2Block{position: relative;min-height: 120px;margin: 8px 0;padding-left: 225px}
+#expert_panel .exprt2Block .imgarea{position: absolute;top: 0px;left: 0;border-radius: 5px;display:inline-block;width:200px}
+#expert_panel .exprt2Block .imgarea span{display: inline-block;word-break: break-all}
+#expert_panel .exprt2Block .imgarea img.review-img{margin-top:0}
+#expert_panel .exprt2Block .fulltext-review a{color: #D80546}
+#expert_panel .exprt2Block .fulltext-review p.date{color: #666666}
+#expert_panel .exprt2Block .fulltext-review .review-content{padding:0 20px 20px 0}
+#expert_panel .exprt2Block .fulltext-review .button{position: absolute;bottom: 8px;right: 20px}
+/* //LGERU-1341 :20131219 add */
+/* LGERU-1394 : 20140129 */
+.where-to-buy-info .alerts {background: url("/lg3-common-v2/images/support/icon-alert.png") no-repeat scroll 0 2px transparent;display: none;float: left;font-size: 11px !important;font-style: italic;margin: 44px 0 0 10px;max-width: 205px;min-width: 150px;overflow: hidden;padding-left: 17px;text-overflow: ellipsis;text-transform: none;left: 13px;position: absolute}
+/* //LGERU-1394 : 20140129 */
+/* LGERU-1500 : 20140314 add */
+.promotion-container .social-share.share-send-top.new-share .gpi-share .vkBtn {width:90px}
+.lt-ie8 .social-share.new-share .gpi-share .okBtn {overflow:hidden !important; margin-right:10px;height:21px !important}
+.lt-ie8 .promotion-container .share.hotspot.gpi-share {width:450px;margin-left:-85px}
+.promotion-container .share.hotspot.gpi-share{left: -62px}
+/* //LGERU-1500 : 20140314 add */
+
+.units .img.cate-resister{bottom:-20px}
+
+/* LGERU-1580 : 20140523 */
+#hero-area .tabs {bottom:-207px}
+.lt-ie9 #hero-area .tabs {bottom: -217px}
+#hero-area .tabs div {height:215px}
+.lt-ie9 #hero-area .tabs div {height: 225px}
+#hero-area .tabs div.active{top:-207px}
+.lt-ie9 #hero-area .tabs div.active {top: -217px}
+
+/* LG-WCAG : 140623 add */
+.tagline .innerwrap .questions .support a {width: 73px !important}
+.tagline .innerwrap .questions .support a.email {background-position: 17px -275px}
+.tagline .innerwrap .questions .support a.phone {background-position: -102px -275px}
+.tagline .innerwrap .questions .support a.register {background-position: -224px -275px}
+
+.share span.ok {background: url("/ru/images/global/lg-global-sprite-v2.png") -246px -591px no-repeat;top: 3px}
+.share span.vk{background:url("/ru/images/global/vk_logo_small_blue.png") no-repeat;top: 4px;width:21px;position:relative}
+
+/* 20140627 add */
+.main-navigation > ul > li h2 { font-size: 11px}
+.main-navigation > ul > li h2 a { padding: 11px 5px 7px}
+.legal li:first-child {border-left:1px solid #999}
+/* //20140627 add */
+
+.column2.survey .container{width:auto;margin:0}
+
+.lg-support #shareClick + table.view{position:relative;}
+
+.ie .model-browser .category01 .icons a span{-ms-word-break:break-all;word-break:break-all}
+
+.support-registraion h4 ~ .line-bottom .stitle{width:215px}
+
+.support-enhance .search-by-category-grp .search-by-category a span{text-transform:uppercase}
+
+.lt-ie8 .support-registraion .line-bottom a.model-browse-open{float:none}
+
+/* LGERU-1466 20140626 add*/
+footer .hidden{display:none !important}
+.goTop{position:fixed;bottom:2%;z-index:99;right:20px}
+/* //LGERU-1466 20140626 add*/
+
+/* LGERU-1627 20140801 add*/
+.subnav { width: 195px; margin-left: 10px; margin-right: 10px; margin-bottom: 15px; font-size: 11px; }
+/* //LGERU-1627 20140801 add*/
+
+/* LGERU-1709 add 2014-09-22 */
+#search-page .tooltip .copy-wrapper {
+	height: auto;
+	width: 358px;
+	overflow: hidden;
+	clear: left;
+	margin-top: 10px;
+}
+.lt-ie8 #search-page .new_search_result_list .details p{
+ height:26px;
+}
+/* //LGERU-1709 add 2014-09-22 */
+
+/* LGERU-1745 add 2014-10-07 */
+#search-page .product-innovations .carousel ul li h3{
+	font-size: 11px;
+	height: 52px;
+}
+.lt-ie8 #search-page .product-innovations .carousel .content ul.ratings{
+	height:0;
+}
+.lt-ie8 #search-page .product-innovations .carousel ul li h3{
+	font-size: 11px;
+	height: 55px;
+}
+/* //LGERU-1745 add 2014-10-07 */
+
+/* LGERU-1777 : 20141016 add */
+.tagline .questions .support a.brandshop {background:url('/ru/images/icon_shop.png') center no-repeat; text-align:center}
+/* //LGERU-1777 : 20141016 add */
+
+/* LGERU-1905 : 20150126 add */
+html#support-page body h1, html#support-page body h1 a, 
+html#support-page body h2, html#support-page body h2 a, 
+html#support-page body h3, html#support-page body h3 a, 
+html#support-page body h4, html#support-page body h4 a, 
+html#support-page body h5, html#support-page body h5 a,  
+html#support-page body h6, html#support-page body h6 a, .main-navigation > ul > li.active h2 a strong,
+.main-navigation > ul > li .gnb-submenu.mega-gnb > ul > li > a span, .main-navigation > ul > li .gnb-submenu.mega-gnb > ul > li > ul > li > a span{font-family:"LGFontMedium" !important}
+
+html#support-page body h2, html#support-page body h3 {font-family:"LGFontBold" !important}
+
+html#support-page body .subnav h4, html#support-page body .main-navigation > ul > li h2 { font-size: 13px}
+.main-navigation > ul > li.active h2 a strong {}
+html#support-page body .main-navigation > ul > li h2 a {padding: 11px 9px 7px;}
+/* //LGERU-1905 : 20150126 add */
+
+/* SMG-6227 add 2014-12-09 */
+.main-navigation > ul > li> h2{
+	text-rendering:auto;
+}
+/* //SMG-6227 add 2014-12-09 */ 
+
+/* LGERU-1937 add 2015-02-23 */
+.tagline div.questions {
+	width: 395px;
+}
+.tagline .questions .support a.brandshop {
+	display:inline-block;
+	background:url('/ru/images/icon_shop.png') no-repeat 14px -3px;
+}
+/* LGERU-2073 20150326 modify */
+.lt-ie10 .tagline iframe {height: 1020px !important;}
+/* //LGERU-2073 20150326 modify */
+/* //LGERU-1937 add 2015-02-23 */
+
+/* LGERU-1855 : 20150209 add */
+.product-info .friendly-name {color: #222;font-family: "LGFontMedium",Arial,Helvetica,sans-serif;font-size: 14px;font-weight: normal;letter-spacing: -1px;line-height: 20px;text-transform: uppercase;margin: 0 15px 10px 0;padding: 0;}
+.product-info .product-desc {font-family: "LGFontMedium",Arial,Helvetica,sans-serif;font-weight: 300;font-size: 28px;color: #d80546;margin: 0 0 10px 0;padding: 0;line-height: 26px;letter-spacing: 0;text-transform: none;}
+/* //LGERU-1855 : 20150209 add */
+
+/* LGERU-1960 add 2015-02-16 */
+.aform span.padTB5{
+	padding:8px 0;
+	display:inline-block; 
+}
+/* //LGERU-1960 add 2015-02-16 */
+/* LGERU-2062 add 20150331*/
+.product-list-wrap .product .copy-area .details{height:58px}
+/* //LGERU-2062 add 20150331*/
+
+/* LGERU-1996 add 2015-04-09 */
+body h1,body h1 a,
+body h2,body h2 a,
+body h3,body h3 a,
+body h4,body h4 a,
+body h5,body h5 a,
+body h6,body h6 a, 
+.main-navigation > ul > li.active h2 a strong,
+.main-navigation > ul > li .gnb-submenu.mega-gnb > ul > li > a span, 
+.main-navigation > ul > li .gnb-submenu.mega-gnb > ul > li > ul > li > a span,
+.lg-support h2,
+.findProviderTit h3,
+body .product-info h3,
+body .product-info h2,
+body .column1 .subnav h4,
+.lt-ie10 body .subnav h4,
+.lt-ie10 body .column1 .subnav h4,
+body .lg-support .main-navigation > ul > li .gnb-submenu.mega-gnb > ul > li > a span,
+.lt-ie10  body .lg-support .main-navigation > ul > li .gnb-submenu.mega-gnb > ul > li > a span,
+body .lg-support .main-navigation > ul > li .gnb-submenu.mega-gnb > ul > li>  h3,
+.lt-ie10  body .lg-support .main-navigation > ul > li .gnb-submenu.mega-gnb > ul > li>  h3{font-family:"LGFontMedium" !important;}
+
+#support-page body h2,
+#support-page body h3 ,
+#support-page.lt-ie10 body h2,
+#support-page.lt-ie10 body h3,
+body .info h1,
+.model-browser h2.title,
+.layer-content h1{font-family:"LGFontBold" !important;}
+
+body .subnav h4,
+body .main-navigation > ul > li h2 {font-size: 13px;}
+body .main-navigation > ul > li h2 a {padding: 11px 9px 7px;}
+
+body .product-info h3{font-size:34px;}
+body footer h4{font-size:12px;}
+body .info h1{font-size:14px;}
+body .product-info h2{font-size:18px;}
+
+#ru-page .product-innovations .carousel ul li .content h3{font-size:12px;}
+h2.featured{font-size:17px;}
+.tagline h4, #hero-area .tabs h3{font-size:14px;}
+
+body .column1 .subnav h4{font-weight:normal;}
+/* //LGERU-1996 add 2015-04-09 */

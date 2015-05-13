@@ -74,7 +74,7 @@ function onYouTubeIframeAPIReady() {
 function playVideoPixel(event) {
 	var $player = $('.js-pixel-video');
 
-	$playBtn.on('click', function () {
+	$playBtn.bind('click', function () {
 		event.target.playVideo();
 		setTimeout(function () {
 			$player.css('z-index', 4);
@@ -90,7 +90,7 @@ function onYouTubePlayerReady() {
 		playerBanner = $playerBanner.get(0),
 		playerPixel = $playerPixel.get(0);
 
-	$btn.on('click', function () {
+	$btn.bind('click', function () {
 		$img.addClass(imgHideClass);
 		$info.addClass(infoHideClass);
 		$playerBanner.css('z-index', 10);
@@ -101,7 +101,7 @@ function onYouTubePlayerReady() {
 
 	// видео из блока "самопдсвечивающиеся пиксели"
 
-	$playBtn.on('click', function () {
+	$playBtn.bind('click', function () {
 		$playerPixel.css('z-index', 10);
 		playerPixel.playVideo();
 	});

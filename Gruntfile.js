@@ -228,7 +228,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: 'css',
-					src: ['lg.min.css', 'fonts.css'],
+					src: ['lg.min.css', 'fonts.css', 'default.css'],
 					dest: 'dist/assets/styles',
 					filter: 'isFile'
 				}]

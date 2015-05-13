@@ -17,7 +17,7 @@ $window.load(function () {
 
 		dataPlayer = videojs('dataVideo', {
 			width: 900,
-			height: 436,
+			height: 432,
 			controls: false,
 			preload: 'auto',
 			autoplay: false
@@ -48,23 +48,6 @@ $window.load(function () {
 			});
 		});
 	}
-
-	function isIE8() {
-		if (document.all && document.querySelector && !document.addEventListener) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-	function isIE7() {
-		if (document.all && !document.querySelector) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
 });
 
 
