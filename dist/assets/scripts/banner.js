@@ -13,6 +13,7 @@ $(window).load(function() {
 var $img = $('.js-banner-img'),
 	$info = $('.js-banner-info'),
 	$btn = $('.js-banner-btn'),
+	$playBtn = $('.js-play-btn'),
 	imgHideClass = 'banner__img_state_hide',
 	infoHideClass = 'banner__info_state_hide',
 	activeVideoClass = 'video__item_state_active',
@@ -44,8 +45,67 @@ function onYouTubeIframeAPIReady() {
 			'onReady': playVideo
 		}
 	});
+
+	var $player = $('.js-pixel-video'),
+		idPlayer = $player.attr('id'),
+		idVideo = $player.attr('data-video-id'),
+		player;
+
+	playerPixel = new YT.Player (idPlayer, {
+		height: '450',
+		width: '1025',
+		videoId: idVideo,
+		playerVars : {
+			autohide: 1,
+			controls: 2,
+			fs: 0,
+			modestbranding: 0,
+			showinfo: 0
+		},
+		events: {
+			'onReady': playVideoPixel
+		}
+});
+
+
+
+// Функция запуска видео
+
+function playVideoPixel(event) {
+	var $player = $('.js-pixel-video');
+
+	$playBtn.on('click', function () {
+		event.target.playVideo();
+		setTimeout(function () {
+			$player.css('z-index', 4);
+		}, 1500)
+	});
+	}
 }
 
+
+function onYouTubePlayerReady() {
+	var $playerBanner = $('#bannerPlayer'),
+		$playerPixel = $('#pixelPlayer'),
+		playerBanner = $playerBanner.get(0),
+		playerPixel = $playerPixel.get(0);
+
+	$btn.on('click', function () {
+		$img.addClass(imgHideClass);
+		$info.addClass(infoHideClass);
+		$playerBanner.css('z-index', 10);
+		playerBanner.playVideo();
+	});
+
+	changeVideo('', $playerBanner);
+
+	// видео из блока "самопдсвечивающиеся пиксели"
+
+	$playBtn.on('click', function () {
+		$playerPixel.css('z-index', 10);
+		playerPixel.playVideo();
+	});
+}
 
 // Функция запуска видео
 
@@ -72,10 +132,10 @@ function playVideo(event) {
 
 // Функция переключения видео
 
-function changeVideo(event) {
+function changeVideo(event, $swfPlayer) {
 	var $switchers = $('.js-video-switch'),
-		$player = $('.js-banner-video'),
-		player = event.target,
+		$player = $('.js-banner-video') ? $('.js-banner-video') : $swfPlayer,
+		player = event ? event.target : $swfPlayer.get(0),
 		id;
 
 	$switchers.each(function () {

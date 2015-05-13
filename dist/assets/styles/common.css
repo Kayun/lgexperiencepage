@@ -895,35 +895,113 @@ body {
 .pixel {
   position: relative;
   margin-top: 50px;
+  height: 452px;
+  width: 100%;
   border-bottom: 1px solid #f3f3f3;
   border-top: 1px solid #f3f3f3;
 }
-/* line 7, css\new_design\blocks\oled\pixel.less */
+/* line 9, css\new_design\blocks\oled\pixel.less */
 .pixel-wrap {
   position: absolute;
+  z-index: 4;
   top: 102px;
   left: 0;
   width: 410px;
+  opacity: 1;
+  -webkit-transition: opacity .3s ease;
+          transition: opacity .3s ease;
+  will-change: opacity;
 }
-/* line 14, css\new_design\blocks\oled\pixel.less */
-.pixel__video {
+/* line 19, css\new_design\blocks\oled\pixel.less */
+.pixel-wrap_state_hide {
+  opacity: 0;
+}
+/* line 24, css\new_design\blocks\oled\pixel.less */
+.pixel__video,
+.pixel object {
   position: relative;
-  width: 588px;
-  height: 452px;
-  float: right;
+  z-index: 1 !important;
 }
-/* line 20, css\new_design\blocks\oled\pixel.less */
-.pixel__video-play {
+/* line 31, css\new_design\blocks\oled\pixel.less */
+.pixel__img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -38px;
-  margin-left: 16px;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 588px;
+  height: 450px;
+  background: url('../images/oled/pixel-bg.jpg') 0 0 no-repeat;
+  opacity: 1;
+  -webkit-transition: opacity .3s ease;
+          transition: opacity .3s ease;
+  will-change: opacity;
+}
+/* line 43, css\new_design\blocks\oled\pixel.less */
+.pixel__img_state_hide {
+  opacity: 0;
+}
+/* line 49, css\new_design\blocks\oled\pixel.less */
+.pixel__play {
+  position: absolute;
+  z-index: 3;
+  top: 188px;
+  right: 206px;
   background-image: url(../images/sprite.png);
   background-position: 0px -170px;
   width: 72px;
   height: 72px;
   cursor: pointer;
+  opacity: 1;
+  -webkit-transition: opacity .3s ease;
+          transition: opacity .3s ease;
+  will-change: opacity;
+}
+/* line 60, css\new_design\blocks\oled\pixel.less */
+.pixel__play_state_hide {
+  opacity: 0;
+}
+/* line 66, css\new_design\blocks\oled\pixel.less */
+.pixel__mask {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 1025px;
+  height: 450px;
+  background: url('../images/oled/mask.png') 0 0 no-repeat;
+  -webkit-transform-origin: 438px 100%;
+      -ms-transform-origin: 438px 100%;
+          transform-origin: 438px 100%;
+  -webkit-transform: translateX(0) rotate(0);
+      -ms-transform: translateX(0) rotate(0);
+          transform: translateX(0) rotate(0);
+  -webkit-transition: -webkit-transform .5s linear;
+          transition: transform .5s linear;
+  will-change: transform, transition;
+}
+/* line 81, css\new_design\blocks\oled\pixel.less */
+.pixel__mask_transform_transl {
+  -webkit-transform: translateX(-438px);
+      -ms-transform: translateX(-438px);
+          transform: translateX(-438px);
+  -webkit-transition-timing-function: cubic-bezier(0.65, 1.95, 0.03, 0.32);
+          transition-timing-function: cubic-bezier(0.65, 1.95, 0.03, 0.32);
+}
+/* line 86, css\new_design\blocks\oled\pixel.less */
+.pixel__mask_transform_rotate {
+  -webkit-transform: translateX(-438px) rotate(-22deg);
+      -ms-transform: translateX(-438px) rotate(-22deg);
+          transform: translateX(-438px) rotate(-22deg);
+}
+/* line 93, css\new_design\blocks\oled\pixel.less */
+.pixel__mask-wrap {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
 }
 /* line 1, css\new_design\blocks\oled\oled-4k.less */
 .oled-4k {
@@ -1331,8 +1409,8 @@ body {
   width: 117px;
   height: 22px;
 }
-/* line 24, css\new_design\blocks\ultra\colorprime.less */
-.colorprime__chek + label {
+/* line 22, css\new_design\blocks\ultra\colorprime.less */
+.colorprime__chek {
   position: relative;
   height: 20px;
   width: 35px;
@@ -1341,19 +1419,12 @@ body {
   border-radius: 20px;
   -webkit-transition: background-color 0.3s ease;
           transition: background-color 0.3s ease;
-  cursor: default;
 }
-/* line 35, css\new_design\blocks\ultra\colorprime.less */
-.colorprime__chek:not(checked) {
-  position: absolute !important;
-  opacity: 0 !important;
-}
-/* line 41, css\new_design\blocks\ultra\colorprime.less */
-.colorprime__chek:not(checked) + label:before {
+/* line 32, css\new_design\blocks\ultra\colorprime.less */
+.colorprime__chek-point {
   position: absolute;
   top: -2px;
   left: -2px;
-  content: '';
   background-image: url(../images/sprite.png);
   background-position: -502px -97px;
   width: 25px;
@@ -1361,15 +1432,7 @@ body {
   -webkit-transition: left 0.3s ease;
           transition: left 0.3s ease;
 }
-/* line 54, css\new_design\blocks\ultra\colorprime.less */
-.colorprime__chek:checked + label {
-  background-color: #f04879;
-}
-/* line 57, css\new_design\blocks\ultra\colorprime.less */
-.colorprime__chek:checked + label:before {
-  left: 13px;
-}
-/* line 64, css\new_design\blocks\ultra\colorprime.less */
+/* line 42, css\new_design\blocks\ultra\colorprime.less */
 .colorprime__img1 {
   position: absolute;
   z-index: 2;
@@ -1379,7 +1442,7 @@ body {
   height: 362px;
   background: url('../images/ultra/colorprime-bg.jpg') 0 0 no-repeat;
 }
-/* line 74, css\new_design\blocks\ultra\colorprime.less */
+/* line 52, css\new_design\blocks\ultra\colorprime.less */
 .colorprime__img2 {
   position: absolute;
   z-index: 1;
@@ -1389,7 +1452,7 @@ body {
   height: 362px;
   background: url('../images/ultra/colorprime-bg-before.jpg') 0 0 no-repeat;
 }
-/* line 84, css\new_design\blocks\ultra\colorprime.less */
+/* line 62, css\new_design\blocks\ultra\colorprime.less */
 .colorprime__line {
   position: absolute;
   z-index: 3;

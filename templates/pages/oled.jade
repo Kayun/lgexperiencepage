@@ -34,7 +34,26 @@ block content
 			.banner__btn.banner__btn_state_hide.js-banner-btn
 				| Посмотрите видео
 
-		div.banner__video.js-banner-video#bannerPlayerOled(data-video-id="NiRkoX2p94o")
+
+		!= "<!--[if !IE]>-->"
+			.banner__video.js-banner-video#bannerPlayerOled(data-video-id="NiRkoX2p94o")
+		!= "<!--<![endif]-->"
+
+		!= "<!--[if lte IE 8]>"
+			#bannerPlayerOled
+
+			script.
+
+				var params = {
+					allowScriptAccess: "always",
+					wmode: "opaque"
+				};
+				var atts = { id: "bannerPlayer" };
+				swfobject.embedSWF(
+					"http://www.youtube.com/v/NiRkoX2p94o?enablejsapi=1&playerapiid=bannerPlayer&version=3",
+					"bannerPlayerOled", "1260", "442", "8", null, null, params, atts);
+
+		!= "<![endif]-->"
 
 	include ../blocks/oled/oled
 
@@ -97,14 +116,14 @@ block scriptBefore
 	script.
 
 		var scripts = [
-			'https://www.youtube.com/iframe_api'
+			'https://www.youtube.com/iframe_api',
+			'assets/scripts/swfobject.js'
 		]
 
-		scripts.forEach(function(item) {
+		for (var index = 0; index < scripts.length; index++) {
 			var script = document.createElement('script'),
-			beforeScript = document.getElementsByTagName('script')[0];
-
-			script.src = item;
-			script.async = false;
-			beforeScript.parentNode.insertBefore(script, beforeScript);
-		})
+				beforeScript = document.getElementsByTagName('head')[0];
+			script.type = "text/javascript";
+			script.src = scripts[index];
+			beforeScript.appendChild(script);
+		}

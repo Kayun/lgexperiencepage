@@ -12,16 +12,17 @@
 		<link href="assets/styles/fonts.css" rel="stylesheet">
 		<script>
 		var scripts = [
-			'https://www.youtube.com/iframe_api'
+			'https://www.youtube.com/iframe_api',
+			'assets/scripts/swfobject.js'
 		]
-		scripts.forEach(function(item)
+		for (var index = 0; index < scripts.length; index++)
 		{
 			var script = document.createElement('script'),
-				beforeScript = document.getElementsByTagName('script')[0];
-			script.src = item;
-			script.async = false;
-			beforeScript.parentNode.insertBefore(script, beforeScript);
-		})
+				beforeScript = document.getElementsByTagName('head')[0];
+			script.type = "text/javascript";
+			script.src = scripts[index];
+			beforeScript.appendChild(script);
+		}
 		</script>
 		<!--[if lte IE 8]> <link href="assets/styles/ie8.css" rel="stylesheet"> <![endif]-->
 		<!--[if IE 7]> <link href="assets/styles/ie7.css" rel="stylesheet"> <![endif]-->
@@ -494,7 +495,18 @@
 					<div class="banner__text banner__text_state_hide js-banner-text">Совершенный цвет, бесконечная контрастность</div>
 					<div class="banner__btn banner__btn_state_hide js-banner-btn">Посмотрите видео</div>
 				</div>
+				<!--[if !IE]>-->
 				<div id="bannerPlayerOled" data-video-id="NiRkoX2p94o" class="banner__video js-banner-video"></div>
+				<!--<![endif]-->
+				<!--[if lte IE 8]><div id="bannerPlayerOled"></div><script>var params = {
+	allowScriptAccess: "always",
+	wmode: "opaque"
+};
+var atts = { id: "bannerPlayer" };
+swfobject.embedSWF(
+	"http://www.youtube.com/v/NiRkoX2p94o?enablejsapi=1&playerapiid=bannerPlayer&version=3",
+	"bannerPlayerOled", "1260", "442", "8", null, null, params, atts);
+</script><![endif]-->
 			</section>
 			<section class="oled">
 				<div class="oled-wrap clearfix">
@@ -529,10 +541,24 @@
 			</section>
 			<div class="wrapper">
 				<section class="pixel clearfix">
-					<div class="pixel__video"><img src="assets/images/oled/pixel-bg.jpg" class="pixel__video-img">
-						<div class="pixel__video-play"></div>
+					<div class="pixel__mask-wrap">
+						<div class="pixel__mask js-pixel-mask"></div>
 					</div>
-					<div class="pixel-wrap">
+					<div class="pixel__img js-pixel-img"></div>
+					<!--[if !IE]>-->
+					<div id="pixelPlayerOled" data-video-id="yZ1OEBLnUQI" class="pixel__video js-pixel-video"></div>
+					<!--<![endif]-->
+					<!--[if lte IE 8]><div id="pixelPlayerOled"></div><script>var params = {
+	allowScriptAccess: "always",
+	wmode: "opaque"
+};
+var atts = { id: "pixelPlayer" };
+swfobject.embedSWF(
+	"http://www.youtube.com/v/yZ1OEBLnUQI?enablejsapi=1&playerapiid=pixelPlayer&version=3&wmode=transparent",
+	"pixelPlayerOled", "1025", "450", "8", null, null, params, atts);
+</script><![endif]-->
+					<div class="pixel__play js-play-btn"></div>
+					<div class="pixel-wrap js-pixel-text">
 						<h2 role="heading" class="title">Самоподсвечивающиеся пиксели</h2>
 						<p class="text">Матрица OLED-телевизора, в отличие от LED LCD, состоит из миллионов самоподсвечивающиеся пикселей. Каждый из них контролируется индивидуально, и нет никаких проблем с тем, чтобы показать предельное сочетание ярких, насыщенных красок и бездонно глубокого черного цвета. Таким образом, OLED-телевизор достигает поистине ультимативный контраст, приближая изображение к&nbsp;реальности.</p>
 					</div>

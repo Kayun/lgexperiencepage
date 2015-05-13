@@ -39,7 +39,26 @@ block content
 			.banner__btn.banner__btn_state_hide.js-banner-btn
 				| Посмотрите видео
 
-		div.banner__video.js-banner-video#bannerPlayerWebos(data-video-id="kWbRVrrpb4w")
+		!= "<!--[if !IE]>-->"
+			.banner__video.js-banner-video#bannerPlayerWebos(data-video-id="kWbRVrrpb4w")
+		!= "<!--<![endif]-->"
+
+		!= "<!--[if lte IE 8]>"
+			#bannerPlayerWebos
+
+			script.
+
+				var params = {
+					allowScriptAccess: "always",
+					wmode: "opaque"
+				};
+				var atts = { id: "bannerPlayer" };
+				swfobject.embedSWF(
+					"http://www.youtube.com/v/kWbRVrrpb4w?enablejsapi=1&playerapiid=bannerPlayer&version=3",
+					"bannerPlayerWebos", "1260", "442", "8", null, null, params, atts);
+
+		!= "<![endif]-->"
+
 
 	section.features
 
@@ -203,6 +222,7 @@ block scriptBefore
 		var scripts = [
 			'https://www.youtube.com/iframe_api',
 			'//vjs.zencdn.net/4.12/video.js',
+			'assets/scripts/swfobject.js'
 		]
 
 		for (var index = 0; index < scripts.length; index++) {

@@ -174,6 +174,30 @@ This must be run when you have at least 2 sprites.
 .demo__btn {
   width: 279px;
 }
+/* line 1, css\new_design\ie8\blocks\pixel.less */
+.pixel {
+  zoom: 1;
+}
+/* line 4, css\new_design\ie8\blocks\pixel.less */
+.pixel__img,
+.pixel-wrap,
+.pixel__play {
+  zoom: 1;
+}
+/* line 9, css\new_design\ie8\blocks\pixel.less */
+.pixel__img_state_hide,
+.pixel-wrap_state_hide,
+.pixel__play_state_hide {
+  display: none;
+}
+/* line 14, css\new_design\ie8\blocks\pixel.less */
+.pixel__mask {
+  zoom: 1;
+}
+/* line 17, css\new_design\ie8\blocks\pixel.less */
+.pixel__mask_transform_transl {
+  display: none;
+}
 /* line 7, css\new_design\ie8\components\menu-mini.less */
 .menu-mini__logo_type_ultra {
   background-image: url(../images/sprite.png);
@@ -196,13 +220,18 @@ This must be run when you have at least 2 sprites.
   height: 28px;
 }
 /* line 3, css\new_design\ie8\components\banner.less */
-.banner iframe {
-  position: relative;
-  z-index: 1;
+.banner object {
+  position: relative !important;
+  z-index: 1 !important;
 }
 /* line 8, css\new_design\ie8\components\banner.less */
 .banner__img {
   zoom: 1;
+}
+/* line 16, css\new_design\ie8\components\banner.less */
+.banner__img_state_hide,
+.banner__info_state_hide {
+  display: none;
 }
 /* line 1, css\new_design\ie8\components\buttons.less */
 .button-feat,

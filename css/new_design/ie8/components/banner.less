@@ -1,11 +1,19 @@
 .banner {
 
-	& iframe {
-		position: relative;
-		z-index: 1;
+	& object {
+		position: relative !important;
+		z-index: 1 !important;
 	}
 
 	&__img {
 		zoom: 1;
+	}
+}
+
+.banner__img,
+.banner__info {
+
+	&_state_hide {
+		display: none;
 	}
 }

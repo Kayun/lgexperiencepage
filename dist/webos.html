@@ -15,6 +15,7 @@
 		var scripts = [
 			'https://www.youtube.com/iframe_api',
 			'//vjs.zencdn.net/4.12/video.js',
+			'assets/scripts/swfobject.js'
 		]
 		for (var index = 0; index < scripts.length; index++)
 		{
@@ -496,7 +497,18 @@
 					<div class="banner__text banner__text_state_hide js-banner-text">Запуск в один клик</div>
 					<div class="banner__btn banner__btn_state_hide js-banner-btn">Посмотрите видео</div>
 				</div>
+				<!--[if !IE]>-->
 				<div id="bannerPlayerWebos" data-video-id="kWbRVrrpb4w" class="banner__video js-banner-video"></div>
+				<!--<![endif]-->
+				<!--[if lte IE 8]><div id="bannerPlayerWebos"></div><script>var params = {
+	allowScriptAccess: "always",
+	wmode: "opaque"
+};
+var atts = { id: "bannerPlayer" };
+swfobject.embedSWF(
+	"http://www.youtube.com/v/kWbRVrrpb4w?enablejsapi=1&playerapiid=bannerPlayer&version=3",
+	"bannerPlayerWebos", "1260", "442", "8", null, null, params, atts);
+</script><![endif]-->
 			</section>
 			<section class="features">
 				<div class="wrapper clearfix">

@@ -1,10 +1,33 @@
 section.pixel.clearfix
 
-	.pixel__video
-		img.pixel__video-img(src="assets/images/oled/pixel-bg.jpg")
-		.pixel__video-play
+	.pixel__mask-wrap
+		.pixel__mask.js-pixel-mask
 
-	.pixel-wrap
+	.pixel__img.js-pixel-img
+
+	!= "<!--[if !IE]>-->"
+		.pixel__video.js-pixel-video#pixelPlayerOled(data-video-id="yZ1OEBLnUQI")
+	!= "<!--<![endif]-->"
+
+	!= "<!--[if lte IE 8]>"
+		#pixelPlayerOled
+
+		script.
+
+			var params = {
+				allowScriptAccess: "always",
+				wmode: "opaque"
+			};
+			var atts = { id: "pixelPlayer" };
+			swfobject.embedSWF(
+				"http://www.youtube.com/v/yZ1OEBLnUQI?enablejsapi=1&playerapiid=pixelPlayer&version=3&wmode=transparent",
+				"pixelPlayerOled", "1025", "450", "8", null, null, params, atts);
+
+	!= "<![endif]-->"
+
+	.pixel__play.js-play-btn
+
+	.pixel-wrap.js-pixel-text
 
 		h2.title(role="heading") Самоподсвечивающиеся пиксели
 

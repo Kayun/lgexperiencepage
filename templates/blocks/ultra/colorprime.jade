@@ -15,8 +15,13 @@ section.colorprime#colorPrime
 
 		.colorprime__logo
 
-		input.colorprime__chek.mobile-hide(type="checkbox" id="chek" name="colorprime" disabled)
-		label.mobile-hide(for="chek")
+		.colorprime__chek.mobile-hide(
+			data-700-top="background-color: rgb(233, 233, 233)"
+			data-600-top="background-color: rgb(214, 16, 73)")
+
+			.colorprime__chek-point(
+				data-700-top="left: -2px"
+				data-600-top="left: 15px")
 
 	.colorprime__img1.mobile-hide(
 		data-600-top="opacity: 1"

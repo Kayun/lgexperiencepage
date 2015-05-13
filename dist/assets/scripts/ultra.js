@@ -9,7 +9,8 @@ var $colorPrimeSection = $('#colorPrime'),
 	setupPointDurationClass = 'setup__point_duration',
 	animCountClass = 'setup__container_frame_',
 	count = 1,
-	flag = true;
+	flag = true,
+	flagChek = true;
 
 $window.load(function () {
 	if (!device.mobile() && !device.tablet() && !isIE8() && !isIE7()) {
@@ -17,17 +18,20 @@ $window.load(function () {
 		$document.bind('scroll', function () {
 
 			if ($colorPrimeSection.position().top +
-				$colorPrimeSection.innerHeight() <= $document.scrollTop() +
-				$window.height()) {
+				$colorPrimeSection.innerHeight() + 500 <= $document.scrollTop() +
+				$window.height() && flagChek) {
 
-				$checkbox.attr('checked', 'checked')
+				$checkbox.attr('checked', 'checked');
+				flagChek = !flagChek;
 			}
 
 			if ($colorPrimeSection.position().top +
-				$colorPrimeSection.innerHeight() > $document.scrollTop() +
-				$window.height()) {
+				$colorPrimeSection.innerHeight() + 500 > $document.scrollTop() +
+				$window.height() && !flagChek) {
 
-				$checkbox.removeAttr('checked')
+				$checkbox.removeAttr('checked');
+				flagChek = !flagChek;
+				console.log($checkbox);
 			}
 
 			if ($setupSection.position().top +
