@@ -34,21 +34,3 @@ block scriptAfter
 		"vendor.js",
 		"common.js"
 	])
-
-block scriptBefore
-
-	script.
-
-		var scripts = [
-			'//code.jquery.com/jquery-1.6.1.min.js',
-		];
-
-		for (var index = 0; index < scripts.length; index++) {
-			var script = document.createElement('script'),
-				head = document.getElementsByTagName('head')[0];
-
-			script.type = "text/javascript";
-			script.src = scripts[index];
-			head.appendChild(script);
-		}
-

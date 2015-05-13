@@ -469,7 +469,7 @@ body .column1 .subnav h4,
 body .lg-support .main-navigation > ul > li .gnb-submenu.mega-gnb > ul > li > a span,
 .lt-ie10  body .lg-support .main-navigation > ul > li .gnb-submenu.mega-gnb > ul > li > a span,
 body .lg-support .main-navigation > ul > li .gnb-submenu.mega-gnb > ul > li>  h3,
-.lt-ie10  body .lg-support .main-navigation > ul > li .gnb-submenu.mega-gnb > ul > li>  h3{font-family:"LGFontMedium" !important;}
+.lt-ie10  body .lg-support .main-navigation > ul > li .gnb-submenu.mega-gnb > ul > li>  h3{/* font-family:"LGFontMedium" !important; */}
 
 #support-page body h2,
 #support-page body h3 ,
