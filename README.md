@@ -9,4 +9,4 @@
 
 ## Листинг
 
-[https://kayun.github.io/lgexperiencepage/dist/main.html](https://kayun.github.io/lgexperiencepage/dist/main.html)
+[https://kayun.github.io/lgexperiencepage/dist/tv/main.html](https://kayun.github.io/lgexperiencepage/dist/tv/main.html)
